@@ -11,7 +11,7 @@ export const PanelWrapper = styled.div`
 export const Panel = styled.div`
   display: flex;
   height: 550px;
-  width: 200vw;
+  width: 5000px;
   margin-left: 200px;
   background-color: lightcoral;
 `;

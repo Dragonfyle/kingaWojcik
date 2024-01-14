@@ -2,7 +2,7 @@ import * as P from "./Navagation.parts";
 
 export default function Navigation() {
   return (
-    <P.Wrapper>
+    <P.NavigationWrapper>
       <P.StyledNav>
         <P.StyledUl>
           <P.styledLi>placeholder</P.styledLi>
@@ -17,6 +17,6 @@ export default function Navigation() {
           <P.styledLi>placeholder</P.styledLi>
         </P.StyledUl>
       </P.StyledNav>
-    </P.Wrapper>
+    </P.NavigationWrapper>
   );
 }

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const NavigationWrapper = styled.div`
+  position: fixed;
   display: flex;
   justify-content: space-around;
   width: 100%;
+  background-color: white;
 `;
 
 export const StyledNav = styled.nav`

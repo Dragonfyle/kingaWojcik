@@ -1,17 +1,17 @@
 import * as P from "./ProjectsSections.parts";
 import NavButtons from "../NavButtons/NavButtons";
-import ImagePanel from "../ImagePanel/ImagePanel";
+import ProjectPanel from "../ProjectPanel/ProjectPanel";
 
 export default function PorjectsSection() {
   return (
     <P.StyledSection>
       <P.HeaderWrapper>
         <P.StyledHeader>
-          <P.StyledH1>Projekty</P.StyledH1>
+          <P.StyledH2>Projekty</P.StyledH2>
         </P.StyledHeader>
         <NavButtons />
       </P.HeaderWrapper>
-      <ImagePanel />
+      <ProjectPanel />
     </P.StyledSection>
   );
 }

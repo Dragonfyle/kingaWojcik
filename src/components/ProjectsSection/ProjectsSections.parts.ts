@@ -16,12 +16,12 @@ export const HeaderWrapper = styled.div`
 export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
-  width: 30%;
-  height: 70%;
-  margin-left: 200px;
+  width: 20%;
+  height: 90%;
+  margin-left: 500px;
   background-color: white;
 `;
 
-export const StyledH1 = styled.h1`
-  font-size: 2rem;
+export const StyledH2 = styled.h2`
+  font-size: 3rem;
 `;

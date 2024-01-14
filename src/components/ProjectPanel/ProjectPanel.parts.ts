@@ -8,10 +8,10 @@ export const PanelWrapper = styled.div`
   background-color: lavender;
 `;
 
-export const Panel = styled.div`
+export const ProjectPanel = styled.div`
   display: flex;
   height: 550px;
   width: 5000px;
-  margin-left: 200px;
+  margin-left: 500px;
   background-color: lightcoral;
 `;

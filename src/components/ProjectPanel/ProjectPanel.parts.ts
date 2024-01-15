@@ -2,16 +2,13 @@ import styled from "styled-components";
 
 export const PanelWrapper = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-around;
   height: 100%;
-  background-color: lavender;
+  padding-top: 30px;
 `;
 
 export const ProjectPanel = styled.div`
   display: flex;
-  height: 550px;
+  height: 400px;
   width: 5000px;
-  margin-left: 500px;
-  background-color: lightcoral;
 `;

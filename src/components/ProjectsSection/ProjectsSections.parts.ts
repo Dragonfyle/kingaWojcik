@@ -10,16 +10,16 @@ export const HeaderWrapper = styled.div`
   display: flex;
   align-items: flex-end;
   height: 100%;
-  background-color: lavender;
+  /* background-color: lavender; */
 `;
 
 export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   width: 20%;
-  height: 90%;
+  height: 100%;
   margin-left: 500px;
-  background-color: white;
+  /* background-color: white; */
 `;
 
 export const StyledH2 = styled.h2`

@@ -5,13 +5,13 @@ export default function ProjectPanel() {
   return (
     <P.PanelWrapper>
       <P.ProjectPanel>
-        <ProjectPanelItem />
-        <ProjectPanelItem />
-        <ProjectPanelItem />
-        <ProjectPanelItem />
-        <ProjectPanelItem />
-        <ProjectPanelItem />
-        <ProjectPanelItem />
+        <ProjectPanelItem image="https://picsum.photos/seed/123/640/360" />
+        <ProjectPanelItem image="https://picsum.photos/seed/1245/640/360" />
+        <ProjectPanelItem image="https://picsum.photos/seed/sdag/640/360" />
+        <ProjectPanelItem image="https://picsum.photos/seed/34tg/640/360" />
+        <ProjectPanelItem image="https://picsum.photos/seed/sdag/640/360" />
+        <ProjectPanelItem image="https://picsum.photos/seed/h53q/640/360" />
+        <ProjectPanelItem image="https://picsum.photos/seed/434/640/360" />
       </P.ProjectPanel>
     </P.PanelWrapper>
   );

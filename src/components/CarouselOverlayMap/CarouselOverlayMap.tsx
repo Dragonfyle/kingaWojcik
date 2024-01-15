@@ -3,12 +3,12 @@ import CarouselOverlayMapItem from "../CarouselOverlayMapItem/CarouselOverlayMap
 
 export default function CarouseOverlayMap() {
   return (
-    <P.MapContainer>
+    <P.MapWrapper>
       <CarouselOverlayMapItem />
       <CarouselOverlayMapItem />
       <CarouselOverlayMapItem />
       <CarouselOverlayMapItem />
       <CarouselOverlayMapItem />
-    </P.MapContainer>
+    </P.MapWrapper>
   );
 }

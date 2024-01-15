@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 export const NavigationWrapper = styled.div`
   position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
   z-index: 100;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: inherit;
   background-color: white;
 `;
 

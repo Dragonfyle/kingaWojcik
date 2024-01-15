@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MapContainer = styled.div`
+export const MapWrapper = styled.div`
   display: flex;
   align-items: end;
   justify-content: space-between;

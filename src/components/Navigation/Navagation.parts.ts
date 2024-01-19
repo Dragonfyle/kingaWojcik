@@ -1,23 +1,48 @@
+import { breakpoints } from "../../styles/breakpoints";
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const NavigationWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 100;
   width: 100%;
+  background-color: white;
+  ${breakpoints.XXL} {
+    justify-content: flex-start;
+  }
 `;
 
-export const StyledNav = styled.nav`
+export const ListWrapper = styled.nav`
   display: flex;
   height: 100%;
+  width: 78%;
+  margin: 0 11%;
+  ${breakpoints.XXL} {
+    justify-content: flex-start;
+  }
 `;
 
-export const StyledUl = styled.ul`
+export const StyledUlLeft = styled.ul`
   display: flex;
-  height: 100%;
+  width: 1040px;
 `;
 
-export const styledLi = styled.li`
+export const StyledUlRight = styled.ul`
+  display: flex;
+`;
+
+export const styledLiLeft = styled.li`
   display: block;
-  padding: 12px 35px;
+  padding: 12px 35px 12px 0;
+  height: 100%;
+`;
+
+export const styledLiRight = styled.li`
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 0 12px 35px;
   height: 100%;
 `;

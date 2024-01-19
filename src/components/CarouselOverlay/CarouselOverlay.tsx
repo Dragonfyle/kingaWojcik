@@ -3,8 +3,8 @@ import CarouseOverlayMap from "../CarouselOverlayMap/CarouselOverlayMap";
 
 export default function CarouselOverlay() {
   return (
-    <P.OverlayWrapper>
+    <P.StyledDiv>
       <CarouseOverlayMap />
-    </P.OverlayWrapper>
+    </P.StyledDiv>
   );
 }

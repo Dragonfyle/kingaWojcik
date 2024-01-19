@@ -4,8 +4,6 @@ export const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 550px;
-  /* background-color: seashell; */
   margin-right: 50px;
 `;
 

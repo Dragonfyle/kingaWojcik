@@ -1,13 +1,13 @@
-import * as P from "./IconNext.parts";
+import * as P from "./NavIcons.parts";
 import Icons from "../../assets/Icons.svg";
 
-interface IconNextProps {
+interface NavIcon {
   name: string;
   color: string;
   size: number;
 }
 
-export default function IconNext({ name, color, size }: IconNextProps) {
+export default function NavIcon({ name, color, size }: NavIcon) {
   return (
     <P.StyledSvg fill={color} width={size} height={size}>
       <use href={`${Icons}#icon-${name}`} />

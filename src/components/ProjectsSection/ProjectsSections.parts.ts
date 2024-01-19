@@ -1,23 +1,28 @@
+import { breakpoints } from "../../styles/breakpoints";
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  display: grid;
-  grid-template-rows: 1fr 9fr;
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+  margin: 0 0 0 11%;
+  padding: 100px 0;
+  ${breakpoints.M} {
+    width: 88%;
+    margin: 0 0 0 4%;
+  }
+  ${breakpoints.S} {
+    padding: 40px 0;
+  }
 `;
 
 export const HeaderWrapper = styled.div`
   display: flex;
-  align-items: flex-end;
-  height: 100%;
-  /* width: 100vw; */
 `;
 
 export const StyledHeader = styled.header`
   display: flex;
-  align-items: center;
-  width: 40vw;
-  height: 100%;
-  /* margin-right: 20vw; */
+  width: 68%;
 `;
 
 export const StyledH2 = styled.h2`

@@ -26,6 +26,7 @@ const CarouselContextProvider = ({
   const [activeImage, setActiveImgae] = useState(0);
   const [progress, setProgress] = useState(0);
   const step = useMemo(() => normalizeStep(INTERVAL, SLIDE_LENGTH_MS), []);
+  console.log(activeImage);
 
   useEffect(() => {
     const progressInterval = setInterval(() => {

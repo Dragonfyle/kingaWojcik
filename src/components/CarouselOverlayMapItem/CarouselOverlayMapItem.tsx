@@ -1,12 +1,20 @@
 import * as P from "./CarouselOverlayMapItem.parts";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
-export default function CarouselOverlayMapItem() {
+interface CarouselOverlayMapItemProps {
+  description: string;
+  isActive: boolean;
+}
+
+export default function CarouselOverlayMapItem({
+  description,
+  isActive,
+}: CarouselOverlayMapItemProps) {
   return (
     <P.MapItemWrapper>
-      <ProgressBar />
+      <ProgressBar isActive={isActive} />
       <P.DescriptionWrapper>
-        <P.Description>Veniam pariatur.</P.Description>
+        <P.Description>{description}</P.Description>
       </P.DescriptionWrapper>
     </P.MapItemWrapper>
   );

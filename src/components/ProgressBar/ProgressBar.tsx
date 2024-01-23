@@ -1,12 +1,15 @@
 import * as P from "./ProgressBar.parts";
 import { useCarouselContext } from "../CarouselContext/CarouselContext";
 
-export default function ProgressBar() {
+interface ProgressBarProps {
+  isActive: boolean;
+}
+
+export default function ProgressBar({ isActive }: ProgressBarProps) {
   const { progress } = useCarouselContext();
-  console.log(progress);
   return (
     <P.ProgressBarContainer>
-      <P.ProgressBarFiller $progress={progress} />
+      <P.ProgressBarFiller $isActive={isActive} $progress={progress} />
     </P.ProgressBarContainer>
   );
 }

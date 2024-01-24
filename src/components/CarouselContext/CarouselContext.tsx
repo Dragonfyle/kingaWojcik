@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { NUM_IMAGES } from "../../data/TopCarouselData";
 
 const INTERVAL = 50;
 const SLIDE_LENGTH_MS = 5000;
@@ -9,7 +10,6 @@ const normalizeStep = (interval: number, slideLengthMs: number) => {
 
 interface CarouselContextProps {
   children: React.ReactNode;
-  numImages: number;
 }
 
 interface CarouselContext {
@@ -19,14 +19,10 @@ interface CarouselContext {
 
 const CarouselContext = createContext({} as CarouselContext);
 
-const CarouselContextProvider = ({
-  children,
-  numImages,
-}: CarouselContextProps) => {
+const CarouselContextProvider = ({ children }: CarouselContextProps) => {
   const [activeImage, setActiveImgae] = useState(0);
   const [progress, setProgress] = useState(0);
   const step = useMemo(() => normalizeStep(INTERVAL, SLIDE_LENGTH_MS), []);
-  console.log(activeImage);
 
   useEffect(() => {
     const progressInterval = setInterval(() => {
@@ -35,7 +31,7 @@ const CarouselContextProvider = ({
       } else {
         setProgress(0);
         setActiveImgae((previous) => {
-          if (previous === numImages) {
+          if (previous === NUM_IMAGES - 1) {
             return 0;
           } else {
             return previous + 1;
@@ -44,7 +40,7 @@ const CarouselContextProvider = ({
       }
     }, INTERVAL);
     return () => clearInterval(progressInterval);
-  }, [numImages, progress, step]);
+  }, [progress, step]);
   return (
     <CarouselContext.Provider value={{ activeImage, progress }}>
       {children}

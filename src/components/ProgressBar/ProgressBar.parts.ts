@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const ProgressBarContainer = styled.div`
   width: 100%;
   height: 4px;
-  background-color: lightgray;
-  opacity: 1;
+  background-color: #555;
 `;
 
 export const ProgressBarFiller = styled.div<{

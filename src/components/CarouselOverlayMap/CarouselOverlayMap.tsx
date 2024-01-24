@@ -1,6 +1,6 @@
 import * as P from "./CarouselOverlayMap.parts";
 import CarouselOverlayMapItem from "../CarouselOverlayMapItem/CarouselOverlayMapItem";
-import { mapItemDescriptions } from "../../data/TopCarouselData";
+import { MAP_ITEM_DESCRIPTIONS } from "../../data/TopCarouselData";
 import { useCarouselContext } from "../CarouselContext/CarouselContext";
 
 export default function CarouseOverlayMap() {
@@ -15,5 +15,5 @@ export default function CarouseOverlayMap() {
     ));
   }
 
-  return <P.MapWrapper>{generateMapItems(mapItemDescriptions)}</P.MapWrapper>;
+  return <P.MapWrapper>{generateMapItems(MAP_ITEM_DESCRIPTIONS)}</P.MapWrapper>;
 }

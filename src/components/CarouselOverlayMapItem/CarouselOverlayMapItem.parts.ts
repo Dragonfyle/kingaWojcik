@@ -21,7 +21,7 @@ export const DescriptionWrapper = styled.div`
   height: 30%;
   width: 100%;
   text-align: left;
-  ${breakpoints.M} {
+  ${breakpoints.L} {
     display: none;
   }
 `;

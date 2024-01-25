@@ -5,7 +5,8 @@ export const StyledDiv = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 200px;
+  height: 22%;
+  max-height: 200px;
   width: 100%;
   background-color: #000;
   opacity: 0.9;

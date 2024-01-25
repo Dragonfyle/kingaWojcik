@@ -3,10 +3,14 @@ import styled from "styled-components";
 
 export const MapWrapper = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
-  ${breakpoints.M} {
-    width: 96%;
+  margin-top: 30px;
+  ${breakpoints.L} {
+    margin-top: 0;
+  }
+  ${breakpoints.L} {
+    width: 94%;
   }
 `;

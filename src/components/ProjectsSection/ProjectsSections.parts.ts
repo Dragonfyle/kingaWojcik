@@ -7,12 +7,13 @@ export const StyledSection = styled.section`
   width: 89%;
   margin: 0 0 0 11%;
   padding: 100px 0;
-  ${breakpoints.M} {
+  ${breakpoints.L} {
     width: 88%;
-    margin: 0 0 0 4%;
+    margin: 0 0 0 6%;
   }
   ${breakpoints.S} {
     padding: 40px 0;
+    margin: 0 0 0 5%;
   }
 `;
 

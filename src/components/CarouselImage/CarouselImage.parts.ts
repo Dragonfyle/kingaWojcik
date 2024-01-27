@@ -1,20 +1,15 @@
 import styled from "styled-components";
 
-export const ImgWrapper = styled.div`
+export const ImageWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
-  max-height: min(100vh, 1200px);
-  overflow: hidden;
+  justify-content: flex-end;
+  max-width: 100%;
+  max-height: 100%;
 `;
 
-export const StyledP = styled.p`
-  position: absolute;
-  left: 20%;
-  top: 15%;
-  transform: translateX(-50%);
-  font-size: 2.5rem;
-  max-width: 30%;
-  color: beige;
-  text-align: left;
+export const StyledPicture = styled.picture<{ $isActive: boolean }>`
+  order: ${({ $isActive }) => ($isActive ? 0 : 1)};
+  opacity: ${({ $isActive }) => ($isActive ? 1 : 0)};
+  transition: opacity linear 300ms;
 `;

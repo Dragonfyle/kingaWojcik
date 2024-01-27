@@ -1,44 +1,38 @@
 import * as P from "./CarouselImage.parts";
+import { ImageSet } from "../CarouselSlide/CarouselSlide.utils";
+import { WIDTH_THRESHOLDS } from "../CarouselSlide/CarouselSlide.utils";
 import { useCarouselContext } from "../CarouselContext/CarouselContext";
-import wspolpracaXXL from "/wspolpraca2560.png";
-import dzielenieXXL from "/dzielenie2560.png";
-import dzielenieL from "/dzielenie1920.png";
-import wspolpracaL from "/wspolpraca1920.png";
-import genericM from "/generic1024.png";
-import genericS from "/generic640.png";
+import {
+  activeImageMap,
+  wspolpraca,
+} from "../CarouselSlide/CarouselSlide.utils";
 
-const wspolpraca = [wspolpracaXXL, wspolpracaL, genericM, genericS];
-const dzielenie = [dzielenieXXL, dzielenieL, genericM, genericS];
-const mediaQueries = [
-  "(min-width: 1921px)",
-  "(min-width: 1025px)",
-  "(min-width: 641px)",
-  "(max-width: 640px)",
-];
+interface CarouselImage extends React.PropsWithChildren {
+  isActive: boolean;
+  imageSet: ImageSet;
+  activeImage: number;
+}
 
-const activeImageMap = new Map();
-activeImageMap.set(0, wspolpraca);
-activeImageMap.set(1, dzielenie);
-activeImageMap.set(2, wspolpraca);
-activeImageMap.set(3, dzielenie);
-activeImageMap.set(4, wspolpraca);
-
-export default function CarouselImage() {
+export default function CarouselImage({ isActive, imageSet }: CarouselImage) {
   const { activeImage } = useCarouselContext();
-
-  function generateSources(imageArray: string[]) {
-    return imageArray.map((image, idx) => (
-      <source key={image} srcSet={image} media={mediaQueries[idx]} />
-    ));
+  const activeImageSet = activeImageMap.get(activeImage) || wspolpraca;
+  const largestImageIndex = activeImageSet.length - 1;
+  function generateSources(imageSet: ImageSet) {
+    return imageSet
+      .filter((image, idx) => idx !== largestImageIndex)
+      .map((image, idx) => (
+        <source
+          key={activeImage + idx}
+          srcSet={image}
+          media={WIDTH_THRESHOLDS[idx]}
+        />
+      ));
   }
 
   return (
-    <P.ImgWrapper>
-      <picture>
-        {generateSources(activeImageMap.get(activeImage))}
-        <img src={wspolpracaL} />
-        <P.StyledP>Cillum officia do culpa eu ea minim.</P.StyledP>
-      </picture>
-    </P.ImgWrapper>
+    <P.StyledPicture $isActive={isActive}>
+      {generateSources(imageSet)}
+      <img src={imageSet[largestImageIndex]} />
+    </P.StyledPicture>
   );
 }

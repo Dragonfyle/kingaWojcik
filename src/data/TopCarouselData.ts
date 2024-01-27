@@ -7,3 +7,11 @@ export const MAP_ITEM_DESCRIPTIONS = [
 ];
 
 export const NUM_IMAGES = MAP_ITEM_DESCRIPTIONS.length;
+
+export const IMAGE_DESCRIPTIONS = [
+  "Irure sint incididunt consequat anim fugiat esse mollit excepteur",
+  "Eu velit irure officia consequat velit deserunt est velit occaecat Lorem.",
+  "Consectetur excepteur adipisicing sunt duis id anim nisi duis est.",
+  "Est consequat do commodo et eu cupidatat quis.",
+  "Reprehenderit sit pariatur occaecat qui qui deserunt Lorem ut magna non nisi non consequat.",
+];

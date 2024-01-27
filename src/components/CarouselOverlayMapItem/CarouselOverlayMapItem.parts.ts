@@ -7,13 +7,13 @@ export const MapItemWrapper = styled.div`
   justify-content: space-around;
   height: 50%;
   width: 15vw;
-  margin: 0 2%;
-  max-width: 220px;
+  margin-right: 2%;
   ${breakpoints.XXL} {
     width: 16vw;
   }
-  ${breakpoints.S} {
-    width: 16vw;
+  ${breakpoints.L} {
+    margin: auto;
+    width: 75vw;
   }
 `;
 

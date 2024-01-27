@@ -7,6 +7,7 @@ interface ProgressBarProps {
 
 export default function ProgressBar({ isActive }: ProgressBarProps) {
   const { progress } = useCarouselContext();
+
   return (
     <P.ProgressBarContainer>
       <P.ProgressBarFiller $isActive={isActive} $progress={progress} />

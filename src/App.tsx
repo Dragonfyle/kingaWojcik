@@ -1,11 +1,14 @@
 import { GlobalStyles } from "./styles/GlobalStyles";
 import Layout from "./components/Layout/Layout";
+import { DeviceContextProvider } from "./components/DeviceContext/DeviceContext";
 
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <Layout />
+      <DeviceContextProvider>
+        <GlobalStyles />
+        <Layout />
+      </DeviceContextProvider>
     </>
   );
 }

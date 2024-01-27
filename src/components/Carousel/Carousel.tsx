@@ -1,14 +1,14 @@
 // import { breakpointsNoMedia } from "../../styles/breakpoints";
 import * as P from "./Carousel.parts";
-import CarouselContextProvider from "../CarouselContext/CarouselContext";
 import CarouselOverlay from "../CarouselOverlay/CarouselOverlay";
-import CarouselImage from "../CarouselImage/CarouselImage";
+import CarouselSlide from "../CarouselSlide/CarouselSlide";
+import CarouselContextProvider from "../CarouselContext/CarouselContext";
 
 export default function Carousel() {
   return (
     <CarouselContextProvider>
       <P.CarouselWrapper>
-        <CarouselImage />
+        <CarouselSlide />
         <CarouselOverlay />
       </P.CarouselWrapper>
     </CarouselContextProvider>

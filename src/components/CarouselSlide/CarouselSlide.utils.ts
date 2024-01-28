@@ -8,25 +8,13 @@ import genericS from "/generic640.png";
 type ImageSet = (typeof imageSets)[number];
 type ActiveImageMap = Map<number, ImageSet>;
 
-const WIDTH_THRESHOLDS = [
-  "(max-width: 640px)",
-  "(max-width: 1024px)",
-  "(max-width: 1920px)",
-] as const;
+const WIDTH_THRESHOLDS = ["(max-width: 640px)", "(max-width: 1024px)", "(max-width: 1920px)"] as const;
 
 const wspolpraca = [genericS, genericM, wspolpracaL, wspolpracaXXL] as const;
 const dzielenie = [genericS, genericM, dzielenieL, dzielenieXXL] as const;
-const imageSets = [
-  wspolpraca,
-  dzielenie,
-  wspolpraca,
-  dzielenie,
-  wspolpraca,
-] as const;
+const imageSets = [wspolpraca, dzielenie, wspolpraca, dzielenie, wspolpraca] as const;
 
-const activeImageMap: ActiveImageMap = new Map(
-  imageSets.map((set, index) => [index, set])
-);
+const activeImageMap: ActiveImageMap = new Map(imageSets.map((set, index) => [index, set]));
 
 export type { ImageSet };
 

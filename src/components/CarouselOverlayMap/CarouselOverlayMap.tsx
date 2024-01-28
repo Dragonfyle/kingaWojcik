@@ -5,21 +5,23 @@ import { useCarouselContext } from "../CarouselContext/CarouselContext";
 import { useDeviceContext } from "../DeviceContext/DeviceContext";
 
 export default function CarouselOverlayMap() {
-  const { isMobile } = useDeviceContext();
-  const { activeImage } = useCarouselContext();
-  function generateMapItems(mapItemDescriptions: string[]) {
-    if (isMobile) {
-      return <CarouselOverlayMapItem isActive={true} description={""} />;
-    } else {
-      return mapItemDescriptions.map((descritption, idx) => (
-        <CarouselOverlayMapItem
-          key={descritption}
-          isActive={activeImage === idx}
-          description={descritption}
-        />
-      ));
-    }
-  }
+    const { isMobile } = useDeviceContext();
+    const { activeImage } = useCarouselContext();
 
-  return <P.MapWrapper>{generateMapItems(MAP_ITEM_DESCRIPTIONS)}</P.MapWrapper>;
+    function generateMapItems(mapItemDescriptions: string[]) {
+        if (isMobile) {
+            return <CarouselOverlayMapItem isActive={true} description={""} imageIndex={null} />;
+        } else {
+            return mapItemDescriptions.map((descritption, idx) => (
+                <CarouselOverlayMapItem
+                    key={descritption}
+                    isActive={activeImage === idx}
+                    description={descritption}
+                    imageIndex={idx}
+                />
+            ));
+        }
+    }
+
+    return <P.MapWrapper>{generateMapItems(MAP_ITEM_DESCRIPTIONS)}</P.MapWrapper>;
 }

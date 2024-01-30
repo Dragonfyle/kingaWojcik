@@ -1,55 +1,59 @@
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useContext, useState, useEffect, SetStateAction } from "react";
+import { CONFIG } from "../../constants/config";
 import { NUM_IMAGES } from "../../data/TopCarouselData";
 
-const INTERVAL = 50;
-const SLIDE_LENGTH_MS = 5000;
+interface CarouselContextProps {
+    children: React.ReactNode;
+}
 
-const normalizeStep = (interval: number, slideLengthMs: number) => {
-  return 100 / (slideLengthMs / interval);
+interface CarouselBarContext {
+    progress: number;
+    activeImage: number;
+    setActiveImage: React.Dispatch<SetStateAction<number>>;
+    setProgress: React.Dispatch<SetStateAction<number>>;
+}
+
+const getStep = (interval: number, slideLengthMs: number) => {
+    return 100 / (slideLengthMs / interval);
 };
 
-interface CarouselContextProps {
-  children: React.ReactNode;
-}
+const step = getStep(CONFIG.CAROUSEL.INTERVAL, CONFIG.CAROUSEL.SLIDE_LENGTH_MS);
 
-interface CarouselContext {
-  activeImage: number;
-  progress: number;
-}
-
-const CarouselContext = createContext({} as CarouselContext);
+const CarouselContext = createContext({} as CarouselBarContext);
 
 const CarouselContextProvider = ({ children }: CarouselContextProps) => {
-  const [activeImage, setActiveImgae] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const step = useMemo(() => normalizeStep(INTERVAL, SLIDE_LENGTH_MS), []);
+    const [activeImage, setActiveImage] = useState(0);
+    const [progress, setProgress] = useState(0);
 
-  useEffect(() => {
-    const progressInterval = setInterval(() => {
-      if (progress < 100) {
-        setProgress((previous) => previous + step);
-      } else {
-        setProgress(0);
-        setActiveImgae((previous) => {
-          if (previous === NUM_IMAGES - 1) {
-            return 0;
-          } else {
-            return previous + 1;
-          }
-        });
-      }
-    }, INTERVAL);
-    return () => clearInterval(progressInterval);
-  }, [progress, step]);
-  return (
-    <CarouselContext.Provider value={{ activeImage, progress }}>
-      {children}
-    </CarouselContext.Provider>
-  );
+    useEffect(() => {
+        const progressInterval = setInterval(() => {
+            setProgress((prev) => {
+                if (prev < 100) {
+                    return prev + step;
+                } else {
+                    setActiveImage((prev) => {
+                        if (prev < NUM_IMAGES - 1) {
+                            return prev + 1;
+                        } else {
+                            return 0;
+                        }
+                    });
+                    return 0;
+                }
+            });
+        }, CONFIG.CAROUSEL.INTERVAL);
+        return () => clearInterval(progressInterval);
+    }, []);
+
+    return (
+        <CarouselContext.Provider value={{ activeImage, progress, setProgress, setActiveImage }}>
+            {children}
+        </CarouselContext.Provider>
+    );
 };
 
 const useCarouselContext = () => {
-  return useContext(CarouselContext);
+    return useContext(CarouselContext);
 };
 
 export { useCarouselContext };

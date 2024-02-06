@@ -3,14 +3,13 @@ import { breakpoints } from "../../../../styles/breakpoints";
 
 export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     position: absolute;
-    left: 7%;
+    left: 11%;
     top: 20%;
     max-width: 30%;
     display: ${({ $isActive }) => ($isActive ? "block" : "none")};
 `;
 
 export const StyledP = styled.p`
-    /* position: absolute; */
     font-size: 2.5rem;
     font-weight: 400;
     color: beige;

@@ -9,6 +9,7 @@ export default function Flexbox<T extends HTMLElement>({
     $align = "normal",
     $wrap = "wrap",
     $width = "100%",
+    $maxWidth = "auto",
     $colGap,
     $rowGap,
     className,
@@ -26,6 +27,7 @@ export default function Flexbox<T extends HTMLElement>({
             $rowGap={$rowGap}
             $wrap={$wrap}
             $width={$width}
+            $maxWidth={$maxWidth}
             {...restProps}>
             {children}
         </P.Flexbox>

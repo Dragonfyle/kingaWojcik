@@ -18,15 +18,11 @@ export const ListWrapper = styled.nav`
     display: flex;
     height: 100%;
     width: 78%;
+    max-width: 1300px;
     margin: 0 11%;
     ${breakpoints.XXL} {
         justify-content: flex-start;
     }
-`;
-
-export const StyledUlLeft = styled.ul`
-    display: flex;
-    width: 1040px;
 `;
 
 export const styledLiLeft = styled.li`
@@ -38,6 +34,6 @@ export const styledLiLeft = styled.li`
 export const styledLiRight = styled.li`
     display: flex;
     justify-content: flex-end;
-    padding: 12px 0 12px 35px;
+    padding: 12px 15px 12px 20px;
     height: 100%;
 `;

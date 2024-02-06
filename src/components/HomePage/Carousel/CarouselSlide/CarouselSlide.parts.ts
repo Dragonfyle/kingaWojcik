@@ -11,7 +11,7 @@ export const SlideWrapper = styled.div`
     max-height: min(100vh, 1300px);
     overflow: hidden;
     ${breakpoints.XXL} {
-        /* max-height: 730px; */
+        max-height: 1000px;
     }
     ${breakpoints.L} {
         height: 80vh;

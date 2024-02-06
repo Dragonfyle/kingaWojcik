@@ -10,4 +10,5 @@ export const Flexbox = styled.div<StyledFlexboxProps>`
     row-gap: ${({ $rowGap }) => $rowGap};
     flex-wrap: ${({ $wrap }) => $wrap};
     width: ${({ $width }) => $width};
+    max-width: ${({ $width }) => $width};
 `;

@@ -46,6 +46,7 @@ export interface FlexboxProps<T extends HTMLElement> extends React.HTMLAttribute
     $rowGap?: string;
     $wrap?: "wrap" | "nowrap" | "wrap-reverse";
     $width?: string;
+    $maxWidth?: string;
 }
 
 export type StyledFlexboxProps = Omit<FlexboxProps<HTMLElement>, "className">;

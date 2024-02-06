@@ -7,6 +7,7 @@ export const ButtonsWrapper = styled.div`
     justify-content: flex-end;
     width: 200px;
     height: 100%;
+    cursor: pointer;
     ${breakpoints.S} {
         display: none;
     }

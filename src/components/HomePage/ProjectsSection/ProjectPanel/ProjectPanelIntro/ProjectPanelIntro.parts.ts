@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const IntroWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
 `;
 
 export const StyledP = styled.p`

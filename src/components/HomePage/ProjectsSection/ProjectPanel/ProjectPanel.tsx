@@ -1,4 +1,5 @@
 import * as P from "./ProjectPanel.parts";
+import { forwardRef } from "react";
 // import img1 from "https://picsum.photos/seed/123/640/360";
 // import img2 from "https://picsum.photos/seed/1245/640/360";
 // import img3 from "https://picsum.photos/seed/sdag/640/360";
@@ -9,9 +10,9 @@ import * as P from "./ProjectPanel.parts";
 import ProjectPanelIntro from "./ProjectPanelIntro/ProjectPanelIntro";
 import ProjectPanelItem from "./ProjectPanelItem/ProjectPanelItem";
 
-export default function ProjectPanel() {
+export default forwardRef(function ProjectPanel(_, ref: React.Ref<HTMLDivElement>) {
     return (
-        <P.PanelWrapper>
+        <P.PanelWrapper ref={ref}>
             <P.ProjectPanel>
                 <ProjectPanelIntro />
                 <P.ItemsWrapper>
@@ -26,4 +27,4 @@ export default function ProjectPanel() {
             </P.ProjectPanel>
         </P.PanelWrapper>
     );
-}
+});

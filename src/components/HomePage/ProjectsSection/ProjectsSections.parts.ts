@@ -7,6 +7,7 @@ export const StyledSection = styled.section`
     width: 89%;
     margin: 0 0 0 11%;
     padding: 100px 0;
+    user-select: none;
     ${breakpoints.L} {
         width: 88%;
         margin: 0 0 0 6%;

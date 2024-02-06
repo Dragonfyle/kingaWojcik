@@ -1,20 +1,21 @@
 import * as P from "./Navagation.parts";
 import KingaBrand from "../generics/KingaBrand/KingaBrand";
+import Flexbox from "../generics/Flexbox/Flexbox";
 
 export default function Navigation() {
     return (
         <P.NavigationWrapper>
             <P.ListWrapper>
-                <P.StyledUlLeft>
+                <Flexbox tag="ul">
                     <KingaBrand />
                     <P.styledLiLeft>placeholder</P.styledLiLeft>
                     <P.styledLiLeft>placeholder</P.styledLiLeft>
-                </P.StyledUlLeft>
-                <P.StyledUlRight>
+                </Flexbox>
+                <Flexbox tag="ul" $justify="flex-end">
                     <P.styledLiRight>placeholder</P.styledLiRight>
                     <P.styledLiRight>placeholder</P.styledLiRight>
                     <P.styledLiRight>placeholder</P.styledLiRight>
-                </P.StyledUlRight>
+                </Flexbox>
             </P.ListWrapper>
         </P.NavigationWrapper>
     );

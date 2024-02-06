@@ -7,15 +7,15 @@ export const SlideWrapper = styled.div`
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-end;
-    height: 100vh;
+    height: 97vh;
     max-height: min(100vh, 1300px);
     overflow: hidden;
     ${breakpoints.XXL} {
-        max-height: 730px;
+        /* max-height: 730px; */
     }
     ${breakpoints.L} {
         height: 80vh;
-        max-height: 730px;
+        max-height: 800px;
     }
     ${breakpoints.S} {
         height: 80vh;

@@ -9,12 +9,15 @@ import { forwardRef } from "react";
 // import img7 from "https://picsum.photos/seed/434/640/360";
 import ProjectPanelIntro from "./ProjectPanelIntro/ProjectPanelIntro";
 import ProjectPanelItem from "./ProjectPanelItem/ProjectPanelItem";
+import { useDeviceContext } from "../../contexts/DeviceContext/DeviceContext";
 
 export default forwardRef(function ProjectPanel(_, ref: React.Ref<HTMLDivElement>) {
+    const { isMobile } = useDeviceContext();
+
     return (
         <P.PanelWrapper ref={ref}>
             <P.ProjectPanel>
-                <ProjectPanelIntro />
+                {!isMobile && <ProjectPanelIntro />}
                 <P.ItemsWrapper>
                     <ProjectPanelItem image="https://picsum.photos/seed/123/640/360" />
                     <ProjectPanelItem image="https://picsum.photos/seed/1245/640/360" />

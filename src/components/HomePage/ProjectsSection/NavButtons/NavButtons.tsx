@@ -1,5 +1,6 @@
 import * as P from "./NavButtons.parts";
-import NavIcon from "../../../generics/NavIcon/NavIcon";
+import Next from "../../../generics/NavIcon/Next/Next";
+import Previous from "../../../generics/NavIcon/Previous/Previous";
 
 interface NavButtonsProps {
     onNextProject: () => void;
@@ -9,8 +10,8 @@ interface NavButtonsProps {
 export default function NavButtons({ onNextProject, onPreviousProject }: NavButtonsProps) {
     return (
         <P.ButtonsWrapper>
-            <NavIcon name="previous" color="#F1DB13" size={50} onClick={onPreviousProject} />
-            <NavIcon name="next" color="#F1DB13" size={50} onClick={onNextProject} />
+            <Previous $size="50px" onClick={onPreviousProject} />
+            <Next $size="50px" onClick={onNextProject} />
         </P.ButtonsWrapper>
     );
 }

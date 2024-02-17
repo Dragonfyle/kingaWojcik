@@ -7,7 +7,8 @@ export const StyledSection = styled.section`
     width: 89%;
     margin: 0 0 0 11%;
     padding: 100px 0;
-    user-select: none ${breakpoints.L} {
+    user-select: none;
+    ${breakpoints.L} {
         width: 88%;
         margin: 0 0 0 6%;
     }
@@ -15,10 +16,6 @@ export const StyledSection = styled.section`
         padding: 40px 0;
         margin: 0 0 0 5%;
     }
-`;
-
-export const HeaderWrapper = styled.div`
-    display: flex;
 `;
 
 export const StyledHeader = styled.header`

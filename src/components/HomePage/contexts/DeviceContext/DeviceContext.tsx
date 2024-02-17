@@ -10,9 +10,9 @@ const DeviceContextProvider = ({ children }: React.PropsWithChildren) => {
 
     function getWindowWidth([
         {
-            contentRect: { width, height },
+            contentRect: { width },
         },
-    ]) {
+    ]: Array<ResizeObserverEntry>) {
         setIsMobile(width < CONFIG.APP.MAX_MOBILE_WIDTH);
     }
 

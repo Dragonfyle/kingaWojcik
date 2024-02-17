@@ -10,6 +10,7 @@ import { forwardRef } from "react";
 import ProjectPanelIntro from "./ProjectPanelIntro/ProjectPanelIntro";
 import ProjectPanelItem from "./ProjectPanelItem/ProjectPanelItem";
 import { useDeviceContext } from "../../contexts/DeviceContext/DeviceContext";
+import Flexbox from "../../../generics/Flexbox/Flexbox";
 
 export default forwardRef(function ProjectPanel(_, ref: React.Ref<HTMLDivElement>) {
     const { isMobile } = useDeviceContext();
@@ -18,7 +19,7 @@ export default forwardRef(function ProjectPanel(_, ref: React.Ref<HTMLDivElement
         <P.PanelWrapper ref={ref}>
             <P.ProjectPanel>
                 {!isMobile && <ProjectPanelIntro />}
-                <P.ItemsWrapper>
+                <Flexbox $wrap="nowrap">
                     <ProjectPanelItem image="https://picsum.photos/seed/123/640/360" />
                     <ProjectPanelItem image="https://picsum.photos/seed/1245/640/360" />
                     <ProjectPanelItem image="https://picsum.photos/seed/sdag/640/360" />
@@ -26,7 +27,7 @@ export default forwardRef(function ProjectPanel(_, ref: React.Ref<HTMLDivElement
                     <ProjectPanelItem image="https://picsum.photos/seed/sdag/640/360" />
                     <ProjectPanelItem image="https://picsum.photos/seed/h53q/640/360" />
                     <ProjectPanelItem image="https://picsum.photos/seed/434/640/360" />
-                </P.ItemsWrapper>
+                </Flexbox>
             </P.ProjectPanel>
         </P.PanelWrapper>
     );

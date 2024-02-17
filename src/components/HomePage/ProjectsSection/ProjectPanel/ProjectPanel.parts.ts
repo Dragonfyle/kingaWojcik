@@ -7,7 +7,6 @@ export const PanelWrapper = styled.div`
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
-    /* scroll-behavior: smooth; */
     margin-top: 30px;
     ${breakpoints.L} {
         margin-top: 50px;

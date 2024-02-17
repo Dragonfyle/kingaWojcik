@@ -5,6 +5,7 @@ import ProjectPanel from "./ProjectPanel/ProjectPanel";
 import { useRef } from "react";
 import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/ProjectPanelIntro";
 import { useDeviceContext } from "../contexts/DeviceContext/DeviceContext";
+import Flexbox from "../../generics/Flexbox/Flexbox";
 
 export default function ProjectSection() {
     const ProjectPanelRef = useRef<HTMLDivElement>(null);
@@ -25,7 +26,7 @@ export default function ProjectSection() {
 
     return (
         <P.StyledSection>
-            <P.HeaderWrapper>
+            <Flexbox>
                 <P.StyledHeader>
                     <P.StyledH2>Projekty</P.StyledH2>
                 </P.StyledHeader>
@@ -33,7 +34,7 @@ export default function ProjectSection() {
                     onNextProject={() => handleNextProject(ProjectPanelRef.current)}
                     onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}
                 />
-            </P.HeaderWrapper>
+            </Flexbox>
             {isMobile && <ProjectPanelIntro />}
             <ProjectPanel ref={ProjectPanelRef} />
         </P.StyledSection>

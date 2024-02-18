@@ -12,6 +12,10 @@ export default function Flexbox<T extends HTMLElement>({
     $maxWidth = "auto",
     $colGap,
     $rowGap,
+    $marginT,
+    $marginB,
+    $marginL,
+    $marginR,
     className,
     children,
     ...restProps
@@ -28,6 +32,10 @@ export default function Flexbox<T extends HTMLElement>({
             $wrap={$wrap}
             $width={$width}
             $maxWidth={$maxWidth}
+            $marginT={$marginT}
+            $marginB={$marginB}
+            $marginL={$marginL}
+            $marginR={$marginR}
             {...restProps}>
             {children}
         </P.Flexbox>

@@ -1,4 +1,4 @@
-import { breakpoints } from "../../../../styles/breakpoints";
+import { BREAKPOINTS } from "../../../../styles/breakpoints";
 import styled from "styled-components";
 
 export const PanelWrapper = styled.div`
@@ -8,14 +8,18 @@ export const PanelWrapper = styled.div`
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
     margin-top: 30px;
-    ${breakpoints.L} {
+    ${BREAKPOINTS.L} {
         margin-top: 50px;
+    }
+    & a {
+        text-decoration: none;
+        color: ${({ theme }) => theme.colors.leading.secondary[1]};
     }
 `;
 
 export const ProjectPanel = styled.div`
     display: flex;
-    ${breakpoints.S} {
+    ${BREAKPOINTS.S} {
         flex-direction: column;
         height: auto;
         margin-bottom: 70px;

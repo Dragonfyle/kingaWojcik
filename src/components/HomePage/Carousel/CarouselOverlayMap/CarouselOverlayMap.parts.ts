@@ -1,4 +1,4 @@
-import { breakpoints } from "../../../../styles/breakpoints";
+import { BREAKPOINTS } from "../../../../styles/breakpoints";
 import styled from "styled-components";
 
 export const MapWrapper = styled.div`
@@ -8,10 +8,10 @@ export const MapWrapper = styled.div`
     max-width: 1300px;
     margin: 0 11%;
     margin-top: 50px;
-    ${breakpoints.L} {
+    ${BREAKPOINTS.L} {
         margin-top: 0;
     }
-    ${breakpoints.L} {
+    ${BREAKPOINTS.L} {
         width: 94%;
     }
 `;

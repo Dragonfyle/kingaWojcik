@@ -6,8 +6,14 @@ import { useRef } from "react";
 import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/ProjectPanelIntro";
 import { useDeviceContext } from "../contexts/DeviceContext/DeviceContext";
 import Flexbox from "../../generics/Flexbox/Flexbox";
+import Text from "../../generics/Text/Text";
+import { ProjectPanelDataSection } from "../../../data/ProjectPanelData";
 
-export default function ProjectSection() {
+interface ProjectSectionProps {
+    source: ProjectPanelDataSection;
+}
+
+export default function ProjectSection({ source }: ProjectSectionProps) {
     const ProjectPanelRef = useRef<HTMLDivElement>(null);
     const { isMobile } = useDeviceContext();
 
@@ -28,15 +34,17 @@ export default function ProjectSection() {
         <P.StyledSection>
             <Flexbox>
                 <P.StyledHeader>
-                    <P.StyledH2>Projekty</P.StyledH2>
+                    <Text bold size="4xl">
+                        {source.header}
+                    </Text>
                 </P.StyledHeader>
                 <NavButtons
                     onNextProject={() => handleNextProject(ProjectPanelRef.current)}
                     onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}
                 />
             </Flexbox>
-            {isMobile && <ProjectPanelIntro />}
-            <ProjectPanel ref={ProjectPanelRef} />
+            {isMobile && <ProjectPanelIntro text={source.intro} />}
+            <ProjectPanel ref={ProjectPanelRef} source={source} />
         </P.StyledSection>
     );
 }

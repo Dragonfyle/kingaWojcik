@@ -7,5 +7,4 @@ export const Layout = styled.div`
     min-height: 100vh;
     width: clamp(240px, 100%, 2560px);
     /* overflow-x: hidden; */
-    background-color: navajowhite;
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { breakpoints } from "../../../../styles/breakpoints";
+import { BREAKPOINTS } from "../../../../styles/breakpoints";
+import Text from "../../../generics/Text/Text";
 
 export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     position: absolute;
@@ -9,24 +10,18 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     display: ${({ $isActive }) => ($isActive ? "block" : "none")};
 `;
 
-export const StyledP = styled.p`
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: beige;
-    text-align: left;
-    ${breakpoints.XXL} {
-        font-size: 1.5rem;
+export const StyledP = styled(Text)`
+    ${BREAKPOINTS.XXL} {
+        font-size: ${({ theme }) => theme.fontSize["2xl"]};
     }
-    ${breakpoints.L} {
-        font-size: 2rem;
+    ${BREAKPOINTS.L} {
+        font-size: ${({ theme }) => theme.fontSize["2xl"]};
     }
-    ${breakpoints.S} {
-        font-size: 1.5rem;
+    ${BREAKPOINTS.S} {
+        font-size: ${({ theme }) => theme.fontSize.xl};
     }
 `;
 
-export const StyledH2 = styled.h2`
-    font-size: 3.5rem;
-    color: beige;
+export const StyledH2 = styled(Text)`
     margin-bottom: 80px;
 `;

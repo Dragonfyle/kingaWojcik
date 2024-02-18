@@ -4,7 +4,7 @@ export const ItemWrapper = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     scroll-snap-align: start;
 `;
 
@@ -17,9 +17,4 @@ export const DescriptionWrapper = styled.div`
 
 export const ItemTitle = styled.h4`
     margin-bottom: 10px;
-`;
-
-export const ItemDescription = styled.p`
-    font-size: 1rem;
-    line-height: 25px;
 `;

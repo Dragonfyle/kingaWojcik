@@ -1,9 +1,8 @@
-import * as P from "./Layout.parts";
+import { Outlet } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
-import Carousel from "../HomePage/Carousel/Carousel";
-import Content from "../HomePage/HomeContent/HomeContent";
 import Footer from "../Footer/Footer";
 import { useDeviceContext } from "../HomePage/contexts/DeviceContext/DeviceContext";
+import * as P from "./Layout.parts";
 
 export default function Layout() {
     const { isMobile } = useDeviceContext();
@@ -11,8 +10,7 @@ export default function Layout() {
     return (
         <P.Layout>
             {!isMobile && <Navigation />}
-            <Carousel />
-            <Content />
+            <Outlet />
             <Footer />
         </P.Layout>
     );

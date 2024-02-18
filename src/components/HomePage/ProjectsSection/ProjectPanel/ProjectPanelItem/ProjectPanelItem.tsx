@@ -1,20 +1,21 @@
 import * as P from "./ProjectPanelItem.parts";
 import Thumbnail from "../Thumbnail/Thumbnail";
+import Text from "../../../../generics/Text/Text";
 
 interface ProjectPanelItemProps {
     image: string;
+    text: string;
 }
 
-export default function ProjectPanelItem({ image }: ProjectPanelItemProps) {
+export default function ProjectPanelItem({ image, text }: ProjectPanelItemProps) {
     return (
         <P.ItemWrapper>
             <Thumbnail src={image} />
             <P.DescriptionWrapper>
                 <P.ItemTitle>Project title</P.ItemTitle>
-                <P.ItemDescription>
-                    Occaecat qui voluptate ipsum consectetur culpa. Est adipisicing non laborum nulla reprehenderit
-                    laborum pariatur anim voluptate. Dolor id ullamco eu eu cupidatat velit ea.
-                </P.ItemDescription>
+                <Text size="m" lineHeight={1.5}>
+                    {text}
+                </Text>
             </P.DescriptionWrapper>
         </P.ItemWrapper>
     );

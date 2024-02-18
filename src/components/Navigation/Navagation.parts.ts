@@ -1,4 +1,4 @@
-import { breakpoints } from "../../styles/breakpoints";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 import styled from "styled-components";
 
 export const NavigationWrapper = styled.div`
@@ -8,8 +8,9 @@ export const NavigationWrapper = styled.div`
     top: 0;
     z-index: 100;
     width: 100%;
-    background-color: white;
-    ${breakpoints.XXL} {
+    background-color: ${({ theme }) => theme.colors.leading.white[1]};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.leading.secondary[1]};
+    ${BREAKPOINTS.XXL} {
         justify-content: flex-start;
     }
 `;
@@ -20,7 +21,7 @@ export const ListWrapper = styled.nav`
     width: 78%;
     max-width: 1300px;
     margin: 0 11%;
-    ${breakpoints.XXL} {
+    ${BREAKPOINTS.XXL} {
         justify-content: flex-start;
     }
 `;

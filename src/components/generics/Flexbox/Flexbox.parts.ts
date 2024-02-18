@@ -11,4 +11,8 @@ export const Flexbox = styled.div<StyledFlexboxProps>`
     flex-wrap: ${({ $wrap }) => $wrap};
     width: ${({ $width }) => $width};
     max-width: ${({ $width }) => $width};
+    margin-top: ${({ $marginT }) => $marginT};
+    margin-bottom: ${({ $marginB }) => $marginB};
+    margin-left: ${({ $marginL }) => $marginL};
+    margin-bottom: ${({ $marginR }) => $marginR};
 `;

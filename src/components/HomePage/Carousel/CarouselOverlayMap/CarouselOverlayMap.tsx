@@ -8,7 +8,7 @@ export default function CarouselOverlayMap() {
     const { isMobile } = useDeviceContext();
     const { activeImage } = useCarouselContext();
 
-    function generateMapItems(mapItemDescriptions: string[]) {
+    function generateMapItems(mapItemDescriptions: typeof MAP_ITEM_DESCRIPTIONS) {
         if (isMobile) {
             return <CarouselOverlayMapItem isActive={true} description={""} imageIndex={null} />;
         } else {

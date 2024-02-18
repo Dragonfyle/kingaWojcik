@@ -1,48 +1,40 @@
-import { breakpoints } from "../../styles/breakpoints";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 import styled from "styled-components";
 
 export const NavigationWrapper = styled.div`
-  display: flex;
-  position: fixed;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  z-index: 100;
-  width: 100%;
-  background-color: white;
-  ${breakpoints.XXL} {
-    justify-content: flex-start;
-  }
+    display: flex;
+    position: sticky;
+    left: 50%;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: ${({ theme }) => theme.colors.leading.white[1]};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.leading.secondary[1]};
+    ${BREAKPOINTS.XXL} {
+        justify-content: flex-start;
+    }
 `;
 
 export const ListWrapper = styled.nav`
-  display: flex;
-  height: 100%;
-  width: 78%;
-  margin: 0 11%;
-  ${breakpoints.XXL} {
-    justify-content: flex-start;
-  }
-`;
-
-export const StyledUlLeft = styled.ul`
-  display: flex;
-  width: 1040px;
-`;
-
-export const StyledUlRight = styled.ul`
-  display: flex;
+    display: flex;
+    height: 100%;
+    width: 78%;
+    max-width: 1300px;
+    margin: 0 11%;
+    ${BREAKPOINTS.XXL} {
+        justify-content: flex-start;
+    }
 `;
 
 export const styledLiLeft = styled.li`
-  display: block;
-  padding: 12px 35px 12px 0;
-  height: 100%;
+    display: block;
+    padding: 12px 35px 12px 0;
+    height: 100%;
 `;
 
 export const styledLiRight = styled.li`
-  display: flex;
-  justify-content: flex-end;
-  padding: 12px 0 12px 35px;
-  height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 15px 12px 20px;
+    height: 100%;
 `;

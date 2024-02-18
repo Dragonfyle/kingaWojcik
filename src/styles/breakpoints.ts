@@ -14,7 +14,7 @@ export const SIZE = Object.freeze({
     XXL: 1920,
 });
 
-export const breakpoints: Breakpoints = {
+export const BREAKPOINTS: Breakpoints = {
     XXL: `@media(max-width: ${SIZE.XXL}px)`,
     XL: `@media(max-width: ${SIZE.XL}px)`,
     L: `@media(max-width: ${SIZE.L}px)`,
@@ -23,7 +23,7 @@ export const breakpoints: Breakpoints = {
     XS: `@media(max-width: ${SIZE.XS}px)`,
 };
 
-export const breakpointsNoMedia: BreakpointsNoMedia = {
+export const BREAKPOINTS_NO_MEDIA: BreakpointsNoMedia = {
     XXL: `(max-width: ${SIZE.XXL}px)`,
     XL: `(max-width: ${SIZE.XL}px)`,
     L: `(max-width: ${SIZE.L}px)`,

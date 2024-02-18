@@ -8,8 +8,12 @@ const DeviceContext = createContext({
 const DeviceContextProvider = ({ children }: React.PropsWithChildren) => {
     const [isMobile, setIsMobile] = useState(false);
 
-    function getWindowWidth() {
-        setIsMobile(window.innerWidth <= CONFIG.APP.MAX_MOBILE_WIDTH);
+    function getWindowWidth([
+        {
+            contentRect: { width },
+        },
+    ]: Array<ResizeObserverEntry>) {
+        setIsMobile(width < CONFIG.APP.MAX_MOBILE_WIDTH);
     }
 
     useEffect(() => {

@@ -1,9 +1,10 @@
-import { breakpoints } from "../../../../../styles/breakpoints";
+import { BREAKPOINTS } from "../../../../../styles/breakpoints";
+import { CONFIG } from "../../../../../constants/config";
 import styled from "styled-components";
 
 export const StyledImage = styled.img`
-    width: 550px;
-    ${breakpoints.S} {
+    width: ${CONFIG.PROJECT_PANEL.THUMBNAIL_WIDTH}px;
+    ${BREAKPOINTS.S} {
         width: 90vw;
     }
 `;

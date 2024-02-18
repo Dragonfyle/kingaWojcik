@@ -1,4 +1,4 @@
-import { breakpoints } from "../../../../styles/breakpoints";
+import { BREAKPOINTS } from "../../../../styles/breakpoints";
 import styled from "styled-components";
 
 export const ButtonsWrapper = styled.div`
@@ -7,7 +7,8 @@ export const ButtonsWrapper = styled.div`
     justify-content: flex-end;
     width: 200px;
     height: 100%;
-    ${breakpoints.S} {
+    cursor: pointer;
+    ${BREAKPOINTS.S} {
         display: none;
     }
 `;

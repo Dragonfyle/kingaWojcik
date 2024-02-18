@@ -1,12 +1,13 @@
 import * as P from "./HomeContent.parts";
-import PorjectsSection from "../ProjectsSection/ProjectsSection";
+import ProjectSection from "../ProjectsSection/ProjectsSection";
+import { ProjectPanelData } from "../../../data/ProjectPanelData";
 
-export default function Content() {
+export default function HomeContent() {
     return (
         <P.Wrapper>
-            <PorjectsSection />
-            <PorjectsSection />
-            <PorjectsSection />
+            <ProjectSection source={ProjectPanelData.branding} />
+            {/* <ProjectSection /> */}
+            {/* <ProjectSection /> */}
         </P.Wrapper>
     );
 }

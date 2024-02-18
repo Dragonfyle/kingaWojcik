@@ -8,6 +8,6 @@ export const StyledDiv = styled.div`
     height: 22%;
     max-height: 200px;
     width: 100%;
-    background-color: #000;
+    background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
     opacity: 0.9;
 `;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const CarouselWrapper = styled.div`
-  position: relative;
-  height: auto;
-  background-color: gray;
+    position: relative;
+    height: auto;
 `;

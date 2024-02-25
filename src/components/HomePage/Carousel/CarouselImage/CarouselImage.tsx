@@ -16,7 +16,7 @@ export default function CarouselImage({ isActive, imageSet }: CarouselImage) {
 
     function generateSources(imageSet: ImageSet) {
         return imageSet
-            .filter((image, idx) => idx !== largestImageIndex)
+            .filter((_, idx) => idx !== largestImageIndex)
             .map((image, idx) => <source key={activeImage + idx} srcSet={image} media={WIDTH_THRESHOLDS[idx]} />);
     }
 

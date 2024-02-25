@@ -51,6 +51,10 @@ export interface FlexboxProps<T extends HTMLElement> extends React.HTMLAttribute
     $marginB?: string;
     $marginL?: string;
     $marginR?: string;
+    $padding?: string;
+    $alignSelf?: "start" | "end" | "center";
+    $justifySelf?: "start" | "end" | "center";
+    $order?: number;
 }
 
 export type StyledFlexboxProps = Omit<FlexboxProps<HTMLElement>, "className">;

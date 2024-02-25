@@ -4,6 +4,9 @@ export const FeatureWrapper = styled.section`
     display: flex;
     flex-direction: column;
     margin: 50px 0;
+    & img {
+        width: 100%;
+    }
 `;
 
 export const DescriptionWrapper = styled.div`

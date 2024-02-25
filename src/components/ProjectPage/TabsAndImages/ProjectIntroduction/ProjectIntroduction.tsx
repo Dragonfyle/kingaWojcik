@@ -1,19 +1,15 @@
 import Text from "../../../generics/Text/Text";
 import * as P from "./ProjectIntroduction.parts";
+import { GalleryProject } from "../../../../data/TabbedGalleryData";
 
-export default function ProjectIntroduction() {
+export default function ProjectIntroduction({ source }: { source: GalleryProject }) {
     return (
         <P.SummaryWrapper>
             <Text bold size="2xl">
-                Occaecat et mollit{" "}
+                {source.header}
             </Text>
             <P.DescriptionWrapper>
-                <Text size="l">
-                    Ea elit cuTextidatat dolore qui sint est in.Sint ex tempor nisi ea et duis dolore elit proident
-                    occaecat aliquip non. Lorem ea quis ad occaecat irure sunt do labore.Nisi ad adipisicing quis anim
-                    adipisicing commodo duis cillum ut occaecat amet aute fugiat.Consectetur id reprehenderit ullamco et
-                    do sunt consequat aliqua nostrud mollit ullamco aute labore ad.
-                </Text>
+                <Text size="l">{source.intro}</Text>
             </P.DescriptionWrapper>
         </P.SummaryWrapper>
     );

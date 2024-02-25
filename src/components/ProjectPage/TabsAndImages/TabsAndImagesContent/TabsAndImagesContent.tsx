@@ -9,7 +9,7 @@ export default function TabsAndImagesContent() {
 
     return (
         <P.ContentWrapper>
-            <ProjectIntroduction />
+            <ProjectIntroduction source={tabbedGalleryData.project1} />
             <TabbedGallery source={tabbedGalleryData.project1} />
         </P.ContentWrapper>
     );

@@ -19,11 +19,7 @@ export const ListWrapper = styled.nav`
     display: flex;
     height: 100%;
     width: 78%;
-    max-width: 1300px;
     margin: 0 11%;
-    ${BREAKPOINTS.XXL} {
-        justify-content: flex-start;
-    }
 `;
 
 export const styledLiLeft = styled.li`

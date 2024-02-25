@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const FeatureWrapper = styled.section`
     display: flex;
+    flex-direction: column;
     margin: 50px 0;
 `;
 

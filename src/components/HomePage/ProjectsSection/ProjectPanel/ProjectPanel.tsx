@@ -1,11 +1,11 @@
-import * as P from "./ProjectPanel.parts";
 import { forwardRef } from "react";
+import { Link } from "react-router-dom";
 import ProjectPanelIntro from "./ProjectPanelIntro/ProjectPanelIntro";
 import ProjectPanelItem from "./ProjectPanelItem/ProjectPanelItem";
-import { useDeviceContext } from "../../contexts/DeviceContext/DeviceContext";
 import Flexbox from "../../../generics/Flexbox/Flexbox";
 import { ProjectPanelDataSection } from "../../../../data/ProjectPanelData";
-import { Link } from "react-router-dom";
+import { useDeviceContext } from "../../contexts/DeviceContext/DeviceContext";
+import * as P from "./ProjectPanel.parts";
 
 interface ProjectPanelProps {
     source: ProjectPanelDataSection;
@@ -16,7 +16,7 @@ export default forwardRef(function ProjectPanel({ source }: ProjectPanelProps, r
 
     function getContent(source: ProjectPanelDataSection) {
         return source.content.map(({ thumbnail, description, projectUrl }) => (
-            <Link to={projectUrl}>
+            <Link key={description} to={projectUrl}>
                 <ProjectPanelItem image={thumbnail} text={description} />
             </Link>
         ));

@@ -1,21 +1,16 @@
-import Highlight from "../Highlight/Highlight";
-import ProjectFeature from "../ProjectFeature/ProjectFeature";
+import { tabbedGalleryData } from "../../../../data/TabbedGalleryData";
+import useScrollToTop from "../../../../hooks/useScrollToTop";
 import ProjectIntroduction from "../ProjectIntroduction/ProjectIntroduction";
-import TabNavigation from "../TabNavigation/TabNavigation";
+import TabbedGallery from "../TabbedGallery/TabbedGallery";
 import * as P from "./TabsAndImagesContent.parts";
 
 export default function TabsAndImagesContent() {
+    useScrollToTop();
+
     return (
         <P.ContentWrapper>
             <ProjectIntroduction />
-            <TabNavigation />
-            <Highlight />
-            <ProjectFeature withHeader={false} withDescription={false}>
-                <img src="https://picsum.photos/seed/12223/1200/640" />
-            </ProjectFeature>
-            <ProjectFeature>
-                <img src="https://picsum.photos/seed/1193/850/540" />
-            </ProjectFeature>
+            <TabbedGallery source={tabbedGalleryData.project1} />
         </P.ContentWrapper>
     );
 }

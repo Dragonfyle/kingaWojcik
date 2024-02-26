@@ -1,5 +1,5 @@
-import TabsAndImagesContent from "../components/ProjectPage/TabsAndImages/TabsAndImagesContent/TabsAndImagesContent";
+import ProjectWithTabs from "../components/ProjectPage/ProjectWithTabs/ProjectWithTabs";
 
 export default function Branding1() {
-    return <TabsAndImagesContent />;
+    return <ProjectWithTabs />;
 }

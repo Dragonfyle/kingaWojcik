@@ -17,5 +17,5 @@ export const Flexbox = styled.div<StyledFlexboxProps>`
     margin-bottom: ${({ $marginR }) => $marginR};
     padding: ${({ $padding }) => $padding};
     order: ${({ $order }) => $order};
-    white-space: pre-wrap;
+    white-space: pre-line;
 `;

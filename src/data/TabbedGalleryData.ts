@@ -1,145 +1,216 @@
 import wstepneSzkice from "/wstepne-szkice.png";
-
-type FeatureComponent = "ColumnsTextText" | "ColumnsTextImage" | "ColumnsImageImage" | "ColumnsImageText";
-
-interface Feature {
-    component: FeatureComponent;
-    img: string;
-    headerH1: string;
-    headerH3: string;
-    sideDescription: string;
-    topDescription: string;
-    bottomDescription: string;
-}
-
-type Features = { [key: `feature${number}`]: Feature };
-
-interface ProjectContent {
-    tabName: string;
-    highlight: string;
-    features: Features;
-}
-
-interface GalleryProject {
-    header: string;
-    intro: string;
-    content: ProjectContent[];
-}
-
-interface TabbedGalleryData {
-    [key: `project${number}`]: GalleryProject;
-}
+import logoPropozycja4spacje from "/logo-propozycja.png";
+import logo4spacje from "/logo.png";
+import articleDarkMode from "/articleDarkMode.png";
+import wyszukiwarkaDawniej from "/wyszukiwarka-dawniej.png";
+import wyszukiwarkaTeraz from "/wyszukiwarka-teraz.png";
+import rekrutacjaArtykuly from "/rekrutacja-artykuly.png";
+import rekrutacjaZadania from "/rekrutacja-zadania.png";
+import { TabbedGalleryData } from "../types/tabbedGallery.types";
 
 const tabbedGalleryData: TabbedGalleryData = {
     project1: {
         header: "Strona internetowa i logo dla 4spacje",
-        intro: "Mollit anim ex commodo occaecat et cupidatat.Ut commodo voluptate elit est aliquip ea nulla id non.",
-        content: [
+        intro: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.
+
+        Poprosiłam zespół, pracujący nad blogiem, o szczegółowe informacje, dotyczące tego projektu. Każdy z nich otrzymał do wypełnienia ankietę (brief) z pytaniami dotyczącymi celu powstania bloga, misji, jaką ma spełniać strona, jej grupy docelowej oraz wielu pokrewnych kwestii. Dzięki temu byłam w stanie przygotować propozycje logo i projektu redesignu strony adekwatnie do roli, jaką mają one spełniać.
+        `,
+
+        tabbedGalleryContent: [
             {
                 tabName: "brief",
-                highlight: "Sint in eiusmod culpa ex nostrud fugiat do non eiusmod veniam laboris nostrud excepteur.",
+                highlight: `Zebrałam powtarzające się i najważniejsze informacje, które posłużyły za tło koncepcyjne dla projektu.
+                Co wynikło z briefów? 
+                - chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
+                -naszym celem jest poszerzanie kręgu odbiorców, dzielenie się wiedzą, stworzenie solidnej bazy informacji i coraz większe angażowanie użytkowników
+                -grupą docelową są głównie młodzi programiści i designerzy, stąd też potrzeba pójścia w kierunku nowoczesnego projektu witryny
+                
+                Przy wykorzystaniu jak najprostszych środków (kolor, forma, kompozycja) starałam się przekazać najważniejsze wartości marki.
+                `,
+
                 features: {
                     feature1: {
-                        component: "ColumnsImageImage",
-                        img: wstepneSzkice,
-                        headerH1: "Podsumowanie briefów wypełnionych przez zespół",
-                        headerH3: "",
-                        sideDescription: "",
-                        topDescription: `\n- chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
-                        \n-naszym celem jest poszerzanie kręgu odbiorców, dzielenie się wiedzą, stworzenie solidnej bazy informacji i coraz większe angażowanie użytkowników
-                        \n-grupą docelową są głównie młodzi programiści i designerzy, stąd też potrzeba pójścia w kierunku nowoczesnego projektu witryny
-                        `,
-                        bottomDescription: "",
+                        component: "ColumnsImageText",
+
+                        configuration: {
+                            leftColumnWidth: 10,
+                            descriptionPosition: "top",
+                            withH1: false,
+                            withDescription: false,
+                        },
+
+                        content: {
+                            img: wstepneSzkice,
+                            h1: "",
+                            description:
+                                "Na blogu staramy się opisywać, tłumaczyć i komentować świat technologii internetowych. Projekt logo wykorzystuje więc dwa ukośniki, które w programowaniu wprowadzają komentarz.",
+                        },
                     },
                     feature2: {
-                        component: "ColumnsTextImage",
-                        img: "https://picsum.photos/seed/17773/850/640",
-                        headerH1: "Et mollit",
-                        headerH3: "Sit nisi",
-                        sideDescription:
-                            "Nostrud ea tempor tempor proident esse dolore labore consequat nisi anim. Veniam eiusmod Lorem fugiat cupidatat.",
-                        topDescription:
-                            "Deserunt nostrud sint ex occaecat aliquip duis veniam culpa tempor elit.Officia ea eiusmod minim cillum.Veniam culpa do aute laboris ex minim.Velit labore pariatur commodo enim.Exercitation ad adipisicing nisi velit consectetur duis Lorem deserunt magna non.Amet incididunt ullamco exercitation dolor exercitation aute occaecat.Consectetur ullamco pariatur reprehenderit mollit exercitation enim exercitation tempor sunt qui dolore aliquip aute ullamco.Mollit velit enim consequat Lorem ipsum laborum excepteur consectetur reprehenderit ipsum sint sunt mollit.Cupidatat cupidatat duis ex ad ut magna cupidatat sint dolore.",
-                        bottomDescription:
-                            "Nulla in consectetur nostrud deserunt.Dolor officia veniam sunt proident magna.Nostrud voluptate tempor est fugiat sint cillum nisi veniam do magna amet esse excepteur.",
+                        component: "ColumnsImageText",
+
+                        configuration: {
+                            leftColumnWidth: 10,
+                            descriptionPosition: "top",
+                            withH1: false,
+                            withDescription: false,
+                        },
+
+                        content: {
+                            img: wstepneSzkice,
+                            h1: "",
+                            description:
+                                "Jednocześnie jest to też cudzysłów otwierający, nawiązujący do dzielenia się wiedzą i opiniami.",
+                        },
+                    },
+                    feature3: {
+                        component: "ColumnsImageText",
+
+                        configuration: {
+                            leftColumnWidth: 10,
+                            descriptionPosition: "top",
+                            withH1: false,
+                            withDescription: false,
+                        },
+
+                        content: {
+                            img: wstepneSzkice,
+                            h1: "",
+                            description: "Dwa ukośniki tworzą cyfrę 4, stanowiącą pierwszy człon nazwy bloga.",
+                        },
                     },
                 },
             },
             {
                 tabName: "logo",
-                highlight:
-                    "Cillum velit amet aute amet voluptate amet quis.Eu eu elit ea reprehenderit aliquip fugiat non eiusmod consectetur.",
+                highlight: "Sint in eiusmod culpa ex nostrud fugiat do non eiusmod veniam laboris nostrud excepteur.",
+
                 features: {
                     feature1: {
-                        component: "ColumnsImageText",
-                        img: "https://picsum.photos/seed/12fds3/850/640",
-                        headerH1: "Tempor",
-                        headerH3: "Dolore anim anim",
-                        sideDescription:
-                            "Nostrud ea tempor tempor proident esse dolore labore consequat nisi anim. Veniam eiusmod Lorem fugiat cupidatat.",
-                        topDescription:
-                            "Amet quis occaecat incididunt quis excepteur fugiat id cillum velit nulla in irure dolor exercitation.",
-                        bottomDescription: "",
-                    },
-                    feature2: {
-                        component: "ColumnsImageText",
-                        img: "https://picsum.photos/seed/199dgs3/1200/640",
-                        headerH1: "Et mollit",
-                        headerH3: "",
-                        sideDescription: "",
-                        topDescription: "",
-                        bottomDescription: "",
+                        component: "ColumnsImageImage",
+
+                        configuration: {
+                            leftColumnWidth: 50,
+                            descriptionPosition: "bottom",
+                            withLeftH1: true,
+                            withRightH1: true,
+                            withLeftDescription: true,
+                            withRightDescription: true,
+                        },
+
+                        content: {
+                            leftImg: logoPropozycja4spacje,
+                            rightImg: logo4spacje,
+                            leftH1: "Wstępna propozycja logo",
+                            rightH1: "Konieczne okazały się poprawki",
+                            leftDescription: `Na blogu staramy się opisywać, tłumaczyć i komentować świat technologii internetowych. Projekt logo wykorzystuje więc dwa ukośniki, które w programowaniu wprowadzają komentarz.
+                                
+                            Jednocześnie jest to też cudzysłów otwierający, nawiązujący do dzielenia się wiedzą i opiniami.
+                               
+                            Dwa ukośniki tworzą cyfrę 4, stanowiącą pierwszy człon nazwy bloga.
+                                `,
+                            rightDescription: `Jak się okazało, czwórka w sygnecie nie była na tyle oczywista, aby odczytywać ją jako część nazwy. A jest to istotne dla rozpoznawalności marki.
+
+                            Dodałam czwórkę do logotypu i poszerzyłam ukośniki w sygnecie. W ten sposób wprowadzony został też motyw kart tarota, co nawiązuje do genezy nazwy.
+
+                                Zmieniony został także font, by bardziej współgrał ze szkoleniowym charakterem bloga.
+                                Gruba linia fontu sugeruje solidność, autorytet, rzetelność. Font jednoelementowy stanowi symbol męskości i stabilności.
+                                Połączenie minuskuły i majuskuły: małe litery sprawiają, że logo jest bardziej przyjazne, komunikują otwartość na ludzi i chęć budowania relacji, wielkie litery dają wrażenie wiarygodności, profesjonalizmu. Ich połączenie tworzy balans między tymi wartościami.
+                                `,
+                        },
                     },
                 },
             },
             {
                 tabName: "strona internetowa",
-                highlight: "Veniam cupidatat laboris ut aute eiusmod.",
+                highlight: "Sint in eiusmod culpa ex nostrud fugiat do non eiusmod veniam laboris nostrud excepteur.",
+
                 features: {
                     feature1: {
                         component: "ColumnsImageText",
-                        img: "https://picsum.photos/seed/11/1200/640",
-                        headerH1: "Lorem Aute",
-                        headerH3: "",
-                        sideDescription: "",
-                        topDescription: "",
-                        bottomDescription: "",
+
+                        configuration: {
+                            leftColumnWidth: 50,
+                            descriptionPosition: "top",
+                            withH1: true,
+                            withDescription: true,
+                        },
+
+                        content: {
+                            img: articleDarkMode,
+                            h1: "Najważniejsze zmiany",
+                            description: `Zmiany obejmują przede wszystkim kwestie estetyczne, ale także modyfikacje niektórych funkcjonalności i sposobu działania strony.
+                            
+                            Witryna została ożywiona odcieniami limonki, wybranej jako główny kolor brandowy. Przygotowałam projekt zarówno dla jasnego, jak i ciemnego motywu z uwagi na to, że programiści często skłaniają się ku temu drugiemu.
+                        
+                            Zmieniona została cała kolorystyka, która dotąd była rozbałaganiona (np. funkcjonowało kilkanaście bardzo zbliżonych do siebie odcieni, elementy na stronie kolorowane były w niekonsekwentny sposób: ta sama funkcja - za każdym razem inny kolor) i nieharmonijna (brak koloru akcentującego, wszystkie barwy jednakowo przygaszone).
+                            
+                            Slogan został przyłączony do nawigacji, by właściwa treść mogła zostać podniesiona wyżej.
+                            
+                            „Codzienną porcję kodu” umieściłam na samej górze, bo sekcja ta bardzo dobrze oddaje charakter bloga i bez słów mówi użytkownikom, gdzie się znajdują. Dodatkowo jest to element, który może angażować ich już od samego początku.
+                            
+                            Tagi artykułów zostały pochylone, by wprowadzić element dynamiki
+                            
+                            W starej wersji profil autora pod artykułem pozostawał nieklikalny. Teraz będzie on przekierowywał do podstrony „o nas”
+                            
+                            Tłem dla kontenerów jest półprzezroczysty, biały gradient, który kojarzy się z luminacją i technologią.
+                            `,
+                        },
                     },
                     feature2: {
-                        component: "ColumnsImageText",
-                        img: "https://picsum.photos/seed/hs89/850/640",
-                        headerH1: "Et mollit",
-                        headerH3: "Sit nisi",
-                        sideDescription:
-                            "Nostrud ea tempor tempor proident esse dolore labore consequat nisi anim. Veniam eiusmod Lorem fugiat cupidatat.",
-                        topDescription: "",
-                        bottomDescription:
-                            "Id labore anim est laboris commodo esse mollit nulla laboris irure occaecat velit aute.Voluptate officia proident dolor ipsum irure cillum est excepteur.",
+                        component: "ColumnsImageImage",
+
+                        configuration: {
+                            leftColumnWidth: 50,
+                            descriptionPosition: "bottom",
+                            withLeftH1: false,
+                            withRightH1: false,
+                            withLeftDescription: true,
+                            withRightDescription: false,
+                        },
+
+                        content: {
+                            leftImg: wyszukiwarkaTeraz,
+                            rightImg: wyszukiwarkaDawniej,
+                            leftH1: "",
+                            rightH1: "",
+                            leftDescription: `Zaproponowałam przebudowę wyszukiwarki artykułów pod kątem poprawy jej użyteczności, a także wyglądu.
+
+                                Dotąd opierała się ona na rozwijanej liście tagów, a filtry wyszukiwania aplikowane były po zaznaczeniu wybranych i zamknięciu pola “select”. Wtedy dopiero lista artykułów była aktualizowana, uwzględniając wybory użytkownika. Mogło to powodować zakłopotanie korzystających ze strony osób, które spodziewałyby się natychmiastowego działania zaznaczonych przez nich tagów.
+                                
+                                W zaprojektowanym przeze mnie rozwiązaniu najważniejsze tagi są widoczne od razu. Eliminuje to konieczność kliknięcia w celu otwarcia listy. Wyszukiwarka zajmuje całą szerokość strony, dzięki czemu jest lepiej widoczna. Okno z tagami można rozwinąć, by zobaczyć więcej filtrów. Mają one być aplikowane od razu po zaznaczeniu. Usunięte zostały wszelkie zbędne elementy i teksty, biorąc pod uwagę, że użytkownicy naszej strony to osoby obeznane z internetem.`,
+                            rightDescription: "",
+                        },
                     },
                 },
             },
             {
                 tabName: "moje propozycje",
-                highlight: "Do incididunt dolore elit eu esse.Mollit eu ipsum non mollit cupidatat enim.",
+                highlight: `Zaproponowałam dodanie zakładki REKRUTACJA, w której zamieszczane będą artykuły dotyczące poszukiwania pracy i możliwych ścieżek rozwoju, a także pytania i zadania rekrutacyjne.
+
+                Przygotowałam projekt podstrony, która jest w trakcie wdrażania.`,
+
                 features: {
                     feature1: {
-                        component: "ColumnsImageText",
-                        img: "https://picsum.photos/seed/j1230th/850/640",
-                        headerH1: "Dolore ad ",
-                        headerH3: "Ullamco",
-                        sideDescription:
-                            "Reprehenderit excepteur aliquip sit deserunt reprehenderit sit laboris velit.Do qui reprehenderit sit dolor magna.Quis consequat irure nisi ullamco pariatur aliqua eiusmod esse deserunt.",
-                        topDescription: "",
-                        bottomDescription: "",
-                    },
-                    feature2: {
-                        component: "ColumnsImageText",
-                        img: "https://picsum.photos/seed/jg248/1200/640",
-                        headerH1: "Et mollit",
-                        headerH3: "",
-                        sideDescription: "",
-                        topDescription: "",
-                        bottomDescription: "",
+                        component: "ColumnsImageImage",
+
+                        configuration: {
+                            leftColumnWidth: 50,
+                            descriptionPosition: "bottom",
+                            withLeftH1: false,
+                            withRightH1: false,
+                            withLeftDescription: false,
+                            withRightDescription: false,
+                        },
+
+                        content: {
+                            leftImg: rekrutacjaArtykuly,
+                            rightImg: rekrutacjaZadania,
+                            leftH1: "",
+                            rightH1: "",
+                            leftDescription: "",
+                            rightDescription: "",
+                        },
                     },
                 },
             },
@@ -148,5 +219,3 @@ const tabbedGalleryData: TabbedGalleryData = {
 };
 
 export { tabbedGalleryData };
-
-export type { Feature, Features, ProjectContent, GalleryProject, TabbedGalleryData };

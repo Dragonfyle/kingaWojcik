@@ -4,6 +4,7 @@ export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: 
     display: grid;
     grid-template-columns: ${({ $leftWidth, $rightWidth }) => `${$leftWidth} ${$rightWidth}`};
     grid-template-rows: auto;
+    margin-top: 50px;
 
     & img {
         width: 100%;

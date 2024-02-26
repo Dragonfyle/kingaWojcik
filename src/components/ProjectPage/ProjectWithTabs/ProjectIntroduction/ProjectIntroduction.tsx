@@ -1,6 +1,6 @@
 import Text from "../../../generics/Text/Text";
 import * as P from "./ProjectIntroduction.parts";
-import { GalleryProject } from "../../../../data/TabbedGalleryData";
+import { GalleryProject } from "../../../../types/tabbedGallery.types";
 
 export default function ProjectIntroduction({ source }: { source: GalleryProject }) {
     return (

@@ -1,8 +1,7 @@
 // import { PropsWithChildren } from "react";
 import { useState } from "react";
-import { Features, GalleryProject } from "../../../../data/TabbedGalleryData";
+import { Feature, FeatureConfig, Features, GalleryProject } from "../../../../types/tabbedGallery.types";
 import Highlight from "../Highlight/Highlight";
-import ProjectFeature from "../ProjectFeature/ProjectFeature";
 import TabNavigation from "../TabNavigation/TabNavigation";
 import ColumnsTextText from "../../ColumnsTextText/ColumnsTextText";
 import ColumnsImageImage from "../../ColumnsImageImage/ColumnsImageImage";
@@ -10,7 +9,6 @@ import ColumnsImageText from "../../ColumnsImageText/ColumnsImageText";
 import ColumnsTextImage from "../../ColumnsTextImage/ColumnsTextImage";
 
 import * as P from "./TabbedGallery.parts";
-import { hasPart } from "./TabbedGallery.utils";
 
 interface TabbedGalleryProps {
     source: GalleryProject;
@@ -25,7 +23,7 @@ export default function TabbedGallery({ source }: TabbedGalleryProps) {
         ColumnsImageImage,
         ColumnsImageText,
     };
-    const features = source.content[activeTab].features;
+    const projectFeatures = source.tabbedGalleryContent[activeTab].features;
 
     function handleClick(idx: number) {
         setActiveTab(idx);
@@ -34,25 +32,18 @@ export default function TabbedGallery({ source }: TabbedGalleryProps) {
     function renderFeatures(features: Features) {
         return (Object.keys(features) as Array<keyof typeof features>).map((feature) => {
             const Component = featureMap[features[feature].component];
+            const config: FeatureConfig<Feature["component"]> = projectFeatures[feature].configuration;
+            const props: FeatureConfig<Feature["component"]> = { ...config };
 
-            return (
-                <Component
-                    withH1={hasPart("headerH1", features[feature])}
-                    withH3={hasPart("headerH3", features[feature])}
-                    withSideDescription={hasPart("sideDescription", features[feature])}
-                    withTopDescription={hasPart("topDescription", features[feature])}
-                    withBottomDescription={hasPart("bottomDescription", features[feature])}
-                    source={source.content[activeTab].features[feature]}
-                />
-            );
+            return <Component source={projectFeatures[feature]} {...props} />;
         });
     }
 
     return (
         <P.GalleryWrapper>
-            <TabNavigation source={source.content} activeTab={activeTab} onClick={handleClick} />
-            <Highlight source={source.content[activeTab].highlight} />
-            {renderFeatures(features)}
+            <TabNavigation source={source.tabbedGalleryContent} activeTab={activeTab} onClick={handleClick} />
+            <Highlight source={source.tabbedGalleryContent[activeTab].highlight} />
+            {renderFeatures(projectFeatures)}
         </P.GalleryWrapper>
     );
 }

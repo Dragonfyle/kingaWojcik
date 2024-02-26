@@ -1,13 +1,20 @@
-import { Feature } from "../../data/TabbedGalleryData";
+import { Feature } from "../../types/tabbedGallery.types";
 
 type ColumnWidth = 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90;
+
+interface SingleImageProps {
+    source: Feature;
+    withH1: boolean;
+    withDescription: boolean;
+    descriptionPosition?: "top" | "bottom";
+}
 
 interface ColumnsImageTextProps {
     source: Feature;
     leftColumnWidth: ColumnWidth;
+    withH1: boolean;
     withDescription: boolean;
     descriptionPosition?: "top" | "bottom";
-    withH1: boolean;
 }
 
 interface ColumnsImageImageProps {
@@ -17,6 +24,18 @@ interface ColumnsImageImageProps {
     withLeftDescription: boolean;
     withRightDescription: boolean;
     descriptionPosition?: "top" | "bottom";
+}
+
+interface SingleTextProps {
+    source: Feature;
+    withH1: boolean;
+}
+
+interface ColumnsTextTextProps {
+    source: Feature;
+    leftColumnWidth: ColumnWidth;
+    withLeftH1: boolean;
+    withRightH1: boolean;
 }
 
 function getColumnsWidth(leftColumnWidth: ColumnWidth) {
@@ -35,4 +54,11 @@ const descriptionPositionMap = {
 
 export { getColumnsWidth, descriptionPositionMap };
 
-export type { ColumnWidth, ColumnsImageImageProps, ColumnsImageTextProps };
+export type {
+    ColumnWidth,
+    SingleImageProps,
+    ColumnsImageImageProps,
+    ColumnsImageTextProps,
+    SingleTextProps,
+    ColumnsTextTextProps,
+};

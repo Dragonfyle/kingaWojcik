@@ -2,6 +2,8 @@ import wspolpracaXXL from "/wspolpraca2560.png";
 import dzielenieXXL from "/dzielenie2560.png";
 import dzielenieL from "/dzielenie1920.png";
 import wspolpracaL from "/wspolpraca1920.png";
+import rozwojXXL from "/rozwoj2560.png";
+import rozwojL from "/rozwoj1920.png";
 import genericM from "/generic1024.png";
 import genericS from "/generic640.png";
 
@@ -12,7 +14,8 @@ const WIDTH_THRESHOLDS = ["(max-width: 640px)", "(max-width: 1024px)", "(max-wid
 
 const wspolpraca = [genericS, genericM, wspolpracaL, wspolpracaXXL] as const;
 const dzielenie = [genericS, genericM, dzielenieL, dzielenieXXL] as const;
-const imageSets = [wspolpraca, dzielenie, wspolpraca, dzielenie, wspolpraca] as const;
+const rozwoj = [genericS, genericM, rozwojL, rozwojXXL] as const;
+const imageSets = [wspolpraca, dzielenie, rozwoj, dzielenie, wspolpraca] as const;
 
 const activeImageMap: ActiveImageMap = new Map(imageSets.map((set, index) => [index, set]));
 

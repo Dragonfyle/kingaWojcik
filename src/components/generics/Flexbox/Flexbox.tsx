@@ -16,6 +16,8 @@ export default function Flexbox<T extends HTMLElement>({
     $marginB,
     $marginL,
     $marginR,
+    $padding = "0 0",
+    $order,
     className,
     children,
     ...restProps
@@ -36,6 +38,8 @@ export default function Flexbox<T extends HTMLElement>({
             $marginB={$marginB}
             $marginL={$marginL}
             $marginR={$marginR}
+            $padding={$padding}
+            $order={$order}
             {...restProps}>
             {children}
         </P.Flexbox>

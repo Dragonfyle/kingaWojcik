@@ -32,16 +32,22 @@ export default function ProjectSection({ source }: ProjectSectionProps) {
 
     return (
         <P.StyledSection>
-            <Flexbox>
-                <P.StyledHeader>
-                    <Text bold size="4xl">
-                        {source.header}
-                    </Text>
-                </P.StyledHeader>
-                <NavButtons
-                    onNextProject={() => handleNextProject(ProjectPanelRef.current)}
-                    onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}
-                />
+            <Flexbox $wrap="nowrap">
+                <Flexbox>
+                    <P.StyledHeader>
+                        <Text bold size="4xl">
+                            {source.header}
+                        </Text>
+                    </P.StyledHeader>
+                </Flexbox>
+                {!isMobile && (
+                    <Flexbox $wrap="nowrap" $justify="center">
+                        <NavButtons
+                            onNextProject={() => handleNextProject(ProjectPanelRef.current)}
+                            onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}
+                        />
+                    </Flexbox>
+                )}
             </Flexbox>
             {isMobile && <ProjectPanelIntro text={source.intro} />}
             <ProjectPanel ref={ProjectPanelRef} source={source} />

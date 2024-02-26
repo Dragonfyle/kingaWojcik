@@ -15,4 +15,7 @@ export const Flexbox = styled.div<StyledFlexboxProps>`
     margin-bottom: ${({ $marginB }) => $marginB};
     margin-left: ${({ $marginL }) => $marginL};
     margin-bottom: ${({ $marginR }) => $marginR};
+    padding: ${({ $padding }) => $padding};
+    order: ${({ $order }) => $order};
+    white-space: pre-line;
 `;

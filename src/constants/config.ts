@@ -15,6 +15,7 @@ const _config = Object.freeze({
             },
             BRANDING: {
                 1: "branding-1",
+                2: "branding-2",
             },
         },
     },

@@ -21,7 +21,7 @@ const ProjectPanelData = {
                 title: "Enim commodo",
                 description:
                     "Aliquip pariatur eiusmod occaecat cillum. Amet velit commodo laboris tempor laborum do aliquip adipisicing veniam eiusmod velit adipisicing.",
-                projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[1],
+                projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[2],
             },
             {
                 thumbnail: "https://picsum.photos/seed/sdag/640/360",

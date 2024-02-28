@@ -90,13 +90,13 @@ interface ColumnsTextImageContent {
     description: string;
 }
 
-interface Feature<T extends FeatureComponentName> {
-    component: T;
-    configuration: FeatureConfigMap[T];
-    content: FeatureContentMap[T];
+interface Feature {
+    component: FeatureComponentName;
+    configuration: FeatureConfigMap[Feature["component"]];
+    content: FeatureContentMap[Feature["component"]];
 }
 
-type Features = { [key: `feature${number}`]: Feature<FeatureComponentName> };
+type Features = { [key: `feature${number}`]: Feature };
 
 interface ProjectContent {
     tabName: string;
@@ -104,14 +104,14 @@ interface ProjectContent {
     features: Features;
 }
 
-interface GalleryProject {
+interface TabbedGalleryProject {
     header: string;
     intro: string;
     tabbedGalleryContent: ProjectContent[];
 }
 
 interface TabbedGalleryData {
-    [key: `project${number}`]: GalleryProject;
+    [key: `project${number}`]: TabbedGalleryProject;
 }
 
 export type {
@@ -119,7 +119,7 @@ export type {
     Feature,
     Features,
     ProjectContent,
-    GalleryProject,
+    TabbedGalleryProject,
     TabbedGalleryData,
     ColumnsTextImageContent,
     ColumnsImageImageContent,

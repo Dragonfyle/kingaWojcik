@@ -4,6 +4,8 @@ import { StyledIconProps } from "../NavIcon.utils";
 export const StyledSvg = styled.svg<StyledIconProps>`
     width: ${({ $size }) => $size};
     height: ${({ $size }) => $size};
+    cursor: pointer;
+    user-select: none;
 
     .background {
         fill: ${({ $bgColor }) => $bgColor};

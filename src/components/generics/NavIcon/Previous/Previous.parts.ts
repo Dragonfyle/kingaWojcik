@@ -5,6 +5,8 @@ export const StyledSvg = styled.svg<StyledIconProps>`
     margin-left: 20px;
     width: ${({ $size }) => $size};
     height: ${({ $size }) => $size};
+    cursor: pointer;
+    user-select: none;
 
     .background {
         fill: ${({ $bgColor }) => $bgColor};

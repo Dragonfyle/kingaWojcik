@@ -18,6 +18,7 @@ const _config = Object.freeze({
                 2: "branding-2",
             },
         },
+        ABOUT: "about",
     },
 });
 

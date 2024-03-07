@@ -7,7 +7,7 @@ import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/ProjectPanelIntr
 import { useDeviceContext } from "../contexts/DeviceContext/DeviceContext";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import Text from "../../generics/Text/Text";
-import { ProjectPanelDataSection } from "../../../data/ProjectPanelData";
+import { ProjectPanelDataSection } from "../../../data/projectPanelData";
 
 interface ProjectSectionProps {
     source: ProjectPanelDataSection;

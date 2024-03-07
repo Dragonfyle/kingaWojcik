@@ -114,6 +114,16 @@ interface TabbedGalleryData {
     [key: `project${number}`]: TabbedGalleryProject;
 }
 
+interface AboutGalleryData {
+    header: string;
+    tabbedGalleryContent: Array<{
+        tabName: string;
+        component: string;
+        configuration: object;
+        content: object;
+    }>;
+}
+
 export type {
     FeatureComponentName,
     Feature,
@@ -128,4 +138,5 @@ export type {
     SingleTextContent,
     FeatureConfigMap,
     FeatureContentMap,
+    AboutGalleryData,
 };

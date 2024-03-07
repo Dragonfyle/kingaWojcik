@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ProjectPanelIntro from "./ProjectPanelIntro/ProjectPanelIntro";
 import ProjectPanelItem from "./ProjectPanelItem/ProjectPanelItem";
 import Flexbox from "../../../generics/Flexbox/Flexbox";
-import { ProjectPanelDataSection } from "../../../../data/ProjectPanelData";
+import { ProjectPanelDataSection } from "../../../../data/projectPanelData";
 import { useDeviceContext } from "../../contexts/DeviceContext/DeviceContext";
 import * as P from "./ProjectPanel.parts";
 

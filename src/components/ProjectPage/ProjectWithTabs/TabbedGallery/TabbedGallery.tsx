@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Feature, Features, TabbedGalleryProject } from "../../../../types/tabbedGallery.types";
 import Highlight from "../Highlight/Highlight";
-import TabNavigation from "../TabNavigation/TabNavigation";
+import TabNavigation from "../../../generics/TabNavigation/TabNavigation";
 import SingleImage from "../../SingleImage/SingleImage";
 import SingleText from "../../SingleText/SingleText";
 import ColumnsTextText from "../../ColumnsTextText/ColumnsTextText";
@@ -39,7 +39,7 @@ export default function TabbedGallery({ source }: TabbedGalleryProps) {
             const config: Feature["configuration"] = projectFeatures[feature].configuration;
             const props: Feature["configuration"] = { ...config };
 
-            return <Component source={projectFeatures[feature]} {...props} />;
+            return <Component key={feature} source={projectFeatures[feature]} {...props} />;
         });
     }
 

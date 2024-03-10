@@ -1,13 +1,15 @@
 import * as P from "./HomeContent.parts";
 import ProjectSection from "../ProjectsSection/ProjectsSection";
-import { ProjectPanelData } from "../../../data/ProjectPanelData";
+import { ProjectPanelData } from "../../../data/projectPanelData";
 import AboutSection from "../AboutSection/AboutSection";
+import ScrollToAnchor from "../../../utils/scrollToAnchor";
 
 export default function HomeContent() {
     return (
         <P.Wrapper>
-            <ProjectSection source={ProjectPanelData.branding} />
-            <ProjectSection source={ProjectPanelData.branding} />
+            <ScrollToAnchor />
+            <ProjectSection id="brandingowe" source={ProjectPanelData.branding} />
+            <ProjectSection id="wydawnicze" source={ProjectPanelData.editorial} />
             {/* <ProjectSection /> */}
             <AboutSection />
         </P.Wrapper>

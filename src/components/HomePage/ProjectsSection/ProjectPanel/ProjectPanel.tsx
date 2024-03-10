@@ -15,9 +15,9 @@ export default forwardRef(function ProjectPanel({ source }: ProjectPanelProps, r
     const { isMobile } = useDeviceContext();
 
     function getContent(source: ProjectPanelDataSection) {
-        return source.content.map(({ thumbnail, description, projectUrl }) => (
+        return source.content.map(({ thumbnail, title, description, projectUrl }) => (
             <Link key={description} to={projectUrl}>
-                <ProjectPanelItem image={thumbnail} text={description} />
+                <ProjectPanelItem image={thumbnail} title={title} description={description} />
             </Link>
         ));
     }

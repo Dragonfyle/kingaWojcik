@@ -4,17 +4,18 @@ import Text from "../../../../generics/Text/Text";
 
 interface ProjectPanelItemProps {
     image: string;
-    text: string;
+    title: string;
+    description: string;
 }
 
-export default function ProjectPanelItem({ image, text }: ProjectPanelItemProps) {
+export default function ProjectPanelItem({ image, title, description }: ProjectPanelItemProps) {
     return (
         <P.ItemWrapper>
             <Thumbnail src={image} />
             <P.DescriptionWrapper>
-                <P.ItemTitle>Project title</P.ItemTitle>
+                <P.ItemTitle>{title}</P.ItemTitle>
                 <Text size="m" lineHeight={1.5}>
-                    {text}
+                    {description}
                 </Text>
             </P.DescriptionWrapper>
         </P.ItemWrapper>

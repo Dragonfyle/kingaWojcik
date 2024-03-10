@@ -9,6 +9,8 @@ const _config = Object.freeze({
 
     PATHS: {
         HOME: "/",
+        BRANDING_SECTION: "/#brandingowe",
+        EDITORIAL_SECTION: "/#wydawnicze",
         PROJECTS: {
             EDITORIAL: {
                 1: "editorial-1",
@@ -19,6 +21,8 @@ const _config = Object.freeze({
             },
         },
         ABOUT: "about",
+        CONTACT: "contact",
+        COLLABORATION: "collaboration",
     },
 });
 

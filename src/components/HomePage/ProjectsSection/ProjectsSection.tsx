@@ -10,10 +10,11 @@ import Text from "../../generics/Text/Text";
 import { ProjectPanelDataSection } from "../../../data/projectPanelData";
 
 interface ProjectSectionProps {
+    id: string;
     source: ProjectPanelDataSection;
 }
 
-export default function ProjectSection({ source }: ProjectSectionProps) {
+export default function ProjectSection({ id, source }: ProjectSectionProps) {
     const ProjectPanelRef = useRef<HTMLDivElement>(null);
     const { isMobile } = useDeviceContext();
 
@@ -31,7 +32,7 @@ export default function ProjectSection({ source }: ProjectSectionProps) {
     }
 
     return (
-        <P.StyledSection>
+        <P.StyledSection id={id}>
             <Flexbox $wrap="nowrap">
                 <Flexbox>
                     <P.StyledHeader>

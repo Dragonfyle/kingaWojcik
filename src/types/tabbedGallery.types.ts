@@ -1,81 +1,57 @@
 import { ColumnWidth } from "../components/ProjectPage/Columns.utils";
 
-type FeatureComponentName =
-    | "SingleText"
-    | "SingleImage"
-    | "ColumnsTextText"
-    | "ColumnsTextImage"
-    | "ColumnsImageImage"
-    | "ColumnsImageText";
+type FeatureComponentName = "Text" | "Image" | "TextText" | "TextImage" | "ImageImage" | "ImageText";
 
 type DescriptionPosition = "top" | "bottom";
 
-type FeatureConfigMap = {
-    SingleImage: SingleImageConfig;
-    SingleText: SingleTextConfig;
-    ColumnsTextText: ColumnsTextTextConfig;
-    ColumnsImageImage: ColumnsImageImageConfig;
-    ColumnsTextImage: ColumnsTextImageConfig;
-    ColumnsImageText: ColumnsTextImageConfig;
-};
-
-type FeatureContentMap = {
-    SingleImage: SingleImageContent;
-    SingleText: SingleTextContent;
-    ColumnsTextText: ColumnsTextTextContent;
-    ColumnsImageImage: ColumnsImageImageContent;
-    ColumnsTextImage: ColumnsTextImageContent;
-    ColumnsImageText: ColumnsTextImageContent;
-};
-
-interface ColumnsFeatureConfig {
+interface FeatureConfig {
     leftColumnWidth: ColumnWidth;
 }
 
-interface ColumnsTextImageConfig extends ColumnsFeatureConfig {
+interface FeatureTextImageConfig extends FeatureConfig {
     withH1: boolean;
     withDescription: boolean;
     descriptionPosition: DescriptionPosition;
 }
 
-interface ColumnsImageImageConfig extends ColumnsFeatureConfig {
-    withLeftH1: boolean;
+interface FeatureImageImageConfig extends FeatureConfig {
     withRightH1: boolean;
+    withLeftH1: boolean;
     withLeftDescription: boolean;
     withRightDescription: boolean;
     descriptionPosition: DescriptionPosition;
 }
-interface SingleImageConfig {
+interface FeatureImageConfig {
     withH1: boolean;
     withDescription: boolean;
 }
-interface SingleTextConfig {
+interface FeatureTextConfig {
     withH1: boolean;
 }
-interface ColumnsTextTextConfig extends ColumnsFeatureConfig {
+interface FeatureTextTextConfig extends FeatureConfig {
     withLeftH1: boolean;
     withRightH1: boolean;
 }
 
-interface SingleTextContent {
+interface FeatureTextContent {
     h1?: string;
     description: string;
 }
 
-interface ColumnsTextTextContent {
+interface FeatureTextTextContent {
     leftH1?: string;
     rightH1?: string;
     leftDescription: string;
     rightDescription: string;
 }
 
-interface SingleImageContent {
+interface FeatureImageContent {
     img: string;
     h1?: string;
     description?: string;
 }
 
-interface ColumnsImageImageContent {
+interface FeatureImageImageContent {
     leftImg: string;
     rightImg: string;
     leftH1?: string;
@@ -84,19 +60,48 @@ interface ColumnsImageImageContent {
     rightDescription?: string;
 }
 
-interface ColumnsTextImageContent {
+interface FeatureTextImageContent {
     img: string;
     h1?: string;
     description: string;
 }
 
-interface Feature {
-    component: FeatureComponentName;
-    configuration: FeatureConfigMap[Feature["component"]];
-    content: FeatureContentMap[Feature["component"]];
+interface FeatureText {
+    component: "Text";
+    configuration: FeatureTextConfig;
+    content: FeatureTextContent;
+}
+interface FeatureImage {
+    component: "Image";
+    configuration: FeatureImageConfig;
+    content: FeatureImageContent;
+}
+interface FeatureTextText {
+    component: "TextText";
+    configuration: FeatureTextTextConfig;
+    content: FeatureTextTextContent;
+}
+interface FeatureImageImage {
+    component: "ImageImage";
+    configuration: FeatureImageImageConfig;
+    content: FeatureImageImageContent;
+}
+interface FeatureTextImage {
+    component: "TextImage";
+    configuration: FeatureTextImageConfig;
+    content: FeatureTextImageContent;
+}
+interface FeatureImageText {
+    component: "ImageText";
+    configuration: FeatureTextImageConfig;
+    content: FeatureTextImageContent;
 }
 
-type Features = { [key: `feature${number}`]: Feature };
+type Feature = FeatureText | FeatureImage | FeatureTextText | FeatureImageImage | FeatureTextImage | FeatureImageText;
+
+type Features = {
+    [key: `feature${number}`]: Feature;
+};
 
 interface ProjectContent {
     tabName: string;
@@ -114,29 +119,21 @@ interface TabbedGalleryData {
     [key: `project${number}`]: TabbedGalleryProject;
 }
 
-interface AboutGalleryData {
-    header: string;
-    tabbedGalleryContent: Array<{
-        tabName: string;
-        component: string;
-        configuration: object;
-        content: object;
-    }>;
-}
-
 export type {
     FeatureComponentName,
-    Feature,
     Features,
     ProjectContent,
     TabbedGalleryProject,
     TabbedGalleryData,
-    ColumnsTextImageContent,
-    ColumnsImageImageContent,
-    ColumnsTextTextContent,
-    SingleImageContent,
-    SingleTextContent,
-    FeatureConfigMap,
-    FeatureContentMap,
-    AboutGalleryData,
+    FeatureTextImageContent,
+    FeatureImageImageContent,
+    FeatureTextTextContent,
+    FeatureImageContent,
+    FeatureTextContent,
+    FeatureTextImageConfig,
+    FeatureImageImageConfig,
+    FeatureTextTextConfig,
+    FeatureImageConfig,
+    FeatureTextConfig,
+    Feature,
 };

@@ -1,4 +1,4 @@
-import { FeatureContent } from "../../../types/tabbedGallery.types";
+import { FeatureTextTextContent } from "../../../types/tabbedGallery.types";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import Text from "../../generics/Text/Text";
 import { ColumnsTextTextProps, getColumnsWidth } from "../Columns.utils";
@@ -11,7 +11,7 @@ export default function ColumnsTextText({
     withRightH1,
 }: ColumnsTextTextProps) {
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureContent<"ColumnsTextText">;
+    const content = source.content as FeatureTextTextContent;
 
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>

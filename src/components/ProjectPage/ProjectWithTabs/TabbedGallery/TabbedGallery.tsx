@@ -1,14 +1,13 @@
-// import { PropsWithChildren } from "react";
 import { useState } from "react";
 import { Feature, Features, TabbedGalleryProject } from "../../../../types/tabbedGallery.types";
 import Highlight from "../Highlight/Highlight";
 import TabNavigation from "../../../generics/TabNavigation/TabNavigation";
-import SingleImage from "../../SingleImage/SingleImage";
-import SingleText from "../../SingleText/SingleText";
-import ColumnsTextText from "../../ColumnsTextText/ColumnsTextText";
-import ColumnsImageImage from "../../ColumnsImageImage/ColumnsImageImage";
-import ColumnsImageText from "../../ColumnsImageText/ColumnsImageText";
-import ColumnsTextImage from "../../ColumnsTextImage/ColumnsTextImage";
+import FeatureImage from "../../SingleImage/SingleImage";
+import FeatureText from "../../SingleText/SingleText";
+import FeatureTextText from "../../ColumnsTextText/ColumnsTextText";
+import FeatureImageImage from "../../ColumnsImageImage/ColumnsImageImage";
+import FeatureImageText from "../../ColumnsImageText/ColumnsImageText";
+import FeatureTextImage from "../../ColumnsTextImage/ColumnsTextImage";
 
 import * as P from "./TabbedGallery.parts";
 
@@ -20,12 +19,12 @@ export default function TabbedGallery({ source }: TabbedGalleryProps) {
     const [activeTab, setActiveTab] = useState(0);
 
     const featureMap = {
-        SingleText,
-        SingleImage,
-        ColumnsTextText,
-        ColumnsTextImage,
-        ColumnsImageImage,
-        ColumnsImageText,
+        FeatureText,
+        FeatureImage,
+        FeatureTextText,
+        FeatureTextImage,
+        FeatureImageImage,
+        FeatureImageText,
     };
     const projectFeatures = source.tabbedGalleryContent[activeTab].features;
 
@@ -35,9 +34,10 @@ export default function TabbedGallery({ source }: TabbedGalleryProps) {
 
     function renderFeatures(features: Features) {
         return (Object.keys(features) as Array<keyof typeof features>).map((feature) => {
-            const Component = featureMap[features[feature].component];
+            const componentName = features[feature].component;
+            const Component = featureMap[`Feature${componentName}`];
             const config: Feature["configuration"] = projectFeatures[feature].configuration;
-            const props: Feature["configuration"] = { ...config };
+            const props = config;
 
             return <Component key={feature} source={projectFeatures[feature]} {...props} />;
         });

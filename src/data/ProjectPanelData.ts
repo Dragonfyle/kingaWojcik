@@ -1,4 +1,9 @@
 import { CONFIG } from "../constants/config";
+import czteryspacjeMiniaturka from "/ProjectPanel_4spacje_miniaturka.png";
+import ukenMiniaturka from "/ProjectPanel_uken_miniaturka.png";
+import goslinaMiniaturka from "/ProjectPanel_goslina_miniaturka.png";
+import kawaMiniaturka from "/ProjectPanel_kawa_miniaturka.png";
+import okladkiMiniaturka from "/ProjectPanel_okladki_miniaturka.png";
 
 type ProjectPanelData = typeof ProjectPanelData;
 
@@ -6,45 +11,48 @@ type ProjectPanelDataSection = ProjectPanelData[keyof ProjectPanelData];
 
 const ProjectPanelData = {
     branding: {
-        header: "Officia ullamco",
-        intro: "Mollit anim ex commodo occaecat et cupidatat.Ut commodo voluptate elit est aliquip ea nulla id non.",
+        header: "Projekty brandingowe",
+        intro: `Zawsze staram się najpierw zrozumieć potrzeby marki oraz oczekiwania klienta. 
+        Z reguły proponuję wypełnienie briefu, dotyczącego firmy oraz jej klientów, co ułatwia mi określenie odpowiedniego 
+        kierunku.`,
         content: [
             {
-                thumbnail: "https://picsum.photos/seed/123/640/360",
-                title: "Et mollit",
+                thumbnail: czteryspacjeMiniaturka,
+                title: "Logo i strona internetowa dla 4spacje.pl",
                 description:
-                    "Nostrud ea tempor tempor proident esse dolore labore consequat nisi anim. Veniam eiusmod Lorem fugiat cupidatat.",
+                    `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.`,
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[1],
             },
             {
-                thumbnail: "https://picsum.photos/seed/1245/640/360",
-                title: "Enim commodo",
+                thumbnail: ukenMiniaturka,
+                title: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie",
                 description:
-                    "Aliquip pariatur eiusmod occaecat cillum. Amet velit commodo laboris tempor laborum do aliquip adipisicing veniam eiusmod velit adipisicing.",
+                    "Jest to projekt przygotowany na konkurs, zorganizowany w celu stworzenia nowego logo dla zmieniającego nazwę Uniwersytetu Pedagogicznego.",
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[2],
             },
             {
-                thumbnail: "https://picsum.photos/seed/sdag/640/360",
-                title: "Occaecat magna",
-                description: "Dolor est cupidatat mollit veniam minim amet deserunt do amet sunt.",
+                thumbnail: goslinaMiniaturka,
+                title: "Logo Miasta i Gminy Murowana Goślina",
+                description:
+                    "Projekt logo, które w reprezentatywny sposób zakomunikuje odbiorcom najważniejsze walory Gminy Murowana Goślina. Projekt konkursowy",
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[3],
             },
         ],
     },
     editorial: {
-        header: "Officia ullamco",
-        intro: "Mollit anim ex commodo occaecat et cupidatat.Ut commodo voluptate elit est aliquip ea nulla id non.",
+        header: "Projekty Wydawnicze",
+        intro: "W tej sekcji znajdują się stworzone przeze mnie projekty okładek a także moje kawowe dziecko - ilustrowana rymowanka o naszych ulubionych ziarnach.",
         content: [
             {
-                thumbnail: "https://picsum.photos/seed/sdag/640/360",
-                title: "Excepteur",
-                description: "Ea eiusmod est laboris aliqua nostrud dolor esse consectetur.",
+                thumbnail: kawaMiniaturka,
+                title: "Krótka historia kawy",
+                description: "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania naszego ulubionego napoju. Projekt we współpracy z Małgorzatą Jaworską",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
             },
             {
-                thumbnail: "https://picsum.photos/seed/h53q/640/360",
-                title: "Laboris",
-                description: "Quis id in commodo cupidatat tempor in magna aliqua consectetur excepteur Lorem.",
+                thumbnail: okladkiMiniaturka,
+                title: "Projekty okładek książkowych",
+                description: "",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
             },
         ],

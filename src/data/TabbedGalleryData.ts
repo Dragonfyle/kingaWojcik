@@ -20,8 +20,9 @@ const tabbedGalleryData: TabbedGalleryData = {
             {
                 tabName: "brief",
                 highlight: `Zebrałam powtarzające się i najważniejsze informacje, które posłużyły za tło koncepcyjne dla projektu.
-                Co wynikło z briefów? 
-                - chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
+                Co wynikło z briefów?
+                
+                -chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
                 -naszym celem jest poszerzanie kręgu odbiorców, dzielenie się wiedzą, stworzenie solidnej bazy informacji i coraz większe angażowanie użytkowników
                 -grupą docelową są głównie młodzi programiści i designerzy, stąd też potrzeba pójścia w kierunku nowoczesnego projektu witryny
                 

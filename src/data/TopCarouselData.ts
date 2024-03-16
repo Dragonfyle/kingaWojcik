@@ -1,6 +1,6 @@
 export const MAP_ITEM_DESCRIPTIONS = [
-    "Aliqua ut est ut dolore mollit dolore",
-    "Anim eu mollit incididunt magna incididunt consectetur",
+    "Determinacja i wytrwałość",
+    "Rozwój",
     "proident dolore laboris aliquip",
     "Lorem consectetur labore minim sit occaecat eu laboris",
     "Culpa minim cillum dolor quis eu veniam",

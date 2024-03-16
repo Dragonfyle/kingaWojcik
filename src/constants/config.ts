@@ -14,10 +14,12 @@ const _config = Object.freeze({
         PROJECTS: {
             EDITORIAL: {
                 1: "editorial-1",
+                2: "editorial-2",
             },
             BRANDING: {
                 1: "branding-1",
                 2: "branding-2",
+                3: "branding-3",
             },
         },
         ABOUT: "about",

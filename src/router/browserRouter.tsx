@@ -27,15 +27,15 @@ const browserRouter = createBrowserRouter([
                 element: <Branding2 />,
             },
             {
-                path: CONFIG.PATHS.PROJECTS.BRANDING[2],
+                path: CONFIG.PATHS.PROJECTS.BRANDING[3],
                 element: <Branding3 />,
             },
             {
-                path: CONFIG.PATHS.PROJECTS.BRANDING[1],
+                path: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
                 element: <Editorial1 />,
             },
             {
-                path: CONFIG.PATHS.PROJECTS.BRANDING[2],
+                path: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
                 element: <Editorial2 />,
             },
             {

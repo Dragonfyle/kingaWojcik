@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Feature, Features, TabbedGalleryProject } from "../../../../types/tabbedGallery.types";
+import { Feature } from "../../../../types/Project.types";
+import { Features, TabbedGalleryProject } from "../../../../types/tabbedGallery.types";
 import Highlight from "../Highlight/Highlight";
 import TabNavigation from "../../../generics/TabNavigation/TabNavigation";
 import FeatureImage from "../../SingleImage/SingleImage";

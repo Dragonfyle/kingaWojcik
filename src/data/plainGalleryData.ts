@@ -13,7 +13,7 @@ const plainGalleryData: PlainGalleryData = {
 
         plainGalleryContent: [
             {
-                component: "ColumnsImageText",
+                component: "ImageText",
 
                 configuration: {
                     leftColumnWidth: 10,
@@ -30,7 +30,7 @@ const plainGalleryData: PlainGalleryData = {
                 },
             },
             {
-                component: "ColumnsImageText",
+                component: "ImageText",
 
                 configuration: {
                     leftColumnWidth: 10,
@@ -47,7 +47,7 @@ const plainGalleryData: PlainGalleryData = {
                 },
             },
             {
-                component: "ColumnsImageText",
+                component: "ImageText",
 
                 configuration: {
                     leftColumnWidth: 10,
@@ -63,7 +63,7 @@ const plainGalleryData: PlainGalleryData = {
                 },
             },
             {
-                component: "ColumnsImageImage",
+                component: "ImageImage",
 
                 configuration: {
                     leftColumnWidth: 50,

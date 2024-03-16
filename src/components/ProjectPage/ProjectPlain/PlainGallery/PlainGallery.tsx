@@ -1,10 +1,10 @@
-import { Feature } from "../../../../types/tabbedGallery.types";
-import SingleImage from "../../SingleImage/SingleImage";
-import SingleText from "../../SingleText/SingleText";
-import ColumnsTextText from "../../ColumnsTextText/ColumnsTextText";
-import ColumnsImageImage from "../../ColumnsImageImage/ColumnsImageImage";
-import ColumnsImageText from "../../ColumnsImageText/ColumnsImageText";
-import ColumnsTextImage from "../../ColumnsTextImage/ColumnsTextImage";
+import { Feature } from "../../../../types/Project.types";
+import FeatureImage from "../../SingleImage/SingleImage";
+import FeatureText from "../../SingleText/SingleText";
+import FeatureTextText from "../../ColumnsTextText/ColumnsTextText";
+import FeatureImageImage from "../../ColumnsImageImage/ColumnsImageImage";
+import FeatureImageText from "../../ColumnsImageText/ColumnsImageText";
+import FeatureTextImage from "../../ColumnsTextImage/ColumnsTextImage";
 
 import * as P from "./PlainGallery.parts";
 import { PlainGalleryProject } from "../../../../types/plainGallery.types";
@@ -15,20 +15,21 @@ interface PlainGalleryProps {
 
 export default function PlainGallery({ source }: PlainGalleryProps) {
     const featureMap = {
-        SingleText,
-        SingleImage,
-        ColumnsTextText,
-        ColumnsTextImage,
-        ColumnsImageImage,
-        ColumnsImageText,
+        FeatureText,
+        FeatureImage,
+        FeatureTextText,
+        FeatureTextImage,
+        FeatureImageImage,
+        FeatureImageText,
     };
     const projectFeatures = source.plainGalleryContent;
 
     function renderFeatures(features: Feature[]) {
         return features.map((feature) => {
-            const Component = featureMap[feature.component];
+            const componentName = feature.component;
+            const Component = featureMap[`Feature${componentName}`];
             const config: Feature["configuration"] = feature.configuration;
-            const props: Feature["configuration"] = { ...config };
+            const props = config;
 
             return <Component source={feature} {...props} />;
         });

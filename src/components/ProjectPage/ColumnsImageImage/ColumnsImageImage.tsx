@@ -1,4 +1,4 @@
-import { FeatureContent } from "../../../types/tabbedGallery.types";
+import { FeatureImageImageContent } from "../../../types/tabbedGallery.types";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import { ColumnDescription } from "../ColumnDescription/ColumnDescription";
 import { ColumnsImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Columns.utils";
@@ -13,7 +13,7 @@ export default function ColumnsImageImage({
     descriptionPosition = "bottom",
 }: ColumnsImageImageProps) {
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureContent<"ColumnsImageImage">;
+    const content = source.content as FeatureImageImageContent;
 
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>

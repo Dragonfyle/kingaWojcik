@@ -1,4 +1,4 @@
-import { FeatureContentMap } from "../../../types/tabbedGallery.types";
+import { FeatureImageContent } from "../../../types/tabbedGallery.types";
 import { ColumnDescription } from "../ColumnDescription/ColumnDescription";
 import { SingleImageProps, descriptionPositionMap } from "../Columns.utils";
 import * as P from "./SingleImage.parts";
@@ -9,7 +9,7 @@ export default function SingleImage({
     withDescription = false,
     descriptionPosition = "bottom",
 }: SingleImageProps) {
-    const content = source.content as FeatureContentMap["SingleImage"];
+    const content = source.content as FeatureImageContent;
 
     return (
         <P.FeatureWrapper>

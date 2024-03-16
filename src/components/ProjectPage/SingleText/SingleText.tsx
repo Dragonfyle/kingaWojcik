@@ -1,11 +1,11 @@
-import { FeatureContentMap } from "../../../types/tabbedGallery.types";
+import { FeatureTextContent } from "../../../types/tabbedGallery.types";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import Text from "../../generics/Text/Text";
 import { SingleTextProps } from "../Columns.utils";
 import * as P from "./SingleText.parts";
 
 export default function SingleText({ source, withH1 }: SingleTextProps) {
-    const content = source.content as FeatureContentMap["SingleText"];
+    const content = source.content as FeatureTextContent;
 
     return (
         <P.FeatureWrapper>

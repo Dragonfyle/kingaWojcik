@@ -1,4 +1,4 @@
-import { FeatureContentMap } from "../../../types/tabbedGallery.types";
+import { FeatureTextImageContent } from "../../../types/tabbedGallery.types";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import Text from "../../generics/Text/Text";
 import { ColumnsImageTextProps, getColumnsWidth } from "../Columns.utils";
@@ -6,7 +6,7 @@ import * as P from "./ColumnsTextImage.parts";
 
 export default function ColumnsTextImage({ source, leftColumnWidth = 50, withH1 = true }: ColumnsImageTextProps) {
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureContentMap["ColumnsTextImage"];
+    const content = source.content as FeatureTextImageContent;
 
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>

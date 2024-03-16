@@ -30,7 +30,7 @@ const tabbedGalleryData: TabbedGalleryData = {
 
                 features: {
                     feature1: {
-                        component: "ColumnsImageText",
+                        component: "ImageText",
 
                         configuration: {
                             leftColumnWidth: 10,
@@ -47,7 +47,7 @@ const tabbedGalleryData: TabbedGalleryData = {
                         },
                     },
                     feature2: {
-                        component: "ColumnsImageText",
+                        component: "ImageText",
 
                         configuration: {
                             leftColumnWidth: 10,
@@ -64,7 +64,7 @@ const tabbedGalleryData: TabbedGalleryData = {
                         },
                     },
                     feature3: {
-                        component: "ColumnsImageText",
+                        component: "ImageText",
 
                         configuration: {
                             leftColumnWidth: 10,
@@ -87,7 +87,7 @@ const tabbedGalleryData: TabbedGalleryData = {
 
                 features: {
                     feature1: {
-                        component: "ColumnsImageImage",
+                        component: "ImageImage",
 
                         configuration: {
                             leftColumnWidth: 50,
@@ -127,7 +127,7 @@ const tabbedGalleryData: TabbedGalleryData = {
 
                 features: {
                     feature1: {
-                        component: "ColumnsImageText",
+                        component: "ImageText",
 
                         configuration: {
                             leftColumnWidth: 50,
@@ -158,7 +158,7 @@ const tabbedGalleryData: TabbedGalleryData = {
                         },
                     },
                     feature2: {
-                        component: "ColumnsImageImage",
+                        component: "ImageImage",
 
                         configuration: {
                             leftColumnWidth: 50,
@@ -192,7 +192,7 @@ const tabbedGalleryData: TabbedGalleryData = {
 
                 features: {
                     feature1: {
-                        component: "ColumnsImageImage",
+                        component: "ImageImage",
 
                         configuration: {
                             leftColumnWidth: 50,

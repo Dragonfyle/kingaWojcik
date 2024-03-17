@@ -1,11 +1,11 @@
 import { AboutGalleryData } from "../types/AboutGallery.types";
 
 const aboutGalleryData: AboutGalleryData = {
-    header: "Strona internetowa i logo dla 4spacje",
+    header: "Kinga Ewa Wójcik BIO",
 
     aboutGalleryContent: [
         {
-            tabName: "brief",
+            tabName: "wykształcenie",
             component: "List",
 
             configuration: {
@@ -16,68 +16,35 @@ const aboutGalleryData: AboutGalleryData = {
             },
 
             tabContent: {
-                h1: "Laboris ipsum dolor",
+                h1: "Wykształcenie",
                 listContent: [
                     {
                         header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
+                            1: "09.2017 - 08.2018",
+                            2: "Wrocław",
                         },
                         description: {
-                            1: "Laboris duis voluptate nostrud magna sit ea.",
-                            2: "Id pariatur nostrud laboris culpa.",
-                            3: "Eu ipsum commodo.",
+                            1: "Grafik komputerowa - roczny kurs zawodowy w TEB Edukacja Centrum Kształcenia Praktycznego",
+                            2: `Zrealizowane przedmioty: grafika rastrowa  /  grafika wektorowa  /  projektowanie graficzne  /  podstawy fotografii cyfrowej  /  podstawy typografii  /  podstawy DTP  /  systemy CMS  /   podstawy animacji komputerowej  /  podstawy grafiki 3D`,
+                            3: "prowadzący: Tomasz Rodakiewicz",
                         },
                     },
                     {
                         header: {
-                            1: "Eiusmod aliqua et ullamco ",
-                            2: "",
+                            1: "10.2012 - 06.2015",
+                            2: "Lublin",
                         },
                         description: {
-                            1: "Exercitation ea laborum fugiat adipisicing.",
-                            2: "Eiusmod sunt adipisicing nostrud est sunt do sunt Lorem ex.",
-                            3: "Elit sint dolor.",
-                        },
-                    },
-                    {
-                        header: {
-                            1: "Ut qui adipisicing ",
-                            2: "Laborum dolor",
-                        },
-                        description: {
-                            1: "Et ad velit eu eiusmod veniam ullamco aliquip aliquip eiusmod excepteur culpa culpa sit est.",
-                            2: "Labore commodo ullamco et nisi sit ullamco ipsum.",
-                            3: "Do cupidatat ",
-                        },
-                    },
-                    {
-                        header: {
-                            1: "Fugiat cupidatat sunt aliqua duis.",
-                            2: "Voluptate Lorem",
-                        },
-                        description: {
-                            1: "Eiusmod culpa cupidatat duis consectetur culpa veniam.",
-                            2: "Qui ipsum excepteur eiusmod minim ullamco aliquip sint velit Lorem eiusmod consectetur est.",
-                            3: "Irure nostrud deserunt ",
-                        },
-                    },
-                    {
-                        header: {
-                            1: "Adipisicing non deserunt ea ",
-                            2: "Cillum ",
-                        },
-                        description: {
-                            1: "Id do esse excepteur aliquip.",
-                            2: "In cillum exercitation eiusmod pariatur anim do do.",
-                            3: "Enim sit in ipsum laboris ipsum exercitation minim et laboris non laboris id.",
+                            1: "licencjat z kognitywistyki na Uniwersytecie Marii Curie-Skłodowskiej",
+                            2: "Kognitywistyka jest dziedziną  zorientowaną wokół problemów ludzkiego poznania, komunikacji czy zdolności do posługiwania się symbolami. Na studiach miałam okazję zgłębić właśnie te problemy, co zaowocowało pracą dyplomową z dziedziny semiotyki (znaków), która dotyczyła mechanizmu rozumienia języka z perspektywy psychologii, neurologii oraz językoznawstwa.",
+                            3: "",
                         },
                     },
                 ],
             },
         },
         {
-            tabName: "brief",
+            tabName: "kursy i szkolenia",
             component: "List",
 
             configuration: {
@@ -88,85 +55,53 @@ const aboutGalleryData: AboutGalleryData = {
             },
 
             tabContent: {
-                h1: "Laboris ipsum dolor ",
+                h1: "Odbyte kursy i szkolenia",
                 listContent: [
                     {
                         header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
+                            1: "01.2024 - obecnie",
+                            2: "kurs online (Udemy)",
                         },
                         description: {
-                            1: "Eu id proident ut ullamco consectetur commodo in nisi adipisicing.",
-                            2: "Laborum officia Lorem cupidatat aliqua qui dolore magna sunt.",
-                            3: "Eu ipsum commodo.",
+                            1: "Complete Web & Mobile Designer: UI/UX, Figma",
+                            2: "(28h wykładów + ćwiczenia)",
+                            3: "prowadzący: Andrei Neagoie, Daniel Schifano",
                         },
                     },
                     {
                         header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
+                            1: "11.2023 - obecnie",
+                            2: "kurs online (Udemy)",
                         },
                         description: {
-                            1: "Eu id proident ut ullamco consectetur commodo in nisi adipisicing.",
-                            2: "Laborum officia Lorem cupidatat aliqua qui dolore magna sunt.",
-                            3: "Eu ipsum commodo.",
+                            1: "The Ultimate Digital Painting Course - Beginner to Advanced",
+                            2: "(27h wykładów + ćwiczenia)",
+                            3: "prowadzący: Jaysen Batchelor, Austin Batchelor",
                         },
                     },
                     {
                         header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
+                            1: "10 - 11.2023",
+                            2: "kurs online (Udemy)",
                         },
                         description: {
-                            1: "Eu id proident ut ullamco consectetur commodo in nisi adipisicing.",
-                            2: "Laborum officia Lorem cupidatat aliqua qui dolore magna sunt.",
-                            3: "Eu ipsum commodo.",
+                            1: "Graphic Design Masterclass Intermediate: The NEXT Level",
+                            2: "(30h wykładów + ćwiczenia)",
+                            3: "prowadzący: Lindsay Marsh",
                         },
                     },
                     {
                         header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
+                            1: "09.2023",
+                            2: "kurs online (Udemy)",
                         },
                         description: {
-                            1: "Eu id proident ut ullamco consectetur commodo in nisi adipisicing.",
-                            2: "Laborum officia Lorem cupidatat aliqua qui dolore magna sunt.",
-                            3: "Eu ipsum commodo.",
+                            1: "The Complete Graphic Design Theory for Beginners Course",
+                            2: "(10h wykładów + ćwiczenia)",
+                            3: "prowadzący: Lindsay Marsh, Jeremy Deighan",
                         },
                     },
-                    {
-                        header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
-                        },
-                        description: {
-                            1: "Eu id proident ut ullamco consectetur commodo in nisi adipisicing.",
-                            2: "Laborum officia Lorem cupidatat aliqua qui dolore magna sunt.",
-                            3: "Eu ipsum commodo.",
-                        },
-                    },
-                    {
-                        header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
-                        },
-                        description: {
-                            1: "Eu id proident ut ullamco consectetur commodo in nisi adipisicing.",
-                            2: "Laborum officia Lorem cupidatat aliqua qui dolore magna sunt.",
-                            3: "Eu ipsum commodo.",
-                        },
-                    },
-                    {
-                        header: {
-                            1: "Tempor labore deserunt officia",
-                            2: "Exercitation",
-                        },
-                        description: {
-                            1: "Eu id proident ut ullamco consectetur commodo in nisi adipisicing.",
-                            2: "Laborum officia Lorem cupidatat aliqua qui dolore magna sunt.",
-                            3: "Eu ipsum commodo.",
-                        },
-                    },
+
                 ],
             },
         },

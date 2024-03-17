@@ -6,7 +6,7 @@ import { CONFIG } from "../../constants/config";
 import { useRef, useState } from "react";
 import Text from "../generics/Text/Text";
 
-const EMAIL = "kingawojcik@gmail.com";
+const EMAIL = "wojcik.kinga.ewa@gmail.com";
 const MODAL_TIMEOUT = 5000;
 
 export default function Navigation() {

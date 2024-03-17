@@ -24,6 +24,11 @@ import ukenLogoSkroconeCzarne from "/uken_logo_skrocone.jpg";
 import ukenLogoSkroconeBiale from "/uken_logo_skrocone_biale.png";
 import ukenLogoSkroconeCzerwone from "/uken_logo_skrocone_czerwone.png";
 import ukenLogoPelneCzerwone from "/uken_logo_pelne_czerwone.png";
+import ukenIkonka1 from "/uken_ikonka1.jpg";
+import ukenIkonka2 from "/uken_ikonka2.jpg";
+import ukenIkonka36 from "/uken_ikonka3_6.jpg";
+import ukenIkonka4 from "/uken_ikonka4.jpg";
+import ukenIkonka5 from "/uken_ikonka5.jpg";
 
 import goslinaLogo from "/goslina_sygnet.png";
 import goslinaMockups from "/goslina_mockups.png";
@@ -261,6 +266,121 @@ const plainGalleryData: PlainGalleryData = {
                 },
             },
             {
+                component: "ImageText",
+
+                configuration: {
+                    leftColumnWidth: 10,
+                    descriptionPosition: "top",
+                    withH1: false,
+                    withDescription: true,
+                },
+
+                content: {
+                    img: ukenIkonka1,
+                    h1: "",
+                    description:
+                        "Spoglądając na sygnet, dostrzeżemy nawias klamrowy, który w metaforycznym sensie spina różne dziedziny działalności badawczej uniwersytetu",
+                },
+            },
+            {
+                component: "ImageText",
+
+                configuration: {
+                    leftColumnWidth: 10,
+                    descriptionPosition: "top",
+                    withH1: false,
+                    withDescription: true,
+                },
+
+                content: {
+                    img: ukenIkonka2,
+                    h1: "",
+                    description:
+                        "Po przeciwnej jego stronie widzimy rozłożoną księgę – tradycyjny symbol wiedzy i nauki.",
+                },
+            },
+            {
+                component: "ImageText",
+
+                configuration: {
+                    leftColumnWidth: 10,
+                    descriptionPosition: "top",
+                    withH1: false,
+                    withDescription: true,
+                },
+
+                content: {
+                    img: ukenIkonka36,
+                    h1: "",
+                    description:
+                        "Całość składa się na sylwetkę ptaka z rozłożonymi skrzydłami, który oznacza chęć osiągania coraz wyższych celów, a także umiejętność obiektywnego oglądu sytuacji „z góry”, jaki powinien cechować naukę.",
+                },
+            },
+            {
+                component: "ImageText",
+
+                configuration: {
+                    leftColumnWidth: 10,
+                    descriptionPosition: "top",
+                    withH1: false,
+                    withDescription: true,
+                },
+
+                content: {
+                    img: ukenIkonka4,
+                    h1: "",
+                    description:
+                        "Pomimo minimalistycznej, nowoczesnej formy sygnetu, jego kształt przywodzi także na myśl motyw tarczy herbowej, co budzi skojarzenia z historią i tradycją. By wzmocnić to wrażenie, zastosowane zostały odcienie czerwieni, które nawiązują do polskich barw narodowych, a więc wartości historyczno – patriotycznych",
+                },
+            },
+            {
+                component: "ImageText",
+
+                configuration: {
+                    leftColumnWidth: 10,
+                    descriptionPosition: "top",
+                    withH1: false,
+                    withDescription: true,
+                },
+
+                content: {
+                    img: ukenIkonka5,
+                    h1: "",
+                    description:
+                        "W logotypie wykorzystany został bezszeryfowy font „Lato”, który dobrze koresponduje z nowoczesnymi aspiracjami uczelni. Zapewnia też odpowiednią czytelność, a tym samym funkcjonalność.",
+                },
+            },
+            {
+                component: "ImageText",
+
+                configuration: {
+                    leftColumnWidth: 10,
+                    descriptionPosition: "top",
+                    withH1: false,
+                    withDescription: true,
+                },
+
+                content: {
+                    img: ukenIkonka36,
+                    h1: "",
+                    description:
+                        "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
+                },
+            },
+            {
+                component: "Text",
+
+                configuration: {
+                    withH1: true,
+                },
+
+                content: {
+                    h1: "Wersje monochromatyczne",
+                    description:
+                        "",
+                },
+            },
+            {
                 component: "ImageImage",
 
                 configuration: {
@@ -300,6 +420,19 @@ const plainGalleryData: PlainGalleryData = {
                     rightH1: "",
                     leftDescription: "",
                     rightDescription: "",
+                },
+            },
+            {
+                component: "Text",
+
+                configuration: {
+                    withH1: true,
+                },
+
+                content: {
+                    h1: "Wizualizacja logo na materiałach reklamowych",
+                    description:
+                        "",
                 },
             },
             {

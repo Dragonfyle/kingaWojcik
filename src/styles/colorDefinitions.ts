@@ -11,9 +11,11 @@ export const colorDefinitions = {
     },
     supplementary: {
         yellow: "rgb(241, 219, 19)",
+        black: "rgb(25, 25, 25)",
     },
     white: {
         main: "rgb(255, 255, 255)",
+        darker: "rgb(246, 246, 246)",
     },
     transparent: "transparent",
 } as const;

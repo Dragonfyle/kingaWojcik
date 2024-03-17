@@ -9,7 +9,7 @@ export default function SingleText({ source, withH1 }: SingleTextProps) {
 
     return (
         <P.FeatureWrapper>
-            <Flexbox $padding="20px 40px" $marginT="50px" $direction="column">
+            <Flexbox $marginT="50px" $direction="column">
                 {withH1 && (
                     <Text tag="h1" size="2xl" bold>
                         {content.h1}

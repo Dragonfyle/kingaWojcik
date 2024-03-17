@@ -27,7 +27,7 @@ export default forwardRef(function ProjectPanel({ source }: ProjectPanelProps, r
             <P.ProjectPanel>
                 {!isMobile && <ProjectPanelIntro text={source.intro} />}
                 <Flexbox $wrap="nowrap" $colGap="50px">
-                    {getContent(source)}{" "}
+                    {getContent(source)}
                 </Flexbox>
             </P.ProjectPanel>
         </P.PanelWrapper>

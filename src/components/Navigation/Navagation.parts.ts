@@ -35,10 +35,10 @@ export const styledLiRight = styled.li`
     height: 100%;
 `;
 
-export const StyledDialog = styled.div`
+export const Modal = styled.div`
     position: absolute;
     left: 50%;
-    top: 75%;
+    top: 110%;
     display: flex;
     justify-content: center;
     align-items: center;

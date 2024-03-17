@@ -4,7 +4,7 @@ export const NavigationItemWrapper = styled.div`
     position: relative;
     display: flex;
     cursor: pointer;
-    padding: 10px 20px;
+    margin: 10px 35px;
 
     a {
         text-decoration: none;

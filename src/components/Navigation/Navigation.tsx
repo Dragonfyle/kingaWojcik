@@ -1,10 +1,10 @@
 import KingaBrand from "../generics/KingaBrand/KingaBrand";
-import Flexbox from "../generics/Flexbox/Flexbox";
-import * as P from "./Navagation.parts";
 import NavigationItem from "./NavigationItem/NavigationItem";
 import { CONFIG } from "../../constants/config";
 import { useRef, useState } from "react";
 import Text from "../generics/Text/Text";
+import * as P from "./Navagation.parts";
+import LinkedinIcon from "../generics/LinkedinIcon/LinkedinIcon";
 
 const EMAIL = "wojcik.kinga.ewa@gmail.com";
 const MODAL_TIMEOUT = 5000;
@@ -21,8 +21,6 @@ export default function Navigation() {
         if (isModalVisible) return;
 
         setIsModalVisible(true);
-        // dialogRef.current.show();
-        // setTimeout(() => dialogRef.current.close(), MODAL_TIMEOUT);
         setTimeout(() => setIsModalVisible(false), MODAL_TIMEOUT);
     }
 
@@ -34,21 +32,18 @@ export default function Navigation() {
     return (
         <P.NavigationWrapper>
             <P.ListWrapper>
-                {/* <Flexbox tag="ul" $wrap="nowrap"> */}
+                <LinkedinIcon size={25} />
                 <KingaBrand />
                 <NavigationItem label="O mnie" isLink to={CONFIG.PATHS.ABOUT} />
-                {/* </Flexbox> */}
-                {/* <Flexbox tag="ul" $justify="flex-end" $wrap="nowrap"> */}
                 <NavigationItem label="Projekty brandingowe" to />
                 <NavigationItem label="Projekty wydawnicze" to />
                 <NavigationItem label={EMAIL} onClick={handleClick}>
                     {isModalVisible && (
-                        <P.StyledDialog ref={dialogRef}>
+                        <P.Modal ref={dialogRef}>
                             <Text size="s">skopiowane</Text>
-                        </P.StyledDialog>
+                        </P.Modal>
                     )}
                 </NavigationItem>
-                {/* </Flexbox> */}
             </P.ListWrapper>
         </P.NavigationWrapper>
     );

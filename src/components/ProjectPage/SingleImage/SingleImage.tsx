@@ -1,4 +1,4 @@
-import { FeatureImageContent } from "../../../types/tabbedGallery.types";
+import { FeatureImageContent } from "../../../types/Project.types";
 import { ColumnDescription } from "../ColumnDescription/ColumnDescription";
 import { SingleImageProps, descriptionPositionMap } from "../Columns.utils";
 import * as P from "./SingleImage.parts";

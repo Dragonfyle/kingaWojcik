@@ -5,6 +5,10 @@ export const StyledUl = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 1em;
+
+    a {
+        text-decoration: none;
+    }
 `;
 
 export const StyledLi = styled.li`

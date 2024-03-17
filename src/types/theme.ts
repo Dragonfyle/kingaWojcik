@@ -20,10 +20,10 @@ declare module "styled-components" {
                 supplementary: {
                     1: ColorOption;
                     2: ColorOption;
-                    3: ColorOption;
                 };
                 white: {
                     1: ColorOption;
+                    2: ColorOption;
                 };
             };
         };

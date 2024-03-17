@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SummaryWrapper = styled.header`
-    padding: 40px;
+    padding: 30px;
     white-space: pre-line;
 `;
 

@@ -4,11 +4,6 @@ import Divider from "../../generics/Divider/Divider";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import Text from "../../generics/Text/Text";
 import * as P from "./FooterSection.parts";
-import { CONFIG } from "../../../constants/config";
-
-interface ListItems {
-    [key: `item${number}`]: string;
-}
 
 interface FooterSectionProps {
     sectionName: string;
@@ -21,11 +16,11 @@ export default function FooterSection({ sectionName, listItems, links }: FooterS
         theme: { colors },
     } = useThemeContext();
 
-    function renderList(listItems: ListItems) {
+    function renderList(listItems: string[]) {
         const values = Object.values(listItems);
 
         return values.map((value, idx) => (
-            <Link to={links[idx]}>
+            <Link key={value} to={links[idx]}>
                 <P.StyledLi>
                     <Text size="s" variant={colors.leading.white[1]}>
                         {value}

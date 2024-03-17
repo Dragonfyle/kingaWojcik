@@ -9,14 +9,8 @@ export default function Footer() {
     const middleSectionLinks = ProjectPanelData.branding.content.map((project) => project.projectUrl);
     const rightSectionTitles = ProjectPanelData.editorial.content.map((project) => project.title);
     const rightSectionLinks = ProjectPanelData.branding.content.map((project) => project.projectUrl);
-    const leftSectionTitles = ["O mnie", "Kontakt", "Projekty Brandingowe", "Projekty Wydawnicze", "Współpraca"];
-    const leftSectionLinks = [
-        CONFIG.PATHS.ABOUT,
-        CONFIG.PATHS.CONTACT,
-        CONFIG.PATHS.BRANDING_SECTION,
-        CONFIG.PATHS.EDITORIAL_SECTION,
-        CONFIG.PATHS.COLLABORATION,
-    ];
+    const leftSectionTitles = ["O mnie", "Projekty Brandingowe", "Projekty Wydawnicze"];
+    const leftSectionLinks = [CONFIG.PATHS.ABOUT, CONFIG.PATHS.BRANDING_SECTION, CONFIG.PATHS.EDITORIAL_SECTION];
 
     return (
         <P.Wrapper>

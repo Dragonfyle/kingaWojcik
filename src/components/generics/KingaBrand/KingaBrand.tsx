@@ -6,7 +6,7 @@ export default function KingaBrand() {
     return (
         <P.StyledNavLink to={CONFIG.PATHS.HOME}>
             <P.KingaWrapper>
-                <Text bold>Kinga Wójcik</Text>
+                <Text bold>Kinga Ewa Wójcik</Text>
             </P.KingaWrapper>
         </P.StyledNavLink>
     );

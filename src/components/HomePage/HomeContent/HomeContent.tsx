@@ -3,6 +3,7 @@ import ProjectSection from "../ProjectsSection/ProjectsSection";
 import { ProjectPanelData } from "../../../data/projectPanelData";
 import AboutSection from "../AboutSection/AboutSection";
 import ScrollToAnchor from "../../../utils/scrollToAnchor";
+import { aboutSectionData } from "../../../data/aboutSectionData";
 
 export default function HomeContent() {
     return (
@@ -11,7 +12,7 @@ export default function HomeContent() {
             <ProjectSection id="brandingowe" source={ProjectPanelData.branding} />
             <ProjectSection id="wydawnicze" source={ProjectPanelData.editorial} />
             {/* <ProjectSection /> */}
-            <AboutSection />
+            <AboutSection source={aboutSectionData} />
         </P.Wrapper>
     );
 }

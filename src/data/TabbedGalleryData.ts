@@ -11,72 +11,29 @@ import { TabbedGalleryData } from "../types/tabbedGallery.types";
 const tabbedGalleryData: TabbedGalleryData = {
     project1: {
         header: "Strona internetowa i logo dla 4spacje",
-        intro: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.
-
-        Poprosiłam zespół, pracujący nad blogiem, o szczegółowe informacje, dotyczące tego projektu. Każdy z nich otrzymał do wypełnienia ankietę (brief) z pytaniami dotyczącymi celu powstania bloga, misji, jaką ma spełniać strona, jej grupy docelowej oraz wielu pokrewnych kwestii. Dzięki temu byłam w stanie przygotować propozycje logo i projektu redesignu strony adekwatnie do roli, jaką mają one spełniać.
-        `,
+        intro: ``,
 
         tabbedGalleryContent: [
             {
                 tabName: "brief",
-                highlight: `Zebrałam powtarzające się i najważniejsze informacje, które posłużyły za tło koncepcyjne dla projektu.
-                Co wynikło z briefów? 
-                - chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
-                -naszym celem jest poszerzanie kręgu odbiorców, dzielenie się wiedzą, stworzenie solidnej bazy informacji i coraz większe angażowanie użytkowników
-                -grupą docelową są głównie młodzi programiści i designerzy, stąd też potrzeba pójścia w kierunku nowoczesnego projektu witryny
-                
-                Przy wykorzystaniu jak najprostszych środków (kolor, forma, kompozycja) starałam się przekazać najważniejsze wartości marki.
-                `,
+                highlight: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.
+                Każdy członek zespołu otrzymał do wypełnienia ankietę (brief) z pytaniami dotyczącymi celu powstania bloga, misji, jaką ma spełniać strona, jej grupy docelowej oraz wielu pokrewnych kwestii. Dzięki temu byłam w stanie przygotować propozycje logo i projektu redesignu strony adekwatnie do roli, jaką mają one spełniać`,
 
                 features: {
                     feature1: {
-                        component: "ImageText",
+                        component: "Text",
 
                         configuration: {
-                            leftColumnWidth: 10,
-                            descriptionPosition: "top",
-                            withH1: false,
-                            withDescription: false,
+                            withH1: true,
                         },
 
                         content: {
-                            img: wstepneSzkice,
-                            h1: "",
-                            description:
-                                "Na blogu staramy się opisywać, tłumaczyć i komentować świat technologii internetowych. Projekt logo wykorzystuje więc dwa ukośniki, które w programowaniu wprowadzają komentarz.",
-                        },
-                    },
-                    feature2: {
-                        component: "ImageText",
-
-                        configuration: {
-                            leftColumnWidth: 10,
-                            descriptionPosition: "top",
-                            withH1: false,
-                            withDescription: false,
-                        },
-
-                        content: {
-                            img: wstepneSzkice,
-                            h1: "",
-                            description:
-                                "Jednocześnie jest to też cudzysłów otwierający, nawiązujący do dzielenia się wiedzą i opiniami.",
-                        },
-                    },
-                    feature3: {
-                        component: "ImageText",
-
-                        configuration: {
-                            leftColumnWidth: 10,
-                            descriptionPosition: "top",
-                            withH1: false,
-                            withDescription: false,
-                        },
-
-                        content: {
-                            img: wstepneSzkice,
-                            h1: "",
-                            description: "Dwa ukośniki tworzą cyfrę 4, stanowiącą pierwszy człon nazwy bloga.",
+                            h1: "Co wynikło z briefów?",
+                            description: `Zebrałam najważniejsze, powtarzające się informacje, które posłużyły za tło koncepcyjne dla projektu.
+                            
+                            -chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
+                            -naszym celem jest poszerzanie kręgu odbiorców, dzielenie się wiedzą, stworzenie solidnej bazy informacji i coraz większe angażowanie użytkowników
+                            -grupą docelową są głównie młodzi programiści i designerzy, stąd też potrzeba pójścia w kierunku nowoczesnego projektu witryny`,
                         },
                     },
                 },

@@ -1,4 +1,4 @@
-import { FeatureImageImageContent } from "../../../types/tabbedGallery.types";
+import { FeatureImageImageContent } from "../../../types/Project.types";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import { ColumnDescription } from "../ColumnDescription/ColumnDescription";
 import { ColumnsImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Columns.utils";

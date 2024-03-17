@@ -8,9 +8,11 @@ interface HighlightProps {
 export default function Highlight({ source }: HighlightProps) {
     return (
         <P.HighlightWrapper>
-            <Text size="xl" lineHeight={1.4}>
-                {source}
-            </Text>
+            <P.TextWrapper>
+                <Text size="xl" lineHeight={1.4}>
+                    {source}
+                </Text>
+            </P.TextWrapper>
         </P.HighlightWrapper>
     );
 }

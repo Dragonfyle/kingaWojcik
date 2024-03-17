@@ -16,9 +16,11 @@ const defaultTheme = {
             },
             supplementary: {
                 1: colors.supplementary.yellow,
+                2: colors.supplementary.black,
             },
             white: {
                 1: colors.white.main,
+                2: colors.white.darker,
             },
         },
     },

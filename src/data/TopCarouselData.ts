@@ -1,25 +1,22 @@
 export const MAP_ITEM_DESCRIPTIONS = [
-    "Aliqua ut est ut dolore mollit dolore",
-    "Anim eu mollit incididunt magna incididunt consectetur",
-    "proident dolore laboris aliquip",
-    "Lorem consectetur labore minim sit occaecat eu laboris",
-    "Culpa minim cillum dolor quis eu veniam",
+    "Współpraca",
+    "Dzielenie się wiedzą",
+    "Determinacja i wytrwałość",
+    "Nieustanny rozwój",
 ] as const;
 
 export const IMAGE_DESCRIPTIONS = [
-    "Irure sint incididunt consequat anim fugiat esse mollit excepteur",
-    "Eu velit irure officia consequat velit deserunt est velit occaecat Lorem.",
-    "Consectetur excepteur adipisicing sunt duis id anim nisi duis est.",
-    "Est consequat do commodo et eu cupidatat quis.",
-    "Reprehenderit sit pariatur occaecat qui qui deserunt Lorem ut magna non nisi non consequat.",
+    "Nikt nie potrafi zagwizdać symfonii, do jej zagrania potrzebna jest cała orkiestra",
+    "Wiele pomysłów rośnie lepiej, gdy przeszczepia się je do innego umysłu niż ten, w którym wyrosły",
+    "Nic nie zastąpi wytrwałości. Nie zastąpi jej talent. Nie uczyni niczego sam geniusz ani wykształcenie – świat jest pełen ludzi wykształconych, o których zapomniano.",
+    `Bez ciągłego wzrostu i postępu, takie słowa jak "poprawa", "osiągnięcie" i "sukces" nie mają znaczenia.`,
 ] as const;
 
 export const IMAGE_TITLES = [
-    "Reprehenderit.",
-    "Irure sint incididunt.",
-    "Eu velit irure officia.",
-    "Consectetur excepteur.",
-    "Est consequat.",
+    "Współpraca",
+    "Dzielenie się wiedzą",
+    "Determinacja i wytrwałość",
+    "Nieustanny rozwój",
 ] as const;
 
 export const NUM_IMAGES = MAP_ITEM_DESCRIPTIONS.length;

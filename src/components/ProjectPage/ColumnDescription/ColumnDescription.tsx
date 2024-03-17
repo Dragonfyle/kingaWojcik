@@ -10,7 +10,7 @@ interface ColumnDescriptionProps {
 
 export function ColumnDescription({ withH1, h1, description, order }: ColumnDescriptionProps) {
     return (
-        <Flexbox $order={order} $padding="20px 20px" $marginT="50px" $direction="column">
+        <Flexbox $order={order} $marginT="50px" $direction="column">
             {withH1 && (
                 <Text tag="h1" size="2xl" bold>
                     {h1}

@@ -1,4 +1,4 @@
-import { Feature } from "./tabbedGallery.types";
+import { Feature } from "./Project.types";
 
 interface PlainGalleryProject {
     header: string;

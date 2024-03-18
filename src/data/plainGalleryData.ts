@@ -24,11 +24,12 @@ import ukenLogoSkroconeCzarne from "/uken_logo_skrocone.jpg";
 import ukenLogoSkroconeBiale from "/uken_logo_skrocone_biale.png";
 import ukenLogoSkroconeCzerwone from "/uken_logo_skrocone_czerwone.png";
 import ukenLogoPelneCzerwone from "/uken_logo_pelne_czerwone.png";
-import ukenIkonka1 from "/uken_ikonka1.jpg";
-import ukenIkonka2 from "/uken_ikonka2.jpg";
-import ukenIkonka36 from "/uken_ikonka3_6.jpg";
-import ukenIkonka4 from "/uken_ikonka4.jpg";
-import ukenIkonka5 from "/uken_ikonka5.jpg";
+import ukenLogoMain from "/uken_logo_main.png";
+import ukenIkonka1 from "/uken_ikonka_1.png";
+import ukenIkonka2 from "/uken_ikonka_2.png";
+import ukenIkonka36 from "/uken_ikonka_3_6.png";
+import ukenIkonka4 from "/uken_ikonka_4.png";
+import ukenIkonka5 from "/uken_ikonka_5.png";
 
 import goslinaLogo from "/goslina_sygnet.png";
 import goslinaMockups from "/goslina_mockups.png";
@@ -212,42 +213,23 @@ const plainGalleryData: PlainGalleryData = {
         ],
     },
     project2: {
-        header: "",
+        header: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie (dawniej Uniwersytet Pedagogiczny)",
         intro: "",
 
         plainGalleryContent: [
             {
-                component: "Text",
+                component: "Image",
 
                 configuration: {
-                    withH1: true,
+                    withH1: false,
+                    withDescription: false,
                 },
 
                 content: {
-                    h1: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie (dawniej Uniwersytet Pedagogiczny)",
+                    img: ukenLogoMain,
+                    h1: "",
                     description:
                         "",
-                },
-            },
-            {
-                component: "ImageImage",
-
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: ukenLogoPelneCzerwone,
-                    rightImg: ukenLogoSkroconeCzerwone,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
                 },
             },
             {
@@ -368,40 +350,6 @@ const plainGalleryData: PlainGalleryData = {
                 },
             },
             {
-                component: "Text",
-
-                configuration: {
-                    withH1: true,
-                },
-
-                content: {
-                    h1: "Wersje monochromatyczne",
-                    description:
-                        "",
-                },
-            },
-            {
-                component: "ImageImage",
-
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: ukenLogoPelneBiale,
-                    rightImg: ukenLogoSkroconeBiale,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
-                },
-            },
-            {
                 component: "ImageImage",
 
                 configuration: {
@@ -423,16 +371,24 @@ const plainGalleryData: PlainGalleryData = {
                 },
             },
             {
-                component: "Text",
+                component: "ImageImage",
 
                 configuration: {
-                    withH1: true,
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
                 },
 
                 content: {
-                    h1: "Wizualizacja logo na materiałach reklamowych",
-                    description:
-                        "",
+                    leftImg: ukenLogoPelneBiale,
+                    rightImg: ukenLogoSkroconeBiale,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
                 },
             },
             {
@@ -539,7 +495,7 @@ const plainGalleryData: PlainGalleryData = {
         ],
     },
     project4: {
-        header: "",
+        header: "Projekty okładek książkowych",
         intro: "",
 
         plainGalleryContent: [

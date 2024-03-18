@@ -4,13 +4,13 @@ import logo4spacje from "/logo.png";
 import articleDarkMode from "/articleDarkMode.png";
 import wyszukiwarkaDawniej from "/wyszukiwarka-dawniej.png";
 import wyszukiwarkaTeraz from "/wyszukiwarka-teraz.png";
-import rekrutacjaArtykuly from "/rekrutacja-artykuly.png";
-import rekrutacjaZadania from "/rekrutacja-zadania.png";
+import rekrutacjaArtykuly from "/czteryspacje_rekrutacja-artykuly.jpg";
+import rekrutacjaZadania from "/czteryspacje_rekrutacja-zadania.jpg";
 import { TabbedGalleryData } from "../types/tabbedGallery.types";
 
 const tabbedGalleryData: TabbedGalleryData = {
     project1: {
-        header: "Strona internetowa i logo dla 4spacje",
+        header: "",
         intro: ``,
 
         tabbedGalleryContent: [

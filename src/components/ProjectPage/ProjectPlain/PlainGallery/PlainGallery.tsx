@@ -25,13 +25,13 @@ export default function PlainGallery({ source }: PlainGalleryProps) {
     const projectFeatures = source.plainGalleryContent;
 
     function renderFeatures(features: Feature[]) {
-        return features.map((feature) => {
+        return features.map((feature, idx) => {
             const componentName = feature.component;
             const Component = featureMap[`Feature${componentName}`];
             const config: Feature["configuration"] = feature.configuration;
             const props = config;
 
-            return <Component source={feature} {...props} />;
+            return <Component key={idx} source={feature} {...props} />;
         });
     }
 

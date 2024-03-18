@@ -7,7 +7,7 @@ export const SlideWrapper = styled.div`
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-end;
-    height: 97vh;
+    height: 67vh;
     max-height: min(100vh, 1300px);
     overflow: hidden;
     ${BREAKPOINTS.XXL} {

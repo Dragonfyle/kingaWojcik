@@ -8,6 +8,10 @@ export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: 
     margin: 0 0 50px 0;
     padding: 0 30px;
 
+    &:last-child {
+        margin: 0 0 200px 0;
+    }
+
     & img {
         width: 100%;
         object-fit: contain;

@@ -1,6 +1,4 @@
-import { wspolpraca } from "../Carousel/CarouselSlide/CarouselSlide.utils";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import Text from "../../generics/Text/Text";
+import aboutKinga from "/author_kinga_wojcik.jpg";
 import { Link } from "react-router-dom";
 import { CONFIG } from "../../../constants/config";
 import * as P from "./AboutSection.parts";
@@ -16,17 +14,7 @@ export default function AboutSection({ source }: AboutSectionProps) {
     return (
         <P.StyledSection>
             <Link to={aboutPageUrl}>
-                <Flexbox $direction="column">
-                    <P.StyledHeader>
-                        <Text bold uppercase size="xl">
-                            Sint commodo
-                        </Text>
-                    </P.StyledHeader>
-                    <Flexbox $wrap="nowrap" $colGap="100px">
-                        <Text>{source.description}</Text>
-                        <img src={source.imgUrl} width={200} />
-                    </Flexbox>
-                </Flexbox>
+                <img src={aboutKinga} height={200} />
             </Link>
         </P.StyledSection>
     );

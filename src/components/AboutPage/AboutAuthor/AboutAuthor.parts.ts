@@ -3,7 +3,7 @@ import { BREAKPOINTS } from "../../../styles/breakpoints";
 
 export const StyledSection = styled.section`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     /* width: 89%; */
     /* margin: 0 0 0 11%; */
     /* padding: 100px 100px 100px 0; */

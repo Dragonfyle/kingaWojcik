@@ -1,7 +1,3 @@
-import wstepneSzkice from "/wstepne-szkice.png";
-import logoPropozycja4spacje from "/logo-propozycja.png";
-import logo4spacje from "/logo.png";
-
 import kawaIntro from "/kawa_1.png";
 import kawa2 from "/kawa_2.png";
 import kawa3 from "/kawa_3.png";
@@ -22,8 +18,6 @@ import ukenLogoPelneCzarne from "/uken_logo_pelne.jpg";
 import ukenLogoPelneBiale from "/uken_logo_pelne_biale.png";
 import ukenLogoSkroconeCzarne from "/uken_logo_skrocone.jpg";
 import ukenLogoSkroconeBiale from "/uken_logo_skrocone_biale.png";
-import ukenLogoSkroconeCzerwone from "/uken_logo_skrocone_czerwone.png";
-import ukenLogoPelneCzerwone from "/uken_logo_pelne_czerwone.png";
 import ukenLogoMain from "/uken_logo_main.png";
 import ukenIkonka1 from "/uken_ikonka_1.png";
 import ukenIkonka2 from "/uken_ikonka_2.png";
@@ -69,8 +63,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawaIntro,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -99,8 +92,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa3,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -114,8 +106,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa4,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -129,8 +120,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa5,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -144,8 +134,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa6,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -159,8 +148,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa7,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -174,8 +162,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa8,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -189,8 +176,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa9,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -204,12 +190,9 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa10,
                     h1: "",
-                    description:
-                        "Projekt powstał we współpracy z Małgorzatą Jaworską (pisarzowiczka.pl)",
+                    description: "Projekt powstał we współpracy z Małgorzatą Jaworską (pisarzowiczka.pl)",
                 },
             },
-
-
         ],
     },
     project2: {
@@ -228,8 +211,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: ukenLogoMain,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -243,8 +225,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: ukenKolorystyka,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -345,8 +326,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: ukenIkonka36,
                     h1: "",
-                    description:
-                        "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
+                    description: "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
                 },
             },
             {
@@ -433,10 +413,6 @@ const plainGalleryData: PlainGalleryData = {
                     rightDescription: "",
                 },
             },
-
-
-
-
         ],
     },
     project3: {
@@ -455,8 +431,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: goslinaLogo,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -470,8 +445,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: goslinaColors,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -485,13 +459,9 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: goslinaMockups,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
-
-
-
         ],
     },
     project4: {
@@ -499,7 +469,6 @@ const plainGalleryData: PlainGalleryData = {
         intro: "",
 
         plainGalleryContent: [
-
             {
                 component: "ImageImage",
 
@@ -647,7 +616,6 @@ const plainGalleryData: PlainGalleryData = {
                     rightDescription: "",
                 },
             },
-
         ],
     },
 };

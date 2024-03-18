@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../styles/breakpoints";
 
 export const ContentWrapper = styled.main`
     display: flex;
@@ -6,6 +7,10 @@ export const ContentWrapper = styled.main`
     align-items: center;
     margin: auto;
     max-width: 1600px;
+
+    ${BREAKPOINTS.XXL} {
+        max-width: 1200px;
+    }
 `;
 
 export const ImageWrapper = styled.div`
@@ -14,5 +19,9 @@ export const ImageWrapper = styled.div`
     img {
         max-width: 1600px;
         padding: 0 30px;
+
+        ${BREAKPOINTS.XXL} {
+            max-width: 1200px;
+        }
     }
 `;

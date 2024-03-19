@@ -4,7 +4,6 @@ export const FeatureWrapper = styled.section`
     display: flex;
     flex-direction: column;
     margin: 0 0 50px 0;
-    padding: 0 30px;
 
     &:last-child {
         margin: 0 0 200px 0;

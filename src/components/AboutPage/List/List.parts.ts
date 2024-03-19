@@ -5,8 +5,6 @@ export const ListWrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 80px auto;
-    width: 60%;
     gap: 50px;
 `;
 

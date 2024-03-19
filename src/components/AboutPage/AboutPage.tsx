@@ -12,7 +12,7 @@ export default function AboutPage() {
         <P.PageWrapper>
             <P.ContentWrapper>
                 <AboutAuthor source={aboutSectionData} />
-                <AboutGallery source={aboutGalleryData} />;
+                <AboutGallery source={aboutGalleryData} />
             </P.ContentWrapper>
         </P.PageWrapper>
     );

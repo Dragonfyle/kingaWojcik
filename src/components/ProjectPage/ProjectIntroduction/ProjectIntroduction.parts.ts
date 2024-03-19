@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "../../../styles/breakpoints";
 
 export const SummaryWrapper = styled.header`
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
     padding: 30px;
     white-space: pre-line;
 

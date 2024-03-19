@@ -26,9 +26,8 @@ const defaultTheme = {
     },
     fontWeight: {
         normal: 400,
-        bold: 600,
-        bolder: 700,
-        boldest: 900,
+        bold: 700,
+        black: 700,
     },
     borderRadius: {
         s: "2px",

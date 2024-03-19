@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const ContentWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
     max-width: 1600px;
+    margin: 50px;
 
     ${BREAKPOINTS.XXL} {
         max-width: 1200px;

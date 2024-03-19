@@ -1,7 +1,6 @@
 import { AboutGalleryContent } from "../../../types/AboutGallery.types";
 import { ProjectContent } from "../../../types/tabbedGallery.types";
 import Button from "../Button/Button";
-import Text from "../Text/Text";
 import * as P from "./TabNavigation.parts";
 
 interface TabNavigation {
@@ -16,7 +15,7 @@ export default function TabNavigation({ source, activeTab, onClick }: TabNavigat
     function getButtons(tabNames: string[]) {
         return tabNames.map((tabName, idx) => (
             <Button key={tabName} isActive={activeTab === idx} onClick={() => onClick(idx)}>
-                <Text bold>{source[idx].tabName}</Text>
+                {source[idx].tabName}{" "}
             </Button>
         ));
     }

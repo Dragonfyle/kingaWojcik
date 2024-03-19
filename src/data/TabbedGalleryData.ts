@@ -1,4 +1,4 @@
-import wstepneSzkice from "/wstepne-szkice.png";
+import wstepneSzkice from "/czteryspacje_wstepne_szkice.png";
 import logoPropozycja4spacje from "/logo-propozycja.png";
 import logo4spacje from "/logo.png";
 import articleDarkMode from "/articleDarkMode.png";
@@ -6,11 +6,13 @@ import wyszukiwarkaDawniej from "/wyszukiwarka-dawniej.png";
 import wyszukiwarkaTeraz from "/wyszukiwarka-teraz.png";
 import rekrutacjaArtykuly from "/czteryspacje_rekrutacja-artykuly.jpg";
 import rekrutacjaZadania from "/czteryspacje_rekrutacja-zadania.jpg";
+import naglowki from "/czteryspacje_naglowki.gif";
+import stronaGlowna from "/czteryspacje_glowna.png";
 import { TabbedGalleryData } from "../types/tabbedGallery.types";
 
 const tabbedGalleryData: TabbedGalleryData = {
     project1: {
-        header: "",
+        header: "Projekt logo i strony internetowej dla 4spacje.pl",
         intro: ``,
 
         tabbedGalleryContent: [
@@ -40,10 +42,22 @@ const tabbedGalleryData: TabbedGalleryData = {
             },
             {
                 tabName: "logo",
-                highlight: "Sint in eiusmod culpa ex nostrud fugiat do non eiusmod veniam laboris nostrud excepteur.",
+                highlight: "Wykorzystując jak najprostsze środki wyrazu staralam się oddać najważniejsze wartości marki: profesjonalizm i edukacyjny charakter bloga.",
 
                 features: {
                     feature1: {
+                        component: "Image",
+                        configuration: {
+                            withH1: false,
+                            withDescription: true,
+                        },
+                        content: {
+                            img: wstepneSzkice,
+                            h1: "",
+                            description: "Wstępne szkice",
+                        },
+                    },
+                    feature2: {
                         component: "ImageImage",
 
                         configuration: {
@@ -76,6 +90,7 @@ const tabbedGalleryData: TabbedGalleryData = {
                                 `,
                         },
                     },
+
                 },
             },
             {
@@ -84,17 +99,13 @@ const tabbedGalleryData: TabbedGalleryData = {
 
                 features: {
                     feature1: {
-                        component: "ImageText",
-
+                        component: "Image",
                         configuration: {
-                            leftColumnWidth: 50,
-                            descriptionPosition: "top",
                             withH1: true,
                             withDescription: true,
                         },
-
                         content: {
-                            img: articleDarkMode,
+                            img: stronaGlowna,
                             h1: "Najważniejsze zmiany",
                             description: `Zmiany obejmują przede wszystkim kwestie estetyczne, ale także modyfikacje niektórych funkcjonalności i sposobu działania strony.
                             
@@ -115,30 +126,22 @@ const tabbedGalleryData: TabbedGalleryData = {
                         },
                     },
                     feature2: {
-                        component: "ImageImage",
-
+                        component: "Image",
                         configuration: {
-                            leftColumnWidth: 50,
-                            descriptionPosition: "bottom",
-                            withLeftH1: false,
-                            withRightH1: false,
-                            withLeftDescription: true,
-                            withRightDescription: false,
+                            withH1: true,
+                            withDescription: true,
                         },
-
                         content: {
-                            leftImg: wyszukiwarkaTeraz,
-                            rightImg: wyszukiwarkaDawniej,
-                            leftH1: "",
-                            rightH1: "",
-                            leftDescription: `Zaproponowałam przebudowę wyszukiwarki artykułów pod kątem poprawy jej użyteczności, a także wyglądu.
+                            img: wyszukiwarkaTeraz,
+                            h1: "Zaproponowałam przebudowę wyszukiwarki",
+                            description: `Zaproponowałam przebudowę wyszukiwarki artykułów pod kątem poprawy jej użyteczności, a także wyglądu.
 
-                                Dotąd opierała się ona na rozwijanej liście tagów, a filtry wyszukiwania aplikowane były po zaznaczeniu wybranych i zamknięciu pola “select”. Wtedy dopiero lista artykułów była aktualizowana, uwzględniając wybory użytkownika. Mogło to powodować zakłopotanie korzystających ze strony osób, które spodziewałyby się natychmiastowego działania zaznaczonych przez nich tagów.
-                                
-                                W zaprojektowanym przeze mnie rozwiązaniu najważniejsze tagi są widoczne od razu. Eliminuje to konieczność kliknięcia w celu otwarcia listy. Wyszukiwarka zajmuje całą szerokość strony, dzięki czemu jest lepiej widoczna. Okno z tagami można rozwinąć, by zobaczyć więcej filtrów. Mają one być aplikowane od razu po zaznaczeniu. Usunięte zostały wszelkie zbędne elementy i teksty, biorąc pod uwagę, że użytkownicy naszej strony to osoby obeznane z internetem.`,
-                            rightDescription: "",
+                            Dotąd opierała się ona na rozwijanej liście tagów, a filtry wyszukiwania aplikowane były po zaznaczeniu wybranych i zamknięciu pola “select”. Wtedy dopiero lista artykułów była aktualizowana, uwzględniając wybory użytkownika. Mogło to powodować zakłopotanie korzystających ze strony osób, które spodziewałyby się natychmiastowego działania zaznaczonych przez nich tagów.
+                            
+                            W zaprojektowanym przeze mnie rozwiązaniu najważniejsze tagi są widoczne od razu. Eliminuje to konieczność kliknięcia w celu otwarcia listy. Wyszukiwarka zajmuje całą szerokość strony, dzięki czemu jest lepiej widoczna. Okno z tagami można rozwinąć, by zobaczyć więcej filtrów. Mają one być aplikowane od razu po zaznaczeniu. Usunięte zostały wszelkie zbędne elementy i teksty, biorąc pod uwagę, że użytkownicy naszej strony to osoby obeznane z internetem.`,
                         },
                     },
+
                 },
             },
             {
@@ -149,24 +152,40 @@ const tabbedGalleryData: TabbedGalleryData = {
 
                 features: {
                     feature1: {
-                        component: "ImageImage",
-
+                        component: "Image",
                         configuration: {
-                            leftColumnWidth: 50,
-                            descriptionPosition: "bottom",
-                            withLeftH1: false,
-                            withRightH1: false,
-                            withLeftDescription: false,
-                            withRightDescription: false,
+                            withH1: false,
+                            withDescription: true,
                         },
-
                         content: {
-                            leftImg: rekrutacjaArtykuly,
-                            rightImg: rekrutacjaZadania,
-                            leftH1: "",
-                            rightH1: "",
-                            leftDescription: "",
-                            rightDescription: "",
+                            img: rekrutacjaZadania,
+                            h1: "",
+                            description: "Przygotowałam projekt zakładki",
+                        },
+                    },
+                    feature2: {
+                        component: "Image",
+                        configuration: {
+                            withH1: false,
+                            withDescription: true,
+                        },
+                        content: {
+                            img: rekrutacjaArtykuly,
+                            h1: "",
+                            description: "Przygotowałam projekt zakładki",
+                        },
+                    },
+
+                    feature3: {
+                        component: "Image",
+                        configuration: {
+                            withH1: false,
+                            withDescription: true,
+                        },
+                        content: {
+                            img: naglowki,
+                            h1: "",
+                            description: "Przygotowałam projekt nagłówków artykułów.",
                         },
                     },
                 },

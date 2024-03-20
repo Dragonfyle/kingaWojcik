@@ -6,8 +6,7 @@ import Flexbox from "../../generics/Flexbox/Flexbox";
 
 export default function List({ source }: { source: TabContent }) {
     function renderList(source: TabContent) {
-        console.log(source);
-        return source.listContent.map((item) => <ListItem source={item} />);
+        return source.listContent.map((item) => <ListItem key={item.header[1]} source={item} />);
     }
 
     return (

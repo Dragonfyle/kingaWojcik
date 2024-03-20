@@ -1,6 +1,7 @@
 import * as P from "./NavButtons.parts";
 import Next from "../../../generics/NavIcon/Next/Next";
 import Previous from "../../../generics/NavIcon/Previous/Previous";
+import { useThemeContext } from "../../../../contexts/ThemeContext";
 
 interface NavButtonsProps {
     onNextProject: () => void;
@@ -8,10 +9,22 @@ interface NavButtonsProps {
 }
 
 export default function NavButtons({ onNextProject, onPreviousProject }: NavButtonsProps) {
+    const { theme } = useThemeContext();
+
     return (
         <P.ButtonsWrapper>
-            <Previous $size="50px" onClick={onPreviousProject} />
-            <Next $size="50px" onClick={onNextProject} />
+            <Previous
+                $bgColor={theme.colors.leading.supplementary[3]}
+                $fgColor={theme.colors.leading.main[2]}
+                $size="50px"
+                onClick={onPreviousProject}
+            />
+            <Next
+                $bgColor={theme.colors.leading.supplementary[3]}
+                $fgColor={theme.colors.leading.main[2]}
+                $size="50px"
+                onClick={onNextProject}
+            />
         </P.ButtonsWrapper>
     );
 }

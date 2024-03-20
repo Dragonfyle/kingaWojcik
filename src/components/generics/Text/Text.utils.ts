@@ -12,6 +12,7 @@ type TextProps = WithTagVariant<{
     uppercase?: boolean;
     lineHeight?: number;
     bold?: boolean;
+    italic?: boolean;
     variant?: ColorOption;
     align?: TextAlign;
     className?: string;
@@ -26,6 +27,7 @@ interface StyledTextProps {
     $uppercase: boolean;
     $lineHeight: number;
     $bold: boolean;
+    $italic: boolean;
     $color: ColorOption | string;
     $align: TextAlign;
 }

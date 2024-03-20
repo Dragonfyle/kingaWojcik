@@ -1,9 +1,9 @@
 import * as P from "./HomeContent.parts";
 import ProjectSection from "../ProjectsSection/ProjectsSection";
 import { ProjectPanelData } from "../../../data/projectPanelData";
-import AboutSection from "../AboutSection/AboutSection";
+// import AboutSection from "../AboutSection/AboutSection";
 import ScrollToAnchor from "../../../utils/scrollToAnchor";
-import { aboutSectionData } from "../../../data/aboutSectionData";
+// import { aboutSectionData } from "../../../data/aboutSectionData";
 
 export default function HomeContent() {
     return (
@@ -12,7 +12,7 @@ export default function HomeContent() {
             <ProjectSection id="brandingowe" source={ProjectPanelData.branding} />
             <ProjectSection id="wydawnicze" source={ProjectPanelData.editorial} />
             {/* <ProjectSection /> */}
-            <AboutSection source={aboutSectionData} />
+            {/* <AboutSection source={aboutSectionData} /> */}
         </P.Wrapper>
     );
 }

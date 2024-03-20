@@ -1,6 +1,5 @@
 import { CONFIG } from "../../constants/config";
 import { ProjectPanelData } from "../../data/projectPanelData";
-import Flexbox from "../generics/Flexbox/Flexbox";
 import * as P from "./Footer.parts";
 import FooterSection from "./FooterSection/FooterSection";
 
@@ -14,7 +13,7 @@ export default function Footer() {
 
     return (
         <P.Wrapper>
-            <Flexbox $width="69%" $wrap="nowrap" $marginL="11%">
+            <P.StyledFlexbox>
                 <FooterSection sectionName="Menu" listItems={leftSectionTitles} links={leftSectionLinks} />
                 <FooterSection
                     sectionName="Projekty Brandingowe"
@@ -26,7 +25,7 @@ export default function Footer() {
                     listItems={rightSectionTitles}
                     links={rightSectionLinks}
                 />
-            </Flexbox>
+            </P.StyledFlexbox>
         </P.Wrapper>
     );
 }

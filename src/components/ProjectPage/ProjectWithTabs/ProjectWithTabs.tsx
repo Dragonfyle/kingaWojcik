@@ -3,6 +3,7 @@ import useScrollToTop from "../../../hooks/useScrollToTop";
 import ProjectIntroduction from "../ProjectIntroduction/ProjectIntroduction";
 import TabbedGallery from "./TabbedGallery/TabbedGallery";
 import * as P from "./ProjectWithTabs.parts";
+import Flexbox from "../../generics/Flexbox/Flexbox";
 
 interface ProjectWithTabs {
     source: TabbedGalleryProject;
@@ -13,16 +14,19 @@ export default function ProjectWithTabs({ source, banner }: ProjectWithTabs) {
     useScrollToTop();
 
     const withBanner = !!banner;
+    const withDescription = source.intro !== "";
 
     return (
-        <P.ContentWrapper>
-            {withBanner && (
-                <P.ImageWrapper>
-                    <img src={banner} />
-                </P.ImageWrapper>
-            )}
-            <ProjectIntroduction source={source} />
-            <TabbedGallery source={source} />
-        </P.ContentWrapper>
+        <Flexbox $justify="center">
+            <P.ContentWrapper>
+                {withBanner && (
+                    <P.ImageWrapper>
+                        <img src={banner} />
+                    </P.ImageWrapper>
+                )}
+                <ProjectIntroduction source={source} withDescription={withDescription} />
+                <TabbedGallery source={source} />
+            </P.ContentWrapper>
+        </Flexbox>
     );
 }

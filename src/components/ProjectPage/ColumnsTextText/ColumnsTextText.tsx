@@ -23,7 +23,7 @@ export default function ColumnsTextText({
                 )}
 
                 <Flexbox $marginB="60px">
-                    <Text size="xl">{content.leftDescription}</Text>
+                    <Text>{content.leftDescription}</Text>
                 </Flexbox>
             </Flexbox>
             <Flexbox $padding="20px 40px" $marginT="50px" $direction="column">
@@ -34,7 +34,7 @@ export default function ColumnsTextText({
                 )}
 
                 <Flexbox $marginB="60px">
-                    <Text size="xl">{content.rightDescription}</Text>
+                    <Text>{content.rightDescription}</Text>
                 </Flexbox>
             </Flexbox>
         </P.FeatureWrapper>

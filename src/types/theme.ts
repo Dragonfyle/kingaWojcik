@@ -1,8 +1,8 @@
 import "styled-components";
-import { RGBColor, Gradient, Transparent } from "./common";
+import { RGBColor, Gradient, Transparent, RGBAColor } from "./common";
 
 declare module "styled-components" {
-    type ColorOption = RGBColor | Gradient | Transparent;
+    type ColorOption = RGBColor | RGBAColor | Gradient | Transparent;
 
     export interface DefaultTheme {
         colors: {
@@ -11,6 +11,9 @@ declare module "styled-components" {
                     1: ColorOption;
                     2: ColorOption;
                     3: ColorOption;
+                    trans: {
+                        1: ColorOption;
+                    };
                 };
                 secondary: {
                     1: ColorOption;
@@ -20,20 +23,23 @@ declare module "styled-components" {
                 supplementary: {
                     1: ColorOption;
                     2: ColorOption;
+                    3: ColorOption;
                 };
                 white: {
                     1: ColorOption;
                     2: ColorOption;
+                    3: ColorOption;
+                    trans: {
+                        1: ColorOption;
+                    };
                 };
             };
         };
 
         fontWeight: {
-            normal: 300;
-            medium: 400;
-            bold: 600;
-            bolder: 700;
-            boldest: 900;
+            normal: 400;
+            bold: 700;
+            black: 900;
         };
         fontSize: {
             xs: string;

@@ -5,7 +5,6 @@ import { LinkedIconProps } from "./LinkedinIcon.utils";
 import * as P from "./LinkedinIcon.parts";
 
 export default function LinkedinIcon({ size }: LinkedIconProps) {
-    console.log(size);
     return (
         <P.StyledA href="https://www.linkedin.com/in/kinga-wójcik-grafik/" $size={size}>
             <LinkedinSvg />

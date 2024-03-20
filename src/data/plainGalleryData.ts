@@ -1,7 +1,3 @@
-import wstepneSzkice from "/wstepne-szkice.png";
-import logoPropozycja4spacje from "/logo-propozycja.png";
-import logo4spacje from "/logo.png";
-
 import kawaIntro from "/kawa_1.png";
 import kawa2 from "/kawa_2.png";
 import kawa3 from "/kawa_3.png";
@@ -22,13 +18,12 @@ import ukenLogoPelneCzarne from "/uken_logo_pelne.jpg";
 import ukenLogoPelneBiale from "/uken_logo_pelne_biale.png";
 import ukenLogoSkroconeCzarne from "/uken_logo_skrocone.jpg";
 import ukenLogoSkroconeBiale from "/uken_logo_skrocone_biale.png";
-import ukenLogoSkroconeCzerwone from "/uken_logo_skrocone_czerwone.png";
-import ukenLogoPelneCzerwone from "/uken_logo_pelne_czerwone.png";
-import ukenIkonka1 from "/uken_ikonka1.jpg";
-import ukenIkonka2 from "/uken_ikonka2.jpg";
-import ukenIkonka36 from "/uken_ikonka3_6.jpg";
-import ukenIkonka4 from "/uken_ikonka4.jpg";
-import ukenIkonka5 from "/uken_ikonka5.jpg";
+import ukenLogoMain from "/uken_logo_main.png";
+import ukenIkonka1 from "/uken_ikonka_1.png";
+import ukenIkonka2 from "/uken_ikonka_2.png";
+import ukenIkonka36 from "/uken_ikonka_3_6.png";
+import ukenIkonka4 from "/uken_ikonka_4.png";
+import ukenIkonka5 from "/uken_ikonka_5.png";
 
 import goslinaLogo from "/goslina_sygnet.png";
 import goslinaMockups from "/goslina_mockups.png";
@@ -68,8 +63,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawaIntro,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -98,8 +92,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa3,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -113,8 +106,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa4,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -128,8 +120,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa5,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -143,8 +134,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa6,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -158,8 +148,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa7,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -173,8 +162,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa8,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -188,8 +176,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa9,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -203,51 +190,28 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa10,
                     h1: "",
-                    description:
-                        "Projekt powstał we współpracy z Małgorzatą Jaworską (pisarzowiczka.pl)",
+                    description: "Projekt powstał we współpracy z Małgorzatą Jaworską (pisarzowiczka.pl)",
                 },
             },
-
-
         ],
     },
     project2: {
-        header: "",
+        header: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie (dawniej Uniwersytet Pedagogiczny)",
         intro: "",
 
         plainGalleryContent: [
             {
-                component: "Text",
+                component: "Image",
 
                 configuration: {
-                    withH1: true,
+                    withH1: false,
+                    withDescription: false,
                 },
 
                 content: {
-                    h1: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie (dawniej Uniwersytet Pedagogiczny)",
-                    description:
-                        "",
-                },
-            },
-            {
-                component: "ImageImage",
-
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: ukenLogoPelneCzerwone,
-                    rightImg: ukenLogoSkroconeCzerwone,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
+                    img: ukenLogoMain,
+                    h1: "",
+                    description: "",
                 },
             },
             {
@@ -261,8 +225,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: ukenKolorystyka,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -363,21 +326,28 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: ukenIkonka36,
                     h1: "",
-                    description:
-                        "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
+                    description: "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
                 },
             },
             {
-                component: "Text",
+                component: "ImageImage",
 
                 configuration: {
-                    withH1: true,
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
                 },
 
                 content: {
-                    h1: "Wersje monochromatyczne",
-                    description:
-                        "",
+                    leftImg: ukenLogoPelneCzarne,
+                    rightImg: ukenLogoSkroconeCzarne,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
                 },
             },
             {
@@ -406,54 +376,20 @@ const plainGalleryData: PlainGalleryData = {
 
                 configuration: {
                     leftColumnWidth: 50,
+                    withLeftH1: true,
                     withRightH1: false,
-                    withLeftH1: false,
                     withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: ukenLogoPelneCzarne,
-                    rightImg: ukenLogoSkroconeCzarne,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
-                },
-            },
-            {
-                component: "Text",
-
-                configuration: {
-                    withH1: true,
-                },
-
-                content: {
-                    h1: "Wizualizacja logo na materiałach reklamowych",
-                    description:
-                        "",
-                },
-            },
-            {
-                component: "ImageImage",
-
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
+                    withRightDescription: true,
                     descriptionPosition: "bottom",
                 },
 
                 content: {
                     leftImg: ukenTshirt,
                     rightImg: ukenKalendarz,
-                    leftH1: "",
+                    leftH1: "unauna",
                     rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
+                    leftDescription: "wizualizacja na T-shircie",
+                    rightDescription: "kalendarz akademicki",
                 },
             },
             {
@@ -463,8 +399,8 @@ const plainGalleryData: PlainGalleryData = {
                     leftColumnWidth: 50,
                     withRightH1: false,
                     withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
+                    withLeftDescription: true,
+                    withRightDescription: true,
                     descriptionPosition: "bottom",
                 },
 
@@ -473,14 +409,10 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: ukenDokument,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
+                    leftDescription: "wizytówki",
+                    rightDescription: "przykładowy dokument",
                 },
             },
-
-
-
-
         ],
     },
     project3: {
@@ -499,8 +431,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: goslinaLogo,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -514,8 +445,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: goslinaColors,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -529,21 +459,16 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: goslinaMockups,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
-
-
-
         ],
     },
     project4: {
-        header: "",
+        header: "Projekty okładek książkowych",
         intro: "",
 
         plainGalleryContent: [
-
             {
                 component: "ImageImage",
 
@@ -691,7 +616,6 @@ const plainGalleryData: PlainGalleryData = {
                     rightDescription: "",
                 },
             },
-
         ],
     },
 };

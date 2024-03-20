@@ -1,4 +1,4 @@
-import { Feature } from "../../types/tabbedGallery.types";
+import { Feature } from "../../types/Project.types";
 
 type ColumnWidth = 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90;
 
@@ -20,7 +20,8 @@ interface ColumnsImageTextProps {
 interface ColumnsImageImageProps {
     source: Feature;
     leftColumnWidth: ColumnWidth;
-    withH1: boolean;
+    withLeftH1: boolean;
+    withRightH1: boolean;
     withLeftDescription: boolean;
     withRightDescription: boolean;
     descriptionPosition?: "top" | "bottom";

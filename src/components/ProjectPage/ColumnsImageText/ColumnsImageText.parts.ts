@@ -1,12 +1,21 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../styles/breakpoints";
 
 export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: string }>`
     display: grid;
     grid-template-columns: ${({ $leftWidth, $rightWidth }) => `${$leftWidth} ${$rightWidth}`};
     grid-template-rows: auto;
-    gap: 50px;
+    gap: 20px;
     margin: 0 0 50px 0;
-    padding: 0 30px;
+
+    ${BREAKPOINTS.M} {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    &:last-child {
+        margin: 0 0 200px 0;
+    }
 
     & img {
         width: 100%;

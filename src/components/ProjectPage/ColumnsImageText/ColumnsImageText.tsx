@@ -21,7 +21,7 @@ export default function ColumnsTextImage({ source, leftColumnWidth = 50, withH1 
                 )}
 
                 <Flexbox $marginB="60px">
-                    <Text size="xl">{content.description}</Text>
+                    <Text>{content.description}</Text>
                 </Flexbox>
             </Flexbox>
         </P.FeatureWrapper>

@@ -1,4 +1,6 @@
 import { PropsWithChildren } from "react";
+import { useThemeContext } from "../../../contexts/ThemeContext";
+import Text from "../Text/Text";
 import * as P from "./Button.parts";
 
 interface ButtonProps extends PropsWithChildren {
@@ -7,9 +9,14 @@ interface ButtonProps extends PropsWithChildren {
 }
 
 export default function Button({ children, isActive, onClick }: ButtonProps) {
+    const { theme } = useThemeContext();
+    const color = isActive ? theme.colors.leading.main[2] : theme.colors.leading.white[1];
+
     return (
         <P.StyledButton $isActive={isActive} onClick={onClick}>
-            {children}
+            <Text size="ms" uppercase italic variant={color}>
+                {children}
+            </Text>
         </P.StyledButton>
     );
 }

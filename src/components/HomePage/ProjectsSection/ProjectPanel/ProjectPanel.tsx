@@ -9,6 +9,8 @@ import * as P from "./ProjectPanel.parts";
 
 interface ProjectPanelProps {
     source: ProjectPanelDataSection;
+    onNextProject: () => void;
+    onPreviousProject: () => void;
 }
 
 export default forwardRef(function ProjectPanel({ source }: ProjectPanelProps, ref: React.Ref<HTMLDivElement>) {

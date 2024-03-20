@@ -3,6 +3,9 @@ export const colorDefinitions = {
         default: "rgb(255,232,20)",
         lighter: "rgb(255, 245, 155)",
         lightest: "rgb(255, 252,217)",
+        trans: {
+            default: "rgb(255, 245, 155, 0.8)",
+        },
     },
     gray: {
         default: "rgb(15, 15, 14)",
@@ -11,11 +14,16 @@ export const colorDefinitions = {
     },
     supplementary: {
         yellow: "rgb(241, 219, 19)",
+        dirty: "rgba(37, 37, 34)",
         black: "rgb(25, 25, 25)",
     },
     white: {
         main: "rgb(255, 255, 255)",
         darker: "rgb(246, 246, 246)",
+        darkest: "rgb(235, 235, 235)",
+        trans: {
+            main: "rgba(255, 255, 255, 0.3)",
+        },
     },
     transparent: "transparent",
 } as const;

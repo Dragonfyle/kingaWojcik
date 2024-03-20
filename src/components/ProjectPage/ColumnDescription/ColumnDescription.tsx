@@ -3,23 +3,28 @@ import Text from "../../generics/Text/Text";
 
 interface ColumnDescriptionProps {
     withH1: boolean;
-    h1: string | undefined;
-    description: string | undefined;
+    h1: string;
+    withDescription: boolean;
     order: -1 | 1;
+    description?: string | undefined;
 }
 
-export function ColumnDescription({ withH1, h1, description, order }: ColumnDescriptionProps) {
+export function ColumnDescription({ withH1, h1, withDescription, description, order }: ColumnDescriptionProps) {
     return (
-        <Flexbox $order={order} $marginT="50px" $direction="column">
+        <Flexbox $order={order} $direction="column" $marginT="20px" $marginB="20px">
             {withH1 && (
-                <Text tag="h1" size="2xl" bold>
-                    {h1}
-                </Text>
+                <Flexbox>
+                    <Text tag="h1" lineHeight={1.14} size="2xl" bold>
+                        {h1}
+                    </Text>
+                </Flexbox>
             )}
 
-            <Flexbox $marginB="60px" $width="100%">
-                <Text size="xl">{description}</Text>
-            </Flexbox>
+            {withDescription && (
+                <Flexbox>
+                    <Text>{description}</Text>
+                </Flexbox>
+            )}
         </Flexbox>
     );
 }

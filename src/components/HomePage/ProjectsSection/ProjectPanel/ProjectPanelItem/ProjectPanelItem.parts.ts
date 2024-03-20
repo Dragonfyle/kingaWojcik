@@ -17,5 +17,7 @@ export const DescriptionWrapper = styled.div`
 `;
 
 export const ItemTitle = styled.h4`
+    font-size: ${({ theme }) => theme.fontSize.xl};
+    font-weight: bold;
     margin-bottom: 10px;
 `;

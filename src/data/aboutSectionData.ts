@@ -1,5 +1,4 @@
-import photoUna from "/about_foto.png";
-import { wspolpraca } from "../components/HomePage/Carousel/CarouselSlide/CarouselSlide.utils";
+import photoUna from "/about_kinga_wojcik.jpg";
 
 interface AboutSectionData {
     imgUrl: string;

@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 89%;
     margin: 0 0 0 11%;
     padding: 100px 0;
@@ -11,6 +12,24 @@ export const StyledSection = styled.section`
     ${BREAKPOINTS.L} {
         width: 88%;
         margin: 0 0 0 6%;
+
+        svg {
+            position: absolute;
+            z-index: 5;
+
+            &:first-child {
+                margin: 0;
+                left: 0%;
+                top: 56%;
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(2) {
+                right: 0%;
+                top: 56%;
+                transform: translateX(50%);
+            }
+        }
     }
     ${BREAKPOINTS.S} {
         padding: 40px 0;

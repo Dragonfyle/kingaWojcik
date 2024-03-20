@@ -10,6 +10,7 @@ const Text = forwardRef<HTMLElement, TextProps>(function Text(
         underline = false,
         uppercase = false,
         bold = false,
+        italic = false,
         align = "left",
         tag,
         children,
@@ -27,6 +28,7 @@ const Text = forwardRef<HTMLElement, TextProps>(function Text(
             $underline={underline}
             $uppercase={uppercase}
             $bold={bold}
+            $italic={italic}
             $align={align}
             className={className}>
             {children}

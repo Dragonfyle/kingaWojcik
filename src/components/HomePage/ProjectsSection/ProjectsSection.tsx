@@ -8,6 +8,7 @@ import { useDeviceContext } from "../contexts/DeviceContext/DeviceContext";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import Text from "../../generics/Text/Text";
 import { ProjectPanelDataSection } from "../../../data/projectPanelData";
+import { createPortal } from "react-dom";
 
 interface ProjectSectionProps {
     id: string;
@@ -51,7 +52,21 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
                 )}
             </Flexbox>
             {isMobile && <ProjectPanelIntro text={source.intro} />}
-            <ProjectPanel ref={ProjectPanelRef} source={source} />
+            {isMobile &&
+                ProjectPanelRef.current &&
+                createPortal(
+                    <NavButtons
+                        onNextProject={() => handleNextProject(ProjectPanelRef.current)}
+                        onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}
+                    />,
+                    ProjectPanelRef.current
+                )}
+
+            <ProjectPanel
+                ref={ProjectPanelRef}
+                source={source}
+                onNextProject={() => handleNextProject(ProjectPanelRef.current)}
+                onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}></ProjectPanel>
         </P.StyledSection>
     );
 }

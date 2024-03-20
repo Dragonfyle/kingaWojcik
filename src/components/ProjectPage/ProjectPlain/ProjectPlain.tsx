@@ -3,6 +3,7 @@ import PlainGallery from "./PlainGallery/PlainGallery";
 import ProjectIntroduction from "../ProjectIntroduction/ProjectIntroduction";
 import * as P from "./ProjectPlain.parts";
 import { PlainGalleryProject } from "../../../types/plainGallery.types";
+import Flexbox from "../../generics/Flexbox/Flexbox";
 
 interface ProjecPlain {
     source: PlainGalleryProject;
@@ -11,10 +12,14 @@ interface ProjecPlain {
 export default function ProjectPlain({ source }: ProjecPlain) {
     useScrollToTop();
 
+    const withDescription = source.intro !== "";
+
     return (
-        <P.ContentWrapper>
-            <ProjectIntroduction source={source} />
-            <PlainGallery source={source} />
-        </P.ContentWrapper>
+        <Flexbox $justify="center">
+            <P.ContentWrapper>
+                <ProjectIntroduction source={source} withDescription={withDescription} />
+                <PlainGallery source={source} />
+            </P.ContentWrapper>
+        </Flexbox>
     );
 }

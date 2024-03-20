@@ -30,16 +30,3 @@ export const ListWrapper = styled.nav`
         margin: 0 5%;
     }
 `;
-
-export const Modal = styled.div`
-    position: absolute;
-    left: 50%;
-    top: 110%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 30px;
-    background-color: ${({ theme }) => theme.colors.leading.main[2]};
-    transform: translateX(-50%);
-`;

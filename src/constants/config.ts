@@ -26,6 +26,8 @@ const _config = Object.freeze({
         CONTACT: "contact",
         COLLABORATION: "collaboration",
     },
+    EMAIL: "wojcik.kinga.ewa@gmail.com",
+    COPIED_TIMEOUT: 5000,
 });
 
 const CONFIG = new Proxy(_config, {

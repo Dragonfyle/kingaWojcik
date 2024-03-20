@@ -3,6 +3,9 @@ export const colorDefinitions = {
         default: "rgb(255,232,20)",
         lighter: "rgb(255, 245, 155)",
         lightest: "rgb(255, 252,217)",
+        trans: {
+            default: "rgb(255, 245, 155, 0.8)",
+        },
     },
     gray: {
         default: "rgb(15, 15, 14)",

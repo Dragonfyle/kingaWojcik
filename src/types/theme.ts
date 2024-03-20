@@ -11,6 +11,9 @@ declare module "styled-components" {
                     1: ColorOption;
                     2: ColorOption;
                     3: ColorOption;
+                    trans: {
+                        1: ColorOption;
+                    };
                 };
                 secondary: {
                     1: ColorOption;

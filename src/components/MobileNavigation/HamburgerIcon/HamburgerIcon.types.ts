@@ -1,7 +1,14 @@
-interface StyledHamburgerIconProps {
-    $size: number;
-    $bgcolor: string;
-    $fgcolor: string;
+interface HamburgerIconProps {
+    size: string;
+    bgColor: string;
+    fgColor: string;
+    onClick: () => void;
 }
 
-export type { StyledHamburgerIconProps };
+interface StyledHamburgerIconProps {
+    $size: string;
+    $bgColor: string;
+    $fgColor: string;
+}
+
+export type { StyledHamburgerIconProps, HamburgerIconProps };

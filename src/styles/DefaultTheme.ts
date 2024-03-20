@@ -8,6 +8,9 @@ const defaultTheme = {
                 1: colors.yellow.default,
                 2: colors.yellow.lighter,
                 3: colors.yellow.lightest,
+                trans: {
+                    1: colors.yellow.trans.default,
+                },
             },
             secondary: {
                 1: colors.gray.default,

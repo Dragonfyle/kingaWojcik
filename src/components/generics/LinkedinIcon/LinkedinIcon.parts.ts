@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { StyledLinkedinIconProps } from "./LinkedinIcon.utils";
+import { BREAKPOINTS } from "../../../styles/breakpoints";
 
 export const StyledA = styled.a<StyledLinkedinIconProps>`
     display: flex;
@@ -8,4 +9,9 @@ export const StyledA = styled.a<StyledLinkedinIconProps>`
     cursor: pointer;
     user-select: none;
     margin: auto 0;
+
+    ${BREAKPOINTS.L} {
+        width: 35px;
+        height: 35px;
+    }
 `;

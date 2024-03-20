@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 60 41" style="enable-background:new 0 0 60 41;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#EDD919;}
-	.st1{fill:#FFFFFF;}
+	.background{fill:#EDD919;}
+	.foreground{fill:#FFFFFF;}
 </style>
-<rect class="st0" width="60" height="41"/>
-<path class="st1" d="M14.8,9.6c0-1.2,1-2.2,2.2-2.2H43c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2H17C15.8,11.8,14.8,10.8,14.8,9.6z
+<rect class="background" width="60" height="41"/>
+<path class="foreground" d="M14.8,9.6c0-1.2,1-2.2,2.2-2.2H43c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2H17C15.8,11.8,14.8,10.8,14.8,9.6z
 	 M14.8,20.5c0-1.2,1-2.2,2.2-2.2H43c1.2,0,2.2,1,2.2,2.2c0,1.2-1,2.2-2.2,2.2H17C15.8,22.7,14.8,21.7,14.8,20.5z M45.2,31.4
 	c0,1.2-1,2.2-2.2,2.2H17c-1.2,0-2.2-1-2.2-2.2c0-1.2,1-2.2,2.2-2.2H43C44.2,29.2,45.2,30.2,45.2,31.4z"/>
 </svg>

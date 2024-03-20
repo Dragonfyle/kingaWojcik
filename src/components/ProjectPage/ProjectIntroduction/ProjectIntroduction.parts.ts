@@ -5,7 +5,7 @@ export const SummaryWrapper = styled.header`
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    padding: 30px;
+    padding: 30px 30px;
     white-space: pre-line;
 
     ${BREAKPOINTS.XXL} {

@@ -9,5 +9,5 @@ export const KingaWrapper = styled.div`
 export const StyledNavLink = styled(NavLink)`
     display: flex;
     text-decoration: none;
-    margin: 0 35px 0 10px;
+    margin: 0 25px 0 10px;
 `;

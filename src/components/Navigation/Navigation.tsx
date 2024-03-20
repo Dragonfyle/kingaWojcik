@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import Text from "../generics/Text/Text";
 import * as P from "./Navagation.parts";
 import LinkedinIcon from "../generics/LinkedinIcon/LinkedinIcon";
+import Flexbox from "../generics/Flexbox/Flexbox";
 
 const EMAIL = "wojcik.kinga.ewa@gmail.com";
 const MODAL_TIMEOUT = 5000;
@@ -32,8 +33,10 @@ export default function Navigation() {
     return (
         <P.NavigationWrapper>
             <P.ListWrapper>
-                <LinkedinIcon size={25} />
-                <KingaBrand />
+                <Flexbox $width="auto">
+                    <LinkedinIcon size={25} />
+                    <KingaBrand />
+                </Flexbox>
                 <NavigationItem label="O mnie" isLink to={CONFIG.PATHS.ABOUT} />
                 <NavigationItem label="Projekty brandingowe" isLink to={CONFIG.PATHS.BRANDING_SECTION} />
                 <NavigationItem label="Projekty wydawnicze" isLink to={CONFIG.PATHS.EDITORIAL_SECTION} />

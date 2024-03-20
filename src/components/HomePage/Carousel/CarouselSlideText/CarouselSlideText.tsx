@@ -15,7 +15,9 @@ export default function CarouselSlideText({ isActive, title, description }: Caro
             <P.StyledH2 bold size="5xl" lineHeight={1.2} variant={theme.colors.leading.white[1]}>
                 {title}
             </P.StyledH2>
-            <P.StyledP variant={theme.colors.leading.white[1]}>{description}</P.StyledP>
+            <P.StyledP size="3xl" variant={theme.colors.leading.white[1]}>
+                {description}
+            </P.StyledP>
         </P.DescriptionWrapper>
     );
 }

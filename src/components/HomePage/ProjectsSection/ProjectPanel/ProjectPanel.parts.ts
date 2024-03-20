@@ -11,6 +11,11 @@ export const PanelWrapper = styled.div`
     ${BREAKPOINTS.L} {
         margin-top: 50px;
     }
+
+    .panelAnchor {
+        position: relative;
+    }
+
     & a {
         text-decoration: none;
         color: ${({ theme }) => theme.colors.leading.secondary[1]};

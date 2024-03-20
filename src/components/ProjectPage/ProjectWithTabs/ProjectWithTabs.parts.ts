@@ -5,7 +5,6 @@ export const ContentWrapper = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
     max-width: 1600px;
 
     ${BREAKPOINTS.XXL} {
@@ -17,11 +16,8 @@ export const ImageWrapper = styled.div`
     display: flex;
 
     img {
+        width: 100%;
         max-width: 1600px;
         padding: 0 30px;
-
-        ${BREAKPOINTS.XXL} {
-            max-width: 1200px;
-        }
     }
 `;

@@ -11,6 +11,7 @@ export const colorDefinitions = {
     },
     supplementary: {
         yellow: "rgb(241, 219, 19)",
+        dirty: "rgba(37, 37, 34)",
         black: "rgb(25, 25, 25)",
     },
     white: {

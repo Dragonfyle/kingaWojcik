@@ -16,7 +16,8 @@ const defaultTheme = {
             },
             supplementary: {
                 1: colors.supplementary.yellow,
-                2: colors.supplementary.black,
+                2: colors.supplementary.dirty,
+                3: colors.supplementary.black,
             },
             white: {
                 1: colors.white.main,
@@ -45,9 +46,9 @@ const defaultTheme = {
         m: "16px",
         l: "18px",
         xl: "21px",
-        "2xl": "30px",
-        "3xl": "40px",
-        "4xl": "50px",
+        "2xl": "24px",
+        "3xl": "30px",
+        "4xl": "40px",
         "5xl": "60px",
     },
 } as unknown as DefaultTheme;

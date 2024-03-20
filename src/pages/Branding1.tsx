@@ -5,8 +5,8 @@ import * as P from "./Branding1.parts";
 
 export default function Branding1() {
     return (
-        <P.PageWrapper>
+        <P.BackgroundContainer>
             <ProjectWithTabs source={tabbedGalleryData.project1} banner={banner} />;
-        </P.PageWrapper>
+        </P.BackgroundContainer>
     );
 }

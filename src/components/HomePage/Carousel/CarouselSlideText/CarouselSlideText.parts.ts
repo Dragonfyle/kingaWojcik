@@ -6,13 +6,24 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     position: absolute;
     left: 11%;
     top: 20%;
-    max-width: 30%;
     display: ${({ $isActive }) => ($isActive ? "block" : "none")};
+    max-width: 45%;
+
+    ${BREAKPOINTS.XL} {
+        max-width: 85%;
+        left: 3%;
+        top: 10%;
+    }
+
+    ${BREAKPOINTS.M} {
+        max-width: 85%;
+        left: 7%;
+        top: 10%;
+    }
 `;
 
 export const StyledP = styled(Text)`
     ${BREAKPOINTS.XXL} {
-        font-size: ${({ theme }) => theme.fontSize["2xl"]};
     }
     ${BREAKPOINTS.L} {
         font-size: ${({ theme }) => theme.fontSize["2xl"]};
@@ -23,5 +34,5 @@ export const StyledP = styled(Text)`
 `;
 
 export const StyledH2 = styled(Text)`
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 `;

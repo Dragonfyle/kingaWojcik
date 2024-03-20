@@ -55,7 +55,7 @@ const aboutGalleryData: AboutGalleryData = {
             },
 
             tabContent: {
-                h1: "Odbyte kursy i szkolenia",
+                h1: "Kursy i szkolenia",
                 listContent: [
                     {
                         header: {

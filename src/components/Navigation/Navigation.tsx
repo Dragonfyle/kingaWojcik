@@ -35,8 +35,8 @@ export default function Navigation() {
                 <LinkedinIcon size={25} />
                 <KingaBrand />
                 <NavigationItem label="O mnie" isLink to={CONFIG.PATHS.ABOUT} />
-                <NavigationItem label="Projekty brandingowe" to />
-                <NavigationItem label="Projekty wydawnicze" to />
+                <NavigationItem label="Projekty brandingowe" isLink to={CONFIG.PATHS.BRANDING_SECTION} />
+                <NavigationItem label="Projekty wydawnicze" isLink to={CONFIG.PATHS.EDITORIAL_SECTION} />
                 <NavigationItem label={EMAIL} onClick={handleClick}>
                     {isModalVisible && (
                         <P.Modal ref={dialogRef}>

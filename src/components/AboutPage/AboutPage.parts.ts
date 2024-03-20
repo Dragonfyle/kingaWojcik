@@ -7,9 +7,18 @@ export const ContentWrapper = styled.div`
     gap: 100px;
     max-width: 1600px;
     margin: 50px;
+    margin-bottom: 200px;
+
+    img {
+        width: 790px;
+    }
 
     ${BREAKPOINTS.XXL} {
         max-width: 1200px;
+
+        img {
+            width: 550px;
+        }
     }
 `;
 

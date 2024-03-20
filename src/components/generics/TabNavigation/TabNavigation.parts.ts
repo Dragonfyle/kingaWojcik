@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledMenu = styled.menu`
     display: flex;
-    gap: 10px;
     align-items: center;
     background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
     height: 50px;

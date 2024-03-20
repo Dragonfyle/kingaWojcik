@@ -11,7 +11,7 @@ export default function AboutAuthor({ source }: AboutSectionProps) {
     return (
         <P.StyledSection>
             <Flexbox>
-                <img src={source.imgUrl} width={790} />
+                <img src={source.imgUrl} />
             </Flexbox>
             <P.StyledHeader>
                 <Text bold uppercase size="xl">

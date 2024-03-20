@@ -21,6 +21,10 @@ const defaultTheme = {
             white: {
                 1: colors.white.main,
                 2: colors.white.darker,
+                3: colors.white.darkest,
+                trans: {
+                    1: colors.white.trans.main,
+                },
             },
         },
     },

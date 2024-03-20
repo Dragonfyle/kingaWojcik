@@ -10,6 +10,6 @@ export const Wrapper = styled.div`
 
     p,
     h1 {
-        color: ${({ theme }) => theme.colors.leading.secondary[3]};
+        color: ${({ theme }) => theme.colors.leading.white[3]};
     }
 `;

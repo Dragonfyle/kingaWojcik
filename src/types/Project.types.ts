@@ -52,8 +52,8 @@ interface FeatureImageContent {
 interface FeatureImageImageContent {
     leftImg: string;
     rightImg: string;
-    leftH1?: string;
-    rightH1?: string;
+    leftH1: string;
+    rightH1: string;
     leftDescription?: string;
     rightDescription?: string;
 }

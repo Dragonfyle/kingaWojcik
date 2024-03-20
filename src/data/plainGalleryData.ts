@@ -376,9 +376,9 @@ const plainGalleryData: PlainGalleryData = {
 
                 configuration: {
                     leftColumnWidth: 50,
+                    withLeftH1: true,
                     withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: true,
+                    withLeftDescription: false,
                     withRightDescription: true,
                     descriptionPosition: "bottom",
                 },
@@ -386,7 +386,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     leftImg: ukenTshirt,
                     rightImg: ukenKalendarz,
-                    leftH1: "",
+                    leftH1: "unauna",
                     rightH1: "",
                     leftDescription: "wizualizacja na T-shircie",
                     rightDescription: "kalendarz akademicki",

@@ -1,8 +1,8 @@
 import "styled-components";
-import { RGBColor, Gradient, Transparent } from "./common";
+import { RGBColor, Gradient, Transparent, RGBAColor } from "./common";
 
 declare module "styled-components" {
-    type ColorOption = RGBColor | Gradient | Transparent;
+    type ColorOption = RGBColor | RGBAColor | Gradient | Transparent;
 
     export interface DefaultTheme {
         colors: {
@@ -24,6 +24,10 @@ declare module "styled-components" {
                 white: {
                     1: ColorOption;
                     2: ColorOption;
+                    3: ColorOption;
+                    trans: {
+                        1: ColorOption;
+                    };
                 };
             };
         };

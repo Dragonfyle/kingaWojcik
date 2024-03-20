@@ -9,7 +9,7 @@ export default function Highlight({ source }: HighlightProps) {
     return (
         <P.HighlightWrapper>
             <P.TextWrapper>
-                <Text size="xl" lineHeight={1.4}>
+                <Text size="l" lineHeight={1.4}>
                     {source}
                 </Text>
             </P.TextWrapper>

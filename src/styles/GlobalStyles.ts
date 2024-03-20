@@ -16,7 +16,8 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-     font-style: normal;
+    font-style: normal;
+    font-size: 16px;
 }
 
 body {

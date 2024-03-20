@@ -16,6 +16,10 @@ export const colorDefinitions = {
     white: {
         main: "rgb(255, 255, 255)",
         darker: "rgb(246, 246, 246)",
+        darkest: "rgb(235, 235, 235)",
+        trans: {
+            main: "rgba(255, 255, 255, 0.3)",
+        },
     },
     transparent: "transparent",
 } as const;

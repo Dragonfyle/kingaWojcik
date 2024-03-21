@@ -1,4 +1,4 @@
-import photoUna from "/about_kinga_wojcik.jpg";
+import photoUna from "$img/author/about_kinga_wojcik.jpg";
 
 interface AboutSectionData {
     imgUrl: string;

@@ -1,4 +1,4 @@
-import aboutKinga from "/author_kinga_wojcik.jpg";
+import aboutKinga from "$img/author/author_kinga_wojcik.jpg";
 import { Link } from "react-router-dom";
 import { CONFIG } from "../../../constants/config";
 import * as P from "./AboutSection.parts";

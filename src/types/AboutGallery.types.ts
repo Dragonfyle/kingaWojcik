@@ -37,7 +37,7 @@ interface TabContent {
 
 type AboutGalleryContent = Array<{
     tabName: string;
-    component: string;
+    component: "List";
     configuration: object;
     tabContent: TabContent;
 }>;

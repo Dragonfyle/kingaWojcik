@@ -13,7 +13,7 @@ export const ProgressBarContainer = styled.div`
     }
 `;
 
-export const ProgressBarFiller = styled.div<{ s; $progress: number; $isActive: boolean }>`
+export const ProgressBarFiller = styled.div<{ $progress: number; $isActive: boolean }>`
     width: 100%;
     height: 100%;
     background-color: ${({ theme }) => theme.colors.leading.main[1]};

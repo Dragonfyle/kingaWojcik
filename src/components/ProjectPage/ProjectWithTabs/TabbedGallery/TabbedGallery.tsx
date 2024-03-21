@@ -9,7 +9,6 @@ import FeatureTextText from "../../ColumnsTextText/ColumnsTextText";
 import FeatureImageImage from "../../ColumnsImageImage/ColumnsImageImage";
 import FeatureImageText from "../../ColumnsImageText/ColumnsImageText";
 import FeatureTextImage from "../../ColumnsTextImage/ColumnsTextImage";
-
 import * as P from "./TabbedGallery.parts";
 
 interface TabbedGalleryProps {
@@ -19,7 +18,7 @@ interface TabbedGalleryProps {
 export default function TabbedGallery({ source }: TabbedGalleryProps) {
     const [activeTab, setActiveTab] = useState(0);
 
-    const featureMap = {
+    const featureMap: Record<string, React.ComponentType<any>> = {
         FeatureText,
         FeatureImage,
         FeatureTextText,

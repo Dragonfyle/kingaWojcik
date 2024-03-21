@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { TextProps } from "./Text.utils";
 import * as P from "./Text.parts";
 
-const Text = forwardRef<HTMLElement, TextProps>(function Text(
+const Text = forwardRef<HTMLParagraphElement, TextProps>(function Text(
     {
         size = "m",
         variant = "black",

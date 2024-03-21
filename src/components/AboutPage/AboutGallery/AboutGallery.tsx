@@ -1,4 +1,3 @@
-// import { PropsWithChildren } from "react";
 import { useState } from "react";
 import { AboutGalleryData } from "../../../types/AboutGallery.types";
 import TabNavigation from "../../generics/TabNavigation/TabNavigation";

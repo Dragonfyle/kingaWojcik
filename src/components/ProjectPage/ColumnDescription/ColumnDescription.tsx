@@ -3,7 +3,7 @@ import Text from "../../generics/Text/Text";
 
 interface ColumnDescriptionProps {
     withH1: boolean;
-    h1: string;
+    h1?: string;
     withDescription: boolean;
     order: -1 | 1;
     description?: string | undefined;

@@ -12,6 +12,7 @@ const Text = forwardRef<HTMLElement, TextProps>(function Text(
         bold = false,
         italic = false,
         align = "left",
+        whiteSpace = "normal",
         tag,
         children,
         className,
@@ -30,6 +31,7 @@ const Text = forwardRef<HTMLElement, TextProps>(function Text(
             $bold={bold}
             $italic={italic}
             $align={align}
+            $whiteSpace={whiteSpace}
             className={className}>
             {children}
         </P.StyledText>

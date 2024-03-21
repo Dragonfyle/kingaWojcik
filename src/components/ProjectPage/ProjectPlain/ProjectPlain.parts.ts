@@ -7,5 +7,4 @@ export const ContentWrapper = styled.main`
     align-items: center;
     margin: auto;
     max-width: 1600px;
-    padding: 0 30px;
 `;

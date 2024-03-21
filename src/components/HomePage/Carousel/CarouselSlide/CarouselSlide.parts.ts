@@ -10,6 +10,7 @@ export const SlideWrapper = styled.div`
     height: 67vh;
     max-height: min(100vh, 1300px);
     overflow: hidden;
+
     ${BREAKPOINTS.XXL} {
         max-height: 1000px;
     }
@@ -26,7 +27,6 @@ export const SlideWrapper = styled.div`
 
     ${BREAKPOINTS.S} {
         height: 80vh;
-        max-height: 640px;
     }
 `;
 

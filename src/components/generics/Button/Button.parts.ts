@@ -18,7 +18,10 @@ export const StyledButton = styled.button<{ $isActive: boolean }>`
 
     ${BREAKPOINTS.S} {
         padding: 5px 8px;
-        max-width: 120px;
+
+        p {
+            font-size: ${({ theme }) => theme.fontSize.xs};
+        }
     }
 
     &:hover {

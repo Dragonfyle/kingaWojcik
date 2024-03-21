@@ -10,15 +10,17 @@ export const ContentWrapper = styled.div`
     margin-bottom: 200px;
 
     img {
-        width: 790px;
+        width: 100%;
     }
 
     ${BREAKPOINTS.XXL} {
         max-width: 1200px;
+        gap: 50px;
+    }
 
-        img {
-            width: 550px;
-        }
+    ${BREAKPOINTS.L} {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
     }
 `;
 

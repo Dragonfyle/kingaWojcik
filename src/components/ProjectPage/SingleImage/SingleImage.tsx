@@ -17,7 +17,7 @@ export default function SingleImage({
                 <ColumnDescription
                     withH1={withH1}
                     h1={content.h1}
-                    description={content.description}
+                    withDescription={withDescription}
                     order={descriptionPositionMap[descriptionPosition]}
                 />
             )}

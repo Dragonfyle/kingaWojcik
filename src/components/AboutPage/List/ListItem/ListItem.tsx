@@ -11,7 +11,7 @@ export default function ListItem({ source }: ListItemProps) {
     return (
         <P.ListItemWrapper>
             <Flexbox $direction="column" $width="25%">
-                <Text size="s" align="right">
+                <Text size="s" align="right" whiteSpace="nowrap">
                     {source.header[1]}
                 </Text>
                 {source.header[2] && (

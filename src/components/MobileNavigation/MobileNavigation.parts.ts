@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const NavigationWrapper = styled.div`
     display: flex;
@@ -37,5 +38,9 @@ export const Menu = styled.menu`
     p {
         font-size: ${({ theme }) => theme.fontSize["3xl"]};
         font-weight: bold;
+
+        ${BREAKPOINTS.S} {
+            font-size: ${({ theme }) => theme.fontSize["2xl"]};
+        }
     }
 `;

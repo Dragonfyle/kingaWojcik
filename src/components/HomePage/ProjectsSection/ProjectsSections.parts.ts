@@ -11,7 +11,7 @@ export const StyledSection = styled.section`
     user-select: none;
     ${BREAKPOINTS.L} {
         width: 88%;
-        margin: 0 0 0 6%;
+        margin: 0 0 0 12%;
 
         svg {
             position: absolute;
@@ -32,8 +32,13 @@ export const StyledSection = styled.section`
         }
     }
     ${BREAKPOINTS.S} {
+        width: 90%;
         padding: 40px 0;
         margin: 0 0 0 5%;
+
+        svg {
+            width: 35px;
+        }
     }
 `;
 

@@ -15,6 +15,7 @@ type TextProps = WithTagVariant<{
     italic?: boolean;
     variant?: ColorOption;
     align?: TextAlign;
+    whiteSpace?: string;
     className?: string;
     children?: React.ReactNode;
     breakpointVariant?: BreakpointVariants;
@@ -30,6 +31,7 @@ interface StyledTextProps {
     $italic: boolean;
     $color: ColorOption | string;
     $align: TextAlign;
+    $whiteSpace: string;
 }
 
 function getTextSize({ theme, $size: size }: StyledTextProps): string {

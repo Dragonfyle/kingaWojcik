@@ -3,7 +3,7 @@ import KingaBrand from "../generics/KingaBrand/KingaBrand";
 import LinkedinIcon from "../generics/LinkedinIcon/LinkedinIcon";
 import HamburgerIcon from "./HamburgerIcon/HamburgerIcon";
 import { useThemeContext } from "../../contexts/ThemeContext";
-import { UIEvent, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import NavigationItem from "../Navigation/NavigationItem/NavigationItem";
 import { CONFIG } from "../../constants/config";
 import { CopiedConfirmation } from "../generics/CopiedConfirmation/CopiedConfirmation";
@@ -44,7 +44,7 @@ export default function MobileNavigation() {
             <P.NavigationWrapper>
                 <Flexbox $width="auto">
                     <LinkedinIcon size={25} />
-                    <KingaBrand />
+                    <KingaBrand onClick={handleMenuItemTouch} />
                 </Flexbox>
                 <HamburgerIcon
                     size="50px"

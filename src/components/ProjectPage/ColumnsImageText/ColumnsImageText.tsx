@@ -13,7 +13,7 @@ export default function ColumnsTextImage({ source, leftColumnWidth = 50, withH1 
             <Flexbox $wrap="nowrap" $direction="column">
                 <img src={content.img} />
             </Flexbox>
-            <Flexbox $padding="20px 40px" $direction="column">
+            <P.StyledFlexbox $padding="20px 40px" $direction="column">
                 {withH1 && (
                     <Text tag="h1" size="2xl" bold>
                         {content.h1}
@@ -23,7 +23,7 @@ export default function ColumnsTextImage({ source, leftColumnWidth = 50, withH1 
                 <Flexbox $marginB="60px">
                     <Text>{content.description}</Text>
                 </Flexbox>
-            </Flexbox>
+            </P.StyledFlexbox>
         </P.FeatureWrapper>
     );
 }

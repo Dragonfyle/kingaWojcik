@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../styles/breakpoints";
 
 export const FeatureWrapper = styled.section`
     display: flex;
@@ -12,5 +13,8 @@ export const FeatureWrapper = styled.section`
     & img {
         width: 100%;
         object-fit: contain;
+    }
+
+    ${BREAKPOINTS.S} {
     }
 `;

@@ -14,6 +14,11 @@ export const NavigationItemWrapper = styled.div<StyledNavigationItemProps>`
         padding: 10px 10px;
     }
 
+    ${BREAKPOINTS.L} {
+        padding: 10px 10px;
+        border: 5px solid ${({ theme }) => theme.colors.white[1]};
+    }
+
     a {
         text-decoration: none;
     }

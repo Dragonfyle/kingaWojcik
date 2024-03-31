@@ -24,6 +24,7 @@ export const colorDefinitions = {
         darkest: "rgb(235, 235, 235)",
         trans: {
             main: "rgba(255, 255, 255, 0.3)",
+            secondary: "rgba(255, 255, 255, 0.8)",
         },
     },
     transparent: "transparent",

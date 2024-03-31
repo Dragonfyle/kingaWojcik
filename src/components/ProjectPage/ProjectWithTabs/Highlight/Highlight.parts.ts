@@ -9,5 +9,5 @@ export const HighlightWrapper = styled.div`
 
 export const TextWrapper = styled.div`
     padding: 40px;
-    background-color: ${({ theme }) => theme.colors.leading.supplementary[4]};
+    background-color: ${({ theme }) => theme.colors.supplementary[4]};
 `;

@@ -8,7 +8,7 @@ export const NavigationWrapper = styled.div`
     top: 0;
     z-index: 100;
     width: 100%;
-    background-color: ${({ theme }) => theme.colors.leading.white[1]};
+    background-color: ${({ theme }) => theme.colors.white[1]};
     border-bottom: 1px solid ${({ theme }) => theme.colors.leading.secondary[1]};
 
     ${BREAKPOINTS.XXL} {

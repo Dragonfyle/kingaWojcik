@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { StyledHamburgerIconProps } from "./HamburgerIcon.types";
+import { StyledMenuCrossProps } from "./MenuCrossIcon.types";
 
-export const HamburgerWrapper = styled.svg<StyledHamburgerIconProps>`
+export const StyledSvg = styled.svg<StyledMenuCrossProps>`
     height: ${({ $size }) => $size};
+    cursor: pointer;
     user-select: none;
     aspect-ratio: 1.45/1;
 

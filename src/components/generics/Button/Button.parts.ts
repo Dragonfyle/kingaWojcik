@@ -26,7 +26,6 @@ export const StyledButton = styled.button<{ $isActive: boolean }>`
 
     &:hover {
         border-bottom: 5px solid
-            ${({ theme, $isActive }) =>
-                $isActive ? theme.colors.leading.main[2] : theme.colors.leading.white.trans[1]};
+            ${({ theme, $isActive }) => ($isActive ? theme.colors.leading.main[2] : theme.colors.white.trans[1])};
     }
 `;

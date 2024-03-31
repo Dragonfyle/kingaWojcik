@@ -20,19 +20,20 @@ declare module "styled-components" {
                     2: ColorOption;
                     3: ColorOption;
                 };
-                supplementary: {
+            };
+            supplementary: {
+                1: ColorOption;
+                2: ColorOption;
+                3: ColorOption;
+                4: ColorOption;
+            };
+            white: {
+                1: ColorOption;
+                2: ColorOption;
+                3: ColorOption;
+                trans: {
                     1: ColorOption;
                     2: ColorOption;
-                    3: ColorOption;
-                    4: ColorOption;
-                };
-                white: {
-                    1: ColorOption;
-                    2: ColorOption;
-                    3: ColorOption;
-                    trans: {
-                        1: ColorOption;
-                    };
                 };
             };
         };

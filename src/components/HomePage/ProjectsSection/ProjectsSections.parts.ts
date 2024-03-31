@@ -27,10 +27,11 @@ export const StyledSection = styled.section`
             &:nth-child(2) {
                 right: 0%;
                 top: 56%;
-                transform: translateX(50%);
+                transform: translateX(-20%);
             }
         }
     }
+
     ${BREAKPOINTS.S} {
         width: 90%;
         padding: 40px 0;

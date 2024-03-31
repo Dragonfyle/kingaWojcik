@@ -52,6 +52,7 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
                 )}
             </Flexbox>
             {isMobile && <ProjectPanelIntro text={source.intro} />}
+
             {isMobile &&
                 ProjectPanelRef.current &&
                 createPortal(

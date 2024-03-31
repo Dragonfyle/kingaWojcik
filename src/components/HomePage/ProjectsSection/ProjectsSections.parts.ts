@@ -32,10 +32,10 @@ export const StyledSection = styled.section`
         }
     }
 
-    ${BREAKPOINTS.S} {
-        width: 90%;
+    ${BREAKPOINTS.M} {
+        width: 100%;
         padding: 40px 0;
-        margin: 0 0 0 5%;
+        margin: 0 0 0 4%;
 
         svg {
             width: 35px;

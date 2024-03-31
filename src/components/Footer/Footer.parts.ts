@@ -4,15 +4,14 @@ import { BREAKPOINTS } from "../../styles/breakpoints";
 
 export const Wrapper = styled.div`
     display: flex;
-    height: 300px;
     background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
     border-top: 1px solid ${({ theme }) => theme.colors.white[1]};
     width: 100vw;
+    padding-bottom: 40px;
 
     ${BREAKPOINTS.M} {
         flex-direction: column;
         height: auto;
-        padding-bottom: 20px;
         padding-left: 20px;
     }
 `;

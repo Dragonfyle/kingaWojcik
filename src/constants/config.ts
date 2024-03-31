@@ -5,7 +5,7 @@ const _config = Object.freeze({
 
     CAROUSEL: { INTERVAL: 100, SLIDE_LENGTH_MS: 5000 },
 
-    PROJECT_PANEL: { THUMBNAIL_WIDTH: 550 },
+    PROJECT_PANEL: { THUMBNAIL_WIDTH: 550, THUMBNAIL_HEIGHT: 309 },
 
     PATHS: {
         HOME: "/",

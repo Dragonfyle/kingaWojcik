@@ -8,7 +8,6 @@ export const StyledUl = styled.ul`
 
     a {
         text-decoration: none;
-        width: 100px;
     }
 `;
 

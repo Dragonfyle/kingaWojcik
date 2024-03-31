@@ -5,5 +5,9 @@ interface ThumbnailProps {
 }
 
 export default function Thumbnail({ src }: ThumbnailProps) {
-    return <P.StyledImage src={src} />;
+    return (
+        <P.ThumbnailWrapper>
+            <P.StyledImage src={src} />
+        </P.ThumbnailWrapper>
+    );
 }

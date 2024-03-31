@@ -5,7 +5,6 @@ export const ItemWrapper = styled.div`
     flex-direction: column;
     height: 100%;
     max-width: 550px;
-    /* margin-right: 50px; */
     scroll-snap-align: start;
 `;
 

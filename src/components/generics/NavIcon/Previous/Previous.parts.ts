@@ -7,6 +7,7 @@ export const StyledSvg = styled.svg<StyledIconProps>`
     height: ${({ $size }) => $size};
     cursor: pointer;
     user-select: none;
+    aspect-ratio: 1/1;
 
     .background {
         fill: ${({ $bgColor }) => $bgColor};
@@ -14,5 +15,17 @@ export const StyledSvg = styled.svg<StyledIconProps>`
 
     .foreground {
         fill: ${({ $fgColor }) => $fgColor};
+    }
+
+    &:hover {
+        .background {
+            fill: ${({ theme }) => theme.colors.leading.main[2]};
+        }
+
+        .foreground {
+            fill: ${({ theme }) => theme.colors.leading.secondary[1]};
+        }
+
+        border: 4px solid ${({ theme }) => theme.colors.leading.secondary[1]};
     }
 `;

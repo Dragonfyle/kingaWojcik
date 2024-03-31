@@ -14,12 +14,17 @@ export const IntroWrapper = styled.div`
 export const StyledP = styled(Text)`
     width: 550px;
     margin-right: 50px;
+
+    ${BREAKPOINTS.L} {
+        margin-right: 0;
+    }
+
     ${BREAKPOINTS.M} {
         font-size: 1.5rem;
     }
     ${BREAKPOINTS.S} {
         max-width: 90vw;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 30px;
     }
     ${BREAKPOINTS.XS} {

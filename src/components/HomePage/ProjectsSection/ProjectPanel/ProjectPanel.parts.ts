@@ -10,7 +10,7 @@ export const PanelWrapper = styled.div`
     margin-top: 30px;
     ${BREAKPOINTS.L} {
         margin-top: 50px;
-        margin-right: 40px;
+        margin-right: 35px;
     }
 
     ${BREAKPOINTS.S} {

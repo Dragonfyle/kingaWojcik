@@ -6,6 +6,7 @@ import Flexbox from "../../../generics/Flexbox/Flexbox";
 import { ProjectPanelDataSection } from "../../../../data/projectPanelData";
 import { useDeviceContext } from "../../contexts/DeviceContext/DeviceContext";
 import * as P from "./ProjectPanel.parts";
+import NavButtons from "../NavButtons/NavButtons";
 
 interface ProjectPanelProps {
     source: ProjectPanelDataSection;
@@ -13,7 +14,10 @@ interface ProjectPanelProps {
     onPreviousProject: () => void;
 }
 
-export default forwardRef(function ProjectPanel({ source }: ProjectPanelProps, ref: React.Ref<HTMLDivElement>) {
+export default forwardRef(function ProjectPanel(
+    { source, onNextProject, onPreviousProject }: ProjectPanelProps,
+    ref: React.Ref<HTMLDivElement>
+) {
     const { isMobile } = useDeviceContext();
 
     function getContent(source: ProjectPanelDataSection) {
@@ -32,6 +36,7 @@ export default forwardRef(function ProjectPanel({ source }: ProjectPanelProps, r
                     {getContent(source)}
                 </Flexbox>
             </P.ProjectPanel>
+            {isMobile && <NavButtons onNextProject={onNextProject} onPreviousProject={onPreviousProject} />}
         </P.PanelWrapper>
     );
 });

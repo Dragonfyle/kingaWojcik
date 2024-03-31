@@ -1,14 +1,13 @@
 import { PropsWithChildren } from "react";
 import { ColorOption } from "styled-components";
 
-interface NavigationItemProps extends PropsWithChildren {
+interface NavigationEmailProps extends PropsWithChildren {
     onClick?: () => void;
-    to?: string;
     backgroundColor?: ColorOption;
 }
 
-interface StyledNavigationItemProps {
+interface StyledNavigationEmailProps {
     $backgroundColor?: ColorOption;
 }
 
-export type { NavigationItemProps, StyledNavigationItemProps };
+export type { NavigationEmailProps, StyledNavigationEmailProps };

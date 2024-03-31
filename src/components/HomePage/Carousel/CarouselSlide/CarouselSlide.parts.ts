@@ -17,12 +17,7 @@ export const SlideWrapper = styled.div`
 
     ${BREAKPOINTS.L} {
         height: 80vh;
-        max-height: 800px;
-    }
-
-    ${BREAKPOINTS.M} {
-        height: 80vh;
-        max-height: 480px;
+        max-height: 600px;
     }
 
     ${BREAKPOINTS.S} {

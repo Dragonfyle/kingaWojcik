@@ -5,8 +5,10 @@ import HamburgerIcon from "./HamburgerIcon/HamburgerIcon";
 import { useThemeContext } from "../../contexts/ThemeContext";
 import { useRef, useState } from "react";
 import NavigationItem from "../Navigation/NavigationItem/NavigationItem";
-import { CONFIG } from "../../constants/config";
 import { CopiedConfirmation } from "../generics/CopiedConfirmation/CopiedConfirmation";
+import { handleEmailClick } from "$components/Navigation/Navigation.utils";
+import navigationItems from "$data/navigationData";
+import NavigationEmail from "$components/Navigation/NavigationItem/NavigationEmail/NavigationEmail";
 import * as P from "./MobileNavigation.parts";
 
 export default function MobileNavigation() {
@@ -19,24 +21,23 @@ export default function MobileNavigation() {
         setIsExpanded((prev) => !prev);
     }
 
-    function copyToClipboard(value: string) {
-        navigator.clipboard.writeText(value);
-    }
-
-    function showCopiedPopup() {
-        if (isModalVisible) return;
-
-        setIsModalVisible(true);
-        setTimeout(() => setIsModalVisible(false), CONFIG.COPIED_TIMEOUT);
-    }
-
-    function handleEmailClick() {
-        copyToClipboard(CONFIG.EMAIL);
-        showCopiedPopup();
-    }
-
     function handleMenuItemTouch() {
         setIsExpanded(false);
+    }
+
+    function renderItems(source: typeof navigationItems) {
+        return (
+            <>
+                {source.map(({ label, link }) => (
+                    <NavigationItem key={label} to={link} onClick={handleMenuItemTouch}>
+                        {label}
+                    </NavigationItem>
+                ))}
+                <NavigationEmail onClick={() => handleEmailClick(isModalVisible, setIsModalVisible)}>
+                    {isModalVisible && <CopiedConfirmation ref={dialogRef}></CopiedConfirmation>}
+                </NavigationEmail>
+            </>
+        );
     }
 
     return (
@@ -53,26 +54,7 @@ export default function MobileNavigation() {
                     onClick={handleHamburgerClick}
                 />
             </P.NavigationWrapper>
-            {isExpanded && (
-                <P.Menu>
-                    <NavigationItem label="O mnie" isLink to={CONFIG.PATHS.ABOUT} onClick={handleMenuItemTouch} />
-                    <NavigationItem
-                        label="Projekty brandingowe"
-                        isLink
-                        to={CONFIG.PATHS.BRANDING_SECTION}
-                        onClick={handleMenuItemTouch}
-                    />
-                    <NavigationItem
-                        label="Projekty wydawnicze"
-                        isLink
-                        to={CONFIG.PATHS.EDITORIAL_SECTION}
-                        onClick={handleMenuItemTouch}
-                    />
-                    <NavigationItem label={CONFIG.EMAIL} onClick={handleEmailClick}>
-                        {isModalVisible && <CopiedConfirmation ref={dialogRef}></CopiedConfirmation>}
-                    </NavigationItem>
-                </P.Menu>
-            )}
+            {isExpanded && <P.Menu>{renderItems(navigationItems)} </P.Menu>}
         </>
     );
 }

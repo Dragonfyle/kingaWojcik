@@ -11,6 +11,10 @@ export const SummaryWrapper = styled.header`
     ${BREAKPOINTS.XXL} {
         max-width: 1200px;
     }
+
+    ${BREAKPOINTS.S} {
+        padding: 30px 15px;
+    }
 `;
 
 export const DescriptionWrapper = styled.div`

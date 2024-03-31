@@ -12,4 +12,9 @@ export const StyledMenu = styled.menu`
     ${BREAKPOINTS.XXL} {
         width: 100%;
     }
+
+    ${BREAKPOINTS.M} {
+        position: sticky;
+        top: 5%;
+    }
 `;

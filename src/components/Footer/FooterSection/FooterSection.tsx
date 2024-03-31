@@ -22,7 +22,7 @@ export default function FooterSection({ sectionName, listItems, links }: FooterS
         return values.map((value, idx) => (
             <Link key={value} to={links[idx]}>
                 <P.StyledLi>
-                    <Text size="s" variant={colors.leading.white[1]}>
+                    <Text size="s" variant={colors.white[1]}>
                         {value}
                     </Text>
                 </P.StyledLi>
@@ -32,10 +32,10 @@ export default function FooterSection({ sectionName, listItems, links }: FooterS
 
     return (
         <Flexbox $direction="column" $marginT="40px" $marginL="auto" $marginR="auto">
-            <Text size="xl" variant={colors.leading.white[1]} lineHeight={1.2}>
+            <Text size="xl" variant={colors.white[1]} lineHeight={1.2}>
                 {sectionName}
             </Text>
-            <Divider />
+            <Divider color={colors.leading.secondary[2]} />
             <P.StyledUl>{renderList(listItems)}</P.StyledUl>
         </Flexbox>
     );

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BREAKPOINTS } from "../../../styles/breakpoints";
 
-export const ContentWrapper = styled.main`
+export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,5 +19,9 @@ export const ImageWrapper = styled.div`
         width: 100%;
         max-width: 1600px;
         padding: 0 30px;
+
+        ${BREAKPOINTS.S} {
+            padding: 0 15px;
+        }
     }
 `;

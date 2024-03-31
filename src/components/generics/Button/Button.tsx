@@ -10,11 +10,11 @@ interface ButtonProps extends PropsWithChildren {
 
 export default function Button({ children, isActive, onClick }: ButtonProps) {
     const { theme } = useThemeContext();
-    const color = isActive ? theme.colors.leading.main[2] : theme.colors.leading.white[1];
+    const color = isActive ? theme.colors.leading.main[2] : theme.colors.white[1];
 
     return (
         <P.StyledButton $isActive={isActive} onClick={onClick}>
-            <Text size="ms" uppercase italic variant={color}>
+            <Text size="ms" uppercase italic variant={color} whiteSpace="nowrap">
                 {children}
             </Text>
         </P.StyledButton>

@@ -10,4 +10,5 @@ export const StyledText = styled.p<StyledTextProps>`
     font-style: ${({ $italic }) => ($italic ? "italic" : "none")};
     color: ${({ $color }) => $color};
     line-height: ${({ $lineHeight }) => $lineHeight};
+    white-space: ${({ $whiteSpace }) => $whiteSpace};
 `;

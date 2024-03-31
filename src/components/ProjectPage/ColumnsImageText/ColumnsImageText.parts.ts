@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BREAKPOINTS } from "../../../styles/breakpoints";
+import Flexbox from "../../generics/Flexbox/Flexbox";
 
 export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: string }>`
     display: grid;
@@ -20,5 +21,11 @@ export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: 
     & img {
         width: 100%;
         object-fit: contain;
+    }
+`;
+
+export const StyledFlexbox = styled(Flexbox)`
+    ${BREAKPOINTS.S} {
+        padding: 20px 10px;
     }
 `;

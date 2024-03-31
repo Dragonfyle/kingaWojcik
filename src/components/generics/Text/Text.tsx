@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { TextProps } from "./Text.utils";
 import * as P from "./Text.parts";
 
-const Text = forwardRef<HTMLElement, TextProps>(function Text(
+const Text = forwardRef<HTMLParagraphElement, TextProps>(function Text(
     {
         size = "m",
         variant = "black",
@@ -12,6 +12,7 @@ const Text = forwardRef<HTMLElement, TextProps>(function Text(
         bold = false,
         italic = false,
         align = "left",
+        whiteSpace = "normal",
         tag,
         children,
         className,
@@ -30,6 +31,7 @@ const Text = forwardRef<HTMLElement, TextProps>(function Text(
             $bold={bold}
             $italic={italic}
             $align={align}
+            $whiteSpace={whiteSpace}
             className={className}>
             {children}
         </P.StyledText>

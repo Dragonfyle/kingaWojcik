@@ -18,12 +18,14 @@ export const StyledButton = styled.button<{ $isActive: boolean }>`
 
     ${BREAKPOINTS.S} {
         padding: 5px 8px;
-        max-width: 120px;
+
+        p {
+            font-size: ${({ theme }) => theme.fontSize.xs};
+        }
     }
 
     &:hover {
         border-bottom: 5px solid
-            ${({ theme, $isActive }) =>
-                $isActive ? theme.colors.leading.main[2] : theme.colors.leading.white.trans[1]};
+            ${({ theme, $isActive }) => ($isActive ? theme.colors.leading.main[2] : theme.colors.white.trans[1])};
     }
 `;

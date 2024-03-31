@@ -14,7 +14,7 @@ interface PlainGalleryProps {
 }
 
 export default function PlainGallery({ source }: PlainGalleryProps) {
-    const featureMap = {
+    const featureMap: Record<string, React.ComponentType<any>> = {
         FeatureText,
         FeatureImage,
         FeatureTextText,
@@ -22,6 +22,7 @@ export default function PlainGallery({ source }: PlainGalleryProps) {
         FeatureImageImage,
         FeatureImageText,
     };
+
     const projectFeatures = source.plainGalleryContent;
 
     function renderFeatures(features: Feature[]) {

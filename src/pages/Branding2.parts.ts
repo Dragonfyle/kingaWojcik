@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ukenPattern from "/uken_pattern_element.svg";
+import ukenPattern from "/src/assets/icons/uken_pattern_element.svg";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -12,6 +12,6 @@ export const Wrapper = styled.div`
 
     p,
     h1 {
-        color: ${({ theme }) => theme.colors.leading.white[3]};
+        color: ${({ theme }) => theme.colors.white[3]};
     }
 `;

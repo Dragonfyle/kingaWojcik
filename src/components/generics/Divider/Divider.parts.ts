@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import { StyledDividerProps } from "./Divider.type";
 
-export const StyledDiv = styled.div`
-    height: 1.5px;
-    background-color: ${({ theme }) => theme.colors.leading.secondary[2]};
-    width: 90%;
-    margin: 10px 0;
+export const StyledDiv = styled.div<StyledDividerProps>`
+    height: ${({ $height }) => $height}px;
+    width: ${({ $width }) => $width};
+    background-color: ${({ $color }) => $color};
+    width: ${({ $width }) => $width};
+    margin-left: ${({ $mLeft }) => $mLeft}px;
+    margin-right: ${({ $mRight }) => $mRight}px;
+    margin-top: ${({ $mTop }) => $mTop}px;
+    margin-bottom: ${({ $mBot }) => $mBot}px;
 `;

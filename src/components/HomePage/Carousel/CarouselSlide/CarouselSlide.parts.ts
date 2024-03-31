@@ -10,23 +10,18 @@ export const SlideWrapper = styled.div`
     height: 67vh;
     max-height: min(100vh, 1300px);
     overflow: hidden;
+
     ${BREAKPOINTS.XXL} {
         max-height: 1000px;
     }
 
     ${BREAKPOINTS.L} {
         height: 80vh;
-        max-height: 800px;
-    }
-
-    ${BREAKPOINTS.M} {
-        height: 80vh;
-        max-height: 480px;
+        max-height: 600px;
     }
 
     ${BREAKPOINTS.S} {
         height: 80vh;
-        max-height: 640px;
     }
 `;
 

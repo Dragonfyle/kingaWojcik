@@ -10,9 +10,15 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     max-width: 45%;
 
     ${BREAKPOINTS.XL} {
+        max-width: 65%;
+        left: 6%;
+        top: 15%;
+    }
+
+    ${BREAKPOINTS.L} {
         max-width: 85%;
-        left: 3%;
-        top: 10%;
+        left: 7%;
+        top: 11%;
     }
 
     ${BREAKPOINTS.M} {
@@ -23,8 +29,6 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
 `;
 
 export const StyledP = styled(Text)`
-    ${BREAKPOINTS.XXL} {
-    }
     ${BREAKPOINTS.L} {
         font-size: ${({ theme }) => theme.fontSize["2xl"]};
     }
@@ -35,4 +39,8 @@ export const StyledP = styled(Text)`
 
 export const StyledH2 = styled(Text)`
     margin-bottom: 40px;
+
+    ${BREAKPOINTS.S} {
+        font-size: ${({ theme }) => theme.fontSize["4xl"]};
+    }
 `;

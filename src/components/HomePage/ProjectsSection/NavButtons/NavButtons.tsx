@@ -14,13 +14,13 @@ export default function NavButtons({ onNextProject, onPreviousProject }: NavButt
     return (
         <P.ButtonsWrapper>
             <Previous
-                $bgColor={theme.colors.leading.supplementary[3]}
+                $bgColor={theme.colors.supplementary[3]}
                 $fgColor={theme.colors.leading.main[2]}
                 $size="50px"
                 onClick={onPreviousProject}
             />
             <Next
-                $bgColor={theme.colors.leading.supplementary[3]}
+                $bgColor={theme.colors.supplementary[3]}
                 $fgColor={theme.colors.leading.main[2]}
                 $size="50px"
                 onClick={onNextProject}

@@ -2,7 +2,6 @@ import { TabContent } from "../../../types/AboutGallery.types";
 import Text from "../../generics/Text/Text";
 import ListItem from "./ListItem/ListItem";
 import * as P from "./List.parts";
-import Flexbox from "../../generics/Flexbox/Flexbox";
 
 export default function List({ source }: { source: TabContent }) {
     function renderList(source: TabContent) {
@@ -16,9 +15,7 @@ export default function List({ source }: { source: TabContent }) {
                     {source.h1}
                 </Text>
             </P.StyledFlexbox>
-            <Flexbox $direction="column" $rowGap="30px" $padding="0 5% 0 15%">
-                {renderList(source)}
-            </Flexbox>
+            <P.RightColumnWrapper>{renderList(source)}</P.RightColumnWrapper>
         </P.ListWrapper>
     );
 }

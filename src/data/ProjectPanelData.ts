@@ -1,9 +1,9 @@
 import { CONFIG } from "../constants/config";
-import czteryspacjeMiniaturka from "/ProjectPanel_4spacje_miniaturka.png";
-import ukenMiniaturka from "/ProjectPanel_uken_miniaturka.png";
-import goslinaMiniaturka from "/ProjectPanel_goslina_miniaturka.png";
-import kawaMiniaturka from "/ProjectPanel_kawa_miniaturka.png";
-import okladkiMiniaturka from "/ProjectPanel_okladki_miniaturka.png";
+import czteryspacjeMiniaturka from "$img/projects/4spacje/ProjectPanel_4spacje_miniaturka.png";
+import ukenMiniaturka from "$img/projects/uken/ProjectPanel_uken_miniaturka.png";
+import goslinaMiniaturka from "$img/projects/goslina/ProjectPanel_goslina_miniaturka.png";
+import kawaMiniaturka from "$img/projects/kawa/ProjectPanel_kawa_miniaturka.png";
+import okladkiMiniaturka from "$img/projects/okladki/ProjectPanel_okladki_miniaturka.png";
 
 type ProjectPanelData = typeof ProjectPanelData;
 
@@ -19,8 +19,7 @@ const ProjectPanelData = {
             {
                 thumbnail: czteryspacjeMiniaturka,
                 title: "Logo i strona internetowa dla 4spacje.pl",
-                description:
-                    `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.`,
+                description: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.`,
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[1],
             },
             {
@@ -46,7 +45,8 @@ const ProjectPanelData = {
             {
                 thumbnail: kawaMiniaturka,
                 title: "Krótka historia kawy",
-                description: "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania naszego ulubionego napoju. Projekt we współpracy z Małgorzatą Jaworską",
+                description:
+                    "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania naszego ulubionego napoju. Projekt we współpracy z Małgorzatą Jaworską",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
             },
             {

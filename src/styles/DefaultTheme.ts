@@ -17,18 +17,20 @@ const defaultTheme = {
                 2: colors.gray.lighter,
                 3: colors.gray.lightest,
             },
-            supplementary: {
-                1: colors.supplementary.yellow,
-                2: colors.supplementary.dirty,
-                3: colors.supplementary.black,
-            },
-            white: {
-                1: colors.white.main,
-                2: colors.white.darker,
-                3: colors.white.darkest,
-                trans: {
-                    1: colors.white.trans.main,
-                },
+        },
+        supplementary: {
+            1: colors.supplementary.yellow,
+            2: colors.supplementary.dirty,
+            3: colors.supplementary.black,
+            4: colors.supplementary.yellowDark,
+        },
+        white: {
+            1: colors.white.main,
+            2: colors.white.darker,
+            3: colors.white.darkest,
+            trans: {
+                1: colors.white.trans.main,
+                2: colors.white.trans.secondary,
             },
         },
     },

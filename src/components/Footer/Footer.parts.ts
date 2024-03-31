@@ -6,7 +6,8 @@ export const Wrapper = styled.div`
     display: flex;
     height: 300px;
     background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
-    border-top: 1px solid ${({ theme }) => theme.colors.leading.white[1]};
+    border-top: 1px solid ${({ theme }) => theme.colors.white[1]};
+    width: 100vw;
 
     ${BREAKPOINTS.M} {
         flex-direction: column;
@@ -20,6 +21,7 @@ export const StyledFlexbox = styled(Flexbox)`
     gap: 20px;
     flex-wrap: nowrap;
     margin-left: 11%;
+    width: 89%;
 
     ${BREAKPOINTS.L} {
         margin: 0 40px;

@@ -18,12 +18,11 @@ export const MapItemWrapper = styled.div<{ $isActive: boolean }>`
         cursor: not-allowed;
     }
     & div p {
-        color: ${({ $isActive, theme }) =>
-            $isActive ? theme.colors.leading.white[1] : theme.colors.leading.secondary[3]};
+        color: ${({ $isActive, theme }) => ($isActive ? theme.colors.white[1] : theme.colors.leading.secondary[3])};
     }
     &:hover {
         & div p {
-            color: ${({ theme }) => theme.colors.leading.white[1]};
+            color: ${({ theme }) => theme.colors.white[1]};
         }
     }
 `;

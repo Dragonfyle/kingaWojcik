@@ -1,13 +1,11 @@
-import wstepneSzkice from "/czteryspacje_wstepne_szkice.png";
-import logoPropozycja4spacje from "/logo-propozycja.png";
-import logo4spacje from "/logo.png";
-import articleDarkMode from "/articleDarkMode.png";
-import wyszukiwarkaDawniej from "/wyszukiwarka-dawniej.png";
-import wyszukiwarkaTeraz from "/wyszukiwarka-teraz.png";
-import rekrutacjaArtykuly from "/czteryspacje_rekrutacja-artykuly.jpg";
-import rekrutacjaZadania from "/czteryspacje_rekrutacja-zadania.jpg";
-import naglowki from "/czteryspacje_naglowki.gif";
-import stronaGlowna from "/czteryspacje_glowna.png";
+import wstepneSzkice from "$img/projects/4spacje/czteryspacje_wstepne_szkice.png";
+import logoPropozycja4spacje from "$img/projects/4spacje/logo-propozycja.png";
+import logo4spacje from "$img/projects/4spacje/logo.png";
+import wyszukiwarkaTeraz from "$img/projects/4spacje/wyszukiwarka-teraz.png";
+import rekrutacjaArtykuly from "$img/projects/4spacje/czteryspacje_rekrutacja-artykuly.jpg";
+import rekrutacjaZadania from "$img/projects/4spacje/czteryspacje_rekrutacja-zadania.jpg";
+import naglowki from "$img/projects/4spacje/czteryspacje_naglowki.gif";
+import stronaGlowna from "$img/projects/4spacje/czteryspacje_glowna.png";
 import { TabbedGalleryData } from "../types/tabbedGallery.types";
 
 const tabbedGalleryData: TabbedGalleryData = {
@@ -42,7 +40,8 @@ const tabbedGalleryData: TabbedGalleryData = {
             },
             {
                 tabName: "logo",
-                highlight: "Wykorzystując jak najprostsze środki wyrazu staralam się oddać najważniejsze wartości marki: profesjonalizm i edukacyjny charakter bloga.",
+                highlight:
+                    "Wykorzystując jak najprostsze środki wyrazu staralam się oddać najważniejsze wartości marki: profesjonalizm i edukacyjny charakter bloga.",
 
                 features: {
                     feature1: {
@@ -90,7 +89,6 @@ const tabbedGalleryData: TabbedGalleryData = {
                                 `,
                         },
                     },
-
                 },
             },
             {
@@ -141,7 +139,6 @@ const tabbedGalleryData: TabbedGalleryData = {
                             W zaprojektowanym przeze mnie rozwiązaniu najważniejsze tagi są widoczne od razu. Eliminuje to konieczność kliknięcia w celu otwarcia listy. Wyszukiwarka zajmuje całą szerokość strony, dzięki czemu jest lepiej widoczna. Okno z tagami można rozwinąć, by zobaczyć więcej filtrów. Mają one być aplikowane od razu po zaznaczeniu. Usunięte zostały wszelkie zbędne elementy i teksty, biorąc pod uwagę, że użytkownicy naszej strony to osoby obeznane z internetem.`,
                         },
                     },
-
                 },
             },
             {

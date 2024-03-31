@@ -10,6 +10,12 @@ export const PanelWrapper = styled.div`
     margin-top: 30px;
     ${BREAKPOINTS.L} {
         margin-top: 50px;
+        margin-right: 40px;
+    }
+
+    ${BREAKPOINTS.S} {
+        margin-top: 50px;
+        margin-right: 0;
     }
 
     .panelAnchor {

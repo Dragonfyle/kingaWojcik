@@ -1,11 +1,11 @@
-import Flexbox from "../generics/Flexbox/Flexbox";
-import KingaBrand from "../generics/KingaBrand/KingaBrand";
-import LinkedinIcon from "../generics/LinkedinIcon/LinkedinIcon";
+import Flexbox from "../../generics/Flexbox/Flexbox";
+import KingaBrand from "../../generics/KingaBrand/KingaBrand";
+import LinkedinIcon from "../../generics/LinkedinIcon/LinkedinIcon";
 import HamburgerIcon from "./HamburgerIcon/HamburgerIcon";
-import { useThemeContext } from "../../contexts/ThemeContext";
+import { useThemeContext } from "../../../contexts/ThemeContext";
 import { useRef, useState } from "react";
-import NavigationItem from "../Navigation/NavigationItem/NavigationItem";
-import { CopiedConfirmation } from "../generics/CopiedConfirmation/CopiedConfirmation";
+import NavigationItem from "../../Navigation/NavigationItem/NavigationItem";
+import { CopiedConfirmation } from "../../generics/CopiedConfirmation/CopiedConfirmation";
 import { handleEmailClick } from "$components/Navigation/Navigation.utils";
 import navigationItems from "$data/navigationData";
 import NavigationEmail from "$components/Navigation/NavigationItem/NavigationEmail/NavigationEmail";

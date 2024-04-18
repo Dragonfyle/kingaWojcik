@@ -18,6 +18,7 @@ export default function SingleImage({
                     withH1={withH1}
                     h1={content.h1}
                     withDescription={withDescription}
+                    description={content.description}
                     order={descriptionPositionMap[descriptionPosition]}
                 />
             )}

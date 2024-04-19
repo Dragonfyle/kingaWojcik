@@ -14,7 +14,7 @@ export default function Button({ children, isActive, onClick }: ButtonProps) {
 
     return (
         <P.StyledButton $isActive={isActive} onClick={onClick}>
-            <Text size="ms" uppercase italic variant={color} whiteSpace="nowrap">
+            <Text size="ms" uppercase italic color={color} whiteSpace="nowrap">
                 {children}
             </Text>
         </P.StyledButton>

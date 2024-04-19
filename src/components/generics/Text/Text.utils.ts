@@ -13,7 +13,7 @@ type TextProps = WithTagVariant<{
     lineHeight?: number;
     bold?: boolean;
     italic?: boolean;
-    variant?: ColorOption;
+    color?: ColorOption;
     align?: TextAlign;
     whiteSpace?: string;
     className?: string;

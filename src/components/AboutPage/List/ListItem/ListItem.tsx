@@ -26,7 +26,7 @@ export default function ListItem({ source }: ListItemProps) {
                 </Text>
                 {source.description[2] && <Text size="s">{source.description[2]}</Text>}
                 {source.description[3] && (
-                    <Text size="s" variant="rgb(170, 130, 0)">
+                    <Text size="s" color="rgb(170, 130, 0)">
                         {source.description[3]}
                     </Text>
                 )}

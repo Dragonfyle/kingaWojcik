@@ -5,7 +5,7 @@ import * as P from "./Text.parts";
 const Text = forwardRef<HTMLParagraphElement, TextProps>(function Text(
     {
         size = "m",
-        variant = "black",
+        color = "black",
         lineHeight = 1.6,
         underline = false,
         uppercase = false,
@@ -24,7 +24,7 @@ const Text = forwardRef<HTMLParagraphElement, TextProps>(function Text(
             as={tag || "p"}
             ref={forwardedRef}
             $size={size}
-            $color={variant}
+            $color={color}
             $lineHeight={lineHeight}
             $underline={underline}
             $uppercase={uppercase}

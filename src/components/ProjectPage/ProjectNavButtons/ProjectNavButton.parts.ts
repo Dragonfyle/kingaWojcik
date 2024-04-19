@@ -5,6 +5,7 @@ export const ButtonsWrapper = styled.div`
     top: 50%;
     left: 1%;
     right: 1%;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
 `;

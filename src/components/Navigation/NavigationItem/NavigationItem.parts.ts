@@ -6,18 +6,8 @@ export const NavigationItemWrapper = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 10px 20px;
-
-    &:hover {
-        background-color: ${({ theme }) => theme.colors.leading.main[2]};
-    }
-
-    ${BREAKPOINTS.XL} {
-        padding: 10px 10px;
-    }
 
     ${BREAKPOINTS.L} {
-        padding: 10px 10px;
         border: 5px solid ${({ theme }) => theme.colors.white[1]};
     }
 
@@ -25,5 +15,10 @@ export const NavigationItemWrapper = styled.div`
         text-decoration: none;
         width: 100%;
         height: 100%;
+        padding: 10px 15px;
+
+        &:hover {
+            background-color: ${({ theme }) => theme.colors.leading.main[2]};
+        }
     }
 `;

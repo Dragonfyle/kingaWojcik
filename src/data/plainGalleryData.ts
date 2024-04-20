@@ -250,8 +250,10 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: ukenIkonka2,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "Spoglądając na sygnet, dostrzeżemy nawias klamrowy, który w metaforycznym sensie spina różne dziedziny działalności badawczej uniwersytetu",
-                    rightDescription: "Po przeciwnej jego stronie widzimy rozłożoną księgę – tradycyjny symbol wiedzy i nauki.",
+                    leftDescription:
+                        "Spoglądając na sygnet, dostrzeżemy nawias klamrowy, który w metaforycznym sensie spina różne dziedziny działalności badawczej uniwersytetu",
+                    rightDescription:
+                        "Po przeciwnej jego stronie widzimy rozłożoną księgę – tradycyjny symbol wiedzy i nauki.",
                 },
             },
             {
@@ -271,8 +273,10 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: ukenIkonka4,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "Całość składa się na sylwetkę ptaka z rozłożonymi skrzydłami, który oznacza chęć osiągania coraz wyższych celów, a także umiejętność obiektywnego oglądu sytuacji „z góry”, jaki powinien cechować naukę.",
-                    rightDescription: "Pomimo minimalistycznej, nowoczesnej formy sygnetu, jego kształt przywodzi także na myśl motyw tarczy herbowej, co budzi skojarzenia z historią i tradycją. By wzmocnić to wrażenie, zastosowane zostały odcienie czerwieni, które nawiązują do polskich barw narodowych, a więc wartości historyczno – patriotycznych",
+                    leftDescription:
+                        "Całość składa się na sylwetkę ptaka z rozłożonymi skrzydłami, który oznacza chęć osiągania coraz wyższych celów, a także umiejętność obiektywnego oglądu sytuacji „z góry”, jaki powinien cechować naukę.",
+                    rightDescription:
+                        "Pomimo minimalistycznej, nowoczesnej formy sygnetu, jego kształt przywodzi także na myśl motyw tarczy herbowej, co budzi skojarzenia z historią i tradycją. By wzmocnić to wrażenie, zastosowane zostały odcienie czerwieni, które nawiązują do polskich barw narodowych, a więc wartości historyczno – patriotycznych",
                 },
             },
             {
@@ -292,8 +296,10 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: ukenIkonka36,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "W logotypie wykorzystany został bezszeryfowy font „Lato”, który dobrze koresponduje z nowoczesnymi aspiracjami uczelni. Zapewnia też odpowiednią czytelność, a tym samym funkcjonalność.",
-                    rightDescription: "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
+                    leftDescription:
+                        "W logotypie wykorzystany został bezszeryfowy font „Lato”, który dobrze koresponduje z nowoczesnymi aspiracjami uczelni. Zapewnia też odpowiednią czytelność, a tym samym funkcjonalność.",
+                    rightDescription:
+                        "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
                 },
             },
 
@@ -482,7 +488,6 @@ const plainGalleryData: PlainGalleryData = {
                     rightDescription: "rewers wizytówki",
                 },
             },
-
         ],
     },
     project4: {

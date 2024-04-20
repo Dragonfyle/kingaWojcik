@@ -7,7 +7,7 @@ export const SlideWrapper = styled.div`
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-end;
-    height: 67vh;
+    height: 75vh;
     max-height: min(100vh, 1300px);
     overflow: hidden;
 

@@ -40,19 +40,19 @@ const ProjectPanelData = {
     },
     editorial: {
         header: "Projekty Wydawnicze",
-        intro: "W tej sekcji znajdują się stworzone przeze mnie projekty okładek a także moje kawowe dziecko - ilustrowana rymowanka o naszych ulubionych ziarnach.",
+        intro: "W tej sekcji znajdują się stworzone przeze mnie projekty przygotowane do druku, które faktycznie posiadają swoje papierowe wersje",
         content: [
             {
                 thumbnail: kawaMiniaturka,
                 title: "Krótka historia kawy",
                 description:
-                    "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania naszego ulubionego napoju. Projekt we współpracy z Małgorzatą Jaworską",
+                    "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania kawy. Projekt we współpracy z Małgorzatą Jaworską",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
             },
             {
                 thumbnail: okladkiMiniaturka,
                 title: "Projekty okładek książkowych",
-                description: "",
+                description: "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
             },
         ],

@@ -1,19 +1,19 @@
-import kawaIntro from "$img/projects/kawa/kawa_1.png";
-import kawa2 from "$img/projects/kawa/kawa_2.png";
-import kawa3 from "$img/projects/kawa/kawa_3.png";
-import kawa4 from "$img/projects/kawa/kawa_4.png";
-import kawa5 from "$img/projects/kawa/kawa_5.png";
-import kawa6 from "$img/projects/kawa/kawa_6.png";
-import kawa7 from "$img/projects/kawa/kawa_7.png";
-import kawa8 from "$img/projects/kawa/kawa_8.png";
-import kawa9 from "$img/projects/kawa/kawa_9.png";
-import kawa10 from "$img/projects/kawa/kawa_10.png";
+import kawaIntro from "$img/projects/kawa/kawa_1.jpg";
+import kawa2 from "$img/projects/kawa/kawa_2.jpg";
+import kawa3 from "$img/projects/kawa/kawa_3.jpg";
+import kawa4 from "$img/projects/kawa/kawa_4.jpg";
+import kawa5 from "$img/projects/kawa/kawa_5.jpg";
+import kawa6 from "$img/projects/kawa/kawa_6.jpg";
+import kawa7 from "$img/projects/kawa/kawa_7.jpg";
+import kawa8 from "$img/projects/kawa/kawa_8.jpg";
+import kawa9 from "$img/projects/kawa/kawa_9.jpg";
+import kawa10 from "$img/projects/kawa/kawa_10.jpg";
 
 import ukenDokument from "$img/projects/uken/uken_dokument.jpg";
 import ukenKalendarz from "$img/projects/uken/uken_kalendarz.jpg";
 import ukenTshirt from "$img/projects/uken/uken_tshirt.jpg";
 import ukenWizytowki from "$img/projects/uken/uken_wizytowki.jpg";
-import ukenKolorystyka from "$img/projects/uken/uken_kolorystyka.png";
+import ukenKolorystyka from "$img/projects/uken/uken_kolorystyka.jpg";
 import ukenLogoPelneCzarne from "$img/projects/uken/uken_logo_pelne.jpg";
 import ukenLogoPelneBiale from "$img/projects/uken/uken_logo_pelne_biale.png";
 import ukenLogoSkroconeCzarne from "$img/projects/uken/uken_logo_skrocone.jpg";
@@ -25,9 +25,13 @@ import ukenIkonka36 from "$img/projects/uken/uken_ikonka_3_6.png";
 import ukenIkonka4 from "$img/projects/uken/uken_ikonka_4.png";
 import ukenIkonka5 from "$img/projects/uken/uken_ikonka_5.png";
 
-import goslinaLogo from "$img/projects/goslina/goslina_sygnet.png";
-import goslinaMockups from "$img/projects/goslina/goslina_mockups.png";
-import goslinaColors from "$img/projects/goslina/goslina_kolorystyka.png";
+import goslinaLogo from "$img/projects/goslina/goslina_sygnet.jpg";
+import goslinaTshirt from "$img/projects/goslina/goslina_tshirt.jpg";
+import goslinaWizytowka from "$img/projects/goslina/goslina_wizytowka.jpg";
+import goslinaWizytowki from "$img/projects/goslina/goslina_wizytowki.jpg";
+import goslinaKubek from "$img/projects/goslina/goslina_kubek.jpg";
+import goslinaFullColor from "$img/projects/goslina/goslina_logo-fullcolor.jpg";
+import goslinaGrays from "$img/projects/goslina/goslina_logo-grays.jpg";
 
 import okladkiEgiptFront from "$img/projects/okladki/okladki_egipt_front.jpg";
 import okladkiEgiptBack from "$img/projects/okladki/okladki_egipt_back.jpg";
@@ -196,7 +200,7 @@ const plainGalleryData: PlainGalleryData = {
         ],
     },
     project2: {
-        header: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie (dawniej Uniwersytet Pedagogiczny)",
+        header: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie (dawniej Uniwersytet Pedagogiczny) -projekt konkursowy",
         intro: "",
 
         plainGalleryContent: [
@@ -228,107 +232,71 @@ const plainGalleryData: PlainGalleryData = {
                     description: "",
                 },
             },
+
             {
-                component: "ImageText",
+                component: "ImageImage",
 
                 configuration: {
-                    leftColumnWidth: 10,
-                    descriptionPosition: "top",
-                    withH1: false,
-                    withDescription: true,
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: true,
+                    withRightDescription: true,
+                    descriptionPosition: "bottom",
                 },
 
                 content: {
-                    img: ukenIkonka1,
-                    h1: "",
-                    description:
-                        "Spoglądając na sygnet, dostrzeżemy nawias klamrowy, który w metaforycznym sensie spina różne dziedziny działalności badawczej uniwersytetu",
+                    leftImg: ukenIkonka1,
+                    rightImg: ukenIkonka2,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "Spoglądając na sygnet, dostrzeżemy nawias klamrowy, który w metaforycznym sensie spina różne dziedziny działalności badawczej uniwersytetu",
+                    rightDescription: "Po przeciwnej jego stronie widzimy rozłożoną księgę – tradycyjny symbol wiedzy i nauki.",
                 },
             },
             {
-                component: "ImageText",
+                component: "ImageImage",
 
                 configuration: {
-                    leftColumnWidth: 10,
-                    descriptionPosition: "top",
-                    withH1: false,
-                    withDescription: true,
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: true,
+                    withRightDescription: true,
+                    descriptionPosition: "bottom",
                 },
 
                 content: {
-                    img: ukenIkonka2,
-                    h1: "",
-                    description:
-                        "Po przeciwnej jego stronie widzimy rozłożoną księgę – tradycyjny symbol wiedzy i nauki.",
+                    leftImg: ukenIkonka36,
+                    rightImg: ukenIkonka4,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "Całość składa się na sylwetkę ptaka z rozłożonymi skrzydłami, który oznacza chęć osiągania coraz wyższych celów, a także umiejętność obiektywnego oglądu sytuacji „z góry”, jaki powinien cechować naukę.",
+                    rightDescription: "Pomimo minimalistycznej, nowoczesnej formy sygnetu, jego kształt przywodzi także na myśl motyw tarczy herbowej, co budzi skojarzenia z historią i tradycją. By wzmocnić to wrażenie, zastosowane zostały odcienie czerwieni, które nawiązują do polskich barw narodowych, a więc wartości historyczno – patriotycznych",
                 },
             },
             {
-                component: "ImageText",
+                component: "ImageImage",
 
                 configuration: {
-                    leftColumnWidth: 10,
-                    descriptionPosition: "top",
-                    withH1: false,
-                    withDescription: true,
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: true,
+                    withRightDescription: true,
+                    descriptionPosition: "bottom",
                 },
 
                 content: {
-                    img: ukenIkonka36,
-                    h1: "",
-                    description:
-                        "Całość składa się na sylwetkę ptaka z rozłożonymi skrzydłami, który oznacza chęć osiągania coraz wyższych celów, a także umiejętność obiektywnego oglądu sytuacji „z góry”, jaki powinien cechować naukę.",
+                    leftImg: ukenIkonka5,
+                    rightImg: ukenIkonka36,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "W logotypie wykorzystany został bezszeryfowy font „Lato”, który dobrze koresponduje z nowoczesnymi aspiracjami uczelni. Zapewnia też odpowiednią czytelność, a tym samym funkcjonalność.",
+                    rightDescription: "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
                 },
             },
-            {
-                component: "ImageText",
 
-                configuration: {
-                    leftColumnWidth: 10,
-                    descriptionPosition: "top",
-                    withH1: false,
-                    withDescription: true,
-                },
-
-                content: {
-                    img: ukenIkonka4,
-                    h1: "",
-                    description:
-                        "Pomimo minimalistycznej, nowoczesnej formy sygnetu, jego kształt przywodzi także na myśl motyw tarczy herbowej, co budzi skojarzenia z historią i tradycją. By wzmocnić to wrażenie, zastosowane zostały odcienie czerwieni, które nawiązują do polskich barw narodowych, a więc wartości historyczno – patriotycznych",
-                },
-            },
-            {
-                component: "ImageText",
-
-                configuration: {
-                    leftColumnWidth: 10,
-                    descriptionPosition: "top",
-                    withH1: false,
-                    withDescription: true,
-                },
-
-                content: {
-                    img: ukenIkonka5,
-                    h1: "",
-                    description:
-                        "W logotypie wykorzystany został bezszeryfowy font „Lato”, który dobrze koresponduje z nowoczesnymi aspiracjami uczelni. Zapewnia też odpowiednią czytelność, a tym samym funkcjonalność.",
-                },
-            },
-            {
-                component: "ImageText",
-
-                configuration: {
-                    leftColumnWidth: 10,
-                    descriptionPosition: "top",
-                    withH1: false,
-                    withDescription: true,
-                },
-
-                content: {
-                    img: ukenIkonka36,
-                    h1: "",
-                    description: "Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi rozpoznawalność.",
-                },
-            },
             {
                 component: "ImageImage",
 
@@ -376,9 +344,9 @@ const plainGalleryData: PlainGalleryData = {
 
                 configuration: {
                     leftColumnWidth: 50,
-                    withLeftH1: true,
+                    withLeftH1: false,
                     withRightH1: false,
-                    withLeftDescription: false,
+                    withLeftDescription: true,
                     withRightDescription: true,
                     descriptionPosition: "bottom",
                 },
@@ -386,7 +354,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     leftImg: ukenTshirt,
                     rightImg: ukenKalendarz,
-                    leftH1: "unauna",
+                    leftH1: "",
                     rightH1: "",
                     leftDescription: "wizualizacja na T-shircie",
                     rightDescription: "kalendarz akademicki",
@@ -416,7 +384,7 @@ const plainGalleryData: PlainGalleryData = {
         ],
     },
     project3: {
-        header: "",
+        header: "Logo Miasta i Gminy Murowana Goślina -projekt konkursowy ",
         intro: "",
 
         plainGalleryContent: [
@@ -435,33 +403,86 @@ const plainGalleryData: PlainGalleryData = {
                 },
             },
             {
-                component: "Image",
+                component: "Text",
 
                 configuration: {
-                    withH1: false,
-                    withDescription: false,
+                    withH1: true,
                 },
 
                 content: {
-                    img: goslinaColors,
-                    h1: "",
-                    description: "",
+                    h1: "Symbolika sygnetu",
+                    description: `Logo ma na celu ukazanie walorów turystyczno-przyrodniczych gminy oraz zakomunikowanie jej dynamicznego, sportowego charakteru.
+                    Znajdująca się pośrodku postać pokazuje możliwość aktywnego spędzania czasu i płynącą z tego radość. Całość przypomina mapę/plan terenu, na którym różnymi kolorami zaznaczono poszczególne obszary: (lasy, parki, rzeką, zabudowę miejską)
+                    Żywe, kontrastowe kolory podkreślają nowoczesność. Skośne linie i kąty ostre nadają dynamiki i ukazują dążenie gminy do rozwoju i zmian.
+                    
+                    Kolorowe elementy logo można w ciekawy sposób wykorzystać jako charakterystyczną, wyróżniającą część identyfikacji wizualnej gminy.
+                    `,
                 },
             },
             {
-                component: "Image",
+                component: "ImageImage",
 
                 configuration: {
-                    withH1: false,
-                    withDescription: false,
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
                 },
 
                 content: {
-                    img: goslinaMockups,
-                    h1: "",
-                    description: "",
+                    leftImg: goslinaFullColor,
+                    rightImg: goslinaGrays,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
                 },
             },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withLeftH1: false,
+                    withRightH1: false,
+                    withLeftDescription: true,
+                    withRightDescription: true,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: goslinaTshirt,
+                    rightImg: goslinaKubek,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "wizualizacja na T-shircie",
+                    rightDescription: "wizualizacja na kubku",
+                },
+            },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: true,
+                    withRightDescription: true,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: goslinaWizytowka,
+                    rightImg: goslinaWizytowki,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "awers wizytówki",
+                    rightDescription: "rewers wizytówki",
+                },
+            },
+
         ],
     },
     project4: {

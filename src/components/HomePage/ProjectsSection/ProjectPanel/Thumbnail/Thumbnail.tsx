@@ -1,9 +1,13 @@
 import * as P from "./Thumbnail.parts";
 
-interface ThumbnailProps {
+interface ProjectThumbnailProps {
     src: string;
 }
 
-export default function Thumbnail({ src }: ThumbnailProps) {
-    return <P.StyledImage src={src} />;
+export default function ProjectThumbnail({ src }: ProjectThumbnailProps) {
+    return (
+        <P.ProjectThumbnailWrapper>
+            <P.StyledImage src={src} />
+        </P.ProjectThumbnailWrapper>
+    );
 }

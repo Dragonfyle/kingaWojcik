@@ -4,6 +4,7 @@ import ProjectIntroduction from "../ProjectIntroduction/ProjectIntroduction";
 import * as P from "./ProjectPlain.parts";
 import { PlainGalleryProject } from "../../../types/plainGallery.types";
 import Flexbox from "../../generics/Flexbox/Flexbox";
+import ProjectNavigation from "../ProjectNavigation/ProjectNavigation";
 
 interface ProjecPlain {
     source: PlainGalleryProject;
@@ -19,6 +20,7 @@ export default function ProjectPlain({ source }: ProjecPlain) {
             <P.ContentWrapper>
                 <ProjectIntroduction source={source} withDescription={withDescription} />
                 <PlainGallery source={source} />
+                <ProjectNavigation />
             </P.ContentWrapper>
         </Flexbox>
     );

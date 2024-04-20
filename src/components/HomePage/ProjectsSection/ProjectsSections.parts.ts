@@ -10,40 +10,64 @@ export const StyledSection = styled.section`
     padding: 100px 0;
     user-select: none;
     ${BREAKPOINTS.L} {
-        width: 88%;
-        margin: 0 0 0 12%;
+        width: 95%;
+        margin: 0 0 0 5%;
 
         svg {
             position: absolute;
             z-index: 5;
 
             &:first-child {
-                margin: 0;
-                left: 0%;
-                top: 56%;
+                left: -2%;
+                top: 52%;
                 transform: translateX(-50%);
             }
 
             &:nth-child(2) {
                 right: 0%;
-                top: 56%;
+                top: 52%;
                 transform: translateX(-20%);
             }
         }
     }
 
-    ${BREAKPOINTS.S} {
-        width: 90%;
+    ${BREAKPOINTS.M} {
         padding: 40px 0;
-        margin: 0 0 0 5%;
 
         svg {
-            width: 35px;
+            &:first-child {
+                top: 54%;
+            }
+
+            &:nth-child(2) {
+                top: 54%;
+            }
+        }
+    }
+
+    ${BREAKPOINTS.S} {
+        svg {
+            width: 40px;
+            height: 40px;
+
+            &:first-child {
+                top: 50%;
+                left: -3%;
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+            }
         }
     }
 `;
 
 export const StyledHeader = styled.header`
     display: flex;
-    width: 68%;
+
+    p {
+        ${BREAKPOINTS.M} {
+            font-size: ${({ theme }) => theme.fontSize["3xl"]};
+        }
+    }
 `;

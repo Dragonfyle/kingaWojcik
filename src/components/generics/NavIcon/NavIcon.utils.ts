@@ -2,6 +2,7 @@ interface NavIconProps {
     $bgColor?: string;
     $fgColor?: string;
     $size?: string;
+    tooltipValue?: string;
     onClick: () => void;
 }
 

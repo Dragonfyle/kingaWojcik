@@ -1,14 +1,15 @@
-import * as P from "./ProjectsSections.parts";
-import { CONFIG } from "../../../constants/config";
 import NavButtons from "../../HomePage/ProjectsSection/NavButtons/NavButtons";
-import ProjectPanel from "./ProjectPanel/ProjectPanel";
 import { useRef } from "react";
 import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/ProjectPanelIntro";
 import { useDeviceContext } from "../contexts/DeviceContext/DeviceContext";
 import Flexbox from "../../generics/Flexbox/Flexbox";
 import Text from "../../generics/Text/Text";
 import { ProjectPanelDataSection } from "../../../data/projectPanelData";
-import { createPortal } from "react-dom";
+import Slider from "$components/generics/Slider/Slider";
+import { Link } from "react-router-dom";
+import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/ProjectPanelItem";
+import * as P from "./ProjectsSections.parts";
+import { SliderImperativeHandle } from "$components/generics/Slider/Slider.types";
 
 interface ProjectSectionProps {
     id: string;
@@ -16,20 +17,15 @@ interface ProjectSectionProps {
 }
 
 export default function ProjectSection({ id, source }: ProjectSectionProps) {
-    const ProjectPanelRef = useRef<HTMLDivElement>(null);
+    const sliderRef = useRef<SliderImperativeHandle>(null);
     const { isMobile } = useDeviceContext();
 
-    function handleNextProject(element: HTMLDivElement | null) {
-        if (!element) {
-            return;
-        }
-        element.scrollBy({ left: CONFIG.PROJECT_PANEL.THUMBNAIL_WIDTH, behavior: "smooth" });
-    }
-    function handlePreviousProject(element: HTMLDivElement | null) {
-        if (!element) {
-            return;
-        }
-        element.scrollBy({ left: -CONFIG.PROJECT_PANEL.THUMBNAIL_WIDTH, behavior: "smooth" });
+    function getContent(source: ProjectPanelDataSection) {
+        return source.content.map(({ thumbnail, title, description, projectUrl }) => (
+            <Link key={description} to={projectUrl}>
+                <ProjectPanelItem image={thumbnail} title={title} description={description} />
+            </Link>
+        ));
     }
 
     return (
@@ -45,29 +41,18 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
                 {!isMobile && (
                     <Flexbox $wrap="nowrap" $justify="center">
                         <NavButtons
-                            onNextProject={() => handleNextProject(ProjectPanelRef.current)}
-                            onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}
+                            onNextProject={() => sliderRef.current?.scrollToNext()}
+                            onPreviousProject={() => sliderRef.current?.scrollToPrevious()}
                         />
                     </Flexbox>
                 )}
             </Flexbox>
             {isMobile && <ProjectPanelIntro text={source.intro} />}
 
-            {isMobile &&
-                ProjectPanelRef.current &&
-                createPortal(
-                    <NavButtons
-                        onNextProject={() => handleNextProject(ProjectPanelRef.current)}
-                        onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}
-                    />,
-                    ProjectPanelRef.current
-                )}
-
-            <ProjectPanel
-                ref={ProjectPanelRef}
-                source={source}
-                onNextProject={() => handleNextProject(ProjectPanelRef.current)}
-                onPreviousProject={() => handlePreviousProject(ProjectPanelRef.current)}></ProjectPanel>
+            <Slider ref={sliderRef}>
+                {!isMobile && <ProjectPanelIntro text={source.intro} />}
+                {getContent(source)}
+            </Slider>
         </P.StyledSection>
     );
 }

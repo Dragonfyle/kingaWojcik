@@ -1,8 +1,8 @@
-import * as P from "./CarouselImage.parts";
 import { ImageSet } from "../CarouselSlide/CarouselSlide.utils";
 import { WIDTH_THRESHOLDS } from "../CarouselSlide/CarouselSlide.utils";
 import { useCarouselContext } from "../../contexts/CarouselContext/CarouselContext";
 import { activeImageMap, wspolpraca } from "../CarouselSlide/CarouselSlide.utils";
+import * as P from "./CarouselImage.parts";
 
 interface CarouselImage extends React.PropsWithChildren {
     isActive: boolean;

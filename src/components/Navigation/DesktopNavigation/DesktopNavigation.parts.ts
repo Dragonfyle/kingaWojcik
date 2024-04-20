@@ -23,7 +23,6 @@ export const ListWrapper = styled.nav`
     height: 100%;
     width: 78%;
     margin: 0 11%;
-    /* padding: 10px 0; */
 
     ${BREAKPOINTS.XL} {
         width: 90%;

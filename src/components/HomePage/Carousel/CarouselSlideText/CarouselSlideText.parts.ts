@@ -8,6 +8,9 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     top: 20%;
     display: ${({ $isActive }) => ($isActive ? "block" : "none")};
     max-width: 45%;
+    background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
+    opacity: 0.9;
+    padding: 20px 30px;
 
     ${BREAKPOINTS.XL} {
         max-width: 65%;

@@ -1,4 +1,3 @@
-import { MouseEvent, useRef } from "react";
 import { ImageSet } from "../CarouselSlide/CarouselSlide.utils";
 import { WIDTH_THRESHOLDS } from "../CarouselSlide/CarouselSlide.utils";
 import { useCarouselContext } from "../../contexts/CarouselContext/CarouselContext";
@@ -12,8 +11,6 @@ interface CarouselImage extends React.PropsWithChildren {
 
 export default function CarouselImage({ isActive, imageSet }: CarouselImage) {
     const { activeImage } = useCarouselContext();
-    const { startCarousel, stopCarousel } = useCarouselContext();
-    const imgRef = useRef(null);
     const activeImageSet = activeImageMap.get(activeImage) || wspolpraca;
     const largestImageIndex = activeImageSet.length - 1;
 
@@ -23,21 +20,10 @@ export default function CarouselImage({ isActive, imageSet }: CarouselImage) {
             .map((image, idx) => <source key={activeImage + idx} srcSet={image} media={WIDTH_THRESHOLDS[idx]} />);
     }
 
-    function handleMouseOver(e: MouseEvent<HTMLImageElement>) {
-        if (e.target === imgRef.current) {
-            stopCarousel();
-        }
-    }
-
     return (
         <P.StyledPicture $isActive={isActive}>
             {generateSources(imageSet)}
-            <img
-                src={imageSet[largestImageIndex]}
-                ref={imgRef}
-                onMouseOver={handleMouseOver}
-                onMouseLeave={startCarousel}
-            />
+            <img src={imageSet[largestImageIndex]} />
         </P.StyledPicture>
     );
 }

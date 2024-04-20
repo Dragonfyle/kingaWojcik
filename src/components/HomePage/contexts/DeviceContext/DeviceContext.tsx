@@ -3,17 +3,20 @@ import { CONFIG } from "../../../../constants/config";
 
 const DeviceContext = createContext({
     isMobile: false,
+    isPhone: false,
 });
 
 const DeviceContextProvider = ({ children }: React.PropsWithChildren) => {
-    const [isMobile, setIsMobile] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const isMobile = windowWidth < CONFIG.APP.MAX_MOBILE_WIDTH;
+    const isPhone = windowWidth < CONFIG.APP.MAX_PHONE_WIDTH;
 
     function getWindowWidth([
         {
             contentRect: { width },
         },
     ]: Array<ResizeObserverEntry>) {
-        setIsMobile(width < CONFIG.APP.MAX_MOBILE_WIDTH);
+        setWindowWidth(width);
     }
 
     useEffect(() => {
@@ -23,9 +26,9 @@ const DeviceContextProvider = ({ children }: React.PropsWithChildren) => {
     });
 
     useEffect(() => {
-        setIsMobile(window.innerWidth <= CONFIG.APP.MAX_MOBILE_WIDTH);
+        setWindowWidth(window.innerWidth);
     }, []);
-    return <DeviceContext.Provider value={{ isMobile }}>{children}</DeviceContext.Provider>;
+    return <DeviceContext.Provider value={{ isMobile, isPhone }}>{children}</DeviceContext.Provider>;
 };
 
 const useDeviceContext = () => useContext(DeviceContext);

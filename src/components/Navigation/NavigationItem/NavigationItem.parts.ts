@@ -1,14 +1,16 @@
 import styled from "styled-components";
-import { StyledNavigationItemProps } from "./NavigationItem.types";
 import { BREAKPOINTS } from "../../../styles/breakpoints";
 
-export const NavigationItemWrapper = styled.div<StyledNavigationItemProps>`
+export const NavigationItemWrapper = styled.div`
     position: relative;
     display: flex;
     align-items: center;
     cursor: pointer;
     padding: 10px 20px;
-    background-color: ${({ $backgroundColor }) => $backgroundColor};
+
+    &:hover {
+        background-color: ${({ theme }) => theme.colors.leading.main[2]};
+    }
 
     ${BREAKPOINTS.XL} {
         padding: 10px 10px;
@@ -21,5 +23,7 @@ export const NavigationItemWrapper = styled.div<StyledNavigationItemProps>`
 
     a {
         text-decoration: none;
+        width: 100%;
+        height: 100%;
     }
 `;

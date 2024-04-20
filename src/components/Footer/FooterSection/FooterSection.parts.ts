@@ -6,6 +6,12 @@ export const StyledUl = styled.ul`
     flex-direction: column;
     gap: 1em;
 
+    p {
+        &:hover {
+            color: ${({ theme }) => theme.colors.leading.main[2]};
+        }
+    }
+
     a {
         text-decoration: none;
     }

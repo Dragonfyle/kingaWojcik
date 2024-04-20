@@ -3,9 +3,9 @@ import Text from "../../generics/Text/Text";
 import { NavigationItemProps } from "./NavigationItem.types";
 import * as P from "./NavigationItem.parts";
 
-export default function NavigationItem({ children, to = "", onClick, backgroundColor }: NavigationItemProps) {
+export default function NavigationItem({ children, to = "", onClick }: NavigationItemProps) {
     return (
-        <P.NavigationItemWrapper onClick={onClick} $backgroundColor={backgroundColor}>
+        <P.NavigationItemWrapper onClick={onClick}>
             <Link to={to}>
                 <Text lineHeight={1.5} size="ms">
                     {children}

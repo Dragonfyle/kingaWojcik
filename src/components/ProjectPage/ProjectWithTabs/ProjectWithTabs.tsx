@@ -4,6 +4,7 @@ import ProjectIntroduction from "../ProjectIntroduction/ProjectIntroduction";
 import TabbedGallery from "./TabbedGallery/TabbedGallery";
 import * as P from "./ProjectWithTabs.parts";
 import Flexbox from "../../generics/Flexbox/Flexbox";
+import ProjectNavigation from "../ProjectNavigation/ProjectNavigation";
 
 interface ProjectWithTabs {
     source: TabbedGalleryProject;
@@ -26,6 +27,7 @@ export default function ProjectWithTabs({ source, banner }: ProjectWithTabs) {
                 )}
                 <ProjectIntroduction source={source} withDescription={withDescription} />
                 <TabbedGallery source={source} />
+                <ProjectNavigation />
             </P.ContentWrapper>
         </Flexbox>
     );

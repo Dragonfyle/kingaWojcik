@@ -12,10 +12,10 @@ export default function CarouselSlideText({ isActive, title, description }: Caro
 
     return (
         <P.DescriptionWrapper $isActive={isActive}>
-            <P.StyledH2 bold size="5xl" lineHeight={1.2} variant={theme.colors.white[1]}>
+            <P.StyledH2 bold size="5xl" lineHeight={1.2} color={theme.colors.white[1]}>
                 {title}
             </P.StyledH2>
-            <P.StyledP size="3xl" variant={theme.colors.white[1]}>
+            <P.StyledP size="3xl" color={theme.colors.white[1]}>
                 {description}
             </P.StyledP>
         </P.DescriptionWrapper>

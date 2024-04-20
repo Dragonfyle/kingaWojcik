@@ -1,10 +1,10 @@
 import React from "react";
-import * as P from "./CarouselSlide.parts";
 import { useCarouselContext } from "../../contexts/CarouselContext/CarouselContext";
 import { IMAGE_DESCRIPTIONS, IMAGE_TITLES } from "../../../../data/TopCarouselData";
 import { imageSets } from "./CarouselSlide.utils";
 import CarouselImage from "../CarouselImage/CarouselImage";
 import CarouselSlideText from "../CarouselSlideText/CarouselSlideText";
+import * as P from "./CarouselSlide.parts";
 
 export default function CarouselSlide() {
     const { activeImage } = useCarouselContext();

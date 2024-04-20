@@ -4,7 +4,6 @@ import LinkedinIcon from "../../generics/LinkedinIcon/LinkedinIcon";
 import HamburgerIcon from "./HamburgerIcon/HamburgerIcon";
 import { useThemeContext } from "../../../contexts/ThemeContext";
 import { useRef, useState } from "react";
-import NavigationItem from "../../Navigation/NavigationItem/NavigationItem";
 import { CopiedConfirmation } from "../../generics/CopiedConfirmation/CopiedConfirmation";
 import { handleEmailClick } from "$components/Navigation/Navigation.utils";
 import navigationItems from "$data/navigationData";
@@ -13,6 +12,7 @@ import * as P from "./MobileNavigation.parts";
 import NavigationHeader from "./NavigationHeader/NavigationHeader";
 import Divider from "$components/generics/Divider/Divider";
 import MenuCross from "$components/generics/MenuCrossIcon/MenuCrossIcon";
+import MobileNavigationItem from "./MobileNavigationItem/MobileNavigationItem";
 
 export default function MobileNavigation() {
     const {
@@ -34,13 +34,9 @@ export default function MobileNavigation() {
         return (
             <>
                 {source.map(({ label, link }) => (
-                    <NavigationItem
-                        key={label}
-                        to={link}
-                        onClick={handleMenuItemTouch}
-                        backgroundColor={colors.white.trans[2]}>
+                    <MobileNavigationItem key={label} to={link} onClick={handleMenuItemTouch}>
                         {label}
-                    </NavigationItem>
+                    </MobileNavigationItem>
                 ))}
             </>
         );
@@ -53,6 +49,7 @@ export default function MobileNavigation() {
                     <LinkedinIcon size={25} />
                     <KingaBrand onClick={handleMenuItemTouch} />
                 </Flexbox>
+
                 {!isExpanded && (
                     <HamburgerIcon
                         size="35px"
@@ -73,6 +70,7 @@ export default function MobileNavigation() {
                             onClick={handleMenuItemTouch}
                         />
                     </Flexbox>
+
                     <Flexbox $direction="column" $width="75%" $rowGap="10px">
                         <NavigationHeader />
                         <Divider height={3} width="100%" mTop={0} mBot={20} color={colors.supplementary[3]} />

@@ -1,6 +1,6 @@
 import * as P from "./NavButtons.parts";
-import Next from "../../../generics/NavIcon/Next/Next";
-import Previous from "../../../generics/NavIcon/Previous/Previous";
+import NextIcon from "../../../generics/NavIcon/Next/Next";
+import PreviousIcon from "../../../generics/NavIcon/Previous/Previous";
 import { useThemeContext } from "../../../../contexts/ThemeContext";
 
 interface NavButtonsProps {
@@ -13,13 +13,13 @@ export default function NavButtons({ onNextProject, onPreviousProject }: NavButt
 
     return (
         <P.ButtonsWrapper>
-            <Previous
+            <PreviousIcon
                 $bgColor={theme.colors.supplementary[3]}
                 $fgColor={theme.colors.leading.main[2]}
                 $size="50px"
                 onClick={onPreviousProject}
             />
-            <Next
+            <NextIcon
                 $bgColor={theme.colors.supplementary[3]}
                 $fgColor={theme.colors.leading.main[2]}
                 $size="50px"

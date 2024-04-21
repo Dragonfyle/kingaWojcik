@@ -13,15 +13,13 @@ export default function SingleImage({
 
     return (
         <P.FeatureWrapper>
-            {withDescription && (
-                <ColumnDescription
-                    withH1={withH1}
-                    h1={content.h1}
-                    withDescription={withDescription}
-                    description={content.description}
-                    order={descriptionPositionMap[descriptionPosition]}
-                />
-            )}
+            <ColumnDescription
+                withH1={withH1}
+                h1={content.h1}
+                withDescription={withDescription}
+                description={content.description}
+                order={descriptionPositionMap[descriptionPosition]}
+            />
             <img src={content.img} />
         </P.FeatureWrapper>
     );

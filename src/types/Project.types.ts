@@ -1,4 +1,4 @@
-import { ColumnWidth } from "../components/ProjectPage/Columns.utils";
+import { ColumnWidth } from "$components/ProjectPage/Columns.utils";
 
 type DescriptionPosition = "top" | "bottom";
 

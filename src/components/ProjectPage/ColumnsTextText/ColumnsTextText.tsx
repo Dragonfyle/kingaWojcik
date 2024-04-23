@@ -1,6 +1,7 @@
-import { FeatureTextTextContent } from "../../../types/Project.types";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import Text from "../../generics/Text/Text";
+import { FeatureTextTextContent } from "$types/Project.types";
+import Flexbox from "$generics/Flexbox/";
+import Text from "$generics/Text/";
+
 import { ColumnsTextTextProps, getColumnsWidth } from "../Columns.utils";
 import * as P from "./ColumnsTextText.parts";
 

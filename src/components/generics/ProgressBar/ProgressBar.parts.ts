@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { CONFIG } from "../../../constants/config";
-import { BREAKPOINTS } from "../../../styles/breakpoints";
+import { CONFIG } from "$constants/config";
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const ProgressBarContainer = styled.div`
     width: 100%;
@@ -17,6 +17,6 @@ export const ProgressBarFiller = styled.div<{ $progress: number; $isActive: bool
     width: 100%;
     height: 100%;
     background-color: ${({ theme }) => theme.colors.leading.main[1]};
-    transition: transform ${({ $progress }) => ($progress > 0 ? CONFIG.CAROUSEL.INTERVAL + "ms" : "none")} linear;
+    transition: transform ${({ $progress }) => ($progress > 0 ? CONFIG.CAROUSEL.TRANSITION + "ms" : "none")} linear;
     transform: translateX(${({ $isActive, $progress }) => ($isActive ? -100 + $progress : -101)}%);
 `;

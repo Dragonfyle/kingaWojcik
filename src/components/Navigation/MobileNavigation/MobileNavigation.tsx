@@ -1,18 +1,20 @@
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import KingaBrand from "../../generics/KingaBrand/KingaBrand";
-import LinkedinIcon from "../../generics/LinkedinIcon/LinkedinIcon";
-import HamburgerIcon from "./HamburgerIcon/HamburgerIcon";
-import { useThemeContext } from "../../../contexts/ThemeContext";
 import { useRef, useState } from "react";
-import { CopiedConfirmation } from "../../generics/CopiedConfirmation/CopiedConfirmation";
+
+import Flexbox from "$generics/Flexbox/";
+import KingaBrand from "$generics/KingaBrand/";
+import LinkedinIcon from "$generics/LinkedinIcon/";
+import { useThemeContext } from "$contexts/ThemeContext";
+import { CopiedConfirmation } from "$generics/CopiedConfirmation/";
 import { handleEmailClick } from "$components/Navigation/Navigation.utils";
 import navigationItems from "$data/navigationData";
 import NavigationEmail from "$components/Navigation/NavigationItem/NavigationEmail/NavigationEmail";
+import Divider from "$components/generics/Divider/";
+import MenuCross from "$components/generics/MenuCrossIcon/";
+
+import NavigationHeader from "./NavigationHeader/";
+import MobileNavigationItem from "./MobileNavigationItem/";
+import HamburgerIcon from "./HamburgerIcon/";
 import * as P from "./MobileNavigation.parts";
-import NavigationHeader from "./NavigationHeader/NavigationHeader";
-import Divider from "$components/generics/Divider/Divider";
-import MenuCross from "$components/generics/MenuCrossIcon/MenuCrossIcon";
-import MobileNavigationItem from "./MobileNavigationItem/MobileNavigationItem";
 
 export default function MobileNavigation() {
     const {

@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import { StyledNavigationItemProps } from "../NavigationItem.types";
-import { BREAKPOINTS } from "../../../../styles/breakpoints";
 
-export const EmailWrapper = styled.div<StyledNavigationItemProps>`
+import { BREAKPOINTS } from "$styles/breakpoints";
+
+import { StyledNavigationEmailProps } from "./NavigationEmail.types";
+
+export const EmailWrapper = styled.div<StyledNavigationEmailProps>`
     position: relative;
     display: flex;
     align-items: center;

@@ -1,6 +1,6 @@
 import { ColorOption, DefaultTheme } from "styled-components";
-import { WithTagVariant } from "../../../types/common";
-import { BREAKPOINTS } from "../../../styles/breakpoints";
+import { WithTagVariant } from "$types/common";
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 type TextSize = keyof DefaultTheme["fontSize"];
 type BreakpointVariants = Partial<Record<keyof typeof BREAKPOINTS, TextSize>>;

@@ -1,5 +1,6 @@
+import { useCarouselContext } from "$contexts/CarouselContext";
+
 import * as P from "./ProgressBar.parts";
-import { useCarouselContext } from "../../HomePage/contexts/CarouselContext/CarouselContext";
 
 interface ProgressBarProps {
     isActive: boolean;

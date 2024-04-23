@@ -1,5 +1,5 @@
-import { TabContent } from "../../../types/AboutGallery.types";
-import Text from "../../generics/Text/Text";
+import { TabContent } from "$types/AboutGallery.types";
+import Text from "$generics/Text/Text";
 import ListItem from "./ListItem/ListItem";
 import * as P from "./List.parts";
 

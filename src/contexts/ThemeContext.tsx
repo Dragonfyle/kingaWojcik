@@ -1,6 +1,7 @@
-import React, { useContext, createContext } from "react";
-import { defaultTheme } from "../styles/DefaultTheme";
+import { useContext, createContext } from "react";
 import { DefaultTheme } from "styled-components";
+
+import { defaultTheme } from "$styles/DefaultTheme";
 
 interface ThemeContextProps {
     children: React.ReactNode;

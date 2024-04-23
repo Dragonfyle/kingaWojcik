@@ -1,7 +1,7 @@
 import * as P from "./NavButtons.parts";
-import NextIcon from "../../../generics/NavIcon/Next/Next";
-import PreviousIcon from "../../../generics/NavIcon/Previous/Previous";
-import { useThemeContext } from "../../../../contexts/ThemeContext";
+import NextIcon from "$generics/NavIcon/Next/Next";
+import PreviousIcon from "$generics/NavIcon/Previous/Previous";
+import { useThemeContext } from "$contexts/ThemeContext";
 
 interface NavButtonsProps {
     onNextProject: () => void;

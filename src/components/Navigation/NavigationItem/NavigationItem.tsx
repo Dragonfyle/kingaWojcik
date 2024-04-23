@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import Text from "../../generics/Text/Text";
+
+import Text from "$generics/Text/Text";
+
 import { NavigationItemProps } from "./NavigationItem.types";
 import * as P from "./NavigationItem.parts";
 

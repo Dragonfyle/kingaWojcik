@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BREAKPOINTS } from "../../../../styles/breakpoints";
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const SlideWrapper = styled.div`
     position: relative;
@@ -7,7 +7,7 @@ export const SlideWrapper = styled.div`
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-end;
-    height: 67vh;
+    height: 75vh;
     max-height: min(100vh, 1300px);
     overflow: hidden;
 

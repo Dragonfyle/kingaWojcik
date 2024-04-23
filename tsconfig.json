@@ -16,8 +16,17 @@
     "baseUrl": ".",
     "paths": {
       "$components/*": ["./src/components/*"],
+      "$generics/*": ["./src/components/generics/*"],
       "$data/*": ["./src/data/*"],
+      "$hooks/*": ["./src/hooks/*"],
+      "$contexts/*": ["./src/contexts/*"],
+      "$pages/*": ["./src/pages/*"],
+      "$utils/*": ["./src/utils/*"],
       "$img/*": ["./src/assets/img/*"],
+      "$styles/*": ["./src/styles/*"],
+      "$constants/*": ["./src/constants/*"],
+      "$assets/*": ["./src/assets/*"],
+      "$types/*": ["./src/types/*"],
     
     },
 

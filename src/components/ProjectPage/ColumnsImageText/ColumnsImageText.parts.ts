@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { BREAKPOINTS } from "../../../styles/breakpoints";
-import Flexbox from "../../generics/Flexbox/Flexbox";
+import { BREAKPOINTS } from "$styles/breakpoints";
+import Flexbox from "$generics/Flexbox/Flexbox";
 
 export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: string }>`
     display: grid;
@@ -8,6 +8,10 @@ export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: 
     grid-template-rows: auto;
     gap: 20px;
     margin: 0 0 50px 0;
+
+    p {
+        white-space: pre-line;
+    }
 
     ${BREAKPOINTS.M} {
         grid-template-columns: auto;

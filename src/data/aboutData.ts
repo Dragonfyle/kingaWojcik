@@ -1,4 +1,4 @@
-import { AboutGalleryData } from "../types/AboutGallery.types";
+import { AboutGalleryData } from "$types/AboutGallery.types";
 
 const aboutGalleryData: AboutGalleryData = {
     header: "Kinga Ewa Wójcik BIO",
@@ -101,7 +101,6 @@ const aboutGalleryData: AboutGalleryData = {
                             3: "prowadzący: Lindsay Marsh, Jeremy Deighan",
                         },
                     },
-
                 ],
             },
         },

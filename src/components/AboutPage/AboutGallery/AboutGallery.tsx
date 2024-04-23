@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { AboutGalleryData } from "../../../types/AboutGallery.types";
-import TabNavigation from "../../generics/TabNavigation/TabNavigation";
-import List from "../List/List";
-import Flexbox from "../../generics/Flexbox/Flexbox";
 
+import { AboutGalleryData } from "$types/AboutGallery.types";
+import TabNavigation from "$generics/TabNavigation/TabNavigation";
+import Flexbox from "$generics/Flexbox/Flexbox";
+
+import List from "../List/";
 import * as P from "./AboutGallery.parts";
 
 interface AboutGalleryProps {

@@ -1,6 +1,7 @@
+import Text from "$generics/Text/Text";
+
+import ProjectThumbnail from "../Thumbnail/";
 import * as P from "./ProjectPanelItem.parts";
-import ProjectThumbnail from "../Thumbnail/Thumbnail";
-import Text from "../../../../generics/Text/Text";
 interface ProjectPanelItemProps {
     image: string;
     title: string;

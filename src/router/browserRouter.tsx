@@ -1,13 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { CONFIG } from "../constants/config";
-import HomePage from "../pages/Home";
-import Layout from "../components/Layout/Layout";
-import Branding1 from "../pages/Branding1";
-import Branding2 from "../pages/Branding2";
-import AboutPage from "../components/AboutPage/AboutPage";
-import Branding3 from "../pages/Branding3";
-import Editorial1 from "../pages/Editorial1";
-import Editorial2 from "../pages/Editorial2";
+
+import { CONFIG } from "$constants/config";
+import Layout from "$components/Layout/";
+import AboutPage from "$components/AboutPage/AboutPage";
+import HomePage from "$pages/Home";
+import Branding1 from "$pages/Branding1";
+import Branding2 from "$pages/Branding2";
+import Branding3 from "$pages/Branding3";
+import Editorial1 from "$pages/Editorial1";
+import Editorial2 from "$pages/Editorial2";
 
 const browserRouter = createBrowserRouter([
     {

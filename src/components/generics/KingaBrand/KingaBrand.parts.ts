@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { BREAKPOINTS } from "../../../styles/breakpoints";
+
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const KingaWrapper = styled.div`
     display: flex;

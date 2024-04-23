@@ -1,4 +1,4 @@
-import { BREAKPOINTS } from "../../../../styles/breakpoints";
+import { BREAKPOINTS } from "$styles/breakpoints";
 import styled from "styled-components";
 
 export const MapWrapper = styled.div`

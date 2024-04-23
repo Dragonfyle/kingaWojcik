@@ -1,6 +1,7 @@
+import Text from "$generics/Text/";
+import { CONFIG } from "$constants/config";
+
 import * as P from "./KingaBrand.parts";
-import Text from "../Text/Text";
-import { CONFIG } from "../../../constants/config";
 
 interface KingaBrandProps {
     onClick?: () => void;

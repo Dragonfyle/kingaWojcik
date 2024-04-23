@@ -1,6 +1,7 @@
-import { AboutGalleryContent } from "../../../types/AboutGallery.types";
-import { ProjectContent } from "../../../types/tabbedGallery.types";
-import Button from "../Button/Button";
+import { AboutGalleryContent } from "$types/AboutGallery.types";
+import { ProjectContent } from "$types/tabbedGallery.types";
+
+import Button from "../Button/";
 import * as P from "./TabNavigation.parts";
 
 interface TabNavigation {

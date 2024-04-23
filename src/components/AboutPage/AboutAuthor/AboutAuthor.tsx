@@ -1,6 +1,6 @@
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import Text from "../../generics/Text/Text";
-import { AboutSectionData } from "../../../data/aboutSectionData";
+import Flexbox from "$generics/Flexbox/Flexbox";
+import Text from "$generics/Text/Text";
+import { AboutSectionData } from "$data/aboutSectionData";
 import * as P from "./AboutAuthor.parts";
 
 interface AboutSectionProps {

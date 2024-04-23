@@ -1,6 +1,6 @@
-import { BREAKPOINTS } from "../../../../../styles/breakpoints";
+import { BREAKPOINTS } from "$styles/breakpoints";
 import styled from "styled-components";
-import Text from "../../../../generics/Text/Text";
+import Text from "$generics/Text/Text";
 
 export const IntroWrapper = styled.div`
     display: flex;

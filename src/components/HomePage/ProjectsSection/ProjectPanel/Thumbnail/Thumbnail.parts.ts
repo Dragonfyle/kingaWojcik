@@ -1,5 +1,5 @@
-import { BREAKPOINTS } from "../../../../../styles/breakpoints";
-import { CONFIG } from "../../../../../constants/config";
+import { BREAKPOINTS } from "$styles/breakpoints";
+import { CONFIG } from "$constants/config";
 import styled from "styled-components";
 
 export const StyledImage = styled.img`

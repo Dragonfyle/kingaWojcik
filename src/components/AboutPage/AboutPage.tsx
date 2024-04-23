@@ -1,8 +1,9 @@
-import { aboutGalleryData } from "../../data/aboutData";
-import { aboutSectionData } from "../../data/aboutSectionData";
-import useScrollToTop from "../../hooks/useScrollToTop";
-import AboutAuthor from "./AboutAuthor/AboutAuthor";
-import AboutGallery from "./AboutGallery/AboutGallery";
+import { aboutGalleryData } from "$data/aboutData";
+import { aboutSectionData } from "$data/aboutSectionData";
+import useScrollToTop from "$hooks/useScrollToTop";
+
+import AboutGallery from "./AboutGallery/";
+import AboutAuthor from "./AboutAuthor/";
 import * as P from "./AboutPage.parts";
 
 export default function AboutPage() {

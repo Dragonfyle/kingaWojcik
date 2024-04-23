@@ -1,4 +1,4 @@
-import { CONFIG } from "src/constants/config";
+import { CONFIG } from "$constants/config";
 
 function copyToClipboard(value: string) {
     navigator.clipboard.writeText(value);

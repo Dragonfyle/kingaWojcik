@@ -6,7 +6,7 @@ import rekrutacjaArtykuly from "$img/projects/4spacje/czteryspacje_rekrutacja-ar
 import rekrutacjaZadania from "$img/projects/4spacje/czteryspacje_rekrutacja-zadania.jpg";
 import naglowki from "$img/projects/4spacje/czteryspacje_naglowki.gif";
 import stronaGlowna from "$img/projects/4spacje/czteryspacje_glowna.png";
-import { TabbedGalleryData } from "../types/tabbedGallery.types";
+import { TabbedGalleryData } from "$types/tabbedGallery.types";
 
 const tabbedGalleryData: TabbedGalleryData = {
     project1: {
@@ -28,7 +28,7 @@ const tabbedGalleryData: TabbedGalleryData = {
                         },
 
                         content: {
-                            h1: "Co wynikło z briefów?",
+                            h1: "Podsumowanie briefów",
                             description: `Zebrałam najważniejsze, powtarzające się informacje, które posłużyły za tło koncepcyjne dla projektu.
                             
                             -chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
@@ -41,7 +41,7 @@ const tabbedGalleryData: TabbedGalleryData = {
             {
                 tabName: "logo",
                 highlight:
-                    "Wykorzystując jak najprostsze środki wyrazu staralam się oddać najważniejsze wartości marki: profesjonalizm i edukacyjny charakter bloga.",
+                    "Wykorzystując jak najprostsze środki wyrazu staralam się oddać najważniejsze wartości marki: profesjonalizm i edukacyjny charakter bloga. Poniżej zestawienie wstępnych szkiców, powstałych w oparciu o brief oraz przygotowane na jego podstawie mapy myśli, które pomogły mi uporządkować skojarzenia, a także odkryć te mniej oczywiste powiązania.",
 
                 features: {
                     feature1: {
@@ -72,8 +72,8 @@ const tabbedGalleryData: TabbedGalleryData = {
                             leftImg: logoPropozycja4spacje,
                             rightImg: logo4spacje,
                             leftH1: "Wstępna propozycja logo",
-                            rightH1: "Konieczne okazały się poprawki",
-                            leftDescription: `Na blogu staramy się opisywać, tłumaczyć i komentować świat technologii internetowych. Projekt logo wykorzystuje więc dwa ukośniki, które w programowaniu wprowadzają komentarz.
+                            rightH1: "Ostateczny projekt logo",
+                            leftDescription: `Na blogu staramy się opisywać, tłumaczyć i komentować świat technologii internetowych. Projekt logo wykorzystuje więc dwa ukośniki, które w niektórych językach programowania wprowadzają komentarz.
                                 
                             Jednocześnie jest to też cudzysłów otwierający, nawiązujący do dzielenia się wiedzą i opiniami.
                                
@@ -93,7 +93,7 @@ const tabbedGalleryData: TabbedGalleryData = {
             },
             {
                 tabName: "strona internetowa",
-                highlight: "Sint in eiusmod culpa ex nostrud fugiat do non eiusmod veniam laboris nostrud excepteur.",
+                highlight: "Podstawowe zmiany: ",
 
                 features: {
                     feature1: {
@@ -105,22 +105,8 @@ const tabbedGalleryData: TabbedGalleryData = {
                         content: {
                             img: stronaGlowna,
                             h1: "Najważniejsze zmiany",
-                            description: `Zmiany obejmują przede wszystkim kwestie estetyczne, ale także modyfikacje niektórych funkcjonalności i sposobu działania strony.
-                            
-                            Witryna została ożywiona odcieniami limonki, wybranej jako główny kolor brandowy. Przygotowałam projekt zarówno dla jasnego, jak i ciemnego motywu z uwagi na to, że programiści często skłaniają się ku temu drugiemu.
-                        
-                            Zmieniona została cała kolorystyka, która dotąd była rozbałaganiona (np. funkcjonowało kilkanaście bardzo zbliżonych do siebie odcieni, elementy na stronie kolorowane były w niekonsekwentny sposób: ta sama funkcja - za każdym razem inny kolor) i nieharmonijna (brak koloru akcentującego, wszystkie barwy jednakowo przygaszone).
-                            
-                            Slogan został przyłączony do nawigacji, by właściwa treść mogła zostać podniesiona wyżej.
-                            
-                            „Codzienną porcję kodu” umieściłam na samej górze, bo sekcja ta bardzo dobrze oddaje charakter bloga i bez słów mówi użytkownikom, gdzie się znajdują. Dodatkowo jest to element, który może angażować ich już od samego początku.
-                            
-                            Tagi artykułów zostały pochylone, by wprowadzić element dynamiki
-                            
-                            W starej wersji profil autora pod artykułem pozostawał nieklikalny. Teraz będzie on przekierowywał do podstrony „o nas”
-                            
-                            Tłem dla kontenerów jest półprzezroczysty, biały gradient, który kojarzy się z luminacją i technologią.
-                            `,
+                            description:
+                                "Zmiany obejmują przede wszystkim kwestie estetyczne, ale także modyfikacje niektórych funkcjonalności i sposobu działania strony. Witryna została ożywiona odcieniami limonki, wybranej jako główny kolor brandowy. Przygotowałam projekt zarówno dla jasnego, jak i ciemnego motywu z uwagi na to, że programiści często skłaniają się ku temu drugiemu. Zmieniona została cała kolorystyka, która dotąd była rozbałaganiona (np. funkcjonowało kilkanaście bardzo zbliżonych do siebie odcieni, elementy na stronie kolorowane były w niekonsekwentny sposób: ta sama funkcja - za każdym razem inny kolor) i nieharmonijna (brak koloru akcentującego, wszystkie barwy jednakowo przygaszone). Slogan został przyłączony do nawigacji, by właściwa treść mogła zostać podniesiona wyżej. „Codzienną porcję kodu” umieściłam na samej górze, bo sekcja ta bardzo dobrze oddaje charakter bloga i bez słów mówi użytkownikom, gdzie się znajdują. Dodatkowo jest to element, który może angażować ich już od samego początku. Tagi artykułów zostały pochylone, by wprowadzić element dynamiki W starej wersji profil autora pod artykułem pozostawał nieklikalny. Teraz będzie on przekierowywał do podstrony „o nas”. Tłem dla kontenerów jest półprzezroczysty, biały gradient, który kojarzy się z luminacją i technologią.",
                         },
                     },
                     feature2: {

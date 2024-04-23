@@ -6,7 +6,7 @@ import rekrutacjaArtykuly from "$img/projects/4spacje/czteryspacje_rekrutacja-ar
 import rekrutacjaZadania from "$img/projects/4spacje/czteryspacje_rekrutacja-zadania.jpg";
 import naglowki from "$img/projects/4spacje/czteryspacje_naglowki.gif";
 import stronaGlowna from "$img/projects/4spacje/czteryspacje_glowna.png";
-import { TabbedGalleryData } from "../types/tabbedGallery.types";
+import { TabbedGalleryData } from "$types/tabbedGallery.types";
 
 const tabbedGalleryData: TabbedGalleryData = {
     project1: {

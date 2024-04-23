@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, SetStateAction } from "react";
-import { CONFIG } from "../../../../constants/config";
-import { NUM_IMAGES } from "../../../../data/TopCarouselData";
+import { CONFIG } from "$constants/config";
+import { NUM_IMAGES } from "$data/TopCarouselData";
 
 interface CarouselContextProps {
     children: React.ReactNode;

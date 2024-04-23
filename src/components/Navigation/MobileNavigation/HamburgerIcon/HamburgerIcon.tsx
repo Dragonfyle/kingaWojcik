@@ -1,5 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
-import Hamburger from "../../../../assets/icons/hamburger.svg?react";
+import Hamburger from "$assets/icons/hamburger.svg?react";
+
 import { HamburgerIconProps } from "./HamburgerIcon.types";
 import * as P from "./HamburgerIcon.parts";
 

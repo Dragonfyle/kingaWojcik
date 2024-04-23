@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import { BREAKPOINTS } from "../../../styles/breakpoints";
+import Flexbox from "$generics/Flexbox/Flexbox";
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const ListWrapper = styled.section`
     display: flex;

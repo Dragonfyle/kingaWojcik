@@ -1,4 +1,4 @@
-import { useThemeContext } from "../../../../contexts/ThemeContext";
+import { useThemeContext } from "$contexts/ThemeContext";
 import * as P from "./CarouselSlideText.parts";
 
 interface CarouselSlideText extends React.PropsWithChildren {

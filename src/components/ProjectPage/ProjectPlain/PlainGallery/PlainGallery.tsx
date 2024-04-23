@@ -1,13 +1,13 @@
-import { Feature } from "../../../../types/Project.types";
-import FeatureImage from "../../SingleImage/SingleImage";
-import FeatureText from "../../SingleText/SingleText";
-import FeatureTextText from "../../ColumnsTextText/ColumnsTextText";
-import FeatureImageImage from "../../ColumnsImageImage/ColumnsImageImage";
-import FeatureImageText from "../../ColumnsImageText/ColumnsImageText";
-import FeatureTextImage from "../../ColumnsTextImage/ColumnsTextImage";
+import { Feature } from "$types/Project.types";
+import FeatureImage from "$components/ProjectPage/SingleImage/SingleImage";
+import FeatureText from "$components/ProjectPage/SingleText/SingleText";
+import FeatureTextText from "$components/ProjectPage/ColumnsTextText/ColumnsTextText";
+import FeatureImageImage from "$components/ProjectPage/ColumnsImageImage/ColumnsImageImage";
+import FeatureImageText from "$components/ProjectPage/ColumnsImageText/ColumnsImageText";
+import FeatureTextImage from "$components/ProjectPage/ColumnsTextImage/ColumnsTextImage";
 
 import * as P from "./PlainGallery.parts";
-import { PlainGalleryProject } from "../../../../types/plainGallery.types";
+import { PlainGalleryProject } from "$types/plainGallery.types";
 
 interface PlainGalleryProps {
     source: PlainGalleryProject;

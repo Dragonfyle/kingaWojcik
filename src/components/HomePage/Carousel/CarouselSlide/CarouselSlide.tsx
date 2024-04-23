@@ -1,9 +1,11 @@
 import React from "react";
-import { useCarouselContext } from "../../contexts/CarouselContext/CarouselContext";
-import { IMAGE_DESCRIPTIONS, IMAGE_TITLES } from "../../../../data/TopCarouselData";
+
+import { IMAGE_DESCRIPTIONS, IMAGE_TITLES } from "$data/TopCarouselData";
+import { useCarouselContext } from "$contexts/CarouselContext";
+import CarouselImage from "$components/HomePage/Carousel/CarouselImage/";
+
 import { imageSets } from "./CarouselSlide.utils";
-import CarouselImage from "../CarouselImage/CarouselImage";
-import CarouselSlideText from "../CarouselSlideText/CarouselSlideText";
+import CarouselSlideText from "../CarouselSlideText/";
 import * as P from "./CarouselSlide.parts";
 
 export default function CarouselSlide() {

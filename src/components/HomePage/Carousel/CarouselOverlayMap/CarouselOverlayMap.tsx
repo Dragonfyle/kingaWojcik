@@ -1,8 +1,9 @@
+import { MAP_ITEM_DESCRIPTIONS } from "$data/TopCarouselData";
+import { useCarouselContext } from "$contexts/CarouselContext";
+import { useDeviceContext } from "$contexts/DeviceContext";
+
+import CarouselOverlayMapItem from "../CarouselOverlayMapItem/";
 import * as P from "./CarouselOverlayMap.parts";
-import CarouselOverlayMapItem from "../CarouselOverlayMapItem/CarouselOverlayMapItem";
-import { MAP_ITEM_DESCRIPTIONS } from "../../../../data/TopCarouselData";
-import { useCarouselContext } from "../../contexts/CarouselContext/CarouselContext";
-import { useDeviceContext } from "../../contexts/DeviceContext/DeviceContext";
 
 export default function CarouselOverlayMap() {
     const { isMobile } = useDeviceContext();

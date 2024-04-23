@@ -1,6 +1,8 @@
-import * as P from "./CopiedConfirmation.parts";
-import Text from "../Text/Text";
 import { forwardRef } from "react";
+
+import Text from "$generics/Text/";
+
+import * as P from "./CopiedConfirmation.parts";
 
 const CopiedConfirmation = forwardRef<HTMLElement>(function CopiedConfirmation(_, ref) {
     return (

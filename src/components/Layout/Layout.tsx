@@ -1,9 +1,11 @@
 import { Outlet } from "react-router-dom";
-import DesktopNavigation from "../Navigation/DesktopNavigation/DesktopNavigation";
-import Footer from "../Footer/Footer";
-import { useDeviceContext } from "../HomePage/contexts/DeviceContext/DeviceContext";
+
+import { useDeviceContext } from "$contexts/DeviceContext";
+import DesktopNavigation from "$components/Navigation/DesktopNavigation/";
+import Footer from "$components/Footer";
+import MobileNavigation from "$components/Navigation/MobileNavigation/";
+
 import * as P from "./Layout.parts";
-import MobileNavigation from "../Navigation/MobileNavigation/MobileNavigation";
 
 export default function Layout() {
     const { isMobile } = useDeviceContext();

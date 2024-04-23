@@ -1,10 +1,11 @@
-import { TabbedGalleryProject } from "../../../types/tabbedGallery.types";
-import useScrollToTop from "../../../hooks/useScrollToTop";
-import ProjectIntroduction from "../ProjectIntroduction/ProjectIntroduction";
-import TabbedGallery from "./TabbedGallery/TabbedGallery";
+import { TabbedGalleryProject } from "$types/tabbedGallery.types";
+import Flexbox from "$generics/Flexbox/";
+import useScrollToTop from "$hooks/useScrollToTop";
+
+import TabbedGallery from "./TabbedGallery/";
+import ProjectNavigation from "../ProjectNavigation/";
+import ProjectIntroduction from "../ProjectIntroduction/";
 import * as P from "./ProjectWithTabs.parts";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import ProjectNavigation from "../ProjectNavigation/ProjectNavigation";
 
 interface ProjectWithTabs {
     source: TabbedGalleryProject;

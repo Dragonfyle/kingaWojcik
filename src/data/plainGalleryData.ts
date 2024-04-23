@@ -48,7 +48,7 @@ import okladkiRewolucjaBack from "$img/projects/okladki/okladki_rewolucja_back.j
 import okladkiCosmicrayFront from "$img/projects/okladki/okladki_cosmicray_front.jpg";
 import okladkiCosmicrayBack from "$img/projects/okladki/okladki_cosmicray_back.jpg";
 
-import { PlainGalleryData } from "../types/plainGallery.types";
+import { PlainGalleryData } from "$types/plainGallery.types";
 
 const plainGalleryData: PlainGalleryData = {
     project1: {

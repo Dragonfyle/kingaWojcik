@@ -1,5 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
-import MenuCrossIcon from "../../../assets/icons/menu-cross.svg?react";
+import MenuCrossIcon from "$assets/icons/menu-cross.svg?react";
+
 import { MenuCrossProps } from "./MenuCrossIcon.types";
 import * as P from "./MenuCrossIcon.parts";
 

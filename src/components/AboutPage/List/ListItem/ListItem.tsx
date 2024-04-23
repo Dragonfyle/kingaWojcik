@@ -1,6 +1,6 @@
-import { ListElement } from "../../../../types/AboutGallery.types";
-import Flexbox from "../../../generics/Flexbox/Flexbox";
-import Text from "../../../generics/Text/Text";
+import { ListElement } from "$types/AboutGallery.types";
+import Flexbox from "$generics/Flexbox/Flexbox";
+import Text from "$generics/Text/Text";
 import * as P from "./ListItem.parts";
 
 interface ListItemProps {

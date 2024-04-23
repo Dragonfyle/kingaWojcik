@@ -1,5 +1,5 @@
-import * as P from "./Divider.parts";
 import { DividerProps } from "./Divider.type";
+import * as P from "./Divider.parts";
 
 export default function Divider({
     height = 1.5,

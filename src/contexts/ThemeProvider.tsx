@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeProvider as ThemeProviderComponent } from "styled-components";
+
 import { useThemeContext } from "./ThemeContext";
 
 type ThemeProviderProps = {

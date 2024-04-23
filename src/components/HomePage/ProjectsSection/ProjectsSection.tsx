@@ -1,15 +1,17 @@
-import NavButtons from "../../HomePage/ProjectsSection/NavButtons/NavButtons";
 import { useRef } from "react";
-import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/ProjectPanelIntro";
-import { useDeviceContext } from "../contexts/DeviceContext/DeviceContext";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import Text from "../../generics/Text/Text";
-import { ProjectPanelDataSection } from "../../../data/projectPanelData";
-import Slider from "$components/generics/Slider/Slider";
 import { Link } from "react-router-dom";
-import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/ProjectPanelItem";
+
+import { useDeviceContext } from "$contexts/DeviceContext";
+import Flexbox from "$generics/Flexbox/Flexbox";
+import Text from "$generics/Text/Text";
+import Slider from "$generics/Slider/Slider";
+import { SliderImperativeHandle } from "$generics/Slider/Slider.types";
+import { ProjectPanelDataSection } from "$data/projectPanelData";
+
+import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/";
+import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/";
+import NavButtons from "../ProjectsSection/NavButtons/";
 import * as P from "./ProjectsSections.parts";
-import { SliderImperativeHandle } from "$components/generics/Slider/Slider.types";
 
 interface ProjectSectionProps {
     id: string;

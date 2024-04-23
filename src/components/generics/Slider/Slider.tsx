@@ -1,9 +1,11 @@
 import { forwardRef, useImperativeHandle, useRef, useState } from "react";
+
+import { useDeviceContext } from "$contexts/DeviceContext";
+import Flexbox from "$generics/Flexbox/";
+
+import ItemIndicator from "./ItemIndicator/ItemIndicator";
 import { SliderImperativeHandle, SliderProps } from "./Slider.types";
 import * as P from "./Slider.parts";
-import { useDeviceContext } from "$components/HomePage/contexts/DeviceContext/DeviceContext";
-import ItemIndicator from "./ItemIndicator/ItemIndicator";
-import Flexbox from "../Flexbox/Flexbox";
 
 const Slider = forwardRef<SliderImperativeHandle, SliderProps>(({ children }: SliderProps, ref) => {
     const contentRef = useRef<HTMLDivElement>(null);

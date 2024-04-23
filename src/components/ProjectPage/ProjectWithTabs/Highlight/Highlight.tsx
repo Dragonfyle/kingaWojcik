@@ -1,5 +1,5 @@
 import { useThemeContext } from "src/contexts/ThemeContext";
-import Text from "../../../generics/Text/Text";
+import Text from "$generics/Text/Text";
 import * as P from "./Highlight.parts";
 
 interface HighlightProps {

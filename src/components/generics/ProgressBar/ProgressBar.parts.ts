@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { CONFIG } from "../../../constants/config";
-import { BREAKPOINTS } from "../../../styles/breakpoints";
+import { CONFIG } from "$constants/config";
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const ProgressBarContainer = styled.div`
     width: 100%;

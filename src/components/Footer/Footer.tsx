@@ -1,7 +1,8 @@
-import { CONFIG } from "../../constants/config";
-import { ProjectPanelData } from "../../data/projectPanelData";
+import { CONFIG } from "$constants/config";
+import { ProjectPanelData } from "$data/projectPanelData";
+
+import FooterSection from "./FooterSection/";
 import * as P from "./Footer.parts";
-import FooterSection from "./FooterSection/FooterSection";
 
 export default function Footer() {
     const middleSectionTitles = ProjectPanelData.branding.content.map((project) => project.title);

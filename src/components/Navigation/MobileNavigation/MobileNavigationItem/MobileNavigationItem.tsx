@@ -1,4 +1,5 @@
-import NavigationItem from "$components/Navigation/NavigationItem/NavigationItem";
+import NavigationItem from "$components/Navigation/NavigationItem/";
+
 import { MobileNavigationItemProps } from "./MobileNavigationItem.types";
 import * as P from "./MobileNavigationItem.parts";
 

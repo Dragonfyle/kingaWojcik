@@ -1,4 +1,4 @@
-import { SIZE } from "../styles/breakpoints";
+import { SIZE } from "$styles/breakpoints";
 
 const _config = Object.freeze({
     APP: { MAX_MOBILE_WIDTH: SIZE.L, MAX_PHONE_WIDTH: SIZE.S },

@@ -1,14 +1,16 @@
 import { useRef, useState } from "react";
-import KingaBrand from "../../generics/KingaBrand/KingaBrand";
-import NavigationItem from ".././NavigationItem/NavigationItem";
-import LinkedinIcon from "../../generics/LinkedinIcon/LinkedinIcon";
-import { CopiedConfirmation } from "$components/generics/CopiedConfirmation/CopiedConfirmation";
-import Flexbox from "../../generics/Flexbox/Flexbox";
+
 import navigationItems from "$data/navigationData";
-import NavigationEmail from ".././NavigationItem/NavigationEmail/NavigationEmail";
-import { handleEmailClick } from ".././Navigation.utils";
+import KingaBrand from "$generics/KingaBrand/";
+import Flexbox from "$generics/Flexbox/";
+import NavigationItem from "$components/Navigation/NavigationItem/";
+import LinkedinIcon from "$generics/LinkedinIcon/";
+import { CopiedConfirmation } from "$components/generics/CopiedConfirmation/";
+import NavigationEmail from "$components/Navigation/NavigationItem/NavigationEmail/";
+
+import AboutMeItem from "../NavigationItem/AboutMeItem/";
+import { handleEmailClick } from "../Navigation.utils";
 import * as P from "./DesktopNavigation.parts";
-import AboutMeItem from "../NavigationItem/AboutMeItem/AboutMeItem";
 
 export default function Navigation() {
     const [isModalVisible, setIsModalVisible] = useState(false);

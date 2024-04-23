@@ -1,4 +1,4 @@
-import { CONFIG } from "../constants/config";
+import { CONFIG } from "$constants/config";
 import czteryspacjeMiniaturka from "$img/projects/4spacje/ProjectPanel_4spacje_miniaturka.png";
 import ukenMiniaturka from "$img/projects/uken/ProjectPanel_uken_miniaturka.png";
 import goslinaMiniaturka from "$img/projects/goslina/ProjectPanel_goslina_miniaturka.png";
@@ -52,7 +52,8 @@ const ProjectPanelData = {
             {
                 thumbnail: okladkiMiniaturka,
                 title: "Projekty okładek książkowych",
-                description: "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
+                description:
+                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
             },
         ],

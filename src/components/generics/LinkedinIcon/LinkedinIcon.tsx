@@ -1,5 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
-import LinkedinSvg from "../../../assets/icons/linkedin.svg?react";
+import LinkedinSvg from "$assets/icons/linkedin.svg?react";
+
 import { LinkedIconProps } from "./LinkedinIcon.utils";
 
 import * as P from "./LinkedinIcon.parts";

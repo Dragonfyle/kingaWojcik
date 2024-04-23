@@ -1,5 +1,5 @@
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import Text from "../../generics/Text/Text";
+import Flexbox from "$generics/Flexbox/Flexbox";
+import Text from "$generics/Text/Text";
 
 interface ColumnDescriptionProps {
     withH1: boolean;

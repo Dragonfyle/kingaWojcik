@@ -1,7 +1,8 @@
-import { FeatureImageImageContent } from "../../../types/Project.types";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import { ColumnDescription } from "../ColumnDescription/ColumnDescription";
+import { FeatureImageImageContent } from "$types/Project.types";
+import Flexbox from "$generics/Flexbox/";
+
 import { ColumnsImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Columns.utils";
+import { ColumnDescription } from "../ColumnDescription/";
 import * as P from "./ColumnsImageImage.parts";
 
 export default function ColumnsImageImage({

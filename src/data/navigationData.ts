@@ -1,4 +1,4 @@
-import { CONFIG } from "src/constants/config";
+import { CONFIG } from "$constants/config";
 
 const navigationItems = [
     {

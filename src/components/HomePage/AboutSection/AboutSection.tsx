@@ -1,6 +1,6 @@
 import aboutKinga from "$img/author/author_kinga_wojcik.jpg";
 import { Link } from "react-router-dom";
-import { CONFIG } from "../../../constants/config";
+import { CONFIG } from "$constants/config";
 import * as P from "./AboutSection.parts";
 
 export default function AboutSection() {

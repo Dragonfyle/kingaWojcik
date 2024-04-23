@@ -1,10 +1,11 @@
-import useScrollToTop from "../../../hooks/useScrollToTop";
-import PlainGallery from "./PlainGallery/PlainGallery";
-import ProjectIntroduction from "../ProjectIntroduction/ProjectIntroduction";
+import { PlainGalleryProject } from "$types/plainGallery.types";
+import useScrollToTop from "$hooks/useScrollToTop";
+import Flexbox from "$generics/Flexbox/";
+
+import PlainGallery from "./PlainGallery/";
+import ProjectIntroduction from "../ProjectIntroduction/";
+import ProjectNavigation from "../ProjectNavigation/";
 import * as P from "./ProjectPlain.parts";
-import { PlainGalleryProject } from "../../../types/plainGallery.types";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import ProjectNavigation from "../ProjectNavigation/ProjectNavigation";
 
 interface ProjecPlain {
     source: PlainGalleryProject;

@@ -1,6 +1,5 @@
 import { projectUrlList, findCurrentUrlIndex, handleChangeProject } from "./ProjectNavigation.utils";
-import ProjectNavButtons from "../ProjectNavButtons/ProjectNavButton";
-import * as P from "./ProjectNavigation.parts";
+import ProjectNavButtons from "../ProjectNavButtons/";
 
 const MIN_IDX = 0;
 const maxIdx = projectUrlList.length - 1;

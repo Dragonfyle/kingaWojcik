@@ -1,6 +1,7 @@
+import { useCarouselContext } from "$contexts/CarouselContext";
+import ProgressBar from "$generics/ProgressBar/ProgressBar";
+
 import * as P from "./CarouselOverlayMapItem.parts";
-import ProgressBar from "../../../generics/ProgressBar/ProgressBar";
-import { useCarouselContext } from "../../contexts/CarouselContext/CarouselContext";
 
 interface CarouselOverlayMapItemProps {
     isActive: boolean;

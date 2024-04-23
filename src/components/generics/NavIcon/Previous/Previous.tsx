@@ -1,6 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
-import IconNext from "../../../../assets/icons/previous.svg?react";
-import { NavIconProps } from "../NavIcon.utils";
+import IconNext from "$assets/icons/previous.svg?react";
+import { NavIconProps } from "$NavIcon.utils";
 import * as P from "./Previous.parts";
 
 export default function PreviousIcon({

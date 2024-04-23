@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import { useThemeContext } from "../../../contexts/ThemeContext";
-import Divider from "../../generics/Divider/Divider";
-import Flexbox from "../../generics/Flexbox/Flexbox";
-import Text from "../../generics/Text/Text";
+
+import { useThemeContext } from "$contexts/ThemeContext";
+import Divider from "$generics/Divider/Divider";
+import Flexbox from "$generics/Flexbox/Flexbox";
+import Text from "$generics/Text/Text";
+
 import * as P from "./FooterSection.parts";
 
 interface FooterSectionProps {

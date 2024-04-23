@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { BREAKPOINTS } from "../../../../styles/breakpoints";
-import Text from "../../../generics/Text/Text";
+import { BREAKPOINTS } from "$styles/breakpoints";
+import Text from "$generics/Text/Text";
 
 export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     position: absolute;

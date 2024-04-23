@@ -1,6 +1,8 @@
 import { PropsWithChildren } from "react";
-import { useThemeContext } from "../../../contexts/ThemeContext";
-import Text from "../Text/Text";
+
+import { useThemeContext } from "$contexts/ThemeContext";
+import Text from "$generics/Text/";
+
 import * as P from "./Button.parts";
 
 interface ButtonProps extends PropsWithChildren {

@@ -1,7 +1,8 @@
-import Text from "../../../generics/Text/Text";
-import { NavigationEmailProps } from "./NavigationEmail.types";
+import { CONFIG } from "$constants/config";
+import Text from "$generics/Text/Text";
+
 import * as P from "./NavigationEmail.parts";
-import { CONFIG } from "src/constants/config";
+import { NavigationEmailProps } from "./NavigationEmail.types";
 
 export default function NavigationEmail({ children, onClick, backgroundColor }: NavigationEmailProps) {
     return (

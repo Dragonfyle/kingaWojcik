@@ -1,4 +1,4 @@
-import { Feature } from "../../types/Project.types";
+import { Feature } from "$types/Project.types";
 
 type ColumnWidth = 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90;
 

@@ -1,5 +1,6 @@
-import { BREAKPOINTS } from "../../../styles/breakpoints";
 import styled from "styled-components";
+
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const NavigationWrapper = styled.div`
     display: flex;

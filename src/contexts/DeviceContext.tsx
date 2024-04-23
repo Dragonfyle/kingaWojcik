@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { CONFIG } from "../../../../constants/config";
+
+import { CONFIG } from "$constants/config";
 
 const DeviceContext = createContext({
     isMobile: false,

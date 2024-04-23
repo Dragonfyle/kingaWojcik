@@ -17,6 +17,6 @@ export const ProgressBarFiller = styled.div<{ $progress: number; $isActive: bool
     width: 100%;
     height: 100%;
     background-color: ${({ theme }) => theme.colors.leading.main[1]};
-    transition: transform ${({ $progress }) => ($progress > 0 ? CONFIG.CAROUSEL.INTERVAL + "ms" : "none")} linear;
+    transition: transform ${({ $progress }) => ($progress > 0 ? CONFIG.CAROUSEL.TRANSITION + "ms" : "none")} linear;
     transform: translateX(${({ $isActive, $progress }) => ($isActive ? -100 + $progress : -101)}%);
 `;

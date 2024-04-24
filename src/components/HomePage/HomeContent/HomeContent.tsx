@@ -1,7 +1,7 @@
-import ProjectSection from "../ProjectsSection/";
-import { ProjectPanelData } from "$data/projectPanelData";
+import { ProjectPanelData } from "$data/ProjectPanelData";
 import ScrollToAnchor from "$utils/scrollToAnchor";
 
+import ProjectSection from "../ProjectsSection/";
 import * as P from "./HomeContent.parts";
 
 export default function HomeContent() {

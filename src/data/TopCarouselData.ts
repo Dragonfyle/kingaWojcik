@@ -1,8 +1,8 @@
 export const MAP_ITEM_DESCRIPTIONS = [
     "Współpraca",
     "Dzielenie się wiedzą",
-    "Determinacja i wytrwałość",
-    "Rozwój",
+    "Ciągły rozwój",
+    "Wytrwałość",
 ] as const;
 
 export const IMAGE_DESCRIPTIONS = [
@@ -15,8 +15,8 @@ export const IMAGE_DESCRIPTIONS = [
 export const IMAGE_TITLES = [
     "Współpraca",
     "Dzielenie się wiedzą",
-    "Determinacja i wytrwałość",
-    "Rozwój",
+    "Ciągły rozwój",
+    "Wytrwałość",
 ] as const;
 
 export const NUM_IMAGES = MAP_ITEM_DESCRIPTIONS.length;

@@ -6,18 +6,25 @@ import rekrutacjaArtykuly from "$img/projects/4spacje/czteryspacje_rekrutacja-ar
 import rekrutacjaZadania from "$img/projects/4spacje/czteryspacje_rekrutacja-zadania.jpg";
 import naglowki from "$img/projects/4spacje/czteryspacje_naglowki.gif";
 import stronaGlowna from "$img/projects/4spacje/czteryspacje_glowna.png";
+import stronaGlownaLight from "$img/projects/4spacje/articleLightMode.png";
+import mapyMysli from "$img/projects/4spacje/czteryspacje_mapy.jpg";
+import staraLight from "$img/projects/4spacje/czteryspacje_stara-strona-light.jpg";
+import staraDark from "$img/projects/4spacje/czteryspacje_stara-strona.jpg";
 import { TabbedGalleryData } from "$types/tabbedGallery.types";
 
 const tabbedGalleryData: TabbedGalleryData = {
     project1: {
-        header: "Projekt logo i strony internetowej dla 4spacje.pl",
+        header: "Projekt logo i strony internetowej dla 4spacje.pl -redesign",
         intro: ``,
 
         tabbedGalleryContent: [
             {
                 tabName: "brief",
                 highlight: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.
-                Każdy członek zespołu otrzymał do wypełnienia ankietę (brief) z pytaniami dotyczącymi celu powstania bloga, misji, jaką ma spełniać strona, jej grupy docelowej oraz wielu pokrewnych kwestii. Dzięki temu byłam w stanie przygotować propozycje logo i projektu redesignu strony adekwatnie do roli, jaką mają one spełniać`,
+                
+                Projekty logo i strony internetowej powstały w oparciu o brief, wypełniony przez każdego członka zespołu. Pytania dotyczyły celu powstania bloga, misji, jaką ma spełniać strona, jej grupy docelowej oraz pokrewnych kwestii.
+                
+                Dzięki tym informacjom byłam w stanie przygotować propozycje logo i projekt nowej strony adekwatnie do roli, jaką mają one spełniać.`,
 
                 features: {
                     feature1: {
@@ -36,6 +43,20 @@ const tabbedGalleryData: TabbedGalleryData = {
                             -grupą docelową są głównie młodzi programiści i designerzy, stąd też potrzeba pójścia w kierunku nowoczesnego projektu witryny`,
                         },
                     },
+                    feature2: {
+                        component: "Image",
+
+                        configuration: {
+                            withH1: true,
+                            withDescription: true,
+                        },
+
+                        content: {
+                            img: mapyMysli,
+                            h1: "Na podstawie briefów powstały mapy myśli",
+                            description: "",
+                        },
+                    },
                 },
             },
             {
@@ -47,15 +68,16 @@ const tabbedGalleryData: TabbedGalleryData = {
                     feature1: {
                         component: "Image",
                         configuration: {
-                            withH1: false,
+                            withH1: true,
                             withDescription: true,
                         },
                         content: {
                             img: wstepneSzkice,
-                            h1: "",
-                            description: "Wstępne szkice",
+                            h1: "Wstępne szkice powstałe na podstawie briefów i map myśli",
+                            description: "",
                         },
                     },
+
                     feature2: {
                         component: "ImageImage",
 
@@ -77,52 +99,112 @@ const tabbedGalleryData: TabbedGalleryData = {
                                 
                             Jednocześnie jest to też cudzysłów otwierający, nawiązujący do dzielenia się wiedzą i opiniami.
                                
-                            Dwa ukośniki tworzą cyfrę 4, stanowiącą pierwszy człon nazwy bloga.
-                                `,
+                            Dwa ukośniki tworzą cyfrę 4, stanowiącą pierwszy człon nazwy bloga.`,
+
                             rightDescription: `Jak się okazało, czwórka w sygnecie nie była na tyle oczywista, aby odczytywać ją jako część nazwy. A jest to istotne dla rozpoznawalności marki.
 
                             Dodałam czwórkę do logotypu i poszerzyłam ukośniki w sygnecie. W ten sposób wprowadzony został też motyw kart tarota, co nawiązuje do genezy nazwy.
 
-                                Zmieniony został także font, by bardziej współgrał ze szkoleniowym charakterem bloga.
-                                Gruba linia fontu sugeruje solidność, autorytet, rzetelność. Font jednoelementowy stanowi symbol męskości i stabilności.
-                                Połączenie minuskuły i majuskuły: małe litery sprawiają, że logo jest bardziej przyjazne, komunikują otwartość na ludzi i chęć budowania relacji, wielkie litery dają wrażenie wiarygodności, profesjonalizmu. Ich połączenie tworzy balans między tymi wartościami.
-                                `,
+                                Zmieniony został także font, by bardziej współgrał ze szkoleniowym charakterem bloga.`,
+                        },
+                    },
+                    feature3: {
+                        component: "Text",
+
+                        configuration: {
+                            withH1: true,
+                        },
+
+                        content: {
+                            h1: "Symbolika logotypu",
+                            description: `Gruba linia fontu sugeruje solidność, autorytet i rzetelność. Krój jednoelementowy nawiązuje do cech, takich jak stabilność i przewidywalność.
+                            Połączenie minuskuły i majuskuły: małe litery sprawiają, że logo jest bardziej przyjazne, komunikują otwartość na ludzi i chęć budowania relacji, wielkie litery dają wrażenie wiarygodności, profesjonalizmu. Ich połączenie tworzy balans między tymi wartościami.
+                            `,
                         },
                     },
                 },
             },
             {
-                tabName: "strona internetowa",
-                highlight: "Podstawowe zmiany: ",
+                tabName: "Poprzedni wygląd strony",
+                highlight: `Tak prezentowała się strona 4spacje.pl przed redesignem. `,
 
                 features: {
                     feature1: {
                         component: "Image",
                         configuration: {
-                            withH1: true,
-                            withDescription: true,
+                            withH1: false,
+                            withDescription: false,
                         },
                         content: {
-                            img: stronaGlowna,
-                            h1: "Najważniejsze zmiany",
-                            description:
-                                "Zmiany obejmują przede wszystkim kwestie estetyczne, ale także modyfikacje niektórych funkcjonalności i sposobu działania strony. Witryna została ożywiona odcieniami limonki, wybranej jako główny kolor brandowy. Przygotowałam projekt zarówno dla jasnego, jak i ciemnego motywu z uwagi na to, że programiści często skłaniają się ku temu drugiemu. Zmieniona została cała kolorystyka, która dotąd była rozbałaganiona (np. funkcjonowało kilkanaście bardzo zbliżonych do siebie odcieni, elementy na stronie kolorowane były w niekonsekwentny sposób: ta sama funkcja - za każdym razem inny kolor) i nieharmonijna (brak koloru akcentującego, wszystkie barwy jednakowo przygaszone). Slogan został przyłączony do nawigacji, by właściwa treść mogła zostać podniesiona wyżej. „Codzienną porcję kodu” umieściłam na samej górze, bo sekcja ta bardzo dobrze oddaje charakter bloga i bez słów mówi użytkownikom, gdzie się znajdują. Dodatkowo jest to element, który może angażować ich już od samego początku. Tagi artykułów zostały pochylone, by wprowadzić element dynamiki W starej wersji profil autora pod artykułem pozostawał nieklikalny. Teraz będzie on przekierowywał do podstrony „o nas”. Tłem dla kontenerów jest półprzezroczysty, biały gradient, który kojarzy się z luminacją i technologią.",
+                            img: staraLight,
+                            h1: "",
+                            description: "",
                         },
                     },
                     feature2: {
                         component: "Image",
                         configuration: {
-                            withH1: true,
-                            withDescription: true,
+                            withH1: false,
+                            withDescription: false,
                         },
                         content: {
-                            img: wyszukiwarkaTeraz,
-                            h1: "Zaproponowałam przebudowę wyszukiwarki",
+                            img: staraDark,
+                            h1: "",
+                            description: "",
+                        },
+                    },
+                },
+            },
+            {
+                tabName: "nowy design strony",
+                highlight: `Zmiany obejmują przede wszystkim kwestie estetyczne, ale także modyfikacje niektórych funkcjonalności i sposobu działania strony (z nastawieniem na użytkowników desktopowych, skąd pochodzi ponad 90% ruchu).
+                                
+                Witryna została ożywiona odcieniami limonki, wybranej jako główny kolor brandowy. Projekt Ppzygotowałam zarówno dla jasnego, jak i ciemnego motywu. Zmieniona została cała kolorystyka, która dotąd była trochę rozbałaganiona (np. funkcjonowało kilkanaście bardzo zbliżonych do siebie odcieni, elementy na stronie kolorowane były w niekonsekwentny sposób: np. pełniły tę samą funkcję, ale za każdym razem miały inny kolor) i nieharmonijna (brak koloru akcentującego, wszystkie barwy jednakowo przygaszone).
+                `,
+
+                features: {
+                    feature1: {
+                        component: "ImageImage",
+                        configuration: {
+                            leftColumnWidth: 50,
+                            withLeftH1: true,
+                            withRightH1: true,
+                            withLeftDescription: false,
+                            withRightDescription: false,
+                            descriptionPosition: "bottom",
+                        },
+                        content: {
+                            leftImg: stronaGlowna,
+                            rightImg: stronaGlownaLight,
+                            leftH1: "",
+                            rightH1: "",
+                        },
+                    },
+                    feature2: {
+                        component: "Text",
+                        configuration: {
+                            withH1: true,
+
+                        },
+                        content: {
+                            h1: "Redesign wyszukiwarki",
                             description: `Zaproponowałam przebudowę wyszukiwarki artykułów pod kątem poprawy jej użyteczności, a także wyglądu.
 
                             Dotąd opierała się ona na rozwijanej liście tagów, a filtry wyszukiwania aplikowane były po zaznaczeniu wybranych i zamknięciu pola “select”. Wtedy dopiero lista artykułów była aktualizowana, uwzględniając wybory użytkownika. Mogło to powodować zakłopotanie korzystających ze strony osób, które spodziewałyby się natychmiastowego działania zaznaczonych przez nich tagów.
                             
-                            W zaprojektowanym przeze mnie rozwiązaniu najważniejsze tagi są widoczne od razu. Eliminuje to konieczność kliknięcia w celu otwarcia listy. Wyszukiwarka zajmuje całą szerokość strony, dzięki czemu jest lepiej widoczna. Okno z tagami można rozwinąć, by zobaczyć więcej filtrów. Mają one być aplikowane od razu po zaznaczeniu. Usunięte zostały wszelkie zbędne elementy i teksty, biorąc pod uwagę, że użytkownicy naszej strony to osoby obeznane z internetem.`,
+                            W zaprojektowanym przeze mnie rozwiązaniu najważniejsze tagi są widoczne od razu. Eliminuje to konieczność kliknięcia w celu otwarcia listy. Wyszukiwarka zajmuje całą szerokość strony, dzięki czemu jest lepiej widoczna. Okno z tagami można rozwinąć, by zobaczyć więcej filtrów. Mają one być aplikowane od razu po zaznaczeniu. Usunięte zostały wszelkie zbędne elementy i teksty, biorąc pod uwagę, że użytkownicy naszej strony to osoby dobrze radzące sobie z technologiami`,
+                        },
+                    },
+                    feature3: {
+                        component: "Image",
+                        configuration: {
+                            withH1: false,
+                            withDescription: false,
+                        },
+                        content: {
+                            img: wyszukiwarkaTeraz,
+                            h1: "",
+                            description: "",
                         },
                     },
                 },
@@ -138,24 +220,24 @@ const tabbedGalleryData: TabbedGalleryData = {
                         component: "Image",
                         configuration: {
                             withH1: false,
-                            withDescription: true,
+                            withDescription: false,
                         },
                         content: {
                             img: rekrutacjaZadania,
                             h1: "",
-                            description: "Przygotowałam projekt zakładki",
+                            description: "",
                         },
                     },
                     feature2: {
                         component: "Image",
                         configuration: {
                             withH1: false,
-                            withDescription: true,
+                            withDescription: false,
                         },
                         content: {
                             img: rekrutacjaArtykuly,
                             h1: "",
-                            description: "Przygotowałam projekt zakładki",
+                            description: "",
                         },
                     },
 

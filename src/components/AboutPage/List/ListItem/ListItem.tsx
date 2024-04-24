@@ -10,7 +10,7 @@ interface ListItemProps {
 export default function ListItem({ source }: ListItemProps) {
     return (
         <P.ListItemWrapper>
-            <Flexbox $direction="column" $width="25%">
+            <Flexbox $direction="column" $width="100px">
                 <Text size="s" align="right" whiteSpace="nowrap">
                     {source.header[1]}
                 </Text>

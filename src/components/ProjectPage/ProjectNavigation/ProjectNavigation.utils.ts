@@ -1,4 +1,4 @@
-import { ProjectPanelData } from "$data/projectPanelData";
+import { ProjectPanelData } from "$data/ProjectPanelData";
 
 const projectUrlList = [
     ...ProjectPanelData.branding.content.map((project) => project.projectUrl),

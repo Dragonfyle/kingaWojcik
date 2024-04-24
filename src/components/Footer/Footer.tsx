@@ -1,5 +1,5 @@
 import { CONFIG } from "$constants/config";
-import { ProjectPanelData } from "$data/projectPanelData";
+import { ProjectPanelData } from "$data/ProjectPanelData";
 
 import FooterSection from "./FooterSection/";
 import * as P from "./Footer.parts";

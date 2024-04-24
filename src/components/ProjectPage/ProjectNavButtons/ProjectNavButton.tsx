@@ -1,8 +1,9 @@
 import NextIcon from "$components/generics/NavIcon/Next/Next";
 import PreviousIcon from "$components/generics/NavIcon/Previous/Previous";
-import { CONFIG } from "src/constants/config";
-import { useThemeContext } from "src/contexts/ThemeContext";
-import { ProjectNavigationProps } from "$ProjectNavigation/ProjectNavigation.types";
+import { CONFIG } from "$constants/config";
+import { useThemeContext } from "$contexts/ThemeContext";
+
+import { ProjectNavigationProps } from "../ProjectNavigation/ProjectNavigation.types";
 import * as P from "./ProjectNavButton.parts";
 
 export default function ProjectNavButtons({ onNextProject, onPreviousProject }: ProjectNavigationProps) {

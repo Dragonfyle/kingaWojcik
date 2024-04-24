@@ -6,7 +6,7 @@ import Flexbox from "$generics/Flexbox/Flexbox";
 import Text from "$generics/Text/Text";
 import Slider from "$generics/Slider/Slider";
 import { SliderImperativeHandle } from "$generics/Slider/Slider.types";
-import { ProjectPanelDataSection } from "$data/projectPanelData";
+import { ProjectPanelDataSection } from "$data/ProjectPanelData";
 
 import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/";
 import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/";

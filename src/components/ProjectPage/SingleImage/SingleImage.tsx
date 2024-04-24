@@ -1,7 +1,7 @@
 import { FeatureImageContent } from "$types/Project.types";
-
 import { ColumnDescription } from "../ColumnDescription/";
 import { SingleImageProps, descriptionPositionMap } from "../Columns.utils";
+
 import * as P from "./SingleImage.parts";
 
 export default function SingleImage({

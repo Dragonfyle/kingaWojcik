@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledFlexboxProps } from "./Flexbox.utils";
+import { StyledFlexboxProps } from "./Flexbox.types";
 
 export const Flexbox = styled.div<StyledFlexboxProps>`
     display: flex;

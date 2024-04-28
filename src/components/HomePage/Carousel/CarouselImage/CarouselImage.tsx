@@ -1,14 +1,10 @@
 import { useCarouselContext } from "$contexts/CarouselContext";
 
 import { activeImageMap, wspolpraca, ImageSet, WIDTH_THRESHOLDS } from "../CarouselSlide/CarouselSlide.utils";
+import { CarouselImageProps } from "./CarouselImage.types";
 import * as P from "./CarouselImage.parts";
 
-interface CarouselImage extends React.PropsWithChildren {
-    isActive: boolean;
-    imageSet: ImageSet;
-}
-
-export default function CarouselImage({ isActive, imageSet }: CarouselImage) {
+export default function CarouselImage({ isActive, imageSet }: CarouselImageProps) {
     const { activeImage } = useCarouselContext();
     const activeImageSet = activeImageMap.get(activeImage) || wspolpraca;
     const largestImageIndex = activeImageSet.length - 1;

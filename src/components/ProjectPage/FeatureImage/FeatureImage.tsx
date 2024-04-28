@@ -1,15 +1,15 @@
 import { FeatureImageContent } from "$types/Project.types";
 import { ColumnDescription } from "../ColumnDescription/";
-import { SingleImageProps, descriptionPositionMap } from "../Columns.utils";
+import { FeatureImageProps, descriptionPositionMap } from "../Feature.types";
 
-import * as P from "./SingleImage.parts";
+import * as P from "./FeatureImage.parts";
 
-export default function SingleImage({
+export default function FeatureImage({
     source,
     withH1 = true,
     withDescription = false,
     descriptionPosition = "bottom",
-}: SingleImageProps) {
+}: FeatureImageProps) {
     const content = source.content as FeatureImageContent;
 
     return (

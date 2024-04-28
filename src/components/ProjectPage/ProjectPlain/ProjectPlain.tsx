@@ -1,17 +1,13 @@
-import { PlainGalleryProject } from "$types/plainGallery.types";
 import useScrollToTop from "$hooks/useScrollToTop";
 import Flexbox from "$generics/Flexbox/";
 
 import PlainGallery from "./PlainGallery/";
 import ProjectIntroduction from "../ProjectIntroduction/";
 import ProjectNavigation from "../ProjectNavigation/";
+import { ProjecPlainProps } from "./ProjectPlain.types";
 import * as P from "./ProjectPlain.parts";
 
-interface ProjecPlain {
-    source: PlainGalleryProject;
-}
-
-export default function ProjectPlain({ source }: ProjecPlain) {
+export default function ProjectPlain({ source }: ProjecPlainProps) {
     useScrollToTop();
 
     const withDescription = source.intro !== "";

@@ -1,11 +1,8 @@
 import Text from "$generics/Text/";
 import { CONFIG } from "$constants/config";
 
+import { KingaBrandProps } from "./KingaBrand.types";
 import * as P from "./KingaBrand.parts";
-
-interface KingaBrandProps {
-    onClick?: () => void;
-}
 
 export default function KingaBrand({ onClick }: KingaBrandProps) {
     return (

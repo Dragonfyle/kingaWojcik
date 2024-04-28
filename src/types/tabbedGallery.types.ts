@@ -1,5 +1,9 @@
 import { Feature } from "./Project.types";
 
+interface TabbedGalleryProps {
+    source: TabbedGalleryProject;
+}
+
 type FeatureComponentName = "Text" | "Image" | "TextText" | "TextImage" | "ImageImage" | "ImageText";
 
 type Features = {
@@ -22,4 +26,11 @@ interface TabbedGalleryData {
     [key: `project${number}`]: TabbedGalleryProject;
 }
 
-export type { FeatureComponentName, Features, ProjectContent, TabbedGalleryProject, TabbedGalleryData };
+export type {
+    TabbedGalleryProps,
+    FeatureComponentName,
+    Features,
+    ProjectContent,
+    TabbedGalleryProject,
+    TabbedGalleryData,
+};

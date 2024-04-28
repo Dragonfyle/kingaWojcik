@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledTextProps, getTextSize } from "./Text.utils";
+import { StyledTextProps, getTextSize } from "./Text.types";
 
 export const StyledText = styled.p<StyledTextProps>`
     font-size: ${getTextSize};

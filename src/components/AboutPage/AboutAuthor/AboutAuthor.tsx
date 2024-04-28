@@ -1,11 +1,7 @@
 import Flexbox from "$generics/Flexbox/Flexbox";
 import Text from "$generics/Text/Text";
-import { AboutSectionData } from "$data/aboutSectionData";
+import { AboutSectionProps } from "./AboutAuthor.types";
 import * as P from "./AboutAuthor.parts";
-
-interface AboutSectionProps {
-    source: AboutSectionData;
-}
 
 export default function AboutAuthor({ source }: AboutSectionProps) {
     return (

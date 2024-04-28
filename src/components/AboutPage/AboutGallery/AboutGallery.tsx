@@ -1,15 +1,11 @@
 import { useState } from "react";
 
-import { AboutGalleryData } from "$types/AboutGallery.types";
 import TabNavigation from "$generics/TabNavigation/TabNavigation";
 import Flexbox from "$generics/Flexbox/Flexbox";
 
 import List from "../List/";
+import { AboutGalleryProps } from "./AboutGallery.types";
 import * as P from "./AboutGallery.parts";
-
-interface AboutGalleryProps {
-    source: AboutGalleryData;
-}
 
 export default function AboutGallery({ source }: AboutGalleryProps) {
     const [activeTab, setActiveTab] = useState(0);

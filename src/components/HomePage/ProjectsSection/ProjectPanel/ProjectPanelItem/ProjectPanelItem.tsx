@@ -1,12 +1,8 @@
 import Text from "$generics/Text/Text";
 
 import ProjectThumbnail from "../Thumbnail/";
+import { ProjectPanelItemProps } from "./ProjectPanelItem.types";
 import * as P from "./ProjectPanelItem.parts";
-interface ProjectPanelItemProps {
-    image: string;
-    title: string;
-    description: string;
-}
 
 export default function ProjectPanelItem({ image, title, description }: ProjectPanelItemProps) {
     return (

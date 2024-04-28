@@ -1,8 +1,5 @@
 import * as P from "./Thumbnail.parts";
-
-interface ProjectThumbnailProps {
-    src: string;
-}
+import { ProjectThumbnailProps } from "./Thumbnail.types";
 
 export default function ProjectThumbnail({ src }: ProjectThumbnailProps) {
     return (

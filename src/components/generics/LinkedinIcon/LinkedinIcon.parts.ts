@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { BREAKPOINTS } from "$styles/breakpoints";
 
-import { StyledLinkedinIconProps } from "./LinkedinIcon.utils";
+import { StyledLinkedinIconProps } from "./LinkedinIcon.types";
 
 export const StyledA = styled.a<StyledLinkedinIconProps>`
     display: flex;

@@ -2,14 +2,14 @@ import { Feature } from "$types/Project.types";
 
 type ColumnWidth = 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90;
 
-interface SingleImageProps {
+interface FeatureImageProps {
     source: Feature;
     withH1: boolean;
     withDescription: boolean;
     descriptionPosition?: "top" | "bottom";
 }
 
-interface ColumnsImageTextProps {
+interface FeatureImageTextProps {
     source: Feature;
     leftColumnWidth: ColumnWidth;
     withH1: boolean;
@@ -17,7 +17,7 @@ interface ColumnsImageTextProps {
     descriptionPosition?: "top" | "bottom";
 }
 
-interface ColumnsImageImageProps {
+interface FeatureImageImageProps {
     source: Feature;
     leftColumnWidth: ColumnWidth;
     withLeftH1: boolean;
@@ -27,12 +27,12 @@ interface ColumnsImageImageProps {
     descriptionPosition?: "top" | "bottom";
 }
 
-interface SingleTextProps {
+interface FeatureTextProps {
     source: Feature;
     withH1: boolean;
 }
 
-interface ColumnsTextTextProps {
+interface FeatureTextTextProps {
     source: Feature;
     leftColumnWidth: ColumnWidth;
     withLeftH1: boolean;
@@ -57,9 +57,9 @@ export { getColumnsWidth, descriptionPositionMap };
 
 export type {
     ColumnWidth,
-    SingleImageProps,
-    ColumnsImageImageProps,
-    ColumnsImageTextProps,
-    SingleTextProps,
-    ColumnsTextTextProps,
+    FeatureImageProps,
+    FeatureImageImageProps,
+    FeatureImageTextProps,
+    FeatureTextProps,
+    FeatureTextTextProps,
 };

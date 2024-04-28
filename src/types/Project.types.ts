@@ -32,15 +32,15 @@ interface FeatureTextTextConfig extends FeatureConfig {
 }
 
 interface FeatureTextContent {
-    h1?: string;
     description: string;
+    h1?: string;
 }
 
 interface FeatureTextTextContent {
-    leftH1?: string;
-    rightH1?: string;
     leftDescription: string;
     rightDescription: string;
+    leftH1?: string;
+    rightH1?: string;
 }
 
 interface FeatureImageContent {
@@ -60,8 +60,8 @@ interface FeatureImageImageContent {
 
 interface FeatureTextImageContent {
     img: string;
-    h1?: string;
     description: string;
+    h1?: string;
 }
 
 interface FeatureText {

@@ -13,5 +13,5 @@ export default function TabNavigation({ source, activeTab, onClick }: TabNavigat
         ));
     }
 
-    return <P.StyledMenu>{getButtons(tabNames)}</P.StyledMenu>;
+    return <P.StyledNavigation>{getButtons(tabNames)}</P.StyledNavigation>;
 }

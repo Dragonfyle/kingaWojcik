@@ -2,7 +2,7 @@ import { FeatureTextTextContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 import Text from "$generics/Text/";
 
-import { FeatureTextTextProps, getColumnsWidth } from "../Columns.types";
+import { FeatureTextTextProps, getColumnsWidth } from "../Feature.types";
 import * as P from "./FeatureTextText.parts";
 
 export default function FeatureTextText({

@@ -1,6 +1,6 @@
 import { FeatureImageContent } from "$types/Project.types";
 import { ColumnDescription } from "../ColumnDescription/";
-import { FeatureImageProps, descriptionPositionMap } from "../Columns.types";
+import { FeatureImageProps, descriptionPositionMap } from "../Feature.types";
 
 import * as P from "./FeatureImage.parts";
 

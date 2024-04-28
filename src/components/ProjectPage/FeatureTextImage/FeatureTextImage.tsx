@@ -2,7 +2,7 @@ import { FeatureTextImageContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 import Text from "$generics/Text/";
 
-import { FeatureImageTextProps, getColumnsWidth } from "../Columns.types";
+import { FeatureImageTextProps, getColumnsWidth } from "../Feature.types";
 import * as P from "./FeatureTextImage.parts";
 
 export default function FeatureTextImage({ source, leftColumnWidth = 50, withH1 = true }: FeatureImageTextProps) {

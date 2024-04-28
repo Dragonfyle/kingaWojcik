@@ -1,7 +1,7 @@
 import { FeatureImageImageContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 
-import { FeatureImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Columns.types";
+import { FeatureImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Feature.types";
 import { ColumnDescription } from "../ColumnDescription/";
 import * as P from "./FeatureImageImage.parts";
 

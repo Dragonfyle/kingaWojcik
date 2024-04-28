@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { BREAKPOINTS } from "$styles/breakpoints";
 
-export const NavigationWrapper = styled.div`
+export const NavigationWrapper = styled.nav`
     display: flex;
     position: sticky;
     left: 50%;

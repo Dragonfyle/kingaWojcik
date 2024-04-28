@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { BREAKPOINTS } from "$styles/breakpoints";
 
-export const NavigationWrapper = styled.div`
+export const NavigationWrapper = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;

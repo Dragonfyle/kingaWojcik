@@ -30,11 +30,9 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
         <P.StyledSection id={id}>
             <Flexbox $wrap="nowrap">
                 <Flexbox>
-                    <P.StyledHeader>
-                        <Text bold size="4xl">
-                            {source.header}
-                        </Text>
-                    </P.StyledHeader>
+                    <Text tag="h2" bold size="4xl">
+                        {source.header}
+                    </Text>
                 </Flexbox>
                 {!isMobile && (
                     <Flexbox $wrap="nowrap" $justify="center">

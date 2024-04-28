@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BREAKPOINTS } from "$styles/breakpoints";
 
-export const SummaryWrapper = styled.header`
+export const SummaryWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
     width: 100%;

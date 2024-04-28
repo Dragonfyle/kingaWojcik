@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BREAKPOINTS } from "$styles/breakpoints";
 import Flexbox from "$generics/Flexbox/Flexbox";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
     display: flex;
     background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
     border-top: 1px solid ${({ theme }) => theme.colors.white[1]};

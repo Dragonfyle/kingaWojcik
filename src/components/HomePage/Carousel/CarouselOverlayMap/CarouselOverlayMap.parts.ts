@@ -1,7 +1,7 @@
 import { BREAKPOINTS } from "$styles/breakpoints";
 import styled from "styled-components";
 
-export const MapWrapper = styled.div`
+export const MapWrapper = styled.nav`
     display: flex;
     align-items: flex-start;
     width: 78%;

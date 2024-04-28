@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BREAKPOINTS } from "$styles/breakpoints";
 
-export const StyledMenu = styled.menu`
+export const StyledNavigation = styled.nav`
     display: flex;
     align-items: flex-start;
     background-color: ${({ theme }) => theme.colors.leading.secondary[1]};

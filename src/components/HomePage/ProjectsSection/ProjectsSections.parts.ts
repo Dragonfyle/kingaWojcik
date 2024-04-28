@@ -1,5 +1,6 @@
-import { BREAKPOINTS } from "$styles/breakpoints";
 import styled from "styled-components";
+import Text from "$components/generics/Text";
+import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const StyledSection = styled.section`
     display: flex;
@@ -62,12 +63,8 @@ export const StyledSection = styled.section`
     }
 `;
 
-export const StyledHeader = styled.header`
-    display: flex;
-
-    p {
-        ${BREAKPOINTS.M} {
-            font-size: ${({ theme }) => theme.fontSize["3xl"]};
-        }
+export const StyledText = styled(Text)`
+    ${BREAKPOINTS.M} {
+        font-size: ${({ theme }) => theme.fontSize["3xl"]};
     }
 `;

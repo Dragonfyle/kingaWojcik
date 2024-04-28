@@ -2,15 +2,15 @@ import { FeatureTextTextContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 import Text from "$generics/Text/";
 
-import { ColumnsTextTextProps, getColumnsWidth } from "../Columns.utils";
-import * as P from "./ColumnsTextText.parts";
+import { FeatureTextTextProps, getColumnsWidth } from "../Columns.types";
+import * as P from "./FeatureTextText.parts";
 
-export default function ColumnsTextText({
+export default function FeatureTextText({
     source,
     leftColumnWidth = 50,
     withLeftH1,
     withRightH1,
-}: ColumnsTextTextProps) {
+}: FeatureTextTextProps) {
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
     const content = source.content as FeatureTextTextContent;
 

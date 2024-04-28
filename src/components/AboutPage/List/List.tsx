@@ -1,9 +1,11 @@
 import { TabContent } from "$types/AboutGallery.types";
 import Text from "$generics/Text/Text";
+
 import ListItem from "./ListItem/ListItem";
+import { ListProps } from "./List.types";
 import * as P from "./List.parts";
 
-export default function List({ source }: { source: TabContent }) {
+export default function List({ source }: ListProps) {
     function renderList(source: TabContent) {
         return source.listContent.map((item) => <ListItem key={item.header[1]} source={item} />);
     }

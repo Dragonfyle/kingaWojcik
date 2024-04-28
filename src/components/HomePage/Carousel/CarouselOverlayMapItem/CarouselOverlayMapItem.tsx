@@ -1,13 +1,8 @@
 import { useCarouselContext } from "$contexts/CarouselContext";
 import ProgressBar from "$generics/ProgressBar/ProgressBar";
 
+import { CarouselOverlayMapItemProps } from "./CarouselOverlayMapItem.types";
 import * as P from "./CarouselOverlayMapItem.parts";
-
-interface CarouselOverlayMapItemProps {
-    isActive: boolean;
-    description: string;
-    imageIndex: number | null;
-}
 
 export default function CarouselOverlayMapItem({ isActive, description, imageIndex }: CarouselOverlayMapItemProps) {
     const { setProgress, setActiveImage } = useCarouselContext();

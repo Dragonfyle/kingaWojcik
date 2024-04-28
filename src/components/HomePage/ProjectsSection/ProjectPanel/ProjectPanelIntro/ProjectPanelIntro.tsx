@@ -1,8 +1,5 @@
 import * as P from "./ProjectPanelIntro.parts";
-
-interface ProjectPanelIntroProps {
-    text: string;
-}
+import { ProjectPanelIntroProps } from "./ProjectPanelIntro.types";
 
 export default function ProjectPanelIntro({ text }: ProjectPanelIntroProps) {
     return (

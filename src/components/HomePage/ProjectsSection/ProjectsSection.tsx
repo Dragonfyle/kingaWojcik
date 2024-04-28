@@ -11,12 +11,8 @@ import { ProjectPanelDataSection } from "$data/ProjectPanelData";
 import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/";
 import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/";
 import NavButtons from "../ProjectsSection/NavButtons/";
+import { ProjectSectionProps } from "./ProjectsSection.types";
 import * as P from "./ProjectsSections.parts";
-
-interface ProjectSectionProps {
-    id: string;
-    source: ProjectPanelDataSection;
-}
 
 export default function ProjectSection({ id, source }: ProjectSectionProps) {
     const sliderRef = useRef<SliderImperativeHandle>(null);

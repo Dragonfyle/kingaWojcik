@@ -1,11 +1,11 @@
 import { FeatureImageImageContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 
-import { ColumnsImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Columns.utils";
+import { FeatureImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Columns.types";
 import { ColumnDescription } from "../ColumnDescription/";
-import * as P from "./ColumnsImageImage.parts";
+import * as P from "./FeatureImageImage.parts";
 
-export default function ColumnsImageImage({
+export default function FeatureImageImage({
     source,
     leftColumnWidth = 50,
     withLeftH1 = true,
@@ -13,7 +13,7 @@ export default function ColumnsImageImage({
     withLeftDescription = false,
     withRightDescription = false,
     descriptionPosition = "bottom",
-}: ColumnsImageImageProps) {
+}: FeatureImageImageProps) {
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
     const content = source.content as FeatureImageImageContent;
 

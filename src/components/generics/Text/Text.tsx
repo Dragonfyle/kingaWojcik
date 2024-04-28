@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 
-import { TextProps } from "./Text.utils";
+import { TextProps } from "./Text.types";
 import * as P from "./Text.parts";
 
 const Text = forwardRef<HTMLParagraphElement, TextProps>(function Text(

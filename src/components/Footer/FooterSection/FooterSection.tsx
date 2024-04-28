@@ -5,13 +5,8 @@ import Divider from "$generics/Divider/Divider";
 import Flexbox from "$generics/Flexbox/Flexbox";
 import Text from "$generics/Text/Text";
 
+import { FooterSectionProps } from "./FooterSection.types";
 import * as P from "./FooterSection.parts";
-
-interface FooterSectionProps {
-    sectionName: string;
-    listItems: string[];
-    links: string[];
-}
 
 export default function FooterSection({ sectionName, listItems, links }: FooterSectionProps) {
     const {

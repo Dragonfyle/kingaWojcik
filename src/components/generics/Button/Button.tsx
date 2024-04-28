@@ -1,14 +1,8 @@
-import { PropsWithChildren } from "react";
-
 import { useThemeContext } from "$contexts/ThemeContext";
 import Text from "$generics/Text/";
 
+import { ButtonProps } from "./Button.types";
 import * as P from "./Button.parts";
-
-interface ButtonProps extends PropsWithChildren {
-    isActive: boolean;
-    onClick: () => void;
-}
 
 export default function Button({ children, isActive, onClick }: ButtonProps) {
     const { theme } = useThemeContext();

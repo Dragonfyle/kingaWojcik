@@ -1,7 +1,7 @@
 /// <reference types="vite-plugin-svgr/client" />
 import IconNext from "$assets/icons/next.svg?react";
 
-import { NavIconProps } from "../NavIcon.utils";
+import { NavIconProps } from "../NavIcon.types";
 import * as P from "./Next.parts";
 
 export default function NextIcon({

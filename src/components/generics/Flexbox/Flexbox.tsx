@@ -1,6 +1,6 @@
 import { WithTagVariant } from "$types/common";
 
-import { FlexboxProps } from "./Flexbox.utils";
+import { FlexboxProps } from "./Flexbox.types";
 import * as P from "./Flexbox.parts";
 
 export default function Flexbox<T extends HTMLElement>({

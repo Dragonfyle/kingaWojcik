@@ -1,14 +1,8 @@
 import Text from "$generics/Text/Text";
 import * as P from "./ProjectIntroduction.parts";
-import { GalleryProject } from "$types/common";
+import { ProjectIntroductionProps } from "./ProjectIntroduction.types";
 
-export default function ProjectIntroduction({
-    source,
-    withDescription,
-}: {
-    source: GalleryProject;
-    withDescription: boolean;
-}) {
+export default function ProjectIntroduction({ source, withDescription }: ProjectIntroductionProps) {
     return (
         <P.SummaryWrapper>
             <Text bold size="2xl">

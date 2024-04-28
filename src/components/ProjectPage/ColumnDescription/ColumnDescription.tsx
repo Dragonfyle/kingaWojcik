@@ -1,13 +1,7 @@
 import Flexbox from "$generics/Flexbox/Flexbox";
 import Text from "$generics/Text/Text";
 
-interface ColumnDescriptionProps {
-    withH1: boolean;
-    h1?: string;
-    withDescription: boolean;
-    order: -1 | 1;
-    description?: string | undefined;
-}
+import { ColumnDescriptionProps } from "./ColumnDescription.types";
 
 export function ColumnDescription({ withH1, h1, withDescription, description, order }: ColumnDescriptionProps) {
     return (

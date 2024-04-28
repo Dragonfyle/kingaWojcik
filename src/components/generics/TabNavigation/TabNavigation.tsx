@@ -1,16 +1,8 @@
-import { AboutGalleryContent } from "$types/AboutGallery.types";
-import { ProjectContent } from "$types/tabbedGallery.types";
-
 import Button from "../Button/";
+import { TabNavigationProps } from "./TabNavigation.types";
 import * as P from "./TabNavigation.parts";
 
-interface TabNavigation {
-    source: ProjectContent[] | AboutGalleryContent;
-    activeTab: number;
-    onClick: (idx: number) => void;
-}
-
-export default function TabNavigation({ source, activeTab, onClick }: TabNavigation) {
+export default function TabNavigation({ source, activeTab, onClick }: TabNavigationProps) {
     const tabNames = source.map(({ tabName }) => tabName);
 
     function getButtons(tabNames: string[]) {

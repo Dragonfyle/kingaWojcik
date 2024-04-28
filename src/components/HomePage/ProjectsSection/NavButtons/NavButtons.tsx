@@ -2,11 +2,7 @@ import * as P from "./NavButtons.parts";
 import NextIcon from "$generics/NavIcon/Next/Next";
 import PreviousIcon from "$generics/NavIcon/Previous/Previous";
 import { useThemeContext } from "$contexts/ThemeContext";
-
-interface NavButtonsProps {
-    onNextProject: () => void;
-    onPreviousProject: () => void;
-}
+import { NavButtonsProps } from "./NavButtons.types";
 
 export default function NavButtons({ onNextProject, onPreviousProject }: NavButtonsProps) {
     const { theme } = useThemeContext();

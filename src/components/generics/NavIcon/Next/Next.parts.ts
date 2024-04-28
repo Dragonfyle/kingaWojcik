@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { StyledIconProps } from "../NavIcon.utils";
+import { StyledIconProps } from "../NavIcon.types";
 
 export const StyledSvg = styled.svg<StyledIconProps>`
     position: relative;

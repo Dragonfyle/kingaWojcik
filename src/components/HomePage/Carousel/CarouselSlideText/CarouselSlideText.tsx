@@ -1,13 +1,8 @@
 import { useThemeContext } from "$contexts/ThemeContext";
 import * as P from "./CarouselSlideText.parts";
+import { CarouselSlideTextProps } from "./CarouselSlideText.types";
 
-interface CarouselSlideText extends React.PropsWithChildren {
-    isActive: boolean;
-    title: string;
-    description: string;
-}
-
-export default function CarouselSlideText({ isActive, title, description }: CarouselSlideText) {
+export default function CarouselSlideText({ isActive, title, description }: CarouselSlideTextProps) {
     const { theme } = useThemeContext();
 
     return (

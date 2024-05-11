@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ukenPattern from "/src/assets/icons/uken_pattern_element.svg";
+import ukenPattern from "src/assets/icons/uken_pattern_element.svg";
 
 export const Wrapper = styled.div`
     display: flex;

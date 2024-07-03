@@ -44,17 +44,19 @@ const tabbedGalleryData: TabbedGalleryData = {
                         },
                     },
                     feature2: {
-                        component: "Image",
+                        component: "ImageText",
 
                         configuration: {
+                            leftColumnWidth: 50,
                             withH1: true,
-                            withDescription: true,
+                            withDescription: false,
+                            descriptionPosition: "bottom",
                         },
 
                         content: {
                             img: mapyMysli,
                             h1: "Na podstawie briefów powstały mapy myśli",
-                            description: "",
+                            description: "Mapy myśli treść",
                         },
                     },
                 },
@@ -125,8 +127,8 @@ const tabbedGalleryData: TabbedGalleryData = {
                 },
             },
             {
-                tabName: "Poprzedni wygląd strony",
-                highlight: `Tak prezentowała się strona 4spacje.pl przed redesignem. `,
+                tabName: "4spacje.pl przed redesignem",
+                highlight: `Tak wyglądał blog zanim wdrożona została nowa szata graficzna. Zmieniona została cała kolorystyka. Jednak pracując nad projektem starałam się bazować na istniejących już schematach i układach elementów, by ułatwić zadanie zespołowi IT.`,
 
                 features: {
                     feature1: {

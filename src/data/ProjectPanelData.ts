@@ -40,7 +40,7 @@ const ProjectPanelData = {
     },
     editorial: {
         header: "Projekty Wydawnicze",
-        intro: "W tej sekcji znajdują się stworzone przeze mnie projekty przygotowane do druku, które faktycznie posiadają swoje papierowe wersje",
+        intro: "W tej sekcji znajdują się stworzone przeze mnie projekty przygotowane do druku. Jest to moje portfolio okładek książkowych czy książeczka o kawie powstała we współpracy z Małgorzatą Jaworską",
         content: [
             {
                 thumbnail: kawaMiniaturka,

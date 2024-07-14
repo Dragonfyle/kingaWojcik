@@ -11,7 +11,7 @@ export default function KingaBrand({ onClick }: KingaBrandProps) {
         }
 
         if (window.location.pathname === CONFIG.PATHS.HOME) {
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: "smooth" });
         }
     }
 

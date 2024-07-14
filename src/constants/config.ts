@@ -7,11 +7,6 @@ const _config = Object.freeze({
 
     PROJECT_PANEL: { THUMBNAIL_WIDTH: 550, THUMBNAIL_HEIGHT: 309 },
 
-    PROJECT_PAGE: {
-        NAVIGATION_NEXT_TOOLTIP: "Następny projekt",
-        NAVIGATION_PREVIOUS_TOOLTIP: "Poprzedni projekt",
-    },
-
     PATHS: {
         HOME: "/",
         BRANDING_SECTION: "/#brandingowe",

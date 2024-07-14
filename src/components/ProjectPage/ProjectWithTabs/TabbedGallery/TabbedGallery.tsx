@@ -12,9 +12,12 @@ import FeatureImageText from "$components/ProjectPage/FeatureImageText/FeatureIm
 import FeatureTextImage from "$components/ProjectPage/FeatureTextImage/FeatureTextImage";
 
 import * as P from "./TabbedGallery.parts";
+import { useDeviceContext } from "$contexts/DeviceContext";
 
 export default function TabbedGallery({ source }: TabbedGalleryProps) {
     const [activeTab, setActiveTab] = useState(0);
+
+    const { isMobile } = useDeviceContext();
 
     const featureMap: Record<string, React.ComponentType<any>> = {
         FeatureText,
@@ -43,7 +46,9 @@ export default function TabbedGallery({ source }: TabbedGalleryProps) {
 
     return (
         <P.GalleryWrapper>
-            <TabNavigation source={source.tabbedGalleryContent} activeTab={activeTab} onClick={handleClick} />
+            {!isMobile && (
+                <TabNavigation source={source.tabbedGalleryContent} activeTab={activeTab} onClick={handleClick} />
+            )}
             <Highlight source={source.tabbedGalleryContent[activeTab].highlight} />
             {renderFeatures(projectFeatures)}
         </P.GalleryWrapper>

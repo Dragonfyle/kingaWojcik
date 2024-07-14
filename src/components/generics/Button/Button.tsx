@@ -6,13 +6,15 @@ import * as P from "./Button.parts";
 
 export default function Button({ children, isActive, onClick }: ButtonProps) {
     const { theme } = useThemeContext();
-    const color = isActive ? theme.colors.leading.main[2] : theme.colors.white[1];
+    const color = theme.colors.white[1];
 
     return (
         <P.StyledButton $isActive={isActive} onClick={onClick}>
-            <Text size="ms" uppercase italic color={color} whiteSpace="nowrap">
-                {children}
-            </Text>
+            <P.ButtonContent>
+                <Text tag="span" size="ms" uppercase color={color} whiteSpace="nowrap">
+                    {children}
+                </Text>
+            </P.ButtonContent>
         </P.StyledButton>
     );
 }

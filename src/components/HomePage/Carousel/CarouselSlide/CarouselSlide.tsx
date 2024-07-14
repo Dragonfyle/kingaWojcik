@@ -1,6 +1,6 @@
 import React from "react";
 
-import { IMAGE_DESCRIPTIONS, IMAGE_TITLES } from "$data/TopCarouselData";
+import { IMAGE_DESCRIPTIONS, IMAGE_TITLES, IMAGE_PRELUDE } from "$data/TopCarouselData";
 import { useCarouselContext } from "$contexts/CarouselContext";
 import CarouselImage from "$components/HomePage/Carousel/CarouselImage/";
 
@@ -18,11 +18,13 @@ export default function CarouselSlide() {
     function getTitle(descriptionIndex: number) {
         return IMAGE_TITLES[descriptionIndex];
     }
+
     function generateImages(activeImage: number): React.ReactNode {
         return imageSets.map((set, idx) => (
             <React.Fragment key={idx}>
                 <CarouselImage isActive={activeImage === idx} imageSet={set} />
                 <CarouselSlideText
+                    prelude={IMAGE_PRELUDE}
                     title={getTitle(idx)}
                     description={getDescription(idx)}
                     isActive={activeImage === idx}

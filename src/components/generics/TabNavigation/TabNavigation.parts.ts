@@ -8,12 +8,14 @@ export const StyledNavigation = styled.nav`
     height: 50px;
     width: 100%;
     margin-bottom: 50px;
+    overflow-x: hidden;
 
     ${BREAKPOINTS.XXL} {
         width: 100%;
     }
 
     ${BREAKPOINTS.M} {
+        height: auto;
         position: sticky;
         top: 5%;
     }

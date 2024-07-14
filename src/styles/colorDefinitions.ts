@@ -17,6 +17,7 @@ export const colorDefinitions = {
         dirty: "rgba(37, 37, 34)",
         black: "rgb(25, 25, 25)",
         yellowDark: "rgb(150, 130, 19)",
+        greenTrans: "rgba(193,255,132, 0.2)",
     },
     white: {
         main: "rgb(255, 255, 255)",
@@ -27,5 +28,6 @@ export const colorDefinitions = {
             secondary: "rgba(255, 255, 255, 0.8)",
         },
     },
+
     transparent: "transparent",
 } as const;

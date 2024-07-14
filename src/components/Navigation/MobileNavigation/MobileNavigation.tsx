@@ -1,13 +1,10 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 import Flexbox from "$generics/Flexbox/";
 import KingaBrand from "$generics/KingaBrand/";
 import LinkedinIcon from "$generics/LinkedinIcon/";
 import { useThemeContext } from "$contexts/ThemeContext";
-import { CopiedConfirmation } from "$generics/CopiedConfirmation/";
-import { handleEmailClick } from "$components/Navigation/Navigation.utils";
 import navigationItems from "$data/navigationData";
-import NavigationEmail from "$components/Navigation/NavigationItem/NavigationEmail/NavigationEmail";
 import Divider from "$components/generics/Divider/";
 import MenuCross from "$components/generics/MenuCrossIcon/";
 
@@ -21,8 +18,6 @@ export default function MobileNavigation() {
         theme: { colors },
     } = useThemeContext();
     const [isExpanded, setIsExpanded] = useState(false);
-    const [isModalVisible, setIsModalVisible] = useState(false);
-    const dialogRef = useRef(null);
 
     function handleHamburgerClick() {
         setIsExpanded((prev) => !prev);
@@ -78,11 +73,6 @@ export default function MobileNavigation() {
                         <Divider height={3} width="100%" mTop={0} mBot={20} color={colors.supplementary[3]} />
                         {renderItems(navigationItems)}
                         <Divider height={3} width="100%" mTop={70} mBot={0} color={colors.supplementary[3]} />
-                        <NavigationEmail
-                            onClick={() => handleEmailClick(isModalVisible, setIsModalVisible)}
-                            backgroundColor={colors.white.trans[2]}>
-                            {isModalVisible && <CopiedConfirmation ref={dialogRef}></CopiedConfirmation>}
-                        </NavigationEmail>
                     </Flexbox>
                 </P.Menu>
             )}

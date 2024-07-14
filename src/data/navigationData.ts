@@ -7,6 +7,11 @@ const navigationItems = [
     } as const,
 
     {
+        label: "Moje publikacje",
+        link: CONFIG.PATHS.ARTICLES,
+    } as const,
+
+    {
         label: "Projekty brandingowe",
         link: CONFIG.PATHS.BRANDING_SECTION,
     } as const,

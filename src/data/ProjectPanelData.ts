@@ -4,6 +4,11 @@ import ukenMiniaturka from "$img/projects/uken/ProjectPanel_uken_miniaturka.png"
 import goslinaMiniaturka from "$img/projects/goslina/ProjectPanel_goslina_miniaturka.png";
 import kawaMiniaturka from "$img/projects/kawa/ProjectPanel_kawa_miniaturka.png";
 import okladkiMiniaturka from "$img/projects/okladki/ProjectPanel_okladki_miniaturka.png";
+import fontyPisankowe from "$img/articles/fonty_pisankowe.jpg";
+import kontrast from "$img/articles/jak_dobrac_wlasniwy_kontrast.jpg";
+import projektowanieStron from "$img/articles/projektowanie_stron_internetowych.jpg";
+import typografia from "$img/articles/typografia_w_projektowaniu_graficznym.jpg";
+import ucielesnienie from "$img/articles/ucielesnienie-kompozycja.jpg";
 
 type ProjectPanelData = typeof ProjectPanelData;
 
@@ -55,6 +60,52 @@ const ProjectPanelData = {
             },
             {
                 thumbnail: okladkiMiniaturka,
+                title: "Projekty okładek książkowych",
+                description:
+                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
+                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
+                name: "Okładki książek",
+            },
+        ],
+    },
+    articles: {
+        header: "Moje publikacje",
+        intro: "Czasem sobie piszę",
+        content: [
+            {
+                thumbnail: fontyPisankowe,
+                title: "Krótka historia kawy",
+                description:
+                    "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania kawy. Projekt we współpracy z Małgorzatą Jaworską",
+                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
+                name: "Krótka historia kawy",
+            },
+            {
+                thumbnail: kontrast,
+                title: "Projekty okładek książkowych",
+                description:
+                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
+                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
+                name: "Okładki książek",
+            },
+            {
+                thumbnail: projektowanieStron,
+                title: "Projekty okładek książkowych",
+                description:
+                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
+                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
+                name: "Okładki książek",
+            },
+            {
+                thumbnail: typografia,
+                title: "Projekty okładek książkowych",
+                description:
+                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
+                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
+                name: "Okładki książek",
+            },
+            {
+                thumbnail: ucielesnienie,
                 title: "Projekty okładek książkowych",
                 description:
                     "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",

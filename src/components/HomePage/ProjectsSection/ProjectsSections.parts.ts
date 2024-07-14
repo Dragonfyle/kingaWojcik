@@ -9,7 +9,6 @@ export const StyledSection = styled.section`
     width: 89%;
     margin: 0 0 0 11%;
     padding: 100px 0;
-    user-select: none;
     ${BREAKPOINTS.L} {
         width: 95%;
         margin: 0 0 0 5%;

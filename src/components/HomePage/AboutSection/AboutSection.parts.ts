@@ -4,10 +4,6 @@ import { BREAKPOINTS } from "$styles/breakpoints";
 export const StyledSection = styled.section`
     display: flex;
     justify-content: center;
-    /* width: 89%; */
-    /* margin: 0 0 0 11%; */
-    /* padding: 100px 100px 100px 0; */
-    user-select: none;
     a {
         text-decoration: none;
         color: ${({ theme }) => theme.colors.leading.secondary[1]};

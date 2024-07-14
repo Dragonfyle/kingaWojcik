@@ -16,15 +16,23 @@ export default function FooterSection({ sectionName, listItems, links }: FooterS
     function renderList(listItems: string[]) {
         const values = Object.values(listItems);
 
-        return values.map((value, idx) => (
-            <Link key={value} to={links[idx]}>
-                <P.StyledLi>
+        return values.map((value, idx) =>
+            links[idx] ? (
+                <Link key={value} to={links[idx]}>
+                    <P.StyledLi>
+                        <Text size="s" color={colors.white[1]}>
+                            {value}
+                        </Text>
+                    </P.StyledLi>
+                </Link>
+            ) : (
+                <P.StyledLi key={value}>
                     <Text size="s" color={colors.white[1]}>
                         {value}
                     </Text>
                 </P.StyledLi>
-            </Link>
-        ));
+            )
+        );
     }
 
     return (

@@ -24,6 +24,7 @@ const defaultTheme = {
             3: colors.supplementary.black,
             4: colors.supplementary.yellowDark,
             5: colors.supplementary.greenTrans,
+            6: colors.supplementary.spacje,
         },
         white: {
             1: colors.white.main,

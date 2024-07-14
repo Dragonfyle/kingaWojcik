@@ -8,7 +8,7 @@ export default function TabNavigation({ source, activeTab, onClick }: TabNavigat
     function getButtons(tabNames: string[]) {
         return tabNames.map((tabName, idx) => (
             <Button key={tabName} isActive={activeTab === idx} onClick={() => onClick(idx)}>
-                {source[idx].tabName}{" "}
+                {source[idx].tabName}
             </Button>
         ));
     }

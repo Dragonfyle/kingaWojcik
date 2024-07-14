@@ -18,6 +18,7 @@ export const colorDefinitions = {
         black: "rgb(25, 25, 25)",
         yellowDark: "rgb(150, 130, 19)",
         greenTrans: "rgba(193,255,132, 0.2)",
+        spacje: "rgb(23, 22, 27)",
     },
     white: {
         main: "rgb(255, 255, 255)",

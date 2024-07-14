@@ -27,6 +27,7 @@ declare module "styled-components" {
                 3: ColorOption;
                 4: ColorOption;
                 5: ColorOption;
+                6: ColorOption;
             };
             white: {
                 1: ColorOption;

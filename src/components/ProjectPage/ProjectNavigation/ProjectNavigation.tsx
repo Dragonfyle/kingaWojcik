@@ -8,8 +8,8 @@ export default function ProjectNavigation() {
     const currentUrlIndex = findCurrentUrlIndex();
     const nextUrlIndex = (currentUrlIndex + 1) % projectUrlList.length;
     const previousUrlIndex = currentUrlIndex - 1 < MIN_IDX ? maxIdx : currentUrlIndex - 1;
-    const nextProjectName = projectUrlList[nextUrlIndex];
-    const previousProjectName = projectUrlList[previousUrlIndex];
+    const nextProjectName = projectUrlList[nextUrlIndex].name;
+    const previousProjectName = projectUrlList[previousUrlIndex].name;
 
     return (
         <ProjectNavButtons

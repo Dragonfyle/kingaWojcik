@@ -29,19 +29,14 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
         left: 7%;
         top: 10%;
     }
-`;
 
-export const StyledP = styled(Text)`
-    ${BREAKPOINTS.L} {
-        font-size: ${({ theme }) => theme.fontSize["2xl"]};
-    }
-    ${BREAKPOINTS.S} {
-        font-size: ${({ theme }) => theme.fontSize.xl};
+    p {
+        letter-spacing: 1px;
     }
 `;
 
-export const StyledH2 = styled(Text)`
-    margin-bottom: 40px;
+export const Title = styled(Text)`
+    margin: 10px 0 40px;
 
     ${BREAKPOINTS.S} {
         font-size: ${({ theme }) => theme.fontSize["4xl"]};

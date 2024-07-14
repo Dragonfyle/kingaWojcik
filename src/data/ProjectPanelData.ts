@@ -21,6 +21,7 @@ const ProjectPanelData = {
                 title: "Logo i strona internetowa dla 4spacje.pl",
                 description: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.`,
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[1],
+                name: "4spacje",
             },
             {
                 thumbnail: ukenMiniaturka,
@@ -28,6 +29,7 @@ const ProjectPanelData = {
                 description:
                     "Jest to projekt przygotowany na konkurs, zorganizowany w celu stworzenia nowego logo dla zmieniającego nazwę Uniwersytetu Pedagogicznego.",
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[2],
+                name: "Logo UKEN",
             },
             {
                 thumbnail: goslinaMiniaturka,
@@ -35,6 +37,7 @@ const ProjectPanelData = {
                 description:
                     "Projekt logo, które w reprezentatywny sposób zakomunikuje odbiorcom najważniejsze walory Gminy Murowana Goślina. Projekt konkursowy",
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[3],
+                name: "Murowana Goślina",
             },
         ],
     },
@@ -48,6 +51,7 @@ const ProjectPanelData = {
                 description:
                     "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania kawy. Projekt we współpracy z Małgorzatą Jaworską",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
+                name: "Krótka historia kawy",
             },
             {
                 thumbnail: okladkiMiniaturka,
@@ -55,6 +59,7 @@ const ProjectPanelData = {
                 description:
                     "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
                 projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
+                name: "Okładki książek",
             },
         ],
     },

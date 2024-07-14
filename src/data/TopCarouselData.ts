@@ -9,6 +9,6 @@ export const IMAGE_DESCRIPTIONS = [
 
 export const IMAGE_TITLES = ["Współpraca", "Dzielenie się wiedzą", "Ciągły rozwój", "Wytrwałość"] as const;
 
-export const IMAGE_PRELUDE = "Wartości, które inspirują";
+export const IMAGE_PRELUDE = "To, co cenię:";
 
 export const NUM_IMAGES = MAP_ITEM_DESCRIPTIONS.length;

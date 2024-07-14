@@ -56,7 +56,7 @@ const tabbedGalleryData: TabbedGalleryData = {
                         content: {
                             img: mapyMysli,
                             h1: "Na podstawie briefów powstały mapy myśli",
-                            description: "Mapy myśli treść",
+                            description: "",
                         },
                     },
                 },
@@ -181,9 +181,7 @@ const tabbedGalleryData: TabbedGalleryData = {
             },
             {
                 tabName: "moje propozycje",
-                highlight: `Zaproponowałam dodanie zakładki REKRUTACJA, w której zamieszczane będą artykuły dotyczące poszukiwania pracy i możliwych ścieżek rozwoju, a także pytania i zadania rekrutacyjne.
-                
-                Przygotowałam projekt podstrony, która jest w trakcie wdrażania.`,
+                highlight: `Zaproponowałam dodanie zakładki REKRUTACJA, w której zamieszczane będą artykuły dotyczące poszukiwania pracy i możliwych ścieżek rozwoju, a także pytania i zadania rekrutacyjne.`,
 
                 features: {
                     feature1: {

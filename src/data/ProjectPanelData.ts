@@ -69,48 +69,43 @@ const ProjectPanelData = {
         ],
     },
     articles: {
-        header: "Moje publikacje",
-        intro: "Czasem sobie piszę",
+        header: "Czasem coś napiszę",
+        intro: "Tutaj znajdziesz moje artykuły, które publikuję na blogu 4spacje.pl. Dotyczą przede wszystkim kwestii projektowych i typograficznych.",
         content: [
             {
-                thumbnail: fontyPisankowe,
-                title: "Krótka historia kawy",
+                thumbnail: projektowanieStron,
+                title: "Projektowanie stron internetowych",
                 description:
-                    "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania kawy. Projekt we współpracy z Małgorzatą Jaworską",
-                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
-                name: "Krótka historia kawy",
+                    "Jak wybrać odpowiednią paletę kolorów na stronę internetową",
+                projectUrl: "https://www.4spacje.pl/article/projektowanie-stron-internetowych-jak-wybrac-palete-kolorow",
             },
             {
                 thumbnail: kontrast,
-                title: "Projekty okładek książkowych",
+                title: "Właściwy kontrast na stronach internetowych",
                 description:
-                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
-                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
-                name: "Okładki książek",
-            },
-            {
-                thumbnail: projektowanieStron,
-                title: "Projekty okładek książkowych",
-                description:
-                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
-                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
-                name: "Okładki książek",
+                    "Jak dobrać odpowiedni kontrast na stronę internetową",
+                projectUrl: "https://www.4spacje.pl/article/kontrast-na-stronach-internetowych",
             },
             {
                 thumbnail: typografia,
-                title: "Projekty okładek książkowych",
+                title: "Podstawy typografii - font u psychologa",
                 description:
-                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
-                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
-                name: "Okładki książek",
+                    "Neuro-psychologiczne podstawy typografii",
+                projectUrl: "https://www.4spacje.pl/article/typografia-font-u-psychologa",
             },
             {
                 thumbnail: ucielesnienie,
-                title: "Projekty okładek książkowych",
+                title: "Ucieleśnienie w projektowaniu graficznym",
                 description:
-                    "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
-                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
-                name: "Okładki książek",
+                    "Czym jest ucieleśnienie i jak wpływa na kompozycję projektu",
+                projectUrl: "https://www.4spacje.pl/article/ucielesnienie-kompozycja-w-projektowaniu-graficznym",
+            },
+            {
+                thumbnail: fontyPisankowe,
+                title: "Fonty pisankowe",
+                description:
+                    "Wielkanocny artykuł typograficzny :)",
+                projectUrl: "https://www.4spacje.pl/article/fonty-pisankowe-definicja-rodzaje-zastosowanie",
             },
         ],
     },

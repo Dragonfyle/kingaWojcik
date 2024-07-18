@@ -59,7 +59,7 @@ const aboutGalleryData: AboutGalleryData = {
                 listContent: [
                     {
                         header: {
-                            1: "01.2024 - obecnie",
+                            1: "01.2024 - 06.2024",
                             2: "kurs online (Udemy)",
                         },
                         description: {
@@ -70,7 +70,7 @@ const aboutGalleryData: AboutGalleryData = {
                     },
                     {
                         header: {
-                            1: "11.2023 - obecnie",
+                            1: "11.2023 - 01.2024",
                             2: "kurs online (Udemy)",
                         },
                         description: {

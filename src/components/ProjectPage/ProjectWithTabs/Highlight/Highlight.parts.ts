@@ -8,7 +8,7 @@ export const HighlightWrapper = styled.div`
 
 export const TextWrapper = styled.div`
     padding: 20px 40px;
-    background-color: ${({ theme }) => theme.colors.leading.main[2]};
+    background-color: ${({ theme }) => theme.colors.supplementary[5]};
 
     h4 {
         white-space: pre-line;

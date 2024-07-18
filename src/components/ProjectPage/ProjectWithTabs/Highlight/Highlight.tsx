@@ -6,14 +6,14 @@ import { HighlightProps } from "./Highlight.types";
 export default function Highlight({ source }: HighlightProps) {
     const {
         theme: {
-            colors: { supplementary },
+            colors: { white },
         },
     } = useThemeContext();
 
     return (
         <P.HighlightWrapper>
             <P.TextWrapper>
-                <Text tag="h4" color={supplementary[3]} size="l" lineHeight={1.4}>
+                <Text tag="h4" color={white[1]} size="l" lineHeight={1.4}>
                     {source}
                 </Text>
             </P.TextWrapper>

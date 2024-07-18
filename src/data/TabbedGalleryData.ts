@@ -44,11 +44,13 @@ const tabbedGalleryData: TabbedGalleryData = {
                         },
                     },
                     feature2: {
-                        component: "Image",
+                        component: "ImageText",
 
                         configuration: {
+                            leftColumnWidth: 50,
                             withH1: true,
-                            withDescription: true,
+                            withDescription: false,
+                            descriptionPosition: "bottom",
                         },
 
                         content: {
@@ -125,40 +127,9 @@ const tabbedGalleryData: TabbedGalleryData = {
                 },
             },
             {
-                tabName: "Poprzedni wygląd strony",
-                highlight: `Tak prezentowała się strona 4spacje.pl przed redesignem. `,
-
-                features: {
-                    feature1: {
-                        component: "Image",
-                        configuration: {
-                            withH1: false,
-                            withDescription: false,
-                        },
-                        content: {
-                            img: staraLight,
-                            h1: "",
-                            description: "",
-                        },
-                    },
-                    feature2: {
-                        component: "Image",
-                        configuration: {
-                            withH1: false,
-                            withDescription: false,
-                        },
-                        content: {
-                            img: staraDark,
-                            h1: "",
-                            description: "",
-                        },
-                    },
-                },
-            },
-            {
                 tabName: "nowy design strony",
                 highlight: `Zmiany obejmują przede wszystkim kwestie estetyczne, ale także modyfikacje niektórych funkcjonalności i sposobu działania strony (z nastawieniem na użytkowników desktopowych, skąd pochodzi ponad 90% ruchu).
-                                
+                
                 Witryna została ożywiona odcieniami limonki, wybranej jako główny kolor brandowy. Projekt Ppzygotowałam zarówno dla jasnego, jak i ciemnego motywu. Zmieniona została cała kolorystyka, która dotąd była trochę rozbałaganiona (np. funkcjonowało kilkanaście bardzo zbliżonych do siebie odcieni, elementy na stronie kolorowane były w niekonsekwentny sposób: np. pełniły tę samą funkcję, ale za każdym razem miały inny kolor) i nieharmonijna (brak koloru akcentującego, wszystkie barwy jednakowo przygaszone).
                 `,
 
@@ -184,7 +155,6 @@ const tabbedGalleryData: TabbedGalleryData = {
                         component: "Text",
                         configuration: {
                             withH1: true,
-
                         },
                         content: {
                             h1: "Redesign wyszukiwarki",
@@ -211,9 +181,7 @@ const tabbedGalleryData: TabbedGalleryData = {
             },
             {
                 tabName: "moje propozycje",
-                highlight: `Zaproponowałam dodanie zakładki REKRUTACJA, w której zamieszczane będą artykuły dotyczące poszukiwania pracy i możliwych ścieżek rozwoju, a także pytania i zadania rekrutacyjne.
-
-                Przygotowałam projekt podstrony, która jest w trakcie wdrażania.`,
+                highlight: `Zaproponowałam dodanie zakładki REKRUTACJA, w której zamieszczane będą artykuły dotyczące poszukiwania pracy i możliwych ścieżek rozwoju, a także pytania i zadania rekrutacyjne.`,
 
                 features: {
                     feature1: {
@@ -251,6 +219,37 @@ const tabbedGalleryData: TabbedGalleryData = {
                             img: naglowki,
                             h1: "",
                             description: "Przygotowałam projekt nagłówków artykułów.",
+                        },
+                    },
+                },
+            },
+            {
+                tabName: "4spacje.pl przed redesignem",
+                highlight: `Tak wyglądał blog zanim wdrożona została nowa szata graficzna. Zmieniona została cała kolorystyka. Jednak pracując nad projektem starałam się bazować na istniejących już schematach i układach elementów, by ułatwić zadanie zespołowi IT.`,
+
+                features: {
+                    feature1: {
+                        component: "Image",
+                        configuration: {
+                            withH1: false,
+                            withDescription: false,
+                        },
+                        content: {
+                            img: staraLight,
+                            h1: "",
+                            description: "",
+                        },
+                    },
+                    feature2: {
+                        component: "Image",
+                        configuration: {
+                            withH1: false,
+                            withDescription: false,
+                        },
+                        content: {
+                            img: staraDark,
+                            h1: "",
+                            description: "",
                         },
                     },
                 },

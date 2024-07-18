@@ -1,5 +1,6 @@
 import { CONFIG } from "$constants/config";
 import { ProjectPanelData } from "$data/ProjectPanelData";
+import navigationItems from "$data/navigationData";
 
 import FooterSection from "./FooterSection/";
 import * as P from "./Footer.parts";
@@ -9,8 +10,13 @@ export default function Footer() {
     const middleSectionLinks = ProjectPanelData.branding.content.map((project) => project.projectUrl);
     const rightSectionTitles = ProjectPanelData.editorial.content.map((project) => project.title);
     const rightSectionLinks = ProjectPanelData.editorial.content.map((project) => project.projectUrl);
-    const leftSectionTitles = ["O mnie", "Projekty Brandingowe", "Projekty Wydawnicze"];
-    const leftSectionLinks = [CONFIG.PATHS.ABOUT, CONFIG.PATHS.BRANDING_SECTION, CONFIG.PATHS.EDITORIAL_SECTION];
+    const leftSectionTitles = [...navigationItems.map((item) => item.label), CONFIG.EMAIL];
+    const leftSectionLinks = [
+        CONFIG.PATHS.ABOUT,
+        CONFIG.PATHS.ARTICLES,
+        CONFIG.PATHS.BRANDING_SECTION,
+        CONFIG.PATHS.EDITORIAL_SECTION,
+    ];
 
     return (
         <P.Wrapper>

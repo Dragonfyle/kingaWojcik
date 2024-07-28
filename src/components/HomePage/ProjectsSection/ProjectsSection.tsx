@@ -18,7 +18,7 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
     const sliderRef = useRef<SliderImperativeHandle>(null);
     const { isMobile } = useDeviceContext();
 
-    function getContent(source: ProjectPanelDataSection) {
+    function renderContent(source: ProjectPanelDataSection) {
         return source.content.map(({ thumbnail, title, description, projectUrl }) => (
             <Link key={description} to={projectUrl}>
                 <ProjectPanelItem image={thumbnail} title={title} description={description} />
@@ -34,6 +34,7 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
                         {source.header}
                     </Text>
                 </Flexbox>
+
                 {!isMobile && (
                     <Flexbox $wrap="nowrap" $justify="center">
                         <NavButtons
@@ -43,11 +44,12 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
                     </Flexbox>
                 )}
             </Flexbox>
+
             {isMobile && <ProjectPanelIntro text={source.intro} />}
 
             <Slider ref={sliderRef}>
                 {!isMobile && <ProjectPanelIntro text={source.intro} />}
-                {getContent(source)}
+                {renderContent(source)}
             </Slider>
         </P.StyledSection>
     );

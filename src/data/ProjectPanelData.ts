@@ -23,6 +23,13 @@ const ProjectPanelData = {
         content: [
             {
                 thumbnail: czteryspacjeMiniaturka,
+                title: "Renault",
+                description: `takie o zrobilam`,
+                projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[4],
+                name: "Renault",
+            },
+            {
+                thumbnail: czteryspacjeMiniaturka,
                 title: "Logo i strona internetowa dla 4spacje.pl",
                 description: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.`,
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[1],
@@ -75,36 +82,32 @@ const ProjectPanelData = {
             {
                 thumbnail: projektowanieStron,
                 title: "Projektowanie stron internetowych",
-                description:
-                    "Jak wybrać odpowiednią paletę kolorów na stronę internetową",
-                projectUrl: "https://www.4spacje.pl/article/projektowanie-stron-internetowych-jak-wybrac-palete-kolorow",
+                description: "Jak wybrać odpowiednią paletę kolorów na stronę internetową",
+                projectUrl:
+                    "https://www.4spacje.pl/article/projektowanie-stron-internetowych-jak-wybrac-palete-kolorow",
             },
             {
                 thumbnail: kontrast,
                 title: "Właściwy kontrast na stronach internetowych",
-                description:
-                    "Jak dobrać odpowiedni kontrast na stronę internetową",
+                description: "Jak dobrać odpowiedni kontrast na stronę internetową",
                 projectUrl: "https://www.4spacje.pl/article/kontrast-na-stronach-internetowych",
             },
             {
                 thumbnail: typografia,
                 title: "Podstawy typografii - font u psychologa",
-                description:
-                    "Neuro-psychologiczne podstawy typografii",
+                description: "Neuro-psychologiczne podstawy typografii",
                 projectUrl: "https://www.4spacje.pl/article/typografia-font-u-psychologa",
             },
             {
                 thumbnail: ucielesnienie,
                 title: "Ucieleśnienie w projektowaniu graficznym",
-                description:
-                    "Czym jest ucieleśnienie i jak wpływa na kompozycję projektu",
+                description: "Czym jest ucieleśnienie i jak wpływa na kompozycję projektu",
                 projectUrl: "https://www.4spacje.pl/article/ucielesnienie-kompozycja-w-projektowaniu-graficznym",
             },
             {
                 thumbnail: fontyPisankowe,
                 title: "Fonty pisankowe",
-                description:
-                    "Wielkanocny artykuł typograficzny :)",
+                description: "Wielkanocny artykuł typograficzny :)",
                 projectUrl: "https://www.4spacje.pl/article/fonty-pisankowe-definicja-rodzaje-zastosowanie",
             },
         ],

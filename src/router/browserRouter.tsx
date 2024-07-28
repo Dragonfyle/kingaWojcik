@@ -7,6 +7,7 @@ import HomePage from "$pages/Home";
 import Branding1 from "$pages/Branding1";
 import Branding2 from "$pages/Branding2";
 import Branding3 from "$pages/Branding3";
+import Branding4 from "$pages/Branding4";
 import Editorial1 from "$pages/Editorial1";
 import Editorial2 from "$pages/Editorial2";
 
@@ -30,6 +31,10 @@ const browserRouter = createBrowserRouter([
             {
                 path: CONFIG.PATHS.PROJECTS.BRANDING[3],
                 element: <Branding3 />,
+            },
+            {
+                path: CONFIG.PATHS.PROJECTS.BRANDING[4],
+                element: <Branding4 />,
             },
             {
                 path: CONFIG.PATHS.PROJECTS.EDITORIAL[1],

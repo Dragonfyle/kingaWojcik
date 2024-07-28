@@ -644,6 +644,160 @@ const plainGalleryData: PlainGalleryData = {
             },
         ],
     },
+    project5: {
+        header: "Projekty okładek książkowych",
+        intro: "",
+
+        plainGalleryContent: [
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: okladkiPsychoFront,
+                    rightImg: okladkiPsychoBack,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
+                },
+            },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: okladkiRewolucjaFront,
+                    rightImg: okladkiRewolucjaBack,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
+                },
+            },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: okladkiMitologiaFront,
+                    rightImg: okladkiMitologiaBack,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
+                },
+            },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: okladkiAstrologiaFront,
+                    rightImg: okladkiAstrologiaBack,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
+                },
+            },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: okladkiPodworkoFront,
+                    rightImg: okladkiPodworkoBack,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
+                },
+            },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: okladkiEgiptFront,
+                    rightImg: okladkiEgiptBack,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
+                },
+            },
+            {
+                component: "ImageImage",
+
+                configuration: {
+                    leftColumnWidth: 50,
+                    withRightH1: false,
+                    withLeftH1: false,
+                    withLeftDescription: false,
+                    withRightDescription: false,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    leftImg: okladkiCosmicrayFront,
+                    rightImg: okladkiCosmicrayBack,
+                    leftH1: "",
+                    rightH1: "",
+                    leftDescription: "",
+                    rightDescription: "",
+                },
+            },
+        ],
+    },
 };
 
 export { plainGalleryData };

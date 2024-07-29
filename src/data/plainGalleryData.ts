@@ -48,6 +48,12 @@ import okladkiRewolucjaBack from "$img/projects/okladki/okladki_rewolucja_back.j
 import okladkiCosmicrayFront from "$img/projects/okladki/okladki_cosmicray_front.jpg";
 import okladkiCosmicrayBack from "$img/projects/okladki/okladki_cosmicray_back.jpg";
 
+import renaultFront from "$img/projects/renault/front.png";
+import renaultPerspective from "$img/projects/renault/perspective.png";
+import renaultSide from "$img/projects/renault/side.png";
+import renaulMp4 from "$img/projects/renault/renault_design_contest_kinga_wojcik.mp4";
+
+
 import { PlainGalleryData } from "$types/plainGallery.types";
 
 const plainGalleryData: PlainGalleryData = {
@@ -645,157 +651,59 @@ const plainGalleryData: PlainGalleryData = {
         ],
     },
     project5: {
-        header: "Projekty okładek książkowych",
+        header: "",
         intro: "",
 
         plainGalleryContent: [
             {
-                component: "ImageImage",
+                component: "ImageText",
 
                 configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
+                    leftColumnWidth: 70,
+                    withH1: true,
+                    withDescription: true,
                     descriptionPosition: "bottom",
                 },
 
                 content: {
-                    leftImg: okladkiPsychoFront,
-                    rightImg: okladkiPsychoBack,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
+                    img: renaultFront,
+                    h1: "Zwycięski projekt w konkursie Renault Trucks Design Contest – grafika na ciężarówkę Renault E-Tech T",
+                    description: `Ciężarówka Renault E-Tech T to auto elektryczne, dlatego grafika mocno do tego nawiązuje.
+
+                    Projekt balansuje pomiędzy przemysłowym, ciężkim charakterem branży, a elegancją i nowoczesnością. Udało się to osiągnąć dzięki odpowiedniej szerokości liniom, które budują wszystkie elementy wzoru.
+
+                    Design zostanie zrealizowany na prawdziwej ciężarówce i zaprezentowany podczas jesiennego eventu Renault w Lyonie.`,
                 },
             },
+
             {
-                component: "ImageImage",
+                component: "Text",
 
                 configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
+                    withH1: true,
                 },
 
                 content: {
-                    leftImg: okladkiRewolucjaFront,
-                    rightImg: okladkiRewolucjaBack,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
+                    h1: "Projekt Grafiki na ciężarówkę Renault E-Tech T",
+                    description: `Sam przód ciężarówki nawiązuje do schematu obwodu elektrycznego i zaprojektowany został, wykorzystując symetrię środkową.  Strzałki biegnące od baterii w kierunku frontu sygnalizują przepływ energii. We wzór wkomponowałam błyskawicę, bezpośrednio mówiącą, "o czym jest ten projekt"`,
                 },
             },
+
             {
-                component: "ImageImage",
+                component: "Image",
 
                 configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
+                    withH1: false,
+                    withDescription: false,
                 },
 
                 content: {
-                    leftImg: okladkiMitologiaFront,
-                    rightImg: okladkiMitologiaBack,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
+                    img: renaultPerspective,
+                    h1: "",
+                    description: "",
                 },
             },
-            {
-                component: "ImageImage",
 
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: okladkiAstrologiaFront,
-                    rightImg: okladkiAstrologiaBack,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
-                },
-            },
-            {
-                component: "ImageImage",
-
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: okladkiPodworkoFront,
-                    rightImg: okladkiPodworkoBack,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
-                },
-            },
-            {
-                component: "ImageImage",
-
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: okladkiEgiptFront,
-                    rightImg: okladkiEgiptBack,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
-                },
-            },
-            {
-                component: "ImageImage",
-
-                configuration: {
-                    leftColumnWidth: 50,
-                    withRightH1: false,
-                    withLeftH1: false,
-                    withLeftDescription: false,
-                    withRightDescription: false,
-                    descriptionPosition: "bottom",
-                },
-
-                content: {
-                    leftImg: okladkiCosmicrayFront,
-                    rightImg: okladkiCosmicrayBack,
-                    leftH1: "",
-                    rightH1: "",
-                    leftDescription: "",
-                    rightDescription: "",
-                },
-            },
         ],
     },
 };

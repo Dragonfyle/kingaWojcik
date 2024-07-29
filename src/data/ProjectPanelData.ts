@@ -4,6 +4,7 @@ import ukenMiniaturka from "$img/projects/uken/ProjectPanel_uken_miniaturka.png"
 import goslinaMiniaturka from "$img/projects/goslina/ProjectPanel_goslina_miniaturka.png";
 import kawaMiniaturka from "$img/projects/kawa/ProjectPanel_kawa_miniaturka.png";
 import okladkiMiniaturka from "$img/projects/okladki/ProjectPanel_okladki_miniaturka.png";
+import renaultMiniaturka from "$img/projects/renault/renault_trucks_design_contest_kinga_wojcik_miniaturka.jpg";
 import fontyPisankowe from "$img/articles/fonty_pisankowe.jpg";
 import kontrast from "$img/articles/jak_dobrac_wlasniwy_kontrast.jpg";
 import projektowanieStron from "$img/articles/projektowanie_stron_internetowych.jpg";
@@ -22,9 +23,9 @@ const ProjectPanelData = {
         kierunku.`,
         content: [
             {
-                thumbnail: czteryspacjeMiniaturka,
-                title: "Renault",
-                description: `takie o zrobilam`,
+                thumbnail: renaultMiniaturka,
+                title: "Zwycięski projekt w konkursie Renault Trucks Design Contest",
+                description: `Projekt grafiki na ciężarówkę, który został wyróżniony przez Renault Trucks, a następnie zwyciężył też w głosowaniu publiczności.`,
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[4],
                 name: "Renault",
             },
@@ -76,7 +77,7 @@ const ProjectPanelData = {
         ],
     },
     articles: {
-        header: "Czasem coś napiszę",
+        header: "Czasem piszę artykuły",
         intro: "Tutaj znajdziesz moje artykuły, które publikuję na blogu 4spacje.pl. Dotyczą przede wszystkim kwestii projektowych i typograficznych.",
         content: [
             {

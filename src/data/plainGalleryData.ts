@@ -50,9 +50,8 @@ import okladkiCosmicrayBack from "$img/projects/okladki/okladki_cosmicray_back.j
 
 import renaultFront from "$img/projects/renault/front.png";
 import renaultPerspective from "$img/projects/renault/perspective.png";
-import renaultSide from "$img/projects/renault/side.png";
-import renaulMp4 from "$img/projects/renault/renault_design_contest_kinga_wojcik.mp4";
-
+// import renaultSide from "$img/projects/renault/side.png";
+import renaulMp4 from "$videos/renault_design_contest_kinga_wojcik.mp4";
 
 import { PlainGalleryData } from "$types/plainGallery.types";
 
@@ -703,7 +702,20 @@ const plainGalleryData: PlainGalleryData = {
                     description: "",
                 },
             },
+            {
+                component: "Video",
 
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+
+                content: {
+                    video: renaulMp4,
+                    h1: "",
+                    description: "",
+                },
+            },
         ],
     },
 };

@@ -8,6 +8,12 @@ interface FeatureImageProps {
     withDescription: boolean;
     descriptionPosition?: "top" | "bottom";
 }
+interface FeatureVideoProps {
+    source: Feature;
+    withH1: boolean;
+    withDescription: boolean;
+    descriptionPosition?: "top" | "bottom";
+}
 
 interface FeatureImageTextProps {
     source: Feature;
@@ -58,6 +64,7 @@ export { getColumnsWidth, descriptionPositionMap };
 export type {
     ColumnWidth,
     FeatureImageProps,
+    FeatureVideoProps,
     FeatureImageImageProps,
     FeatureImageTextProps,
     FeatureTextProps,

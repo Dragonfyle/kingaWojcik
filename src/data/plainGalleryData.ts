@@ -49,7 +49,7 @@ import okladkiCosmicrayFront from "$img/projects/okladki/okladki_cosmicray_front
 import okladkiCosmicrayBack from "$img/projects/okladki/okladki_cosmicray_back.jpg";
 
 import renaultFront from "$img/projects/renault/front.png";
-import renaultPerspective from "$img/projects/renault/perspective.png";
+// import renaultPerspective from "$img/projects/renault/perspective.png";
 // import renaultSide from "$img/projects/renault/side.png";
 import renaulMp4 from "$videos/renault_design_contest_kinga_wojcik.mp4";
 
@@ -667,9 +667,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: renaultFront,
                     h1: "Zwycięski projekt w konkursie Renault Trucks Design Contest – grafika na ciężarówkę Renault E-Tech T",
-                    description: `Ciężarówka Renault E-Tech T to auto elektryczne, dlatego grafika mocno do tego nawiązuje.
-
-                    Projekt balansuje pomiędzy przemysłowym, ciężkim charakterem branży, a elegancją i nowoczesnością. Udało się to osiągnąć dzięki odpowiedniej szerokości liniom, które budują wszystkie elementy wzoru.
+                    description: `Projekt balansuje pomiędzy przemysłowym, ciężkim charakterem branży, a elegancją i nowoczesnością. Udało się to osiągnąć dzięki odpowiedniej szerokości liniom, które budują wszystkie elementy wzoru.
 
                     Design zostanie zrealizowany na prawdziwej ciężarówce i zaprezentowany podczas jesiennego eventu Renault w Lyonie.`,
                 },
@@ -684,24 +682,10 @@ const plainGalleryData: PlainGalleryData = {
 
                 content: {
                     h1: "Projekt Grafiki na ciężarówkę Renault E-Tech T",
-                    description: `Sam przód ciężarówki nawiązuje do schematu obwodu elektrycznego i zaprojektowany został, wykorzystując symetrię środkową.  Strzałki biegnące od baterii w kierunku frontu sygnalizują przepływ energii. We wzór wkomponowałam błyskawicę, bezpośrednio mówiącą, "o czym jest ten projekt"`,
+                    description: `Sam przód ciężarówki nawiązuje do schematu obwodu elektrycznego i zaprojektowany został, wykorzystując symetrię środkową.  Strzałki biegnące od baterii w kierunku frontu sygnalizują przepływ energii. We wzór wkomponowałam błyskawicę, która bezpośrednio komunikuje, "o czym jest ten projekt"`,
                 },
             },
 
-            {
-                component: "Image",
-
-                configuration: {
-                    withH1: false,
-                    withDescription: false,
-                },
-
-                content: {
-                    img: renaultPerspective,
-                    h1: "",
-                    description: "",
-                },
-            },
             {
                 component: "Video",
 

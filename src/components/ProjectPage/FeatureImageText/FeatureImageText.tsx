@@ -21,7 +21,7 @@ export default function FeatureTextImage({ source, leftColumnWidth = 50, withH1 
                     </Text>
                 )}
 
-                <Flexbox $marginB="60px">
+                <Flexbox $marginB="60px" $marginT="40px">
                     <Text>{content.description}</Text>
                 </Flexbox>
             </P.StyledFlexbox>

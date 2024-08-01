@@ -29,6 +29,8 @@ export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: 
 `;
 
 export const StyledFlexbox = styled(Flexbox)`
+    align-content: flex-start;
+
     ${BREAKPOINTS.S} {
         padding: 20px 10px;
     }

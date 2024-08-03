@@ -33,11 +33,6 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     p {
         letter-spacing: 1px;
     }
-
-    p,
-    h2 {
-        mix-blend-mode: color-dodge;
-    }
 `;
 
 export const Title = styled(Text)`

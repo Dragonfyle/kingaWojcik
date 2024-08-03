@@ -24,7 +24,7 @@ export default function ProjectNavButtons({
                 tooltipValue={previousProjectName}
             />
             <NextIcon
-                $size="40px"
+                $size="90px"
                 $color={colors.leading.secondary[3]}
                 onClick={onNextProject}
                 tooltipValue={nextProjectName}

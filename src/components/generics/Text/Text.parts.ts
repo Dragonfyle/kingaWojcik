@@ -11,4 +11,5 @@ export const StyledText = styled.p<StyledTextProps>`
     color: ${({ $color }) => $color};
     line-height: ${({ $lineHeight }) => $lineHeight};
     white-space: ${({ $whiteSpace }) => $whiteSpace};
+    letter-spacing: 0.5px;
 `;

@@ -13,10 +13,5 @@ export const DescriptionWrapper = styled.div`
     flex-direction: column;
     align-items: left;
     padding: 20px;
-`;
-
-export const ItemTitle = styled.h4`
-    font-size: ${({ theme }) => theme.fontSize.xl};
-    font-weight: bold;
-    margin-bottom: 10px;
+    gap: 10px;
 `;

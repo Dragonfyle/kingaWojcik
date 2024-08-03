@@ -8,13 +8,13 @@ export default function CarouselSlideText({ isActive, prelude, title, descriptio
 
     return (
         <P.DescriptionWrapper $isActive={isActive}>
-            <Text size="xl" color={theme.colors.white[1]}>
+            <Text size="xl" color={theme.colors.leading.main[1]}>
                 {prelude}
             </Text>
-            <P.Title tag="h2" bold size="4xl" lineHeight={1.2} color={theme.colors.white[1]}>
+            <P.Title tag="h2" bold size="4xl" lineHeight={1.2} color={theme.colors.leading.main[1]}>
                 {title}
             </P.Title>
-            <Text size="xl" color={theme.colors.white[1]}>
+            <Text size="xl" color={theme.colors.leading.main[1]}>
                 {description}
             </Text>
         </P.DescriptionWrapper>

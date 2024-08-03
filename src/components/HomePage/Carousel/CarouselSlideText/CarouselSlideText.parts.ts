@@ -8,9 +8,9 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
     top: 20%;
     display: ${({ $isActive }) => ($isActive ? "block" : "none")};
     max-width: 45%;
-    background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
-    opacity: 0.9;
+    /* opacity: 0.9; */
     padding: 20px 30px;
+    /* background-color: black; */
 
     ${BREAKPOINTS.XL} {
         max-width: 65%;
@@ -32,6 +32,11 @@ export const DescriptionWrapper = styled.div<{ $isActive: boolean }>`
 
     p {
         letter-spacing: 1px;
+    }
+
+    p,
+    h2 {
+        mix-blend-mode: color-dodge;
     }
 `;
 

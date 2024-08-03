@@ -1,26 +1,13 @@
 import * as P from "./NavButtons.parts";
 import NextIcon from "$generics/NavIcon/Next/Next";
 import PreviousIcon from "$generics/NavIcon/Previous/Previous";
-import { useThemeContext } from "$contexts/ThemeContext";
 import { NavButtonsProps } from "./NavButtons.types";
 
-export default function NavButtons({ onNextProject, onPreviousProject }: NavButtonsProps) {
-    const { theme } = useThemeContext();
-
+export default function NavButtons({ onNextProject, onPreviousProject, isFirstIndex, isLastIndex }: NavButtonsProps) {
     return (
         <P.ButtonsWrapper>
-            <PreviousIcon
-                $bgColor={theme.colors.supplementary[3]}
-                $fgColor={theme.colors.leading.main[2]}
-                $size="50px"
-                onClick={onPreviousProject}
-            />
-            <NextIcon
-                $bgColor={theme.colors.supplementary[3]}
-                $fgColor={theme.colors.leading.main[2]}
-                $size="50px"
-                onClick={onNextProject}
-            />
+            <PreviousIcon $size="50px" onClick={onPreviousProject} isDisabled={isFirstIndex} />
+            <NextIcon $size="100px" onClick={onNextProject} isDisabled={isLastIndex} />
         </P.ButtonsWrapper>
     );
 }

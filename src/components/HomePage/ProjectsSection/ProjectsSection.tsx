@@ -40,6 +40,8 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
                         <NavButtons
                             onNextProject={() => sliderRef.current?.scrollToNext()}
                             onPreviousProject={() => sliderRef.current?.scrollToPrevious()}
+                            isFirstIndex={false}
+                            isLastIndex={false}
                         />
                     </Flexbox>
                 )}

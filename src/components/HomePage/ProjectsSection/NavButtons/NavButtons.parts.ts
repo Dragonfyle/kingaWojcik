@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonsWrapper = styled.div`
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     justify-content: flex-end;
     width: 200px;

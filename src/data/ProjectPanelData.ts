@@ -55,7 +55,7 @@ const ProjectPanelData = {
     },
     editorial: {
         header: "Projekty Wydawnicze",
-        intro: "Projekty przygotowane do druku oraz ilustracje. A być może znajdzie sie też animacja :)",
+        intro: "Projekty przygotowane do druku oraz ilustracje: projekty prywatne i komercyjne",
         content: [
             {
                 thumbnail: kawaMiniaturka,
@@ -76,8 +76,8 @@ const ProjectPanelData = {
         ],
     },
     articles: {
-        header: "Publikacje",
-        intro: "Zdarza mi się cos napisać, więc tutaj znajdziesz artykuły mojego autorstwa.",
+        header: "Moje publikacje",
+        intro: "Zdarza mi się coś napisać, więc tutaj znajdziesz moje przemyślenia dotyczące m.in. typografii, kompozycji czy doboru kolorów.",
         content: [
             {
                 thumbnail: projektowanieStron,

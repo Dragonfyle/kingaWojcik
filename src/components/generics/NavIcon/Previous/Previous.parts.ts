@@ -15,6 +15,8 @@ export const StyledSvg = styled.svg<StyledIconProps>`
         & + div span {
             visibility: visible;
         }
+
+        fill: ${({ theme }) => theme.colors.leading.main[1]};
     }
 `;
 

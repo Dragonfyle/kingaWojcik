@@ -17,9 +17,9 @@ export const RightColumnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    padding: 0 5% 0 15%;
+    padding: 0 5% 0 0%;
 
     ${BREAKPOINTS.XXL} {
-        padding: 0 1% 0 5%;
+        padding: 0 1% 0 0;
     }
 `;

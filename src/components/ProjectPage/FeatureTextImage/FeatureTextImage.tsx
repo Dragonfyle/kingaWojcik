@@ -13,7 +13,7 @@ export default function FeatureTextImage({ source, leftColumnWidth = 50, withH1 
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
             <P.StyledFlexbox $padding="20px 40px" $marginT="50px" $direction="column">
                 {withH1 && (
-                    <Text tag="h1" size="2xl" bold>
+                    <Text tag="h1" size="2xl" bold lineHeight={1.4}>
                         {content.h1}
                     </Text>
                 )}

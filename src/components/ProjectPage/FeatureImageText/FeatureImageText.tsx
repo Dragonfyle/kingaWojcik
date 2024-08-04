@@ -16,12 +16,12 @@ export default function FeatureTextImage({ source, leftColumnWidth = 50, withH1 
             </Flexbox>
             <P.StyledFlexbox $padding="20px 40px" $direction="column">
                 {withH1 && (
-                    <Text tag="h1" size="2xl" bold>
+                    <Text tag="h1" size="2xl" bold lineHeight={1.4}>
                         {content.h1}
                     </Text>
                 )}
 
-                <Flexbox $marginB="60px" $marginT="40px">
+                <Flexbox $marginB="60px">
                     <Text>{content.description}</Text>
                 </Flexbox>
             </P.StyledFlexbox>

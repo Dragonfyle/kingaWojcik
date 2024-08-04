@@ -18,7 +18,7 @@ export default function FeatureTextText({
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
             <Flexbox $padding="20px 40px" $marginT="50px" $direction="column" $alignC="flex-start">
                 {withLeftH1 && (
-                    <Text tag="h1" size="2xl" bold>
+                    <Text tag="h1" size="2xl" bold lineHeight={1.4}>
                         {content.leftH1}
                     </Text>
                 )}
@@ -27,9 +27,9 @@ export default function FeatureTextText({
                     <Text>{content.leftDescription}</Text>
                 </Flexbox>
             </Flexbox>
-            <Flexbox $padding="20px 40px" $marginT="50px" $direction="column" $alignC="flex-start">
+            <Flexbox $padding="20px 40px" $direction="column" $alignC="flex-start">
                 {withRightH1 && (
-                    <Text tag="h1" size="2xl" bold>
+                    <Text tag="h1" size="2xl" bold lineHeight={1.4}>
                         {content.rightH1}
                     </Text>
                 )}

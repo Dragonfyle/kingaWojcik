@@ -15,6 +15,10 @@ export const StyledP = styled(Text)`
     width: 550px;
     margin-right: 50px;
 
+    ${BREAKPOINTS.XXL} {
+        font-size: ${({ theme }) => theme.fontSize["l"]};
+    }
+
     ${BREAKPOINTS.L} {
         margin-right: 0;
     }

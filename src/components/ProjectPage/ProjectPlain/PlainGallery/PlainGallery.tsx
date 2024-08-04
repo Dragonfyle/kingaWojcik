@@ -1,5 +1,6 @@
 import { Feature } from "$types/Project.types";
 import FeatureImage from "$components/ProjectPage/FeatureImage/FeatureImage";
+import FeatureVideo from "$components/ProjectPage/FeatureVideo/FeatureVideo";
 import FeatureText from "$components/ProjectPage/FeatureText/FeatureText";
 import FeatureTextText from "$components/ProjectPage/FeatureTextText/FeatureTextText";
 import FeatureImageImage from "$components/ProjectPage/FeatureImageImage/FeatureImageImage";
@@ -17,6 +18,7 @@ export default function PlainGallery({ source }: PlainGalleryProps) {
     const featureMap: Record<string, React.ComponentType<any>> = {
         FeatureText,
         FeatureImage,
+        FeatureVideo,
         FeatureTextText,
         FeatureTextImage,
         FeatureImageImage,

@@ -9,6 +9,13 @@ export const StyledSection = styled.section`
     width: 89%;
     margin: 0 0 0 11%;
     padding: 100px 0;
+
+    ${BREAKPOINTS.XXL} {
+        h2 {
+            font-size: ${({ theme }) => theme.fontSize["3xl"]};
+        }
+    }
+
     ${BREAKPOINTS.L} {
         width: 95%;
         margin: 0 0 0 5%;

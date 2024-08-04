@@ -4,5 +4,5 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #eeedea;
+    background: ${({ theme }) => theme.colors.white[1]};
 `;

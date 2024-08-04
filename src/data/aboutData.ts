@@ -36,7 +36,7 @@ const aboutGalleryData: AboutGalleryData = {
                         },
                         description: {
                             1: "licencjat z kognitywistyki na Uniwersytecie Marii Curie-Skłodowskiej",
-                            2: "Kognitywistyka jest dziedziną  zorientowaną wokół problemów ludzkiego poznania, komunikacji czy zdolności do posługiwania się symbolami. Na studiach miałam okazję zgłębić właśnie te problemy, co zaowocowało pracą dyplomową z dziedziny semiotyki (znaków), która dotyczyła mechanizmu rozumienia języka z perspektywy psychologii, neurologii oraz językoznawstwa.",
+                            2: "Kognitywistyka jest dziedziną zorientowaną wokół problemów ludzkiego poznania, komunikacji czy zdolności do posługiwania się symbolami.",
                             3: "",
                         },
                     },

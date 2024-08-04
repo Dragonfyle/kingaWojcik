@@ -23,6 +23,7 @@
       "$pages/*": ["./src/pages/*"],
       "$utils/*": ["./src/utils/*"],
       "$img/*": ["./src/assets/img/*"],
+      "$videos/*": ["./src/assets/videos/*"],
       "$styles/*": ["./src/styles/*"],
       "$constants/*": ["./src/constants/*"],
       "$assets/*": ["./src/assets/*"],

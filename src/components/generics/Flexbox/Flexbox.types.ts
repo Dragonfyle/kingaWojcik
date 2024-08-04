@@ -2,7 +2,7 @@ export interface FlexboxProps<T extends HTMLElement> extends React.HTMLAttribute
     children: React.ReactNode;
     $direction?: "row" | "column" | "row-reverse" | "column-reverse";
     className?: string;
-    $align?:
+    $alignI?:
         | "normal"
         | "stretch"
         | "center"
@@ -17,6 +17,29 @@ export interface FlexboxProps<T extends HTMLElement> extends React.HTMLAttribute
         | "last baseline"
         | "safe center"
         | "unsafe"
+        | "inherit"
+        | "initial"
+        | "revert"
+        | "revert-layer"
+        | "unset";
+    $alignC?:
+        | "normal"
+        | "stretch"
+        | "center"
+        | "start"
+        | "end"
+        | "flex-start"
+        | "flex-end"
+        | "self-start"
+        | "self-end"
+        | "baseline"
+        | "first baseline"
+        | "last baseline"
+        | "space-between"
+        | "space-around"
+        | "space-evenly"
+        | "safe center"
+        | "unsafe center"
         | "inherit"
         | "initial"
         | "revert"

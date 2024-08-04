@@ -9,7 +9,9 @@ export default function ProjectPanelItem({ image, title, description }: ProjectP
         <P.ItemWrapper>
             <ProjectThumbnail src={image} />
             <P.DescriptionWrapper>
-                <P.ItemTitle>{title}</P.ItemTitle>
+                <Text tag="h4" bold>
+                    {title}
+                </Text>
                 <Text size="m" lineHeight={1.5}>
                     {description}
                 </Text>

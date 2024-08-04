@@ -48,6 +48,11 @@ import okladkiRewolucjaBack from "$img/projects/okladki/okladki_rewolucja_back.j
 import okladkiCosmicrayFront from "$img/projects/okladki/okladki_cosmicray_front.jpg";
 import okladkiCosmicrayBack from "$img/projects/okladki/okladki_cosmicray_back.jpg";
 
+import renaultFront from "$img/projects/renault/front.png";
+// import renaultPerspective from "$img/projects/renault/perspective.png";
+// import renaultSide from "$img/projects/renault/side.png";
+import renaulMp4 from "$videos/renault_design_contest_kinga_wojcik.mp4";
+
 import { PlainGalleryData } from "$types/plainGallery.types";
 
 const plainGalleryData: PlainGalleryData = {
@@ -75,14 +80,14 @@ const plainGalleryData: PlainGalleryData = {
 
                 configuration: {
                     withH1: false,
-                    withDescription: true,
+                    withDescription: false,
                 },
 
                 content: {
                     img: kawa2,
                     h1: "",
                     description:
-                        "W swoich ilustracjach staram się przede wszystkim skupiać na emocjach i relacjach. Myślę, że kluczową cechą dobrego ilustratora jest umiejętność ukazania czegoś poza czysto wizualnymi, estetycznymi aspektami obrazu czyli działań, nastrojów czy charakterów postaci. Dlatego zawsze staram się, aby moje prace wywoływały u odbiorców określone odczucia.",
+                        "",
                 },
             },
             {
@@ -418,10 +423,10 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     h1: "Symbolika sygnetu",
                     description: `Logo ma na celu ukazanie walorów turystyczno-przyrodniczych gminy oraz zakomunikowanie jej dynamicznego, sportowego charakteru.
+
                     Znajdująca się pośrodku postać pokazuje możliwość aktywnego spędzania czasu i płynącą z tego radość. Całość przypomina mapę/plan terenu, na którym różnymi kolorami zaznaczono poszczególne obszary: (lasy, parki, rzeką, zabudowę miejską)
-                    Żywe, kontrastowe kolory podkreślają nowoczesność. Skośne linie i kąty ostre nadają dynamiki i ukazują dążenie gminy do rozwoju i zmian.
                     
-                    Kolorowe elementy logo można w ciekawy sposób wykorzystać jako charakterystyczną, wyróżniającą część identyfikacji wizualnej gminy.
+                    Żywe, kontrastowe kolory podkreślają nowoczesność. Skośne linie i kąty ostre nadają dynamiki i ukazują dążenie gminy do rozwoju i zmian. Kolorowe elementy logo można w ciekawy sposób wykorzystać jako charakterystyczną, wyróżniającą część identyfikacji wizualnej gminy.
                     `,
                 },
             },
@@ -640,6 +645,59 @@ const plainGalleryData: PlainGalleryData = {
                     rightH1: "",
                     leftDescription: "",
                     rightDescription: "",
+                },
+            },
+        ],
+    },
+    project5: {
+        header: "",
+        intro: "",
+
+        plainGalleryContent: [
+            {
+                component: "ImageText",
+
+                configuration: {
+                    leftColumnWidth: 70,
+                    withH1: true,
+                    withDescription: true,
+                    descriptionPosition: "bottom",
+                },
+
+                content: {
+                    img: renaultFront,
+                    h1: "Zwycięski projekt w konkursie Renault Trucks Design Contest – grafika na ciężarówkę Renault E-Tech T",
+                    description: `Projekt balansuje pomiędzy przemysłowym, ciężkim charakterem branży, a elegancją i nowoczesnością.
+
+                    Design zostanie zrealizowany na prawdziwej ciężarówce i zaprezentowany podczas jesiennego eventu w Lyonie.`,
+                },
+            },
+
+            {
+                component: "Text",
+
+                configuration: {
+                    withH1: true,
+                },
+
+                content: {
+                    h1: "Projekt Grafiki na ciężarówkę Renault E-Tech T",
+                    description: `Sam przód ciężarówki nawiązuje do schematu obwodu elektrycznego i zaprojektowany został, wykorzystując symetrię środkową.  Strzałki biegnące od baterii w kierunku frontu sygnalizują przepływ energii. We wzór wkomponowałam błyskawicę, która bezpośrednio komunikuje, "o czym jest ten projekt"`,
+                },
+            },
+
+            {
+                component: "Video",
+
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+
+                content: {
+                    video: renaulMp4,
+                    h1: "",
+                    description: "",
                 },
             },
         ],

@@ -4,7 +4,8 @@ import { StyledFlexboxProps } from "./Flexbox.types";
 export const Flexbox = styled.div<StyledFlexboxProps>`
     display: flex;
     justify-content: ${({ $justify }) => $justify};
-    align-items: ${({ $align }) => $align};
+    align-items: ${({ $alignI }) => $alignI};
+    align-content: ${({ $alignC }) => $alignC};
     flex-direction: ${({ $direction }) => $direction};
     column-gap: ${({ $colGap }) => $colGap};
     row-gap: ${({ $rowGap }) => $rowGap};

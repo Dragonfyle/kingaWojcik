@@ -2,6 +2,7 @@ import { useCarouselContext } from "$contexts/CarouselContext";
 import ProgressBar from "$generics/ProgressBar/ProgressBar";
 
 import { CarouselOverlayMapItemProps } from "./CarouselOverlayMapItem.types";
+import Text from "$components/generics/Text";
 import * as P from "./CarouselOverlayMapItem.parts";
 
 export default function CarouselOverlayMapItem({ isActive, description, imageIndex }: CarouselOverlayMapItemProps) {
@@ -20,7 +21,7 @@ export default function CarouselOverlayMapItem({ isActive, description, imageInd
         <P.MapItemWrapper $isActive={isActive} {...(isClickable && { onClick: clickHandler })}>
             <ProgressBar isActive={isActive} />
             <P.DescriptionWrapper>
-                <p>{description}</p>
+                <Text>{description}</Text>
             </P.DescriptionWrapper>
         </P.MapItemWrapper>
     );

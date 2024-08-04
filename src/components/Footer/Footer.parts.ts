@@ -8,7 +8,7 @@ export const Wrapper = styled.footer`
     background-color: ${({ theme }) => theme.colors.leading.secondary[1]};
     border-top: 1px solid ${({ theme }) => theme.colors.white[1]};
     width: 100vw;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 
     ${BREAKPOINTS.M} {
         flex-direction: column;

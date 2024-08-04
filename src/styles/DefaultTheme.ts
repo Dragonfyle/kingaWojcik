@@ -37,7 +37,7 @@ const defaultTheme = {
         },
     },
     fontWeight: {
-        normal: 400,
+        normal: 500,
         bold: 700,
         black: 700,
     },

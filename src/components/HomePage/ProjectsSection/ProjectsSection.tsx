@@ -18,7 +18,7 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
     const sliderRef = useRef<SliderImperativeHandle>(null);
     const { isMobile } = useDeviceContext();
 
-    function getContent(source: ProjectPanelDataSection) {
+    function renderContent(source: ProjectPanelDataSection) {
         return source.content.map(({ thumbnail, title, description, projectUrl }) => (
             <Link key={description} to={projectUrl}>
                 <ProjectPanelItem image={thumbnail} title={title} description={description} />
@@ -29,25 +29,29 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
     return (
         <P.StyledSection id={id}>
             <Flexbox $wrap="nowrap">
-                <Flexbox>
+                <Flexbox $alignC="center">
                     <Text tag="h2" bold size="4xl">
                         {source.header}
                     </Text>
                 </Flexbox>
+
                 {!isMobile && (
                     <Flexbox $wrap="nowrap" $justify="center">
                         <NavButtons
                             onNextProject={() => sliderRef.current?.scrollToNext()}
                             onPreviousProject={() => sliderRef.current?.scrollToPrevious()}
+                            isFirstIndex={false}
+                            isLastIndex={false}
                         />
                     </Flexbox>
                 )}
             </Flexbox>
+
             {isMobile && <ProjectPanelIntro text={source.intro} />}
 
             <Slider ref={sliderRef}>
                 {!isMobile && <ProjectPanelIntro text={source.intro} />}
-                {getContent(source)}
+                {renderContent(source)}
             </Slider>
         </P.StyledSection>
     );

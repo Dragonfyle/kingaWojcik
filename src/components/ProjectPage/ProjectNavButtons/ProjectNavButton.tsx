@@ -19,15 +19,13 @@ export default function ProjectNavButtons({
         <P.ButtonsWrapper>
             <PreviousIcon
                 $size="40px"
-                $bgColor={colors.leading.secondary[2]}
-                $fgColor={colors.white[1]}
+                $color={colors.leading.secondary[3]}
                 onClick={onPreviousProject}
                 tooltipValue={previousProjectName}
             />
             <NextIcon
-                $size="40px"
-                $bgColor={colors.leading.secondary[2]}
-                $fgColor={colors.white[1]}
+                $size="90px"
+                $color={colors.leading.secondary[3]}
                 onClick={onNextProject}
                 tooltipValue={nextProjectName}
             />

@@ -5,10 +5,12 @@ import TabbedGallery from "./TabbedGallery/";
 import ProjectNavigation from "../ProjectNavigation/";
 import ProjectIntroduction from "../ProjectIntroduction/";
 import { ProjectWithTabsProps } from "./ProjectWithTabs.types";
+import { useDeviceContext } from "$contexts/DeviceContext";
 import * as P from "./ProjectWithTabs.parts";
 
 export default function ProjectWithTabs({ source, banner }: ProjectWithTabsProps) {
     useScrollToTop();
+    const { isMobile } = useDeviceContext();
 
     const withBanner = !!banner;
     const withDescription = source.intro !== "";
@@ -23,7 +25,7 @@ export default function ProjectWithTabs({ source, banner }: ProjectWithTabsProps
                 )}
                 <ProjectIntroduction source={source} withDescription={withDescription} />
                 <TabbedGallery source={source} />
-                <ProjectNavigation />
+                {!isMobile && <ProjectNavigation />}
             </P.ContentWrapper>
         </Flexbox>
     );

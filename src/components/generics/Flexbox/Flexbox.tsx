@@ -7,7 +7,8 @@ export default function Flexbox<T extends HTMLElement>({
     tag = "div",
     $direction = "row",
     $justify = "normal",
-    $align = "normal",
+    $alignI = "normal",
+    $alignC = "normal",
     $wrap = "wrap",
     $width = "100%",
     $maxWidth = "auto",
@@ -25,7 +26,8 @@ export default function Flexbox<T extends HTMLElement>({
 }: React.PropsWithChildren<WithTagVariant<FlexboxProps<T>>>) {
     return (
         <P.Flexbox
-            $align={$align}
+            $alignI={$alignI}
+            $alignC={$alignC}
             $direction={$direction}
             $justify={$justify}
             className={className}

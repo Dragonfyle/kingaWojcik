@@ -14,9 +14,9 @@ export default function AboutAuthor({ source }: AboutSectionProps) {
                     Kinga Ewa Wójcik
                 </Text>
             </P.StyledHeader>
-            <Flexbox $wrap="nowrap" $colGap="100px">
-                <Text>{source.description}</Text>
-            </Flexbox>
+            <P.DescriptionWrapper $wrap="nowrap" $colGap="100px">
+                <Text whiteSpace="pre-line">{source.description}</Text>
+            </P.DescriptionWrapper>
         </P.StyledSection>
     );
 }

@@ -5,17 +5,17 @@ import { NavIconProps } from "../NavIcon.types";
 import * as P from "./Previous.parts";
 
 export default function PreviousIcon({
-    $bgColor = "#F1DB13",
-    $fgColor = "black",
+    $color = "black",
     $size,
     onClick,
     tooltipValue,
+    isDisabled = false,
 }: NavIconProps) {
     const withTooltip = !!tooltipValue;
 
     return (
         <>
-            <P.StyledSvg $bgColor={$bgColor} $fgColor={$fgColor} $size={$size} onClick={onClick}>
+            <P.StyledSvg $color={$color} $size={$size} onClick={onClick} isDisabled={isDisabled}>
                 <IconNext />
             </P.StyledSvg>
             {withTooltip && (

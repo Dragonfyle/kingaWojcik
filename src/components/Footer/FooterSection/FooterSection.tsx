@@ -37,9 +37,9 @@ export default function FooterSection({ sectionName, listItems, links }: FooterS
 
     return (
         <Flexbox $direction="column" $marginT="40px" $marginL="auto" $marginR="auto">
-            <Text size="xl" color={colors.white[1]} lineHeight={1.2}>
+            <P.FooterSectionTitle size="xl" color={colors.white[1]} lineHeight={1.2}>
                 {sectionName}
-            </Text>
+            </P.FooterSectionTitle>
             <Divider color={colors.leading.secondary[2]} />
             <P.StyledUl>{renderList(listItems)}</P.StyledUl>
         </Flexbox>

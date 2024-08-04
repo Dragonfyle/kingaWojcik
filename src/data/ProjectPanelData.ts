@@ -4,6 +4,7 @@ import ukenMiniaturka from "$img/projects/uken/ProjectPanel_uken_miniaturka.png"
 import goslinaMiniaturka from "$img/projects/goslina/ProjectPanel_goslina_miniaturka.png";
 import kawaMiniaturka from "$img/projects/kawa/ProjectPanel_kawa_miniaturka.png";
 import okladkiMiniaturka from "$img/projects/okladki/ProjectPanel_okladki_miniaturka.png";
+import renaultMiniaturka from "$img/projects/renault/renault_design_contest_kinga_wojcik.jpg";
 import fontyPisankowe from "$img/articles/fonty_pisankowe.jpg";
 import kontrast from "$img/articles/jak_dobrac_wlasniwy_kontrast.jpg";
 import projektowanieStron from "$img/articles/projektowanie_stron_internetowych.jpg";
@@ -17,10 +18,16 @@ type ProjectPanelDataSection = ProjectPanelData[keyof ProjectPanelData];
 const ProjectPanelData = {
     branding: {
         header: "Projekty brandingowe",
-        intro: `Zawsze staram się najpierw zrozumieć potrzeby marki oraz oczekiwania klienta. 
-        Z reguły proponuję wypełnienie briefu, dotyczącego firmy oraz jej klientów, co ułatwia mi określenie odpowiedniego 
-        kierunku.`,
+        intro: `Staram się najpierw zrozumieć potrzeby marki oraz oczekiwania klienta. 
+        Z reguły proponuję wypełnienie briefu, dotyczącego firmy, co ułatwia mi określenie odpowiedniego kierunku działań.`,
         content: [
+            {
+                thumbnail: renaultMiniaturka,
+                title: "Zwycięski projekt w konkursie Renault Trucks Design Contest",
+                description: `Projekt grafiki na ciężarówkę, który został wyróżniony przez Renault Trucks, a następnie zwyciężył w głosowaniu publiczności.`,
+                projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[4],
+                name: "Renault",
+            },
             {
                 thumbnail: czteryspacjeMiniaturka,
                 title: "Logo i strona internetowa dla 4spacje.pl",
@@ -48,7 +55,7 @@ const ProjectPanelData = {
     },
     editorial: {
         header: "Projekty Wydawnicze",
-        intro: "W tej sekcji znajdują się stworzone przeze mnie projekty przygotowane do druku. Jest to moje portfolio okładek książkowych czy książeczka o kawie powstała we współpracy z Małgorzatą Jaworską",
+        intro: "Projekty przygotowane do druku oraz ilustracje: projekty prywatne i komercyjne",
         content: [
             {
                 thumbnail: kawaMiniaturka,
@@ -69,42 +76,38 @@ const ProjectPanelData = {
         ],
     },
     articles: {
-        header: "Czasem coś napiszę",
-        intro: "Tutaj znajdziesz moje artykuły, które publikuję na blogu 4spacje.pl. Dotyczą przede wszystkim kwestii projektowych i typograficznych.",
+        header: "Moje publikacje",
+        intro: "Zdarza mi się coś napisać, więc tutaj znajdziesz moje przemyślenia dotyczące m.in. typografii, kompozycji czy doboru kolorów.",
         content: [
             {
                 thumbnail: projektowanieStron,
-                title: "Projektowanie stron internetowych",
-                description:
-                    "Jak wybrać odpowiednią paletę kolorów na stronę internetową",
-                projectUrl: "https://www.4spacje.pl/article/projektowanie-stron-internetowych-jak-wybrac-palete-kolorow",
+                title: "Paleta kolorów na stronę internetową",
+                description: "Jak wybrać odpowiednią paletę kolorów na stronę internetową",
+                projectUrl:
+                    "https://www.4spacje.pl/article/projektowanie-stron-internetowych-jak-wybrac-palete-kolorow",
             },
             {
                 thumbnail: kontrast,
-                title: "Właściwy kontrast na stronach internetowych",
-                description:
-                    "Jak dobrać odpowiedni kontrast na stronę internetową",
+                title: "Właściwy kontrast w projektowaniu stron internetowych",
+                description: "Jak dobrać odpowiedni kontrast",
                 projectUrl: "https://www.4spacje.pl/article/kontrast-na-stronach-internetowych",
             },
             {
                 thumbnail: typografia,
                 title: "Podstawy typografii - font u psychologa",
-                description:
-                    "Neuro-psychologiczne podstawy typografii",
+                description: "Neuro-psychologiczne podstawy typografii",
                 projectUrl: "https://www.4spacje.pl/article/typografia-font-u-psychologa",
             },
             {
                 thumbnail: ucielesnienie,
-                title: "Ucieleśnienie w projektowaniu graficznym",
-                description:
-                    "Czym jest ucieleśnienie i jak wpływa na kompozycję projektu",
+                title: "Kompozycja w projektowaniu graficznym",
+                description: "Czym jest ucieleśnienie i jak wpływa na kompozycję projektu",
                 projectUrl: "https://www.4spacje.pl/article/ucielesnienie-kompozycja-w-projektowaniu-graficznym",
             },
             {
                 thumbnail: fontyPisankowe,
                 title: "Fonty pisankowe",
-                description:
-                    "Wielkanocny artykuł typograficzny :)",
+                description: "Wielkanocny artykuł typograficzny :)",
                 projectUrl: "https://www.4spacje.pl/article/fonty-pisankowe-definicja-rodzaje-zastosowanie",
             },
         ],

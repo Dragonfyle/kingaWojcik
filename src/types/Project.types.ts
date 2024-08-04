@@ -23,6 +23,10 @@ interface FeatureImageConfig {
     withH1: boolean;
     withDescription: boolean;
 }
+interface FeatureVideoConfig {
+    withH1: boolean;
+    withDescription: boolean;
+}
 interface FeatureTextConfig {
     withH1: boolean;
 }
@@ -45,6 +49,11 @@ interface FeatureTextTextContent {
 
 interface FeatureImageContent {
     img: string;
+    h1?: string;
+    description?: string;
+}
+interface FeatureVideoContent {
+    video: string;
     h1?: string;
     description?: string;
 }
@@ -74,6 +83,11 @@ interface FeatureImage {
     configuration: FeatureImageConfig;
     content: FeatureImageContent;
 }
+interface FeatureVideo {
+    component: "Video";
+    configuration: FeatureVideoConfig;
+    content: FeatureVideoContent;
+}
 interface FeatureTextText {
     component: "TextText";
     configuration: FeatureTextTextConfig;
@@ -95,13 +109,21 @@ interface FeatureImageText {
     content: FeatureTextImageContent;
 }
 
-type Feature = FeatureText | FeatureImage | FeatureTextText | FeatureImageImage | FeatureTextImage | FeatureImageText;
+type Feature =
+    | FeatureText
+    | FeatureImage
+    | FeatureVideo
+    | FeatureTextText
+    | FeatureImageImage
+    | FeatureTextImage
+    | FeatureImageText;
 
 export type {
     FeatureTextImageContent,
     FeatureImageImageContent,
     FeatureTextTextContent,
     FeatureImageContent,
+    FeatureVideoContent,
     FeatureTextContent,
     FeatureTextImageConfig,
     FeatureImageImageConfig,

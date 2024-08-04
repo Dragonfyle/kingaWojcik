@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { BREAKPOINTS } from "$styles/breakpoints";
 
 export const NavigationItemWrapper = styled.div`
     position: relative;
@@ -9,10 +8,6 @@ export const NavigationItemWrapper = styled.div`
 
     &:hover {
         background-color: ${({ theme }) => theme.colors.leading.main[2]};
-    }
-
-    ${BREAKPOINTS.L} {
-        border: 5px solid ${({ theme }) => theme.colors.white[1]};
     }
 
     a {

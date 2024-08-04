@@ -23,9 +23,6 @@ export const StyledP = styled(Text)`
         margin-right: 0;
     }
 
-    ${BREAKPOINTS.M} {
-        font-size: 1.5rem;
-    }
     ${BREAKPOINTS.S} {
         max-width: 90vw;
         font-size: 1.2rem;

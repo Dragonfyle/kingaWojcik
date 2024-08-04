@@ -39,7 +39,9 @@ const tabbedGalleryData: TabbedGalleryData = {
                             description: `Zebrałam najważniejsze, powtarzające się informacje, które posłużyły za tło koncepcyjne dla projektu.
                             
                             -chcemy kreować wizerunek ekspertów, mentorów chętnych do pomocy, ludzi z pasją. Trzy najlepiej określające nas słowa to: profesjonalni, nietuzinkowi, rzetelni
+                            
                             -naszym celem jest poszerzanie kręgu odbiorców, dzielenie się wiedzą, stworzenie solidnej bazy informacji i coraz większe angażowanie użytkowników
+                           
                             -grupą docelową są głównie młodzi programiści i designerzy, stąd też potrzeba pójścia w kierunku nowoczesnego projektu witryny`,
                         },
                     },
@@ -64,7 +66,9 @@ const tabbedGalleryData: TabbedGalleryData = {
             {
                 tabName: "logo",
                 highlight:
-                    "Wykorzystując jak najprostsze środki wyrazu staralam się oddać najważniejsze wartości marki: profesjonalizm i edukacyjny charakter bloga. Poniżej zestawienie wstępnych szkiców, powstałych w oparciu o brief oraz przygotowane na jego podstawie mapy myśli, które pomogły mi uporządkować skojarzenia, a także odkryć te mniej oczywiste powiązania.",
+                    `Wykorzystując jak najprostsze środki wyrazu staralam się oddać najważniejsze wartości marki: profesjonalizm i edukacyjny charakter bloga.
+                    
+                    Poniżej zestawienie wstępnych szkiców, powstałych w oparciu o brief oraz przygotowane na jego podstawie mapy myśli, które pomogły mi uporządkować skojarzenia, a także odkryć te mniej oczywiste powiązania.`,
 
                 features: {
                     feature1: {
@@ -120,6 +124,7 @@ const tabbedGalleryData: TabbedGalleryData = {
                         content: {
                             h1: "Symbolika logotypu",
                             description: `Gruba linia fontu sugeruje solidność, autorytet i rzetelność. Krój jednoelementowy nawiązuje do cech, takich jak stabilność i przewidywalność.
+                            
                             Połączenie minuskuły i majuskuły: małe litery sprawiają, że logo jest bardziej przyjazne, komunikują otwartość na ludzi i chęć budowania relacji, wielkie litery dają wrażenie wiarygodności, profesjonalizmu. Ich połączenie tworzy balans między tymi wartościami.
                             `,
                         },

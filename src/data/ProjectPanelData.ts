@@ -18,9 +18,8 @@ type ProjectPanelDataSection = ProjectPanelData[keyof ProjectPanelData];
 const ProjectPanelData = {
     branding: {
         header: "Projekty brandingowe",
-        intro: `Zawsze staram się najpierw zrozumieć potrzeby marki oraz oczekiwania klienta. 
-        Z reguły proponuję wypełnienie briefu, dotyczącego firmy oraz jej klientów, co ułatwia mi określenie odpowiedniego 
-        kierunku.`,
+        intro: `Staram się najpierw zrozumieć potrzeby marki oraz oczekiwania klienta. 
+        Z reguły proponuję wypełnienie briefu, dotyczącego firmy, co ułatwia mi określenie odpowiedniego kierunku działań.`,
         content: [
             {
                 thumbnail: renaultMiniaturka,
@@ -56,7 +55,7 @@ const ProjectPanelData = {
     },
     editorial: {
         header: "Projekty Wydawnicze",
-        intro: "W tej sekcji znajdują się stworzone przeze mnie projekty przygotowane do druku. Jest to moje portfolio okładek książkowych czy książeczka o kawie powstała we współpracy z Małgorzatą Jaworską",
+        intro: "Projekty przygotowane do druku oraz ilustracje. A być może znajdzie sie też animacja :)",
         content: [
             {
                 thumbnail: kawaMiniaturka,
@@ -77,20 +76,20 @@ const ProjectPanelData = {
         ],
     },
     articles: {
-        header: "Czasem piszę artykuły",
-        intro: "Tutaj znajdziesz moje artykuły, które publikuję na blogu 4spacje.pl. Dotyczą przede wszystkim kwestii projektowych i typograficznych.",
+        header: "Publikacje",
+        intro: "Zdarza mi się cos napisać, więc tutaj znajdziesz artykuły mojego autorstwa.",
         content: [
             {
                 thumbnail: projektowanieStron,
-                title: "Projektowanie stron internetowych",
+                title: "Paleta kolorów na stronę internetową",
                 description: "Jak wybrać odpowiednią paletę kolorów na stronę internetową",
                 projectUrl:
                     "https://www.4spacje.pl/article/projektowanie-stron-internetowych-jak-wybrac-palete-kolorow",
             },
             {
                 thumbnail: kontrast,
-                title: "Właściwy kontrast na stronach internetowych",
-                description: "Jak dobrać odpowiedni kontrast na stronę internetową",
+                title: "Właściwy kontrast w projektowaniu stron internetowych",
+                description: "Jak dobrać odpowiedni kontrast",
                 projectUrl: "https://www.4spacje.pl/article/kontrast-na-stronach-internetowych",
             },
             {
@@ -101,7 +100,7 @@ const ProjectPanelData = {
             },
             {
                 thumbnail: ucielesnienie,
-                title: "Ucieleśnienie w projektowaniu graficznym",
+                title: "Kompozycja w projektowaniu graficznym",
                 description: "Czym jest ucieleśnienie i jak wpływa na kompozycję projektu",
                 projectUrl: "https://www.4spacje.pl/article/ucielesnienie-kompozycja-w-projektowaniu-graficznym",
             },

@@ -80,14 +80,14 @@ const plainGalleryData: PlainGalleryData = {
 
                 configuration: {
                     withH1: false,
-                    withDescription: true,
+                    withDescription: false,
                 },
 
                 content: {
                     img: kawa2,
                     h1: "",
                     description:
-                        "W swoich ilustracjach staram się przede wszystkim skupiać na emocjach i relacjach. Myślę, że kluczową cechą dobrego ilustratora jest umiejętność ukazania czegoś poza czysto wizualnymi, estetycznymi aspektami obrazu czyli działań, nastrojów czy charakterów postaci. Dlatego zawsze staram się, aby moje prace wywoływały u odbiorców określone odczucia.",
+                        "",
                 },
             },
             {
@@ -423,10 +423,10 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     h1: "Symbolika sygnetu",
                     description: `Logo ma na celu ukazanie walorów turystyczno-przyrodniczych gminy oraz zakomunikowanie jej dynamicznego, sportowego charakteru.
+
                     Znajdująca się pośrodku postać pokazuje możliwość aktywnego spędzania czasu i płynącą z tego radość. Całość przypomina mapę/plan terenu, na którym różnymi kolorami zaznaczono poszczególne obszary: (lasy, parki, rzeką, zabudowę miejską)
-                    Żywe, kontrastowe kolory podkreślają nowoczesność. Skośne linie i kąty ostre nadają dynamiki i ukazują dążenie gminy do rozwoju i zmian.
                     
-                    Kolorowe elementy logo można w ciekawy sposób wykorzystać jako charakterystyczną, wyróżniającą część identyfikacji wizualnej gminy.
+                    Żywe, kontrastowe kolory podkreślają nowoczesność. Skośne linie i kąty ostre nadają dynamiki i ukazują dążenie gminy do rozwoju i zmian. Kolorowe elementy logo można w ciekawy sposób wykorzystać jako charakterystyczną, wyróżniającą część identyfikacji wizualnej gminy.
                     `,
                 },
             },
@@ -667,9 +667,9 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: renaultFront,
                     h1: "Zwycięski projekt w konkursie Renault Trucks Design Contest – grafika na ciężarówkę Renault E-Tech T",
-                    description: `Projekt balansuje pomiędzy przemysłowym, ciężkim charakterem branży, a elegancją i nowoczesnością. Udało się to osiągnąć dzięki odpowiedniej szerokości liniom, które budują wszystkie elementy wzoru.
+                    description: `Projekt balansuje pomiędzy przemysłowym, ciężkim charakterem branży, a elegancją i nowoczesnością.
 
-                    Design zostanie zrealizowany na prawdziwej ciężarówce i zaprezentowany podczas jesiennego eventu Renault w Lyonie.`,
+                    Design zostanie zrealizowany na prawdziwej ciężarówce i zaprezentowany podczas jesiennego eventu w Lyonie.`,
                 },
             },
 

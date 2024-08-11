@@ -1,5 +1,5 @@
 import { CONFIG } from "$constants/config";
-import czteryspacjeMiniaturka from "$img/projects/4spacje/ProjectPanel_4spacje_miniaturka.png";
+// import czteryspacjeMiniaturka from "$img/projects/4spacje/ProjectPanel_4spacje_miniaturka.png";
 import ukenMiniaturka from "$img/projects/uken/ProjectPanel_uken_miniaturka.png";
 import goslinaMiniaturka from "$img/projects/goslina/ProjectPanel_goslina_miniaturka.png";
 import kawaMiniaturka from "$img/projects/kawa/ProjectPanel_kawa_miniaturka.png";
@@ -10,6 +10,7 @@ import kontrast from "$img/articles/jak_dobrac_wlasniwy_kontrast.jpg";
 import projektowanieStron from "$img/articles/projektowanie_stron_internetowych.jpg";
 import typografia from "$img/articles/typografia_w_projektowaniu_graficznym.jpg";
 import ucielesnienie from "$img/articles/ucielesnienie-kompozycja.jpg";
+import jolkaMiniaturka from "$img/projects/jolka/jolka_miniaturka.jpg";
 
 type ProjectPanelData = typeof ProjectPanelData;
 
@@ -28,13 +29,13 @@ const ProjectPanelData = {
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[4],
                 name: "Renault",
             },
-            {
-                thumbnail: czteryspacjeMiniaturka,
-                title: "Logo i strona internetowa dla 4spacje.pl",
-                description: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.`,
-                projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[1],
-                name: "4spacje",
-            },
+            // {
+            //     thumbnail: czteryspacjeMiniaturka,
+            //     title: "Logo i strona internetowa dla 4spacje.pl",
+            //     description: `4spacje.pl to blog o technologiach internetowych. Celem autorów jest dzielenie się wiedzą dotyczącą tworzenia i projektowania stron internetowych, a także zbudowanie przestrzeni sprzyjającej nauce.`,
+            //     projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[1],
+            //     name: "4spacje",
+            // },
             {
                 thumbnail: ukenMiniaturka,
                 title: "Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie",
@@ -53,16 +54,24 @@ const ProjectPanelData = {
             },
         ],
     },
-    editorial: {
-        header: "Projekty Wydawnicze",
+    illustrations: {
+        header: "Ilustracje",
         intro: "Projekty przygotowane do druku oraz ilustracje: projekty prywatne i komercyjne",
         content: [
+            {
+                thumbnail: jolkaMiniaturka,
+                title: "Jolka",
+                description:
+                    "Ilustracje stworzone dla webePartners. Projekt rysunkowej koleżanki, która pokazuje i tłumaczy świat afiliacji",
+                projectUrl: CONFIG.PATHS.PROJECTS.ILLUSTRATIONS[3],
+                name: "Jolka - ilustracje",
+            },
             {
                 thumbnail: kawaMiniaturka,
                 title: "Krótka historia kawy",
                 description:
                     "Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces powstawania kawy. Projekt we współpracy z Małgorzatą Jaworską",
-                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
+                projectUrl: CONFIG.PATHS.PROJECTS.ILLUSTRATIONS[1],
                 name: "Krótka historia kawy",
             },
             {
@@ -70,9 +79,10 @@ const ProjectPanelData = {
                 title: "Projekty okładek książkowych",
                 description:
                     "Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują zawartość każdej z nich",
-                projectUrl: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
+                projectUrl: CONFIG.PATHS.PROJECTS.ILLUSTRATIONS[2],
                 name: "Okładki książek",
             },
+
         ],
     },
     articles: {

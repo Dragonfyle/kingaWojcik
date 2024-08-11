@@ -8,8 +8,9 @@ import Branding1 from "$pages/Branding1";
 import Branding2 from "$pages/Branding2";
 import Branding3 from "$pages/Branding3";
 import Branding4 from "$pages/Branding4";
-import Editorial1 from "$pages/Editorial1";
-import Editorial2 from "$pages/Editorial2";
+import Illustrations1 from "$pages/Illustrations1";
+import Illustrations2 from "$pages/Illustrations2";
+import Illustrations3 from "$pages/Illustrations3";
 
 const browserRouter = createBrowserRouter([
     {
@@ -37,12 +38,16 @@ const browserRouter = createBrowserRouter([
                 element: <Branding4 />,
             },
             {
-                path: CONFIG.PATHS.PROJECTS.EDITORIAL[1],
-                element: <Editorial1 />,
+                path: CONFIG.PATHS.PROJECTS.ILLUSTRATIONS[1],
+                element: <Illustrations1 />,
             },
             {
-                path: CONFIG.PATHS.PROJECTS.EDITORIAL[2],
-                element: <Editorial2 />,
+                path: CONFIG.PATHS.PROJECTS.ILLUSTRATIONS[2],
+                element: <Illustrations2 />,
+            },
+            {
+                path: CONFIG.PATHS.PROJECTS.ILLUSTRATIONS[3],
+                element: <Illustrations3 />,
             },
             {
                 path: CONFIG.PATHS.ABOUT,

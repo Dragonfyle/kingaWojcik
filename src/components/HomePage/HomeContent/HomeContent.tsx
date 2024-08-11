@@ -10,7 +10,7 @@ export default function HomeContent() {
             <ScrollToAnchor />
             <ProjectSection id="artykuly" source={ProjectPanelData.articles} />
             <ProjectSection id="brandingowe" source={ProjectPanelData.branding} />
-            <ProjectSection id="wydawnicze" source={ProjectPanelData.editorial} />
+            <ProjectSection id="ilustracje" source={ProjectPanelData.illustrations} />
         </P.Wrapper>
     );
 }

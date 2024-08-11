@@ -14,14 +14,14 @@ export default function Footer() {
     } = useThemeContext();
     const middleSectionTitles = ProjectPanelData.branding.content.map((project) => project.title);
     const middleSectionLinks = ProjectPanelData.branding.content.map((project) => project.projectUrl);
-    const rightSectionTitles = ProjectPanelData.editorial.content.map((project) => project.title);
-    const rightSectionLinks = ProjectPanelData.editorial.content.map((project) => project.projectUrl);
+    const rightSectionTitles = ProjectPanelData.illustrations.content.map((project) => project.title);
+    const rightSectionLinks = ProjectPanelData.illustrations.content.map((project) => project.projectUrl);
     const leftSectionTitles = [...navigationItems.map((item) => item.label), CONFIG.EMAIL];
     const leftSectionLinks = [
         CONFIG.PATHS.ABOUT,
         CONFIG.PATHS.ARTICLES,
         CONFIG.PATHS.BRANDING_SECTION,
-        CONFIG.PATHS.EDITORIAL_SECTION,
+        CONFIG.PATHS.ILLUSTRATIONS_SECTION,
     ];
 
     return (
@@ -36,7 +36,7 @@ export default function Footer() {
                     />
 
                     <FooterSection
-                        sectionName="Projekty wydawnicze"
+                        sectionName="Ilustracje"
                         listItems={rightSectionTitles}
                         links={rightSectionLinks}
                     />

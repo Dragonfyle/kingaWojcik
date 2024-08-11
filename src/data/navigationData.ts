@@ -17,8 +17,8 @@ const navigationItems = [
     } as const,
 
     {
-        label: "Projekty wydawnicze",
-        link: CONFIG.PATHS.EDITORIAL_SECTION,
+        label: "Ilustracje",
+        link: CONFIG.PATHS.ILLUSTRATIONS_SECTION,
     } as const,
 ] as const;
 

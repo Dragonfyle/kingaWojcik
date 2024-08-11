@@ -2,7 +2,7 @@ import { ProjectPanelData } from "$data/ProjectPanelData";
 
 const projectUrlList = [
     ...ProjectPanelData.branding.content.map((project) => ({ url: project.projectUrl, name: project.name })),
-    ...ProjectPanelData.editorial.content.map((project) => ({ url: project.projectUrl, name: project.name })),
+    ...ProjectPanelData.illustrations.content.map((project) => ({ url: project.projectUrl, name: project.name })),
 ];
 
 function findCurrentUrlIndex() {

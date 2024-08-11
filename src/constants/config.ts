@@ -11,11 +11,12 @@ const _config = Object.freeze({
         HOME: "/",
         ARTICLES: "/#artykuly",
         BRANDING_SECTION: "/#brandingowe",
-        EDITORIAL_SECTION: "/#wydawnicze",
+        ILLUSTRATIONS_SECTION: "/#ilustracje",
         PROJECTS: {
-            EDITORIAL: {
-                1: "editorial-1",
-                2: "editorial-2",
+            ILLUSTRATIONS: {
+                1: "illustrations-1",
+                2: "illustrations-2",
+                3: "illustrations-3",
             },
             BRANDING: {
                 1: "branding-1",

@@ -51,7 +51,13 @@ import okladkiCosmicrayBack from "$img/projects/okladki/okladki_cosmicray_back.j
 import renaultFront from "$img/projects/renault/front.png";
 // import renaultPerspective from "$img/projects/renault/perspective.png";
 // import renaultSide from "$img/projects/renault/side.png";
-import renaulMp4 from "$videos/renault_design_contest_kinga_wojcik.mp4";
+import renaultMp4 from "$videos/renault_design_contest_kinga_wojcik.mp4";
+
+import jolkaZbiorcze from "$img/projects/jolka/jolka_zbiorczo.jpg";
+import jolkaScena1 from "$img/projects/jolka/jolka-scena1.png";
+import jolkaScena2 from "$img/projects/jolka/jolka-scena2.png";
+import jolkaMp4 from "$videos/jolka_animacja_ilustracja_panel.mp4";
+import jolkaShortMp4 from "$videos/jolka_animacja_ilustracja_krotka.mp4";
 
 import { PlainGalleryData } from "$types/plainGallery.types";
 
@@ -357,8 +363,8 @@ const plainGalleryData: PlainGalleryData = {
                     leftColumnWidth: 50,
                     withLeftH1: false,
                     withRightH1: false,
-                    withLeftDescription: true,
-                    withRightDescription: true,
+                    withLeftDescription: false,
+                    withRightDescription: false,
                     descriptionPosition: "bottom",
                 },
 
@@ -367,8 +373,8 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: ukenKalendarz,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "wizualizacja na T-shircie",
-                    rightDescription: "kalendarz akademicki",
+                    leftDescription: "",
+                    rightDescription: "",
                 },
             },
             {
@@ -378,8 +384,8 @@ const plainGalleryData: PlainGalleryData = {
                     leftColumnWidth: 50,
                     withRightH1: false,
                     withLeftH1: false,
-                    withLeftDescription: true,
-                    withRightDescription: true,
+                    withLeftDescription: false,
+                    withRightDescription: false,
                     descriptionPosition: "bottom",
                 },
 
@@ -388,8 +394,8 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: ukenDokument,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "wizytówki",
-                    rightDescription: "przykładowy dokument",
+                    leftDescription: "",
+                    rightDescription: "",
                 },
             },
         ],
@@ -458,8 +464,8 @@ const plainGalleryData: PlainGalleryData = {
                     leftColumnWidth: 50,
                     withLeftH1: false,
                     withRightH1: false,
-                    withLeftDescription: true,
-                    withRightDescription: true,
+                    withLeftDescription: false,
+                    withRightDescription: false,
                     descriptionPosition: "bottom",
                 },
 
@@ -468,8 +474,8 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: goslinaKubek,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "wizualizacja na T-shircie",
-                    rightDescription: "wizualizacja na kubku",
+                    leftDescription: "",
+                    rightDescription: "",
                 },
             },
             {
@@ -479,8 +485,8 @@ const plainGalleryData: PlainGalleryData = {
                     leftColumnWidth: 50,
                     withRightH1: false,
                     withLeftH1: false,
-                    withLeftDescription: true,
-                    withRightDescription: true,
+                    withLeftDescription: false,
+                    withRightDescription: false,
                     descriptionPosition: "bottom",
                 },
 
@@ -489,8 +495,8 @@ const plainGalleryData: PlainGalleryData = {
                     rightImg: goslinaWizytowki,
                     leftH1: "",
                     rightH1: "",
-                    leftDescription: "awers wizytówki",
-                    rightDescription: "rewers wizytówki",
+                    leftDescription: "",
+                    rightDescription: "",
                 },
             },
         ],
@@ -695,11 +701,82 @@ const plainGalleryData: PlainGalleryData = {
                 },
 
                 content: {
-                    video: renaulMp4,
+                    video: renaultMp4,
                     h1: "",
                     description: "",
                 },
             },
+        ],
+    },
+    project6: {
+        header: "",
+        intro: "",
+
+        plainGalleryContent: [
+            {
+                component: "Image",
+
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+                content: {
+                    img: jolkaScena1,
+                },
+            },
+            {
+                component: "Image",
+
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+                content: {
+                    img: jolkaScena2,
+                },
+            },
+            {
+                component: "Video",
+
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+
+                content: {
+                    video: jolkaMp4,
+                    h1: "",
+                    description: "",
+                },
+            },
+            {
+                component: "Image",
+
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+                content: {
+                    img: jolkaZbiorcze,
+                },
+            },
+            {
+                component: "Video",
+
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+
+                content: {
+                    video: jolkaShortMp4,
+                    h1: "",
+                    description: "",
+                },
+            },
+
+
+
         ],
     },
 };

@@ -61,7 +61,7 @@ import jolkaScena4 from "$img/projects/jolka/jolka-scena4.png";
 import jolkaScena5 from "$img/projects/jolka/jolka-scena5.png";
 import jolkaScena6 from "$img/projects/jolka/jolka-scena6.png";
 import jolkaMp4 from "$videos/jolka_animacja_ilustracja_panel.mp4";
-import jolkaMp41 from "$videos/jolka_animacja_ilustracja_panel1.mp4";
+// import jolkaMp41 from "$videos/jolka_animacja_ilustracja_panel1.mp4";
 import jolkaShortMp4 from "$videos/jolka_animacja_ilustracja_krotka.mp4";
 
 import { PlainGalleryData } from "$types/plainGallery.types";

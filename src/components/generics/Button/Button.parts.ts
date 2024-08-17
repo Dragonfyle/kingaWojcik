@@ -9,21 +9,21 @@ export const StyledButton = styled.button<{ $isActive: boolean }>`
     height: 100%;
     padding: 10px 30px;
     cursor: pointer;
+
+    span {
+        color: ${({ theme, $isActive }) => $isActive ? theme.colors.leading.secondary[1] : theme.colors.white[1]};
+    }
+    
     background-color: ${({ theme, $isActive }) =>
-        $isActive ? theme.colors.supplementary[5] : theme.colors.leading.secondary[1]};
+        $isActive ? theme.colors.leading.main[2] : theme.colors.leading.secondary[1]};
     transform: skew(-15deg);
     margin-right: 0.3px;
 
-    ${BREAKPOINTS.M} {
-        padding: 5px 20px;
-        max-width: 160px;
-    }
-
     ${BREAKPOINTS.S} {
-        padding: 5px 8px;
+        padding: 9px 11px;
 
         p {
-            font-size: ${({ theme }) => theme.fontSize.xs};
+            font-size: ${({ theme }) => theme.fontSize.s};
         }
     }
 
@@ -31,31 +31,34 @@ export const StyledButton = styled.button<{ $isActive: boolean }>`
         content: "";
         position: absolute;
         top: 0;
-        left: -7%;
+        left: -6%;
         width: 7%;
         height: 100%;
         background-color: ${({ theme, $isActive }) =>
-            $isActive ? theme.colors.supplementary[5] : theme.colors.leading.secondary[1]};
+        $isActive ? theme.colors.leading.main[2] : theme.colors.leading.secondary[1]};
     }
 
     &:hover:first-child::after {
         content: "";
         position: absolute;
         top: 0;
-        left: -7%;
+        left: -6%;
         width: 7%;
         height: 100%;
+        background-color: ${({ theme }) => theme.colors.leading.main[2]};
 
-        background-color: ${({ theme }) => theme.colors.supplementary[5]};
+        span {
+            color: ${({ theme }) => theme.colors.leading.secondary[1]};
+        }
+
     }
 
     &:hover {
-        background-color: ${({ theme }) => theme.colors.supplementary[5]};
-    }
+        background-color: ${({ theme }) => theme.colors.leading.main[2]};
+        opacity: ${({ $isActive }) => $isActive ? '1' : '0.5'};
 
-    &:last-child {
         span {
-            color: ${({ theme }) => theme.colors.leading.secondary[3]};
+            color: ${({ theme }) => theme.colors.leading.secondary[1]};
         }
     }
 `;

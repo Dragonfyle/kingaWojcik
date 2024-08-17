@@ -19,9 +19,9 @@ export default function Footer() {
     const leftSectionTitles = [...navigationItems.map((item) => item.label), CONFIG.EMAIL];
     const leftSectionLinks = [
         CONFIG.PATHS.ABOUT,
-        CONFIG.PATHS.ARTICLES,
-        CONFIG.PATHS.BRANDING_SECTION,
         CONFIG.PATHS.ILLUSTRATIONS_SECTION,
+        CONFIG.PATHS.BRANDING_SECTION,
+        CONFIG.PATHS.ARTICLES,
     ];
 
     return (

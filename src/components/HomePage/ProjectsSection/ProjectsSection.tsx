@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
 import Flexbox from "$generics/Flexbox/Flexbox";
-import Text from "$generics/Text/Text";
 import Slider from "$generics/Slider/Slider";
 import { SliderImperativeHandle } from "$generics/Slider/Slider.types";
 import { ProjectPanelDataSection } from "$data/ProjectPanelData";
@@ -30,9 +29,9 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
         <P.StyledSection id={id}>
             <Flexbox $wrap="nowrap">
                 <Flexbox $alignC="center">
-                    <Text tag="h2" bold size="4xl">
+                    <P.Header tag="h2" bold size="4xl">
                         {source.header}
-                    </Text>
+                    </P.Header>
                 </Flexbox>
 
                 {!isMobile && (

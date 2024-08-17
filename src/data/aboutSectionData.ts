@@ -12,11 +12,9 @@ const aboutSectionData: AboutSectionData = {
     description:
         `Swoją przygodę z grafiką rozpoczęłam od zagadnień brandingowych i to one sprawiają mi najwięcej satysfakcji.
        
-        Studia kognitywistyczne pozwoliły mi zdobyć wiedzę dotyczącą neuro-psychologicznych aspektów ludzkiego postrzegania, komunikacji i znaków. Dzięki temu mogę tworzyć lepsze projekty, odpowiadające na potrzeby danej marki i realizujące jej cele marketingowe. 
+Ukończyłam studia kognitywistyczne na Uniwersytecie Marii Curie-Skłodowskiej. Dzięki temu postrzegam projektowanie szerzej niż tylko obsługę narzędzi i staram się łączyć wiedzę dotyczącą ludzkiej percepcji z graficznym rzemiosłem.
         
-        Pierwsze doświadczenie zdobywałam, projektując materiały dla firm, w których pracowałam. Obecnie pracuję w firmie marketingowej.
-        
-        Coraz bardziej interesuje mnie też malarstwo cyfrowe i dlatego postanowiłam doskonalić te umiejętności.`,
+        Tworzę też ilustracje cyfrowe w niezbyt poważnym stylu :)`,
 };
 
 export type { AboutSectionData };

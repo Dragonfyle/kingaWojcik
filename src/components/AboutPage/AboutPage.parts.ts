@@ -23,6 +23,11 @@ export const ContentWrapper = styled.div`
         grid-template-columns: auto;
         grid-template-rows: repeat(2, auto);
     }
+
+    ${BREAKPOINTS.S} {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 `;
 
 export const PageWrapper = styled.div`

@@ -5,7 +5,7 @@ const aboutGalleryData: AboutGalleryData = {
 
     aboutGalleryContent: [
         {
-            tabName: "wykształcenie",
+            tabName: "nagrody i wyróżnienia",
             component: "List",
 
             configuration: {
@@ -16,27 +16,27 @@ const aboutGalleryData: AboutGalleryData = {
             },
 
             tabContent: {
-                h1: "Wykształcenie",
+                h1: "Nagrody i wyróżnienia",
                 listContent: [
                     {
                         header: {
-                            1: "09.2017 - 08.2018",
-                            2: "Wrocław",
+                            1: "07.2024",
+                            2: "Renault Trucks",
                         },
                         description: {
-                            1: "Grafik komputerowa - roczny kurs zawodowy w TEB Edukacja Centrum Kształcenia Praktycznego",
-                            2: `Zrealizowane przedmioty: grafika rastrowa  /  grafika wektorowa  /  projektowanie graficzne  /  podstawy fotografii cyfrowej  /  podstawy typografii  /  podstawy DTP  /  systemy CMS  /   podstawy animacji komputerowej  /  podstawy grafiki 3D`,
-                            3: "prowadzący: Tomasz Rodakiewicz",
+                            1: "Zwycięstwo w międzynarodowym konkursie Renault Trucks Design Contest",
+                            2: "Zwycięski projekt w konkursie na stworzenie grafiki na elektryczny ciągnik siodłowy Renault",
+                            3: "",
                         },
                     },
                     {
                         header: {
-                            1: "10.2012 - 06.2015",
-                            2: "Lublin",
+                            1: "10.2023",
+                            2: "Agora",
                         },
                         description: {
-                            1: "licencjat z kognitywistyki na Uniwersytecie Marii Curie-Skłodowskiej",
-                            2: "Kognitywistyka jest dziedziną zorientowaną wokół problemów ludzkiego poznania, komunikacji czy zdolności do posługiwania się symbolami.",
+                            1: `Wyróżnienie w konkursie "Moja Wolność - Moja Sprawa"`,
+                            2: `Plakat wyróżniony w konkursie z okazji rocznicy odzyskania niepodległości, zakwalifikowany do wystawy pokonkursowej`,
                             3: "",
                         },
                     },
@@ -44,7 +44,7 @@ const aboutGalleryData: AboutGalleryData = {
             },
         },
         {
-            tabName: "kursy i szkolenia",
+            tabName: "Współpraca",
             component: "List",
 
             configuration: {
@@ -55,55 +55,24 @@ const aboutGalleryData: AboutGalleryData = {
             },
 
             tabContent: {
-                h1: "Kursy i szkolenia",
+                h1: "Współpraca",
                 listContent: [
                     {
                         header: {
-                            1: "01.2024 - 06.2024",
-                            2: "kurs online (Udemy)",
+                            1: "Zawsze",
+                            2: "Wszędzie",
                         },
                         description: {
-                            1: "Complete Web & Mobile Designer: UI/UX, Figma",
-                            2: "(28h wykładów + ćwiczenia)",
-                            3: "prowadzący: Andrei Neagoie, Daniel Schifano",
+                            1: "Napisz do mnie",
+                            2: `Skontaktuj się, jeśli chciałbyś podjąć współpracę w zakresie projektowania grafiki lub analizy istniejących kreacji. Masz inną propozycję? Nie powstrzymuj się od napisania wiadomości. Wszelkie wspólne projekty są mile widziane. Staram się odpowiadać w ciągu kilku dni.`,
+                            3: "wojcik.kinga.ewa@gmail.com",
                         },
                     },
-                    {
-                        header: {
-                            1: "11.2023 - 01.2024",
-                            2: "kurs online (Udemy)",
-                        },
-                        description: {
-                            1: "The Ultimate Digital Painting Course - Beginner to Advanced",
-                            2: "(27h wykładów + ćwiczenia)",
-                            3: "prowadzący: Jaysen Batchelor, Austin Batchelor",
-                        },
-                    },
-                    {
-                        header: {
-                            1: "10 - 11.2023",
-                            2: "kurs online (Udemy)",
-                        },
-                        description: {
-                            1: "Graphic Design Masterclass Intermediate: The NEXT Level",
-                            2: "(30h wykładów + ćwiczenia)",
-                            3: "prowadzący: Lindsay Marsh",
-                        },
-                    },
-                    {
-                        header: {
-                            1: "09.2023",
-                            2: "kurs online (Udemy)",
-                        },
-                        description: {
-                            1: "The Complete Graphic Design Theory for Beginners Course",
-                            2: "(10h wykładów + ćwiczenia)",
-                            3: "prowadzący: Lindsay Marsh, Jeremy Deighan",
-                        },
-                    },
+
                 ],
             },
         },
+
     ],
 };
 

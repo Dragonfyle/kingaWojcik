@@ -39,6 +39,14 @@ export const Title = styled(Text)`
     margin: 10px 0 40px;
 
     ${BREAKPOINTS.S} {
-        font-size: ${({ theme }) => theme.fontSize["4xl"]};
+        font-size: ${({ theme }) => theme.fontSize["2xl"]};
+    }
+`;
+
+export const SubText = styled(Text)`
+    margin: 10px 0 40px;
+
+    ${BREAKPOINTS.S} {
+        font-size: ${({ theme }) => theme.fontSize["m"]};
     }
 `;

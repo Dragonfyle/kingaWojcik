@@ -8,9 +8,9 @@ export default function HomeContent() {
     return (
         <P.Wrapper>
             <ScrollToAnchor />
-            <ProjectSection id="artykuly" source={ProjectPanelData.articles} />
-            <ProjectSection id="brandingowe" source={ProjectPanelData.branding} />
             <ProjectSection id="ilustracje" source={ProjectPanelData.illustrations} />
+            <ProjectSection id="brandingowe" source={ProjectPanelData.branding} />
+            <ProjectSection id="artykuly" source={ProjectPanelData.articles} />
         </P.Wrapper>
     );
 }

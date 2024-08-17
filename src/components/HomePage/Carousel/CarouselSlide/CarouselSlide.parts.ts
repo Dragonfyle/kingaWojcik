@@ -21,7 +21,7 @@ export const SlideWrapper = styled.div`
     }
 
     ${BREAKPOINTS.S} {
-        height: 80vh;
+        height: 60vh;
     }
 `;
 

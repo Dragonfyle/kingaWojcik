@@ -5,20 +5,17 @@ const navigationItems = [
         label: "O mnie",
         link: CONFIG.PATHS.ABOUT,
     } as const,
-
     {
-        label: "Moje publikacje",
-        link: CONFIG.PATHS.ARTICLES,
+        label: "Ilustracje",
+        link: CONFIG.PATHS.ILLUSTRATIONS_SECTION,
     } as const,
-
     {
         label: "Projekty brandingowe",
         link: CONFIG.PATHS.BRANDING_SECTION,
     } as const,
-
     {
-        label: "Ilustracje",
-        link: CONFIG.PATHS.ILLUSTRATIONS_SECTION,
+        label: "Moje publikacje",
+        link: CONFIG.PATHS.ARTICLES,
     } as const,
 ] as const;
 

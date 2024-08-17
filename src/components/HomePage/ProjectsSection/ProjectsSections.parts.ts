@@ -8,13 +8,8 @@ export const StyledSection = styled.section`
     position: relative;
     width: 89%;
     margin: 0 0 0 11%;
-    padding: 100px 0;
+    padding: 40px 0;
 
-    ${BREAKPOINTS.XXL} {
-        h2 {
-            font-size: ${({ theme }) => theme.fontSize["3xl"]};
-        }
-    }
 
     ${BREAKPOINTS.L} {
         width: 95%;
@@ -69,8 +64,9 @@ export const StyledSection = styled.section`
     }
 `;
 
-export const StyledText = styled(Text)`
-    ${BREAKPOINTS.M} {
-        font-size: ${({ theme }) => theme.fontSize["3xl"]};
+
+export const Header = styled(Text)`
+    ${BREAKPOINTS.S} {
+        font-size: ${({ theme }) => theme.fontSize["2xl"]};
     }
 `;

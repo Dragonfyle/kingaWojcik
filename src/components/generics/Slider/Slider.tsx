@@ -7,7 +7,7 @@ import ItemIndicator from "./ItemIndicator/ItemIndicator";
 import { SliderImperativeHandle, SliderProps } from "./Slider.types";
 import * as P from "./Slider.parts";
 
-const Slider = forwardRef<SliderImperativeHandle, SliderProps>(({ children }: SliderProps, ref) => {
+const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({ children }: SliderProps, ref) {
     const contentRef = useRef<HTMLDivElement>(null);
     const [itemWidth, setItemWidth] = useState<number | undefined>();
     const isScrolling = useRef(false);

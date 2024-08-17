@@ -24,11 +24,11 @@ export const StyledP = styled(Text)`
     }
 
     ${BREAKPOINTS.S} {
+        font-size: ${({ theme }) => theme.fontSize["m"]};
         max-width: 90vw;
-        font-size: 1.2rem;
         margin-bottom: 30px;
     }
     ${BREAKPOINTS.XS} {
-        font-size: 1.1rem;
+        font-size: ${({ theme }) => theme.fontSize["m"]};
     }
 `;

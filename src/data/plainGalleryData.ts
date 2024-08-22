@@ -60,6 +60,7 @@ import jolkaScena3 from "$img/projects/jolka/jolka-scena3.png";
 import jolkaScena4 from "$img/projects/jolka/jolka-scena4.png";
 import jolkaScena5 from "$img/projects/jolka/jolka-scena5.png";
 import jolkaScena6 from "$img/projects/jolka/jolka-scena6.png";
+import jolkaScena7 from "$img/projects/jolka/jolka_eksplozja.png";
 import jolkaMp4 from "$videos/jolka_animacja_ilustracja_panel.mp4";
 // import jolkaMp41 from "$videos/jolka_animacja_ilustracja_panel1.mp4";
 import jolkaShortMp4 from "$videos/jolka_animacja_ilustracja_krotka.mp4";
@@ -719,20 +720,6 @@ const plainGalleryData: PlainGalleryData = {
 
         plainGalleryContent: [
             {
-                component: "Video",
-
-                configuration: {
-                    withH1: false,
-                    withDescription: false,
-                },
-
-                content: {
-                    video: jolkaMp4,
-                    h1: "",
-                    description: "",
-                },
-            },
-            {
                 component: "ImageImage",
 
                 configuration: {
@@ -822,7 +809,31 @@ const plainGalleryData: PlainGalleryData = {
                     img: jolkaScena3,
                 },
             },
+            {
+                component: "Image",
 
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+                content: {
+                    img: jolkaScena7,
+                },
+            },
+            {
+                component: "Video",
+
+                configuration: {
+                    withH1: false,
+                    withDescription: false,
+                },
+
+                content: {
+                    video: jolkaMp4,
+                    h1: "",
+                    description: "",
+                },
+            },
 
 
 

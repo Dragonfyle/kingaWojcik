@@ -50,7 +50,7 @@ const defaultTheme = {
         xs: "10px",
         s: "14px",
         ms: "14px",
-        m: "16px",
+        m: "14px",
         l: "16px",
         xl: "18px",
         "2xl": "24px",

@@ -19,13 +19,13 @@ type ProjectPanelDataSection = ProjectPanelData[keyof ProjectPanelData];
 const ProjectPanelData = {
     branding: {
         header: "Projekty brandingowe",
-        intro: `Staram się najpierw zrozumieć potrzeby marki oraz oczekiwania klienta. 
-        Z reguły proponuję wypełnienie briefu, dotyczącego firmy, co ułatwia mi określenie odpowiedniego kierunku działań.`,
+        intro: `Ważne jest zrozumienie potrzeb marki oraz oczekiwań klienta. 
+        Wypełniony brief pomaga mi określić odpowiedni kierunek działań.`,
         content: [
             {
                 thumbnail: renaultMiniaturka,
                 title: "Zwycięski projekt w konkursie Renault Trucks Design Contest",
-                description: `Projekt grafiki na ciężarówkę, który został wyróżniony przez Renault Trucks, a następnie zwyciężył w głosowaniu publiczności.`,
+                description: `Projekt grafiki na ciężarówkę, który został wyróżniony przez Renault Trucks i zwyciężył w głosowaniu publiczności.`,
                 projectUrl: CONFIG.PATHS.PROJECTS.BRANDING[4],
                 name: "Renault",
             },
@@ -87,7 +87,7 @@ const ProjectPanelData = {
     },
     articles: {
         header: "Moje publikacje",
-        intro: "Zdarza mi się coś napisać, więc tutaj znajdziesz moje przemyślenia dotyczące m.in. typografii, kompozycji czy doboru kolorów.",
+        intro: "Lubię dzielić się spostrzeżeniami, więc tutaj znajdziesz moje przemyślenia dotyczące m.in. typografii, kompozycji czy doboru kolorów.",
         content: [
             {
                 thumbnail: projektowanieStron,

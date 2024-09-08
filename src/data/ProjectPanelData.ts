@@ -20,7 +20,7 @@ const ProjectPanelData = {
     branding: {
         header: "Projekty brandingowe",
         intro: `Ważne jest zrozumienie potrzeb marki oraz oczekiwań klienta. 
-        Wypełniony brief pomaga mi określić odpowiedni kierunek działań.`,
+        Rozmowa lub wpełniony brief pomaga mi określić odpowiedni kierunek działań.`,
         content: [
             {
                 thumbnail: renaultMiniaturka,

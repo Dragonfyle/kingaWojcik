@@ -15,9 +15,8 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     // font-family: "objektiv-mk1", sans-serif;
-
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 500;
   font-style: normal;
     font-size: 16px;
 }

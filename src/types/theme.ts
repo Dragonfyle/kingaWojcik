@@ -41,9 +41,9 @@ declare module "styled-components" {
         };
 
         fontWeight: {
-            normal: 600;
-            bold: 800;
-            black: 900;
+            normal: 500;
+            bold: 600;
+            black: 700;
         };
         fontSize: {
             xs: string;

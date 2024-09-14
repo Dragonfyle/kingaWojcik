@@ -1,8 +1,7 @@
-import { GalleryProject } from "$types/common";
+import { IllustrationsQuery } from "tina/__generated__/types";
 
 interface ProjectIntroductionProps {
-    source: GalleryProject;
-    withDescription: boolean;
+    projectData: IllustrationsQuery["illustrations"];
 }
 
 export type { ProjectIntroductionProps };

@@ -1,41 +1,43 @@
-import { FeatureTextTextContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 import Text from "$generics/Text/";
+import { hasProperty } from "$utils/typeGuards";
 
-import { FeatureTextTextProps, getColumnsWidth } from "../Feature.types";
+import { ColumnWidth, getColumnsWidth } from "../Feature.types";
 import * as P from "./FeatureTextText.parts";
+import { IllustrationsProjectSectionsTextText } from "tina/__generated__/types";
 
-export default function FeatureTextText({
-    source,
-    leftColumnWidth = 50,
-    withLeftH1,
-    withRightH1,
-}: FeatureTextTextProps) {
+interface FeatureTextTextProps {
+    featureData: IllustrationsProjectSectionsTextText;
+}
+
+export default function FeatureTextText({ featureData }: FeatureTextTextProps) {
+    const leftColumnWidth = Number(featureData.leftColumnWidth) as ColumnWidth;
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureTextTextContent;
+    const hasHeaderLeft = hasProperty(featureData, "headerLeft");
+    const hasHeaderRight = hasProperty(featureData, "headerRight");
 
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
             <Flexbox $padding="20px 40px" $marginT="50px" $direction="column" $alignC="flex-start">
-                {withLeftH1 && (
+                {hasHeaderLeft && (
                     <Text tag="h1" size="2xl" bold lineHeight={1.4}>
-                        {content.leftH1}
+                        {featureData.headerLeft}
                     </Text>
                 )}
 
                 <Flexbox $marginB="60px" $marginT="40px">
-                    <Text>{content.leftDescription}</Text>
+                    <Text>{featureData.descriptionLeft}</Text>
                 </Flexbox>
             </Flexbox>
             <Flexbox $padding="20px 40px" $direction="column" $alignC="flex-start">
-                {withRightH1 && (
+                {hasHeaderRight && (
                     <Text tag="h1" size="2xl" bold lineHeight={1.4}>
-                        {content.rightH1}
+                        {featureData.headerRight}
                     </Text>
                 )}
 
                 <Flexbox $marginB="60px" $marginT="40px">
-                    <Text>{content.rightDescription}</Text>
+                    <Text>{featureData.descriptionRight}</Text>
                 </Flexbox>
             </Flexbox>
         </P.FeatureWrapper>

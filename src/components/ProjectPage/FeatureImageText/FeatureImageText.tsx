@@ -1,28 +1,33 @@
-import { FeatureTextImageContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 import Text from "$generics/Text/";
 
-import { FeatureImageTextProps, getColumnsWidth } from "../Feature.types";
+import { ColumnWidth, getColumnsWidth } from "../Feature.types";
 import * as P from "./FeatureImageText.parts";
+import { IllustrationsProjectSectionsImageText } from "tina/__generated__/types";
 
-export default function FeatureTextImage({ source, leftColumnWidth = 50, withH1 = true }: FeatureImageTextProps) {
+interface FeatureImageTextProps {
+    featureData: IllustrationsProjectSectionsImageText;
+}
+
+export default function FeatureImageText({ featureData }: FeatureImageTextProps) {
+    const leftColumnWidth = Number(featureData.leftColumnWidth) as ColumnWidth;
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureTextImageContent;
+    const hasHeader = "header" in featureData;
 
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
             <Flexbox $wrap="nowrap" $direction="column">
-                <img src={content.img} />
+                <img src={featureData.image} />
             </Flexbox>
             <P.StyledFlexbox $padding="20px 40px" $direction="column">
-                {withH1 && (
+                {hasHeader && (
                     <Text tag="h1" size="2xl" bold lineHeight={1.4}>
-                        {content.h1}
+                        {featureData.header}
                     </Text>
                 )}
 
                 <Flexbox $marginB="60px">
-                    <Text>{content.description}</Text>
+                    <Text>{featureData.description}</Text>
                 </Flexbox>
             </P.StyledFlexbox>
         </P.FeatureWrapper>

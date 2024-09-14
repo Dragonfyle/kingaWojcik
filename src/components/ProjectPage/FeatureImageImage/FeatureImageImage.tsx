@@ -1,52 +1,37 @@
-import { FeatureImageImageContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/";
 
-import { FeatureImageImageProps, descriptionPositionMap, getColumnsWidth } from "../Feature.types";
+import { ColumnWidth, getColumnsWidth } from "../Feature.types";
 import { ColumnDescription } from "../ColumnDescription/";
 import * as P from "./FeatureImageImage.parts";
+import { IllustrationsProjectSectionsImageImage } from "tina/__generated__/types";
 
-export default function FeatureImageImage({
-    source,
-    leftColumnWidth = 50,
-    withLeftH1 = true,
-    withRightH1 = true,
-    withLeftDescription = false,
-    withRightDescription = false,
-    descriptionPosition = "bottom",
-}: FeatureImageImageProps) {
+interface FeatureImageImageProps {
+    featureData: IllustrationsProjectSectionsImageImage;
+}
+
+export default function FeatureImageImage({ featureData }: FeatureImageImageProps) {
+    const hasLeftHeader = "headerLeft" in featureData;
+    const hasRightHeader = "headerRight" in featureData;
+    const hasLeftDescription = "optionalDescriptionLeft" in featureData;
+    const hasRightDescription = "optionalDescriptionRight" in featureData;
+    const leftColumnWidth = Number(featureData.leftColumnWidth) as ColumnWidth;
+
     const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureImageImageContent;
 
-    const isLeftTextVisible = withLeftH1 || withLeftDescription;
-    const isRightTextVisible = withRightH1 || withRightDescription;
+    const isLeftTextVisible = hasLeftHeader || hasLeftDescription;
+    const isRightTextVisible = hasRightHeader || hasRightDescription;
 
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
             <Flexbox $wrap="nowrap" $direction="column">
-                <img src={content.leftImg} />
+                <img src={featureData.imageLeft} />
 
-                {isLeftTextVisible && (
-                    <ColumnDescription
-                        withH1={withLeftH1}
-                        h1={content.leftH1}
-                        withDescription={withLeftDescription}
-                        description={content.leftDescription}
-                        order={descriptionPositionMap[descriptionPosition]}
-                    />
-                )}
+                {isLeftTextVisible && <ColumnDescription source={featureData} />}
             </Flexbox>
             <Flexbox $wrap="nowrap" $direction="column">
-                <img src={content.rightImg} />
+                <img src={featureData.imageRight} />
 
-                {isRightTextVisible && (
-                    <ColumnDescription
-                        withH1={withRightH1}
-                        h1={content.rightH1}
-                        withDescription={withRightDescription}
-                        description={content.rightDescription}
-                        order={descriptionPositionMap[descriptionPosition]}
-                    />
-                )}
+                {isRightTextVisible && <ColumnDescription source={featureData} />}
             </Flexbox>
         </P.FeatureWrapper>
     );

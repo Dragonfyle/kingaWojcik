@@ -1,22 +1,39 @@
 import Flexbox from "$generics/Flexbox/Flexbox";
 import Text from "$generics/Text/Text";
 
-import { ColumnDescriptionProps } from "./ColumnDescription.types";
+import {
+    IllustrationsProjectSectionsImage,
+    IllustrationsProjectSectionsImageImage,
+    IllustrationsProjectSectionsVideo,
+} from "tina/__generated__/types";
+import { descriptionPositionMap } from "../Feature.types";
 
-export function ColumnDescription({ withH1, h1, withDescription, description, order }: ColumnDescriptionProps) {
+interface ColumnDescriptionProps {
+    source:
+        | IllustrationsProjectSectionsImage
+        | IllustrationsProjectSectionsVideo
+        | IllustrationsProjectSectionsImageImage;
+}
+
+export function ColumnDescription({ source }: ColumnDescriptionProps) {
+    const descriptionPosition = source.descriptionPosition as "top" | "bottom";
+    const order = descriptionPositionMap[descriptionPosition];
+    const hasHeader = "header" in source;
+    const hasDescription = "description" in source;
+
     return (
         <Flexbox $order={order} $direction="column" $marginT="20px" $marginB="20px" $alignC="flex-start">
-            {withH1 && (
+            {hasHeader && (
                 <Flexbox>
                     <Text tag="h1" lineHeight={1.14} size="2xl" bold>
-                        {h1}
+                        {source.header}
                     </Text>
                 </Flexbox>
             )}
 
-            {withDescription && (
+            {hasDescription && (
                 <Flexbox $marginB="60px" $marginT="40px">
-                    <Text>{description}</Text>
+                    <Text>{source.description}</Text>
                 </Flexbox>
             )}
         </Flexbox>

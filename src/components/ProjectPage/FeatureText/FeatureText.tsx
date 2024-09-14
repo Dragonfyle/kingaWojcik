@@ -1,24 +1,25 @@
-import { FeatureTextContent } from "$types/Project.types";
 import Flexbox from "$generics/Flexbox/Flexbox";
 import Text from "$generics/Text/Text";
 
-import { FeatureTextProps } from "../Feature.types";
 import * as P from "./FeatureText.parts";
+import { IllustrationsProjectSectionsText } from "tina/__generated__/types";
 
-export default function FeatureText({ source, withH1 }: FeatureTextProps) {
-    const content = source.content as FeatureTextContent;
+interface FeatureTextProps {
+    featureData: IllustrationsProjectSectionsText;
+}
 
+export default function FeatureText({ featureData }: FeatureTextProps) {
     return (
         <P.FeatureWrapper>
             <Flexbox $marginT="50px" $direction="column">
                 <Flexbox $marginB="20px">
-                    {withH1 && (
+                    {featureData?.header && (
                         <Text tag="h1" size="2xl" bold>
-                            {content.h1}
+                            {featureData.header}
                         </Text>
                     )}
                 </Flexbox>
-                <Text>{content.description}</Text>
+                <Text>{featureData.description}</Text>
             </Flexbox>
         </P.FeatureWrapper>
     );

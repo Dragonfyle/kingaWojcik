@@ -1,27 +1,17 @@
-import { FeatureImageContent } from "$types/Project.types";
 import { ColumnDescription } from "../ColumnDescription/";
-import { FeatureImageProps, descriptionPositionMap } from "../Feature.types";
+import { IllustrationsProjectSectionsImage } from "tina/__generated__/types";
 
 import * as P from "./FeatureImage.parts";
 
-export default function FeatureImage({
-    source,
-    withH1 = true,
-    withDescription = false,
-    descriptionPosition = "bottom",
-}: FeatureImageProps) {
-    const content = source.content as FeatureImageContent;
+interface FeatureImageProps {
+    featureData: IllustrationsProjectSectionsImage;
+}
 
+export default function FeatureImage({ featureData }: FeatureImageProps) {
     return (
         <P.FeatureWrapper>
-            <ColumnDescription
-                withH1={withH1}
-                h1={content.h1}
-                withDescription={withDescription}
-                description={content.description}
-                order={descriptionPositionMap[descriptionPosition]}
-            />
-            <img src={content.img} />
+            <ColumnDescription source={featureData} />
+            <img src={featureData.image} />
         </P.FeatureWrapper>
     );
 }

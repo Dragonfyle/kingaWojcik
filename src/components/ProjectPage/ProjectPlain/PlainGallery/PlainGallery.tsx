@@ -1,4 +1,3 @@
-import { Feature } from "$types/Project.types";
 import FeatureImage from "$components/ProjectPage/FeatureImage/FeatureImage";
 import FeatureVideo from "$components/ProjectPage/FeatureVideo/FeatureVideo";
 import FeatureText from "$components/ProjectPage/FeatureText/FeatureText";
@@ -7,36 +6,44 @@ import FeatureImageImage from "$components/ProjectPage/FeatureImageImage/Feature
 import FeatureImageText from "$components/ProjectPage/FeatureImageText/FeatureImageText";
 import FeatureTextImage from "$components/ProjectPage/FeatureTextImage/FeatureTextImage";
 
+import { IllustrationsProjectSections } from "tina/__generated__/types";
+import { PlainGalleryProps } from "$types/plainGallery.types";
 import * as P from "./PlainGallery.parts";
-import { PlainGalleryProject } from "$types/plainGallery.types";
 
-interface PlainGalleryProps {
-    source: PlainGalleryProject;
-}
+export default function PlainGallery({ projectData }: PlainGalleryProps) {
+    const featureMap = {
+        IllustrationsProjectSectionsText: FeatureText,
+        IllustrationsProjectSectionsImage: FeatureImage,
+        IllustrationsProjectSectionsVideo: FeatureVideo,
+        IllustrationsProjectSectionsTextText: FeatureTextText,
+        IllustrationsProjectSectionsTextImage: FeatureTextImage,
+        IllustrationsProjectSectionsImageImage: FeatureImageImage,
+        IllustrationsProjectSectionsImageText: FeatureImageText,
+    } as const;
 
-export default function PlainGallery({ source }: PlainGalleryProps) {
-    const featureMap: Record<string, React.ComponentType<any>> = {
-        FeatureText,
-        FeatureImage,
-        FeatureVideo,
-        FeatureTextText,
-        FeatureTextImage,
-        FeatureImageImage,
-        FeatureImageText,
-    };
+    const projectSections = projectData.projectSections;
 
-    const projectFeatures = source.plainGalleryContent;
+    function renderSections(sections: IllustrationsProjectSections[] | undefined) {
+        if (sections === undefined) {
+            return;
+        }
 
-    function renderFeatures(features: Feature[]) {
-        return features.map((feature, idx) => {
-            const componentName = feature.component;
-            const Component = featureMap[`Feature${componentName}`];
-            const config: Feature["configuration"] = feature.configuration;
-            const props = config;
+        return sections.map((feature, idx) => {
+            const componentName = feature.__typename;
 
-            return <Component key={idx} source={feature} {...props} />;
+            if (!componentName) {
+                return;
+            }
+
+            const Component = featureMap[componentName];
+
+            //TODO: find a way to fix this
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            return <Component key={idx} featureData={feature as any} />;
         });
     }
 
-    return <P.GalleryWrapper>{renderFeatures(projectFeatures)}</P.GalleryWrapper>;
+    //TODO: find a way to fix this
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return <P.GalleryWrapper>{renderSections(projectSections as any)}</P.GalleryWrapper>;
 }

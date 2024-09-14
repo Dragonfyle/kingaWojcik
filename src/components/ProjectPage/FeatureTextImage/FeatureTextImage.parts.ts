@@ -23,7 +23,6 @@ export const FeatureWrapper = styled.section<{ $leftWidth: string; $rightWidth: 
         object-fit: contain;
     }
 `;
-
 export const StyledFlexbox = styled(Flexbox)`
     ${BREAKPOINTS.S} {
         padding: 20px 10px;

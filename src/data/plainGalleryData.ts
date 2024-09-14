@@ -97,8 +97,7 @@ const plainGalleryData: PlainGalleryData = {
                 content: {
                     img: kawa2,
                     h1: "",
-                    description:
-                        "",
+                    description: "",
                 },
             },
             {
@@ -714,7 +713,7 @@ const plainGalleryData: PlainGalleryData = {
         ],
     },
     project6: {
-        header: "Jolka - animowana przewodniczka po świecie afiliacji",
+        title: "Jolka - animowana przewodniczka po świecie afiliacji",
         intro: "",
 
         plainGalleryContent: [
@@ -819,9 +818,6 @@ const plainGalleryData: PlainGalleryData = {
                     rightDescription: "",
                 },
             },
-
-
-
         ],
     },
 };

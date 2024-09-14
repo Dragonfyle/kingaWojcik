@@ -17,7 +17,7 @@ interface ProjectContent {
 }
 
 interface TabbedGalleryProject {
-    header: string;
+    title: string;
     intro: string;
     tabbedGalleryContent: ProjectContent[];
 }

@@ -1,7 +1,7 @@
 import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
+const branch = process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "dev";
 
 export default defineConfig({
     branch,
@@ -37,6 +37,11 @@ export default defineConfig({
                         required: true,
                     },
                     {
+                        type: "string",
+                        name: "intro",
+                        label: "Intro",
+                    },
+                    {
                         type: "object",
                         name: "projectSections",
                         label: "Sekcje",
@@ -65,6 +70,13 @@ export default defineConfig({
                                 fields: [
                                     {
                                         type: "string",
+                                        name: "descriptionPosition",
+                                        label: "Położenie opisu",
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
                                         name: "header",
                                         label: "Nagłówek",
                                     },
@@ -87,6 +99,13 @@ export default defineConfig({
                                 fields: [
                                     {
                                         type: "string",
+                                        name: "descriptionPosition",
+                                        label: "Położenie opisu",
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
                                         name: "header",
                                         label: "Nagłówek",
                                     },
@@ -107,6 +126,13 @@ export default defineConfig({
                                 name: "textText",
                                 label: "Tekst - tekst",
                                 fields: [
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
                                     {
                                         type: "string",
                                         name: "headerLeft",
@@ -135,6 +161,20 @@ export default defineConfig({
                                 name: "imageImage",
                                 label: "Grafika - grafika",
                                 fields: [
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: "Położenie opisu",
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
                                     {
                                         type: "string",
                                         name: "headerLeft",
@@ -175,6 +215,13 @@ export default defineConfig({
                                 fields: [
                                     {
                                         type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
                                         name: "header",
                                         label: "Nagłówek",
                                     },
@@ -196,6 +243,13 @@ export default defineConfig({
                                 name: "imageText",
                                 label: "Grafika - tekst",
                                 fields: [
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
                                     {
                                         type: "string",
                                         name: "header",

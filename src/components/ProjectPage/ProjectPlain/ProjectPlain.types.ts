@@ -1,7 +1,7 @@
-import { PlainGalleryProject } from "$types/plainGallery.types";
+import { IllustrationsQuery } from "tina/__generated__/types";
 
-interface ProjecPlainProps {
-    source: PlainGalleryProject;
+interface ProjectPlainProps {
+    projectData: IllustrationsQuery["illustrations"];
 }
 
-export type { ProjecPlainProps };
+export type { ProjectPlainProps };

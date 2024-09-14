@@ -52,6 +52,7 @@ interface FeatureImageContent {
     h1?: string;
     description?: string;
 }
+
 interface FeatureVideoContent {
     video: string;
     h1?: string;

@@ -1,11 +1,11 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { ArticlesThumbnails, BrandingThumbnails, IllustrationsThumbnails } from "tina/__generated__/types";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
 import Flexbox from "$generics/Flexbox/Flexbox";
 import Slider from "$generics/Slider/Slider";
 import { SliderImperativeHandle } from "$generics/Slider/Slider.types";
-import { ProjectPanelDataSection } from "$data/ProjectPanelData";
 
 import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/";
 import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/";
@@ -13,13 +13,13 @@ import NavButtons from "../ProjectsSection/NavButtons/";
 import { ProjectSectionProps } from "./ProjectsSection.types";
 import * as P from "./ProjectsSections.parts";
 
-export default function ProjectSection({ id, source }: ProjectSectionProps) {
+export default function ProjectSection({ id, source, intro }: ProjectSectionProps) {
     const sliderRef = useRef<SliderImperativeHandle>(null);
     const { isMobile } = useDeviceContext();
 
-    function renderContent(source: ProjectPanelDataSection) {
-        return source.content.map(({ thumbnail, title, description, projectUrl }) => (
-            <Link key={description} to={projectUrl}>
+    function renderContent(source: IllustrationsThumbnails[] | BrandingThumbnails[] | ArticlesThumbnails[]) {
+        return source.map(({ thumbnail, title, description, url }) => (
+            <Link key={title} to={url}>
                 <ProjectPanelItem image={thumbnail} title={title} description={description} />
             </Link>
         ));
@@ -30,7 +30,7 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
             <Flexbox $wrap="nowrap">
                 <Flexbox $alignC="center">
                     <P.Header tag="h2" bold size="4xl">
-                        {source.header}
+                        {intro.title}
                     </P.Header>
                 </Flexbox>
 
@@ -46,10 +46,10 @@ export default function ProjectSection({ id, source }: ProjectSectionProps) {
                 )}
             </Flexbox>
 
-            {isMobile && <ProjectPanelIntro text={source.intro} />}
+            {isMobile && <ProjectPanelIntro text={intro.description} />}
 
             <Slider ref={sliderRef}>
-                {!isMobile && <ProjectPanelIntro text={source.intro} />}
+                {!isMobile && <ProjectPanelIntro text={intro.description} />}
                 {renderContent(source)}
             </Slider>
         </P.StyledSection>

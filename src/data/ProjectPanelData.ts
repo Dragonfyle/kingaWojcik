@@ -82,7 +82,6 @@ const ProjectPanelData = {
                 projectUrl: CONFIG.PATHS.PROJECTS.ILLUSTRATIONS[2],
                 name: "Okładki książek",
             },
-
         ],
     },
     articles: {

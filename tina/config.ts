@@ -535,6 +535,118 @@ export default defineConfig({
                     },
                 ],
             },
+            {
+                name: "illustrationsThumbnails",
+                label: "Miniaturki ilustracji",
+                path: "content/thumbnails/illustrations",
+                fields: [
+                    {
+                        type: "image",
+                        name: "thumbnail",
+                        label: "Miniaturka",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Tytuł",
+                        required: true,
+                    },
+                    {
+                        type: "rich-text",
+                        name: "description",
+                        label: "Opis",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "url",
+                        label: "URL",
+                        required: true,
+                    },
+                ],
+            },
+            {
+                name: "brandingThumbnails",
+                label: "Miniaturki brandingowe",
+                path: "content/thumbnails/branding",
+                fields: [
+                    {
+                        type: "image",
+                        name: "thumbnail",
+                        label: "Miniaturka",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Tytuł",
+                        required: true,
+                    },
+                    {
+                        type: "rich-text",
+                        name: "description",
+                        label: "Opis",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "url",
+                        label: "URL",
+                        required: true,
+                    },
+                ],
+            },
+            {
+                name: "articlesThumbnails",
+                label: "Miniaturki artykułów",
+                path: "content/thumbnails/articles",
+                fields: [
+                    {
+                        type: "image",
+                        name: "thumbnail",
+                        label: "Miniaturka",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Tytuł",
+                        required: true,
+                    },
+                    {
+                        type: "rich-text",
+                        name: "description",
+                        label: "Opis",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "url",
+                        label: "URL",
+                        required: true,
+                    },
+                ],
+            },
+            {
+                name: "sliderIntros",
+                label: "Intra sliderów",
+                path: "content/sliderIntros",
+                fields: [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Tytuł",
+                        required: true,
+                    },
+                    {
+                        type: "rich-text",
+                        name: "description",
+                        label: "Opis",
+                        required: true,
+                    },
+                ],
+            },
         ],
     },
 });

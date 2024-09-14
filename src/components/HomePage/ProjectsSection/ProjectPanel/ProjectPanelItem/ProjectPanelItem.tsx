@@ -3,6 +3,7 @@ import Text from "$generics/Text/Text";
 import ProjectThumbnail from "../Thumbnail/";
 import { ProjectPanelItemProps } from "./ProjectPanelItem.types";
 import * as P from "./ProjectPanelItem.parts";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export default function ProjectPanelItem({ image, title, description }: ProjectPanelItemProps) {
     return (
@@ -12,9 +13,7 @@ export default function ProjectPanelItem({ image, title, description }: ProjectP
                 <Text tag="h4" bold>
                     {title}
                 </Text>
-                <Text size="m" lineHeight={1.5}>
-                    {description}
-                </Text>
+                <TinaMarkdown content={description} />
             </P.DescriptionWrapper>
         </P.ItemWrapper>
     );

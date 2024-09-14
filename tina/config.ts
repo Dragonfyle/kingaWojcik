@@ -33,8 +33,6 @@ export default defineConfig({
                         type: "string",
                         name: "title",
                         label: "Title",
-                        isTitle: true,
-                        required: true,
                     },
                     {
                         type: "string",
@@ -111,14 +109,19 @@ export default defineConfig({
                                     },
                                     {
                                         type: "rich-text",
-                                        name: "description",
+                                        name: "optionalDescription",
                                         label: "Opis",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrl",
+                                        label: "URL",
                                         required: true,
                                     },
                                     {
                                         type: "image",
-                                        name: "video",
-                                        label: "Video",
+                                        name: "posterImage",
+                                        label: "Miniaturka",
                                     },
                                 ],
                             },
@@ -274,7 +277,7 @@ export default defineConfig({
                 ],
             },
             {
-                name: "brandingProjects",
+                name: "branding",
                 label: "Projekty brandingowe",
                 path: "content/projects/branding",
                 fields: [
@@ -282,8 +285,253 @@ export default defineConfig({
                         type: "string",
                         name: "title",
                         label: "Title",
-                        isTitle: true,
-                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "intro",
+                        label: "Intro",
+                    },
+                    {
+                        type: "object",
+                        name: "projectSections",
+                        label: "Sekcje",
+                        list: true,
+                        templates: [
+                            {
+                                name: "text",
+                                label: "Tekst",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: "Nagłówek",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "description",
+                                        label: "Opis",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "image",
+                                label: "Grafika",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: "Położenie opisu",
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: "Nagłówek",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescription",
+                                        label: "Opis",
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "image",
+                                        label: "Grafika",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "video",
+                                label: "Video",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: "Położenie opisu",
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: "Nagłówek",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescription",
+                                        label: "Opis",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrl",
+                                        label: "URL",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImage",
+                                        label: "Miniaturka",
+                                    },
+                                ],
+                            },
+                            {
+                                name: "textText",
+                                label: "Tekst - tekst",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerLeft",
+                                        label: "Nagłówek lewy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerRight",
+                                        label: "Nagłówek prawy",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "descriptionLeft",
+                                        label: "Opis lewy",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "descriptionRight",
+                                        label: "Opis prawy",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "imageImage",
+                                label: "Grafika - grafika",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: "Położenie opisu",
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerLeft",
+                                        label: "Nagłówek lewy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerRight",
+                                        label: "Nagłówek prawy",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionLeft",
+                                        label: "Opis lewy",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionRight",
+                                        label: "Opis prawy",
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "imageLeft",
+                                        label: "Grafika lewa",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "imageRight",
+                                        label: "Grafika prawa",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "textImage",
+                                label: "Tekst - grafika",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: "Nagłówek",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "description",
+                                        label: "Opis",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "image",
+                                        label: "Grafika",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "imageText",
+                                label: "Grafika - tekst",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: "Szerokość lewej kolumny",
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: "Położenie opisu",
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: "Nagłówek",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "description",
+                                        label: "Opis",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "image",
+                                        label: "Grafika",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                        ],
                     },
                 ],
             },

@@ -8,9 +8,15 @@ interface FeatureImageProps {
 }
 
 export default function FeatureImage({ featureData }: FeatureImageProps) {
+    const { header, optionalDescription, descriptionPosition } = featureData;
+
     return (
         <P.FeatureWrapper>
-            <ColumnDescription source={featureData} />
+            <ColumnDescription
+                header={header}
+                description={optionalDescription}
+                descriptionPosition={descriptionPosition as "top" | "bottom"}
+            />
             <img src={featureData.image} />
         </P.FeatureWrapper>
     );

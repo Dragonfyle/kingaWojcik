@@ -1,26 +1,23 @@
-import Flexbox from "$generics/Flexbox/Flexbox";
-import Text from "$generics/Text/Text";
-
-import * as P from "./FeatureText.parts";
+import Text from "$components/generics/Text/Text";
+import { hasProperty } from "$utils/typeGuards";
 import { IllustrationsProjectSectionsText } from "tina/__generated__/types";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
+import * as P from "./FeatureText.parts";
 
 interface FeatureTextProps {
     featureData: IllustrationsProjectSectionsText;
 }
 
-export default function FeatureText({ featureData }: FeatureTextProps) {
+function FeatureText({ featureData }: FeatureTextProps) {
+    const hasHeader = hasProperty(featureData, "header");
+    console.log(featureData);
+
     return (
         <P.FeatureWrapper>
-            <Flexbox $marginT="50px" $direction="column">
-                <Flexbox $marginB="20px">
-                    {featureData?.header && (
-                        <Text tag="h1" size="2xl" bold>
-                            {featureData.header}
-                        </Text>
-                    )}
-                </Flexbox>
-                <Text>{featureData.description}</Text>
-            </Flexbox>
+            {hasHeader && <Text tag="h1">{featureData.header}</Text>}
+            <TinaMarkdown content={featureData.description} />
         </P.FeatureWrapper>
     );
 }
+
+export default FeatureText;

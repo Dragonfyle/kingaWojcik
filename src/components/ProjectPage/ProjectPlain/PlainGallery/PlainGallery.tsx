@@ -6,36 +6,42 @@ import FeatureImageImage from "$components/ProjectPage/FeatureImageImage/Feature
 import FeatureImageText from "$components/ProjectPage/FeatureImageText/FeatureImageText";
 import FeatureTextImage from "$components/ProjectPage/FeatureTextImage/FeatureTextImage";
 
-import { IllustrationsProjectSections } from "tina/__generated__/types";
+import { BrandingProjectSections, IllustrationsProjectSections } from "tina/__generated__/types";
 import { PlainGalleryProps } from "$types/plainGallery.types";
 import * as P from "./PlainGallery.parts";
 
 export default function PlainGallery({ projectData }: PlainGalleryProps) {
     const featureMap = {
-        IllustrationsProjectSectionsText: FeatureText,
-        IllustrationsProjectSectionsImage: FeatureImage,
-        IllustrationsProjectSectionsVideo: FeatureVideo,
-        IllustrationsProjectSectionsTextText: FeatureTextText,
-        IllustrationsProjectSectionsTextImage: FeatureTextImage,
-        IllustrationsProjectSectionsImageImage: FeatureImageImage,
-        IllustrationsProjectSectionsImageText: FeatureImageText,
+        projectSectionsText: FeatureText,
+        projectSectionsImage: FeatureImage,
+        projectSectionsVideo: FeatureVideo,
+        projectSectionsTextText: FeatureTextText,
+        projectSectionsTextImage: FeatureTextImage,
+        projectSectionsImageImage: FeatureImageImage,
+        projectSectionsImageText: FeatureImageText,
     } as const;
 
     const projectSections = projectData.projectSections;
 
-    function renderSections(sections: IllustrationsProjectSections[] | undefined) {
+    function convertNameToKey(name: string | undefined) {
+        if (!name) return "";
+
+        return name.replace(/^(Illustrations|Branding)ProjectSections/, "projectSections");
+    }
+
+    function renderSections(sections: IllustrationsProjectSections[] | BrandingProjectSections[] | undefined) {
         if (sections === undefined) {
-            return;
+            return null; // Return null instead of undefined
         }
 
         return sections.map((feature, idx) => {
-            const componentName = feature.__typename;
+            const componentName = convertNameToKey(feature.__typename);
 
             if (!componentName) {
-                return;
+                return null; // Return null for invalid components
             }
 
-            const Component = featureMap[componentName];
+            const Component = featureMap[componentName as keyof typeof featureMap];
 
             //TODO: find a way to fix this
             // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -3,8 +3,9 @@ import Text from "$generics/Text/";
 import { hasProperty } from "$utils/typeGuards";
 
 import { ColumnWidth, getColumnsWidth } from "../Feature.types";
-import * as P from "./FeatureTextText.parts";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { IllustrationsProjectSectionsTextText } from "tina/__generated__/types";
+import * as P from "./FeatureTextText.parts";
 
 interface FeatureTextTextProps {
     featureData: IllustrationsProjectSectionsTextText;
@@ -26,7 +27,7 @@ export default function FeatureTextText({ featureData }: FeatureTextTextProps) {
                 )}
 
                 <Flexbox $marginB="60px" $marginT="40px">
-                    <Text>{featureData.descriptionLeft}</Text>
+                    <TinaMarkdown content={featureData.descriptionLeft} />
                 </Flexbox>
             </Flexbox>
             <Flexbox $padding="20px 40px" $direction="column" $alignC="flex-start">

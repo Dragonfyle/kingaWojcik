@@ -8,7 +8,7 @@ export default function Illustrations3() {
 
     async function fetchData() {
         const myPost = await client.queries.illustrations({
-            relativePath: "Jolka---animowana-przewodniczka-po-wiecie-afiliacji.md",
+            relativePath: "jolka.md",
         });
 
         return myPost;
@@ -18,5 +18,5 @@ export default function Illustrations3() {
         fetchData().then((project) => setProjectData(project.data.illustrations));
     }, []);
 
-    return projectData ? <ProjectPlain projectData={projectData} /> : null;
+    return projectData ? <ProjectPlain projectData={projectData} /> : <div>Loading...</div>;
 }

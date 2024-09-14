@@ -8,11 +8,17 @@ interface FeatureVideoProps {
 }
 
 export default function FeatureVideo({ featureData }: FeatureVideoProps) {
+    const { header, optionalDescription, descriptionPosition } = featureData;
+
     return (
         <P.FeatureWrapper>
-            <ColumnDescription source={featureData} />
+            <ColumnDescription
+                header={header}
+                description={optionalDescription}
+                descriptionPosition={descriptionPosition as "top" | "bottom"}
+            />
             <video controls>
-                <source src={featureData.video || ""} type="video/mp4" />
+                <source src={featureData.videoUrl || ""} type="video/mp4" />
             </video>
         </P.FeatureWrapper>
     );

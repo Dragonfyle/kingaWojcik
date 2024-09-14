@@ -17,6 +17,7 @@ export default function ProjectPlain({ projectData }: ProjectPlainProps) {
             <P.ContentWrapper>
                 <ProjectIntroduction projectData={projectData} />
                 <PlainGallery projectData={projectData} />
+
                 {!isMobile && <ProjectNavigation />}
             </P.ContentWrapper>
         </Flexbox>

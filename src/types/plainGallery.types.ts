@@ -1,4 +1,4 @@
-import { IllustrationsQuery } from "tina/__generated__/types";
+import { BrandingQuery, IllustrationsQuery } from "tina/__generated__/types";
 import { Feature } from "./Project.types";
 
 interface PlainGalleryProject {
@@ -12,7 +12,7 @@ interface PlainGalleryData {
 }
 
 interface PlainGalleryProps {
-    projectData: IllustrationsQuery["illustrations"];
+    projectData: IllustrationsQuery["illustrations"] | BrandingQuery["branding"];
 }
 
 export type { PlainGalleryProject, PlainGalleryData, PlainGalleryProps };

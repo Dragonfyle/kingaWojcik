@@ -26,12 +26,24 @@ export default function FeatureImageImage({ featureData }: FeatureImageImageProp
             <Flexbox $wrap="nowrap" $direction="column">
                 <img src={featureData.imageLeft} />
 
-                {isLeftTextVisible && <ColumnDescription source={featureData} />}
+                {isLeftTextVisible && (
+                    <ColumnDescription
+                        header={featureData.headerLeft}
+                        description={featureData.optionalDescriptionLeft}
+                        descriptionPosition={featureData.descriptionPosition as "top" | "bottom"}
+                    />
+                )}
             </Flexbox>
             <Flexbox $wrap="nowrap" $direction="column">
                 <img src={featureData.imageRight} />
 
-                {isRightTextVisible && <ColumnDescription source={featureData} />}
+                {isRightTextVisible && (
+                    <ColumnDescription
+                        header={featureData.headerRight}
+                        description={featureData.optionalDescriptionRight}
+                        descriptionPosition={featureData.descriptionPosition as "top" | "bottom"}
+                    />
+                )}
             </Flexbox>
         </P.FeatureWrapper>
     );

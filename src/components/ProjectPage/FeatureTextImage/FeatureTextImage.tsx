@@ -4,6 +4,7 @@ import Text from "$generics/Text/";
 import { ColumnWidth, getColumnsWidth } from "../Feature.types";
 import { IllustrationsProjectSectionsTextImage } from "tina/__generated__/types";
 import { hasProperty } from "$utils/typeGuards";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 import * as P from "./FeatureTextImage.parts";
 
 interface FeatureTextImageProps {
@@ -25,7 +26,7 @@ export default function FeatureTextImage({ featureData }: FeatureTextImageProps)
                 )}
 
                 <Flexbox $marginB="60px">
-                    <Text>{featureData.description}</Text>
+                    <TinaMarkdown content={featureData.description} />
                 </Flexbox>
             </P.StyledFlexbox>
             <Flexbox $wrap="nowrap" $direction="column">

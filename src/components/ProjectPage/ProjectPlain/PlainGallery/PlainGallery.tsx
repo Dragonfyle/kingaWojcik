@@ -1,14 +1,16 @@
-import FeatureImage from "$components/ProjectPage/FeatureImage/FeatureImage";
-import FeatureVideo from "$components/ProjectPage/FeatureVideo/FeatureVideo";
-import FeatureText from "$components/ProjectPage/FeatureText/FeatureText";
-import FeatureTextText from "$components/ProjectPage/FeatureTextText/FeatureTextText";
-import FeatureImageImage from "$components/ProjectPage/FeatureImageImage/FeatureImageImage";
-import FeatureImageText from "$components/ProjectPage/FeatureImageText/FeatureImageText";
-import FeatureTextImage from "$components/ProjectPage/FeatureTextImage/FeatureTextImage";
+import { lazy } from "react";
 
 import { BrandingProjectSections, IllustrationsProjectSections } from "tina/__generated__/types";
 import { PlainGalleryProps } from "$types/plainGallery.types";
 import * as P from "./PlainGallery.parts";
+
+const FeatureText = lazy(() => import("$components/ProjectPage/FeatureText/FeatureText"));
+const FeatureImage = lazy(() => import("$components/ProjectPage/FeatureImage/FeatureImage"));
+const FeatureVideo = lazy(() => import("$components/ProjectPage/FeatureVideo/FeatureVideo"));
+const FeatureTextText = lazy(() => import("$components/ProjectPage/FeatureTextText/FeatureTextText"));
+const FeatureImageImage = lazy(() => import("$components/ProjectPage/FeatureImageImage/FeatureImageImage"));
+const FeatureImageText = lazy(() => import("$components/ProjectPage/FeatureImageText/FeatureImageText"));
+const FeatureTextImage = lazy(() => import("$components/ProjectPage/FeatureTextImage/FeatureTextImage"));
 
 export default function PlainGallery({ projectData }: PlainGalleryProps) {
     const featureMap = {

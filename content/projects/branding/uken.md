@@ -4,9 +4,11 @@ title: >-
   Uniwersytet Pedagogiczny) -projekt konkursowy
 projectSections:
   - descriptionPosition: bottom
+    optionalDescription: ''
     image: /assets/img/projects/uken/uken_logo_main.png
     _template: image
   - descriptionPosition: bottom
+    optionalDescription: ''
     image: /assets/img/projects/uken/uken_kolorystyka.jpg
     _template: image
   - leftColumnWidth: '50'
@@ -42,28 +44,36 @@ projectSections:
       koresponduje z nowoczesnymi aspiracjami uczelni. Zapewnia też odpowiednią
       czytelność, a tym samym funkcjonalność.
     optionalDescriptionRight: >
-      ardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi
+      Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi
       rozpoznawalność.
     imageLeft: /assets/img/projects/uken/uken_ikonka_5.png
     imageRight: /assets/img/projects/uken/uken_ikonka_3_6.png
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_logo_pelne.jpg
     imageRight: /assets/img/projects/uken/uken_logo_skrocone.jpg
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_logo_pelne_biale.png
     imageRight: /assets/img/projects/uken/uken_logo_skrocone_biale.png
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_tshirt.jpg
     imageRight: /assets/img/projects/uken/uken_kalendarz.jpg
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_wizytowki.jpg
     imageRight: /assets/img/projects/uken/uken_dokument.jpg
     _template: imageImage

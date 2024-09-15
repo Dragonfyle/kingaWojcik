@@ -17,7 +17,7 @@ export default function FeatureImage({ featureData }: FeatureImageProps) {
                 description={optionalDescription}
                 descriptionPosition={descriptionPosition as "top" | "bottom"}
             />
-            <img src={featureData.image} />
+            <img loading="lazy" src={featureData.image} />
         </P.FeatureWrapper>
     );
 }

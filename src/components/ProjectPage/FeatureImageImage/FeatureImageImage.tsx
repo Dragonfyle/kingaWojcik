@@ -24,7 +24,7 @@ export default function FeatureImageImage({ featureData }: FeatureImageImageProp
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
             <Flexbox $wrap="nowrap" $direction="column">
-                <img src={featureData.imageLeft} />
+                <img loading="lazy" src={featureData.imageLeft} />
 
                 {isLeftTextVisible && (
                     <ColumnDescription
@@ -35,7 +35,7 @@ export default function FeatureImageImage({ featureData }: FeatureImageImageProp
                 )}
             </Flexbox>
             <Flexbox $wrap="nowrap" $direction="column">
-                <img src={featureData.imageRight} />
+                <img loading="lazy" src={featureData.imageRight} />
 
                 {isRightTextVisible && (
                     <ColumnDescription

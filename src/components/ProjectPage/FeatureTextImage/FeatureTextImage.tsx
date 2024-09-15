@@ -30,7 +30,7 @@ export default function FeatureTextImage({ featureData }: FeatureTextImageProps)
                 </Flexbox>
             </P.StyledFlexbox>
             <Flexbox $wrap="nowrap" $direction="column">
-                <img src={featureData.image} alt={featureData.header || "Feature image"} />
+                <img loading="lazy" src={featureData.image} alt={featureData.header || "Feature image"} />
             </Flexbox>
         </P.FeatureWrapper>
     );

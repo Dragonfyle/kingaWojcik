@@ -18,7 +18,7 @@ export default function FeatureImageText({ featureData }: FeatureImageTextProps)
     return (
         <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
             <Flexbox $wrap="nowrap" $direction="column">
-                <img src={featureData.image} />
+                <img loading="lazy" src={featureData.image} />
             </Flexbox>
             <P.StyledFlexbox $padding="20px 40px" $direction="column">
                 {hasHeader && (

@@ -4,7 +4,7 @@ import { CONFIG } from "$constants/config";
 import Layout from "$components/Layout/";
 import AboutPage from "$components/AboutPage/AboutPage";
 import HomePage from "$pages/Home";
-import Branding1 from "$pages/Branding1";
+// import Branding1 from "$pages/Branding1";
 import Branding2 from "$pages/Branding2";
 import Branding3 from "$pages/Branding3";
 import Branding4 from "$pages/Branding4";
@@ -21,10 +21,10 @@ const browserRouter = createBrowserRouter([
                 index: true,
                 element: <HomePage />,
             },
-            {
-                path: CONFIG.PATHS.PROJECTS.BRANDING[1],
-                element: <Branding1 />,
-            },
+            // {
+            //     path: CONFIG.PATHS.PROJECTS.BRANDING[1],
+            //     element: <Branding1 />,
+            // },
             {
                 path: CONFIG.PATHS.PROJECTS.BRANDING[2],
                 element: <Branding2 />,

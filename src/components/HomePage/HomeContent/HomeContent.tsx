@@ -66,9 +66,9 @@ export default function HomeContent() {
         fetchSliderIntros().then((intros) => {
             if (intros) {
                 setSliderIntros({
-                    articlesIntro: intros.articlesIntro.data.sliderIntros,
-                    brandingIntro: intros.brandingIntro.data.sliderIntros,
-                    illustrationsIntro: intros.illustrationsIntro.data.sliderIntros,
+                    articlesIntro: intros.articlesIntro.data.sliderIntros as SliderIntros,
+                    brandingIntro: intros.brandingIntro.data.sliderIntros as SliderIntros,
+                    illustrationsIntro: intros.illustrationsIntro.data.sliderIntros as SliderIntros,
                 });
             }
         });

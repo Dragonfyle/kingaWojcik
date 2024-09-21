@@ -53,7 +53,7 @@ projectSections:
       koresponduje z nowoczesnymi aspiracjami uczelni. Zapewnia też odpowiednią
       czytelność, a tym samym funkcjonalność.
     optionalDescriptionRight: >
-      ardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi
+      Bardzo unikalna, pionowa sylwetka sygnetu zapewni uniwersytetowi
       rozpoznawalność.
     imageLeft: /assets/img/projects/uken/uken_ikonka_5.png
     imageRight: /assets/img/projects/uken/uken_ikonka_3_6.png

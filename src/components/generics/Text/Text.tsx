@@ -1,11 +1,9 @@
 import { forwardRef } from "react";
 
 import { TextProps } from "./Text.types";
-import * as P from "./Text.parts";
 
 const Text = forwardRef<HTMLParagraphElement, TextProps>(function Text(
     {
-        size = "m",
         color = "black",
         lineHeight = 1.6,
         underline = false,
@@ -13,29 +11,28 @@ const Text = forwardRef<HTMLParagraphElement, TextProps>(function Text(
         bold = false,
         italic = false,
         align = "left",
-        whiteSpace = "normal",
-        tag,
+        Tag = "p",
         children,
         className,
     },
     forwardedRef
 ) {
     return (
-        <P.StyledText
-            as={tag || "p"}
+        <Tag
             ref={forwardedRef}
-            $size={size}
-            $color={color}
-            $lineHeight={lineHeight}
-            $underline={underline}
-            $uppercase={uppercase}
-            $bold={bold}
-            $italic={italic}
-            $align={align}
-            $whiteSpace={whiteSpace}
+            style={{
+                color: color,
+                lineHeight: lineHeight,
+                textDecoration: underline ? "underline" : "none",
+                textTransform: uppercase ? "uppercase" : "none",
+                fontWeight: bold ? "bold" : "normal",
+                fontStyle: italic ? "italic" : "normal",
+                textAlign: align,
+                textWrap: "wrap",
+            }}
             className={className}>
             {children}
-        </P.StyledText>
+        </Tag>
     );
 });
 

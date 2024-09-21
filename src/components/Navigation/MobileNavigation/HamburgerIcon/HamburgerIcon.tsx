@@ -1,18 +1,20 @@
-/// <reference types="vite-plugin-svgr/client" />
-import Hamburger from "$assets/icons/hamburger.svg?react";
+import Hamburger from "$assets/icons/hamburger.svg";
+import { defaultTheme } from "$styles/DefaultTheme";
 
 import { HamburgerIconProps } from "./HamburgerIcon.types";
-import * as P from "./HamburgerIcon.parts";
 
-export default function HamburgerIcon({
-    size = "50px",
-    fgColor = "black",
-    bgColor = "#F1DB13",
-    onClick,
-}: HamburgerIconProps) {
+export default function HamburgerIcon({ onClick }: HamburgerIconProps) {
     return (
-        <P.HamburgerWrapper $size={size} $fgColor={fgColor} $bgColor={bgColor} onClick={onClick}>
-            <Hamburger />
-        </P.HamburgerWrapper>
+        <div className="aspect-hamburger h-auto" onClick={onClick}>
+            <Hamburger
+                className="w-12"
+                style={
+                    {
+                        "--background-color": defaultTheme.colors.leading.main[2],
+                        "--foreground-color": defaultTheme.colors.supplementary[3],
+                    } as React.CSSProperties
+                }
+            />
+        </div>
     );
 }

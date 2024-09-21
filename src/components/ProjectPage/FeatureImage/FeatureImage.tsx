@@ -1,23 +1,27 @@
+import Image from "next/image";
+
 import { ColumnDescription } from "../ColumnDescription/";
-import { IllustrationsProjectSectionsImage } from "tina/__generated__/types";
-
-import * as P from "./FeatureImage.parts";
-
-interface FeatureImageProps {
-    featureData: IllustrationsProjectSectionsImage;
-}
+import { FeatureImageProps } from "./FeatureImage.types";
 
 export default function FeatureImage({ featureData }: FeatureImageProps) {
-    const { header, optionalDescription, descriptionPosition } = featureData;
+    const { header, optionalDescription, descriptionPosition, imageHeight, imageWidth } = featureData;
 
     return (
-        <P.FeatureWrapper>
+        <section className="flex flex-col l:w-feature-image-s xl:w-feature-image">
+            <Image
+                alt="grafika prezentująca projekt"
+                width={imageWidth}
+                height={imageHeight}
+                sizes="(min-width: 1024px) 87vw, (min-width: 1250px) 72vw, (min-width: 1440px) 80vw, (min-width: 1600px) 71vw,95vw"
+                src={featureData.image}
+                className="w-auto"
+            />
+
             <ColumnDescription
                 header={header}
                 description={optionalDescription}
                 descriptionPosition={descriptionPosition as "top" | "bottom"}
             />
-            <img loading="lazy" src={featureData.image} />
-        </P.FeatureWrapper>
+        </section>
     );
 }

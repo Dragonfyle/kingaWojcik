@@ -1,5 +1,5 @@
 import { DefaultTheme } from "styled-components";
-import { colorDefinitions as colors } from "./colorDefinitions";
+import { colorDefinitions as colors } from "../theme/colorDefinitions";
 
 const defaultTheme = {
     colors: {

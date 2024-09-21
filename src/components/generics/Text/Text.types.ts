@@ -21,23 +21,4 @@ type TextProps = WithTagVariant<{
     breakpointVariant?: BreakpointVariants;
 }>;
 
-interface StyledTextProps {
-    theme: DefaultTheme;
-    $size: TextSize;
-    $underline: boolean;
-    $uppercase: boolean;
-    $lineHeight: number;
-    $bold: boolean;
-    $italic: boolean;
-    $color: ColorOption | string;
-    $align: TextAlign;
-    $whiteSpace: string;
-}
-
-function getTextSize({ theme, $size: size }: StyledTextProps): string {
-    return theme.fontSize[size];
-}
-
-export type { TextProps, StyledTextProps, TextSize };
-
-export { getTextSize };
+export type { TextProps, TextSize };

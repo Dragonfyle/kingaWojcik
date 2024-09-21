@@ -1,47 +1,41 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
-import { useThemeContext } from "$contexts/ThemeContext";
 import Divider from "$generics/Divider/Divider";
-import Flexbox from "$generics/Flexbox/Flexbox";
 import Text from "$generics/Text/Text";
 
 import { FooterSectionProps } from "./FooterSection.types";
-import * as P from "./FooterSection.parts";
+import { defaultTheme } from "$styles/DefaultTheme";
 
 export default function FooterSection({ sectionName, listItems, links }: FooterSectionProps) {
-    const {
-        theme: { colors },
-    } = useThemeContext();
-
     function renderList(listItems: string[]) {
         const values = Object.values(listItems);
 
         return values.map((value, idx) =>
             links[idx] ? (
-                <Link key={value} to={links[idx]}>
-                    <P.StyledLi>
-                        <Text size="s" color={colors.white[1]}>
+                <Link className="no-underline" key={value} href={links[idx] ?? ""}>
+                    <li className="flex">
+                        <Text className="text-s hover:text-leading-main-2" color={defaultTheme.colors.white[1]}>
                             {value}
                         </Text>
-                    </P.StyledLi>
+                    </li>
                 </Link>
             ) : (
-                <P.StyledLi key={value}>
-                    <Text size="s" color={colors.white[1]}>
+                <li className="flex" key={value}>
+                    <Text className="hover:text-leading-main-2" color={defaultTheme.colors.white[1]}>
                         {value}
                     </Text>
-                </P.StyledLi>
+                </li>
             )
         );
     }
 
     return (
-        <Flexbox $direction="column" $marginT="40px" $marginL="auto" $marginR="auto">
-            <P.FooterSectionTitle size="xl" color={colors.white[1]} lineHeight={1.2}>
+        <div className="flex w-full flex-col gap-y-3">
+            <Text className="xxl:text-l" color={defaultTheme.colors.white[1]} lineHeight={1.2}>
                 {sectionName}
-            </P.FooterSectionTitle>
-            <Divider color={colors.leading.secondary[2]} />
-            <P.StyledUl>{renderList(listItems)}</P.StyledUl>
-        </Flexbox>
+            </Text>
+            <Divider color={defaultTheme.colors.leading.secondary[2]} />
+            <ul className="flex list-none flex-col gap-1">{renderList(listItems)}</ul>
+        </div>
     );
 }

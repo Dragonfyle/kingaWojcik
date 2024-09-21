@@ -1,50 +1,56 @@
-import Flexbox from "$generics/Flexbox/";
-
-import { ColumnWidth, getColumnsWidth } from "../Feature.types";
+import { ColumnWidth } from "../Feature.types";
 import { ColumnDescription } from "../ColumnDescription/";
-import * as P from "./FeatureImageImage.parts";
-import { IllustrationsProjectSectionsImageImage } from "tina/__generated__/types";
-
-interface FeatureImageImageProps {
-    featureData: IllustrationsProjectSectionsImageImage;
-}
+import FeatureSliceImage from "../FeatureSliceImage/FeatureSliceImage";
+import { widthMap } from "../ProjectPage.utils";
+import { FeatureImageImageProps } from "./FeatureImageImage.types";
 
 export default function FeatureImageImage({ featureData }: FeatureImageImageProps) {
+    const {
+        imageLeft,
+        imageRight,
+        imageWidth,
+        imageHeight,
+        headerLeft,
+        optionalDescriptionLeft,
+        headerRight,
+        optionalDescriptionRight,
+        descriptionPosition,
+    } = featureData;
+
     const hasLeftHeader = "headerLeft" in featureData;
     const hasRightHeader = "headerRight" in featureData;
     const hasLeftDescription = "optionalDescriptionLeft" in featureData;
     const hasRightDescription = "optionalDescriptionRight" in featureData;
     const leftColumnWidth = Number(featureData.leftColumnWidth) as ColumnWidth;
-
-    const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
+    const featureGridUtilities = widthMap[leftColumnWidth];
 
     const isLeftTextVisible = hasLeftHeader || hasLeftDescription;
     const isRightTextVisible = hasRightHeader || hasRightDescription;
 
     return (
-        <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
-            <Flexbox $wrap="nowrap" $direction="column">
-                <img loading="lazy" src={featureData.imageLeft} />
+        <div className={`${featureGridUtilities}`}>
+            <div className="flex flex-col flex-nowrap">
+                <FeatureSliceImage src={imageLeft} width={imageWidth} height={imageHeight} />
 
                 {isLeftTextVisible && (
                     <ColumnDescription
-                        header={featureData.headerLeft}
-                        description={featureData.optionalDescriptionLeft}
-                        descriptionPosition={featureData.descriptionPosition as "top" | "bottom"}
+                        header={headerLeft}
+                        description={optionalDescriptionLeft}
+                        descriptionPosition={descriptionPosition as "top" | "bottom"}
                     />
                 )}
-            </Flexbox>
-            <Flexbox $wrap="nowrap" $direction="column">
-                <img loading="lazy" src={featureData.imageRight} />
+            </div>
+            <div className="flex flex-col flex-nowrap">
+                <FeatureSliceImage src={imageRight} width={imageWidth} height={imageHeight} />
 
                 {isRightTextVisible && (
                     <ColumnDescription
-                        header={featureData.headerRight}
-                        description={featureData.optionalDescriptionRight}
-                        descriptionPosition={featureData.descriptionPosition as "top" | "bottom"}
+                        header={headerRight}
+                        description={optionalDescriptionRight}
+                        descriptionPosition={descriptionPosition as "top" | "bottom"}
                     />
                 )}
-            </Flexbox>
-        </P.FeatureWrapper>
+            </div>
+        </div>
     );
 }

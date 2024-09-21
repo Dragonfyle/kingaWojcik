@@ -1,14 +1,11 @@
-/// <reference types="vite-plugin-svgr/client" />
-import LinkedinSvg from "$assets/icons/linkedin.svg?react";
+import LinkedinSvg from "$assets/icons/linkedin.svg";
 
 import { LinkedIconProps } from "./LinkedinIcon.types";
 
-import * as P from "./LinkedinIcon.parts";
-
 export default function LinkedinIcon({ size }: LinkedIconProps) {
     return (
-        <P.StyledA href="https://www.linkedin.com/in/kinga-wójcik-grafik/" $size={size}>
-            <LinkedinSvg />
-        </P.StyledA>
+        <a href="https://www.linkedin.com/in/kinga-wójcik-grafik/" className="user-select-none my-auto cursor-pointer">
+            <LinkedinSvg style={{ width: `${size}px`, height: `${size}px` }} />
+        </a>
     );
 }

@@ -1,36 +1,18 @@
-import Flexbox from "$generics/Flexbox/";
-import Text from "$generics/Text/";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
-
-import { ColumnWidth, getColumnsWidth } from "../Feature.types";
-import * as P from "./FeatureImageText.parts";
-import { IllustrationsProjectSectionsImageText } from "tina/__generated__/types";
-
-interface FeatureImageTextProps {
-    featureData: IllustrationsProjectSectionsImageText;
-}
+import { ColumnWidth } from "../Feature.types";
+import FeatureSliceImage from "../FeatureSliceImage/FeatureSliceImage";
+import FeatureSliceText from "../FeatureSliceText/FeatureSliceText";
+import { widthMap } from "../ProjectPage.utils";
+import { FeatureImageTextProps } from "./FeatureImageText.types";
 
 export default function FeatureImageText({ featureData }: FeatureImageTextProps) {
+    const { image, imageWidth, imageHeight, header, description } = featureData;
     const leftColumnWidth = Number(featureData.leftColumnWidth) as ColumnWidth;
-    const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const hasHeader = "header" in featureData;
+    const featureGridUtilities = widthMap[leftColumnWidth];
 
     return (
-        <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
-            <Flexbox $wrap="nowrap" $direction="column">
-                <img loading="lazy" src={featureData.image} />
-            </Flexbox>
-            <P.StyledFlexbox $padding="20px 40px" $direction="column">
-                {hasHeader && (
-                    <Text tag="h1" size="2xl" bold lineHeight={1.4}>
-                        {featureData.header}
-                    </Text>
-                )}
-
-                <Flexbox $marginB="60px">
-                    <TinaMarkdown content={featureData.description} />
-                </Flexbox>
-            </P.StyledFlexbox>
-        </P.FeatureWrapper>
+        <div className={`${featureGridUtilities}`}>
+            <FeatureSliceImage src={image} width={imageWidth} height={imageHeight} />
+            <FeatureSliceText header={header} description={description} />
+        </div>
     );
 }

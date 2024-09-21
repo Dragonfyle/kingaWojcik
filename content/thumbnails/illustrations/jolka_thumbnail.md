@@ -4,6 +4,6 @@ title: Jolka
 description: >
   Ilustracje stworzone dla webePartners. Projekt rysunkowej koleżanki, która
   pokazuje i tłumaczy świat afiliacji
-url: illustrations-3
+url: /illustrations3
 ---
 

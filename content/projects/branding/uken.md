@@ -2,12 +2,19 @@
 title: >-
   Logo dla Uniwersytetu Komisji Edukacji Narodowej w Krakowie (dawniej
   Uniwersytet Pedagogiczny) -projekt konkursowy
+intro: ''
 projectSections:
   - descriptionPosition: bottom
+    optionalDescription: ''
     image: /assets/img/projects/uken/uken_logo_main.png
+    imageWidth: 900
+    imageHeight: 405
     _template: image
   - descriptionPosition: bottom
+    optionalDescription: ''
     image: /assets/img/projects/uken/uken_kolorystyka.jpg
+    imageWidth: 2200
+    imageHeight: 328
     _template: image
   - leftColumnWidth: '50'
     descriptionPosition: bottom
@@ -19,6 +26,8 @@ projectSections:
       wiedzy i nauki.
     imageLeft: /assets/img/projects/uken/uken_ikonka_1.png
     imageRight: /assets/img/projects/uken/uken_ikonka_2.png
+    imageWidth: 1600
+    imageHeight: 229
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
@@ -34,6 +43,8 @@ projectSections:
       patriotycznych
     imageLeft: /assets/img/projects/uken/uken_ikonka_3_6.png
     imageRight: /assets/img/projects/uken/uken_ikonka_4.png
+    imageWidth: 1600
+    imageHeight: 229
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
@@ -46,26 +57,44 @@ projectSections:
       rozpoznawalność.
     imageLeft: /assets/img/projects/uken/uken_ikonka_5.png
     imageRight: /assets/img/projects/uken/uken_ikonka_3_6.png
+    imageWidth: 1600
+    imageHeight: 229
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_logo_pelne.jpg
     imageRight: /assets/img/projects/uken/uken_logo_skrocone.jpg
+    imageWidth: 900
+    imageHeight: 404
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_logo_pelne_biale.png
     imageRight: /assets/img/projects/uken/uken_logo_skrocone_biale.png
+    imageWidth: 3750
+    imageHeight: 1685
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_tshirt.jpg
     imageRight: /assets/img/projects/uken/uken_kalendarz.jpg
+    imageWidth: 900
+    imageHeight: 900
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: bottom
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/uken/uken_wizytowki.jpg
     imageRight: /assets/img/projects/uken/uken_dokument.jpg
+    imageWidth: 900
+    imageHeight: 900
     _template: imageImage
 ---
 

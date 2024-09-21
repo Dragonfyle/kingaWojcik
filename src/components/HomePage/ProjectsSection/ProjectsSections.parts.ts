@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Text from "$components/generics/Text";
 import { BREAKPOINTS } from "$styles/breakpoints";
 
+//TODO: finish moving to tailwind
 export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
@@ -9,7 +10,6 @@ export const StyledSection = styled.section`
     width: 89%;
     margin: 0 0 0 11%;
     padding: 40px 0;
-
 
     ${BREAKPOINTS.L} {
         width: 95%;
@@ -63,7 +63,6 @@ export const StyledSection = styled.section`
         }
     }
 `;
-
 
 export const Header = styled(Text)`
     ${BREAKPOINTS.S} {

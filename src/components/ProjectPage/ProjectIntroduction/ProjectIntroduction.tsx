@@ -1,20 +1,18 @@
-import Text from "$generics/Text/Text";
-import * as P from "./ProjectIntroduction.parts";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { ProjectIntroductionProps } from "./ProjectIntroduction.types";
 
 export default function ProjectIntroduction({ projectData }: ProjectIntroductionProps) {
     const withDescription = "intro" in projectData;
 
     return (
-        <P.SummaryWrapper>
-            <Text tag="h1" bold size="2xl">
-                {projectData.title}
-            </Text>
+        <header className="xxl:max-w-auto flex w-full max-w-[1200px] justify-start px-4 py-8 s:px-8">
+            <h1 className="text-2xl font-bold">{projectData.title}</h1>
+
             {withDescription && (
-                <P.DescriptionWrapper>
-                    <Text size="l">{projectData.intro}</Text>
-                </P.DescriptionWrapper>
+                <div className="flex items-center justify-center px-3 py-5">
+                    <TinaMarkdown content={projectData.intro} />
+                </div>
             )}
-        </P.SummaryWrapper>
+        </header>
     );
 }

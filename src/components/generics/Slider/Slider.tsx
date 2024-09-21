@@ -1,19 +1,17 @@
 import { forwardRef, useImperativeHandle, useRef, useState } from "react";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
-import Flexbox from "$generics/Flexbox/";
 
 import ItemIndicator from "./ItemIndicator/ItemIndicator";
 import { SliderImperativeHandle, SliderProps } from "./Slider.types";
-import * as P from "./Slider.parts";
 
 const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({ children }: SliderProps, ref) {
-    const contentRef = useRef<HTMLDivElement>(null);
     const [itemWidth, setItemWidth] = useState<number | undefined>();
+    const [activeItem, setActiveItem] = useState(0);
+    const contentRef = useRef<HTMLDivElement>(null);
     const isScrolling = useRef(false);
     const lastScrollLeft = useRef<number | undefined>(0);
     const { isPhone } = useDeviceContext();
-    const [activeItem, setActiveItem] = useState(0);
 
     function handleRefLoad() {
         if (contentRef.current) {
@@ -76,14 +74,16 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
     });
 
     return (
-        <P.SliderWrapper>
-            <P.ContentWrapper ref={contentRef} onLoad={handleRefLoad} onScroll={updateActiveItem}>
+        <div className="flex flex-col gap-3">
+            <div
+                className="scrollbar-none mt-12 flex snap-x flex-nowrap gap-x-12 overflow-x-auto pr-12 l:mt-8 l:pr-[300px]"
+                ref={contentRef}
+                onLoad={handleRefLoad}
+                onScroll={updateActiveItem}>
                 {children}
-            </P.ContentWrapper>
-            <Flexbox $justify="center" $colGap="15px" $padding="0 31px 0 0">
-                {isPhone && renderIndicatorDots()}
-            </Flexbox>
-        </P.SliderWrapper>
+            </div>
+            <div className="flex justify-center gap-x-4 pt-8">{isPhone && renderIndicatorDots()}</div>
+        </div>
     );
 });
 

@@ -1,9 +1,8 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 import { ArticlesThumbnails, BrandingThumbnails, IllustrationsThumbnails } from "tina/__generated__/types";
+import Link from "next/link";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
-import Flexbox from "$generics/Flexbox/Flexbox";
 import Slider from "$generics/Slider/Slider";
 import { SliderImperativeHandle } from "$generics/Slider/Slider.types";
 
@@ -11,7 +10,7 @@ import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/";
 import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/";
 import NavButtons from "../ProjectsSection/NavButtons/";
 import { ProjectSectionProps } from "./ProjectsSection.types";
-import * as P from "./ProjectsSections.parts";
+import ProjectSectionTitle from "./ProjectSectionTitle/ProjectSectionTitle";
 
 export default function ProjectSection({ id, source, intro }: ProjectSectionProps) {
     const sliderRef = useRef<SliderImperativeHandle>(null);
@@ -19,32 +18,26 @@ export default function ProjectSection({ id, source, intro }: ProjectSectionProp
 
     function renderContent(source: IllustrationsThumbnails[] | BrandingThumbnails[] | ArticlesThumbnails[]) {
         return source.map(({ thumbnail, title, description, url }) => (
-            <Link key={title} to={url}>
+            <Link key={title} href={url} className="">
                 <ProjectPanelItem image={thumbnail} title={title} description={description} />
             </Link>
         ));
     }
 
     return (
-        <P.StyledSection id={id}>
-            <Flexbox $wrap="nowrap">
-                <Flexbox $alignC="center">
-                    <P.Header tag="h2" bold size="4xl">
-                        {intro.title}
-                    </P.Header>
-                </Flexbox>
+        <section id={id} className="w-95% l:89% relative flex flex-col py-10 site-padding-left">
+            <div className="flex justify-between pr-96">
+                <ProjectSectionTitle title={intro.title} />
 
                 {!isMobile && (
-                    <Flexbox $wrap="nowrap" $justify="center">
-                        <NavButtons
-                            onNextProject={() => sliderRef.current?.scrollToNext()}
-                            onPreviousProject={() => sliderRef.current?.scrollToPrevious()}
-                            isFirstIndex={false}
-                            isLastIndex={false}
-                        />
-                    </Flexbox>
+                    <NavButtons
+                        onNextProject={() => sliderRef.current?.scrollToNext()}
+                        onPreviousProject={() => sliderRef.current?.scrollToPrevious()}
+                        isFirstIndex={false}
+                        isLastIndex={false}
+                    />
                 )}
-            </Flexbox>
+            </div>
 
             {isMobile && <ProjectPanelIntro text={intro.description} />}
 
@@ -52,6 +45,6 @@ export default function ProjectSection({ id, source, intro }: ProjectSectionProp
                 {!isMobile && <ProjectPanelIntro text={intro.description} />}
                 {renderContent(source)}
             </Slider>
-        </P.StyledSection>
+        </section>
     );
 }

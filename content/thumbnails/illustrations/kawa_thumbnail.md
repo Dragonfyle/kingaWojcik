@@ -4,6 +4,6 @@ title: Krótka historia kawy
 description: >
   Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces
   powstawania kawy. Projekt we współpracy z Małgorzatą Jaworską
-url: illustrations-1
+url: /illustrations1
 ---
 

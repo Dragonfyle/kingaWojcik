@@ -12,6 +12,8 @@ projectSections:
       elegancją i nowoczesnością. Design zostanie zrealizowany na prawdziwej
       ciężarówce i zaprezentowany podczas jesiennego eventu w Lyonie.
     image: /assets/img/projects/renault/front.png
+    imageWidth: 1920
+    imageHeight: 1790
     _template: imageText
   - header: Projekt Grafiki na ciężarówkę Renault E-Tech T
     description: >
@@ -24,6 +26,8 @@ projectSections:
   - descriptionPosition: bottom
     optionalDescription: ''
     videoUrl: /public/assets/videos/renault_design_contest_kinga_wojcik.mp4
+    imageWidth: 640
+    imageHeight: 360
     _template: video
 ---
 

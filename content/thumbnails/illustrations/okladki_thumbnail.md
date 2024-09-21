@@ -4,6 +4,6 @@ title: Projekty okładek książkowych
 description: >
   Zbiór moich projektów okładek książek, które w ciekawy sposób ilustrują
   zawartość każdej z nich
-url: illustrations-2
+url: /illustrations2
 ---
 

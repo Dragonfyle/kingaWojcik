@@ -1,3 +1,5 @@
+"use client";
+
 import { createContext, useContext, useState, useEffect, SetStateAction } from "react";
 import { CONFIG } from "$constants/config";
 import { NUM_IMAGES } from "$data/TopCarouselData";

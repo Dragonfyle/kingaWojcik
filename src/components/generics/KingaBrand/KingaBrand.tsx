@@ -1,8 +1,7 @@
-import Text from "$generics/Text/";
+import Link from "next/link";
 import { CONFIG } from "$constants/config";
 
 import { KingaBrandProps } from "./KingaBrand.types";
-import * as P from "./KingaBrand.parts";
 
 export default function KingaBrand({ onClick }: KingaBrandProps) {
     function handleClick() {
@@ -16,10 +15,8 @@ export default function KingaBrand({ onClick }: KingaBrandProps) {
     }
 
     return (
-        <P.StyledNavLink to={CONFIG.PATHS.HOME} onClick={handleClick}>
-            <P.KingaWrapper>
-                <Text bold>Kinga Ewa Wójcik</Text>
-            </P.KingaWrapper>
-        </P.StyledNavLink>
+        <Link href={CONFIG.PATHS.HOME} onClick={handleClick} className="flex items-center font-bold no-underline">
+            Kinga Ewa Wójcik
+        </Link>
     );
 }

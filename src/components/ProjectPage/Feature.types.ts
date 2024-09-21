@@ -45,21 +45,12 @@ interface FeatureTextTextProps {
     withRightH1: boolean;
 }
 
-function getColumnsWidth(leftColumnWidth: ColumnWidth) {
-    const rightColumnWidth = 100 - leftColumnWidth;
-
-    const leftWidth = `${leftColumnWidth}fr`;
-    const rightWidth = `${rightColumnWidth}fr`;
-
-    return { leftWidth, rightWidth };
-}
-
 const descriptionPositionMap = {
     top: -1,
     bottom: 1,
 } as const;
 
-export { getColumnsWidth, descriptionPositionMap };
+export { descriptionPositionMap };
 
 export type {
     ColumnWidth,

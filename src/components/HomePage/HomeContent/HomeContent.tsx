@@ -1,4 +1,5 @@
-import ScrollToAnchor from "$utils/scrollToAnchor";
+"use client";
+
 import client from "tina/__generated__/client";
 import {
     ArticlesThumbnails,
@@ -9,7 +10,6 @@ import {
 
 import ProjectSection from "../ProjectsSection/";
 import { useEffect, useState } from "react";
-import * as P from "./HomeContent.parts";
 
 interface Thumbnails {
     illustrationsThumbnails: IllustrationsThumbnails[];
@@ -53,7 +53,9 @@ export default function HomeContent() {
     }
 
     useEffect(() => {
-        fetchThumbnails().then(({ illustrationsThumbnails, brandingThumbnails, articlesThumbnails }) => {
+        (async () => {
+            const { illustrationsThumbnails, brandingThumbnails, articlesThumbnails } = await fetchThumbnails();
+
             if (illustrationsThumbnails && brandingThumbnails && articlesThumbnails) {
                 setThumbnails({
                     illustrationsThumbnails: illustrationsThumbnails as IllustrationsThumbnails[],
@@ -61,9 +63,11 @@ export default function HomeContent() {
                     articlesThumbnails: articlesThumbnails as ArticlesThumbnails[],
                 });
             }
-        });
+        })();
 
-        fetchSliderIntros().then((intros) => {
+        (async () => {
+            const intros = await fetchSliderIntros();
+
             if (intros) {
                 setSliderIntros({
                     articlesIntro: intros.articlesIntro.data.sliderIntros as SliderIntros,
@@ -71,7 +75,7 @@ export default function HomeContent() {
                     illustrationsIntro: intros.illustrationsIntro.data.sliderIntros as SliderIntros,
                 });
             }
-        });
+        })();
     }, []);
 
     if (!thumbnails || !sliderIntros) {
@@ -79,8 +83,7 @@ export default function HomeContent() {
     }
 
     return (
-        <P.Wrapper>
-            <ScrollToAnchor />
+        <div className="flex flex-col justify-center bg-white-1">
             <ProjectSection
                 id="ilustracje"
                 source={thumbnails?.illustrationsThumbnails}
@@ -94,6 +97,6 @@ export default function HomeContent() {
             />
 
             <ProjectSection id="artykuly" source={thumbnails?.articlesThumbnails} intro={sliderIntros?.articlesIntro} />
-        </P.Wrapper>
+        </div>
     );
 }

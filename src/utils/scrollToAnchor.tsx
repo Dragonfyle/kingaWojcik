@@ -1,15 +1,14 @@
 import { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
-
+import { useRouter } from "next/navigation";
 const DELAY = 100;
 
 export default function ScrollToAnchor() {
-    const location = useLocation();
+    const location = useRouter();
     const lastHash = useRef("");
 
     useEffect(() => {
-        if (location.hash) {
-            lastHash.current = location.hash.slice(1);
+        if (location.asPath) {
+            lastHash.current = location.asPath.slice(1);
         }
 
         if (lastHash.current && document.getElementById(lastHash.current)) {

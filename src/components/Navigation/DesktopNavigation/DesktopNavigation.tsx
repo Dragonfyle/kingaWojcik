@@ -1,11 +1,8 @@
 import navigationItems from "$data/navigationData";
-import KingaBrand from "$generics/KingaBrand/";
-import Flexbox from "$generics/Flexbox/";
 import NavigationItem from "$components/Navigation/NavigationItem/";
-import LinkedinIcon from "$generics/LinkedinIcon/";
 
 import AboutMeItem from "../NavigationItem/AboutMeItem/";
-import * as P from "./DesktopNavigation.parts";
+import BrandAndLinkedin from "../BrandAndLinkedin/BrandAndLinkedin";
 
 export default function Navigation() {
     function renderItems(source: typeof navigationItems) {
@@ -27,14 +24,12 @@ export default function Navigation() {
     }
 
     return (
-        <P.NavigationWrapper>
-            <P.ListWrapper>
-                <Flexbox $width="auto">
-                    <LinkedinIcon size={25} />
-                    <KingaBrand />
-                </Flexbox>
+        <nav className="site-padding-left sticky top-0 z-10 flex border-b border-leading-secondary-1 bg-white-1 xxl:justify-start">
+            <ul className="xl:w-78% w-90% flex h-full justify-start gap-5">
+                <BrandAndLinkedin linkedinSize={25} />
+
                 {renderItems(navigationItems)}
-            </P.ListWrapper>
-        </P.NavigationWrapper>
+            </ul>
+        </nav>
     );
 }

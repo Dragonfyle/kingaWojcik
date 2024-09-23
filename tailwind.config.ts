@@ -4,7 +4,7 @@ import { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
 const config: Config = {
-    content: ["./src/**/*.{js,ts,jsx,tsx}"],
+    content: ["./src/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
             margin: {
@@ -69,7 +69,9 @@ const config: Config = {
             },
             height: {
                 "mobile-navigation": "var(--mobile-navigation-height)",
-                "project-panel-item": "309px",
+                "project-panel-item": "500px",
+                "project-section": "850px",
+                "project-section-s": "700px",
             },
             inset: {
                 "mobile-navigation": "var(--mobile-navigation-height)",
@@ -79,7 +81,6 @@ const config: Config = {
             fontSize: defaultTheme.fontSize,
             aspectRatio: {
                 hamburger: "1.45/1",
-                "project-panel-item": "551/309",
                 "feature-image": "1140/803",
                 "feature-slice-image": "1140/803",
             },
@@ -122,8 +123,12 @@ const config: Config = {
                 },
             });
             addUtilities({
-                ".site-padding-left": {
-                    "padding-left": "24px",
+                ".site-padding": {
+                    "padding-left": "18px",
+                    "padding-right": "18px",
+                    "@media (min-width: 640px)": {
+                        "padding-left": "24px",
+                    },
                     "@media (min-width: 1024px)": {
                         "padding-left": "5%",
                     },

@@ -25,7 +25,7 @@ projectSections:
     _template: text
   - descriptionPosition: bottom
     optionalDescription: ''
-    videoUrl: /public/assets/videos/renault_design_contest_kinga_wojcik.mp4
+    videoUrl: /renault_design_contest_kinga_wojcik.mp4
     imageWidth: 640
     imageHeight: 360
     _template: video

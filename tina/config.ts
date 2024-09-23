@@ -25,6 +25,106 @@ export default defineConfig({
     schema: {
         collections: [
             {
+                name: "about",
+                label: "O mnie - opis",
+                path: "content/aboutauthor",
+                templates: [
+                    {
+                        name: "aboutAuthor",
+                        label: "O autorze",
+                        fields: [
+                            {
+                                type: "string",
+                                name: "header",
+                                label: "Nagłówek",
+                                required: true,
+                            },
+                            {
+                                type: "image",
+                                name: "photo",
+                                label: "Zdjęcie",
+                                required: true,
+                            },
+                            {
+                                type: "number",
+                                name: "photoWidth",
+                                label: "Szerokość zdjęcia w px",
+                                required: true,
+                            },
+                            {
+                                type: "number",
+                                name: "photoHeight",
+                                label: "Wysokość zdjęcia w px",
+                                required: true,
+                            },
+                            {
+                                type: "rich-text",
+                                name: "description",
+                                label: "Opis",
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "aboutGalleryContent",
+                label: "O mnie - taby",
+                path: "content/aboutgallery",
+                fields: [
+                    {
+                        type: "string",
+                        name: "tabName",
+                        label: "Nazwa tabu",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "header",
+                        label: "Nagłówek",
+                        required: true,
+                    },
+                    {
+                        type: "object",
+                        name: "tabItems",
+                        label: "Wpis",
+                        list: true,
+                        required: true,
+                        fields: [
+                            {
+                                type: "string",
+                                name: "title1",
+                                label: "Tytuł 1",
+                                required: true,
+                            },
+                            {
+                                type: "string",
+                                name: "title2",
+                                label: "Tytuł 2",
+                                required: true,
+                            },
+                            {
+                                type: "rich-text",
+                                name: "description1",
+                                label: "Opis 1",
+                                required: true,
+                            },
+                            {
+                                type: "rich-text",
+                                name: "description2",
+                                label: "Opis 2",
+                                required: true,
+                            },
+                            {
+                                type: "rich-text",
+                                name: "description3",
+                                label: "Opis 3",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
                 name: "illustrations",
                 label: "Ilustracje",
                 path: "content/projects/illustrations",

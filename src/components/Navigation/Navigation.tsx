@@ -1,16 +1,11 @@
 "use client";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
-import DesktopNavigation from "$components/Navigation/DesktopNavigation/";
-import MobileNavigation from "$components/Navigation/MobileNavigation/";
+import DesktopNavigation from "./DesktopNavigation";
+import MobileNavigation from "./MobileNavigation";
 
-export default function Layout() {
+export default function Navigation() {
     const { isMobile } = useDeviceContext();
 
-    return (
-        <>
-            {!isMobile && <DesktopNavigation />}
-            {isMobile && <MobileNavigation />}
-        </>
-    );
+    return isMobile ? <MobileNavigation /> : <DesktopNavigation />;
 }

@@ -27,8 +27,8 @@ export default function MobileNavigation() {
 
     return (
         <>
-            <nav className="site-padding-left h-mobile-navigation sticky left-1/2 top-0 z-10 flex items-center justify-between border-b border-leading-secondary-1 bg-white-1 py-2 pr-6">
-                <BrandAndLinkedin linkedinSize={25} />
+            <nav className="site-padding sticky left-1/2 top-0 z-10 flex h-mobile-navigation items-center justify-between border-b border-leading-secondary-1 bg-white-1 py-2 pr-6">
+                <BrandAndLinkedin linkedinSize={30} />
 
                 {renderHamburgerOrMenu()}
             </nav>

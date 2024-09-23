@@ -4,7 +4,7 @@ intro: ''
 projectSections:
   - descriptionPosition: bottom
     optionalDescription: ''
-    videoUrl: /public/assets/videos/jolka_animacja_ilustracja_panel.mp4
+    videoUrl: /jolka_animacja_ilustracja_panel.mp4
     imageWidth: 640
     imageHeight: 360
     _template: video

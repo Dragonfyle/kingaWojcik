@@ -1,4 +1,4 @@
-import { forwardRef, useImperativeHandle, useRef, useState } from "react";
+import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
 
@@ -11,13 +11,8 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
     const contentRef = useRef<HTMLDivElement>(null);
     const isScrolling = useRef(false);
     const lastScrollLeft = useRef<number | undefined>(0);
-    const { isPhone } = useDeviceContext();
 
-    function handleRefLoad() {
-        if (contentRef.current) {
-            setItemWidth(contentRef.current.firstElementChild?.clientWidth);
-        }
-    }
+    const { isPhone } = useDeviceContext();
 
     function onScrollEnd(handleScrollEnd: () => void) {
         const scrollObserver = setInterval(() => {
@@ -54,6 +49,10 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
         }
     }
 
+    useEffect(() => {
+        console.log(isPhone);
+    }, [isPhone]);
+
     useImperativeHandle(ref, () => {
         return {
             scrollToNext() {
@@ -73,16 +72,22 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
         };
     });
 
+    useLayoutEffect(() => {
+        if (contentRef.current) {
+            setItemWidth(contentRef.current.firstElementChild?.clientWidth);
+        }
+    }, []);
+
     return (
         <div className="flex flex-col gap-3">
             <div
-                className="scrollbar-none mt-12 flex snap-x flex-nowrap gap-x-12 overflow-x-auto pr-12 l:mt-8 l:pr-[300px]"
+                className="mt-12 flex snap-x snap-mandatory flex-nowrap gap-x-12 overflow-x-auto scrollbar-none l:mt-8 l:pr-[300px]"
                 ref={contentRef}
-                onLoad={handleRefLoad}
                 onScroll={updateActiveItem}>
                 {children}
             </div>
-            <div className="flex justify-center gap-x-4 pt-8">{isPhone && renderIndicatorDots()}</div>
+
+            {isPhone && <div className="flex justify-center gap-x-4 pt-8">{renderIndicatorDots()}</div>}
         </div>
     );
 });

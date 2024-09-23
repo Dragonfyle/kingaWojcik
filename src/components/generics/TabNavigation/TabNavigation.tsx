@@ -1,17 +1,20 @@
-import Button from "../Button/";
+import TabNavigationButton from "./TabNavigationButton/";
 import { TabNavigationProps } from "./TabNavigation.types";
-import * as P from "./TabNavigation.parts";
 
 export default function TabNavigation({ source, activeTab, onClick }: TabNavigationProps) {
     const tabNames = source.map(({ tabName }) => tabName);
 
     function getButtons(tabNames: string[]) {
         return tabNames.map((tabName, idx) => (
-            <Button key={tabName} isActive={activeTab === idx} onClick={() => onClick(idx)}>
-                {source[idx].tabName}
-            </Button>
+            <TabNavigationButton key={tabName} isActive={activeTab === idx} onClick={() => onClick(idx)}>
+                {tabName}
+            </TabNavigationButton>
         ));
     }
 
-    return <P.StyledNavigation>{getButtons(tabNames)}</P.StyledNavigation>;
+    return (
+        <nav className="sticky top-1/2 mb-12 flex h-12 w-full items-start overflow-x-hidden bg-leading-secondary-1">
+            {getButtons(tabNames)}
+        </nav>
+    );
 }

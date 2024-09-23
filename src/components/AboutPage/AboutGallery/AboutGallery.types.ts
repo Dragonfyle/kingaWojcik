@@ -1,7 +1,7 @@
-import { AboutGalleryData } from "$types/AboutGallery.types";
+import { AboutGalleryContent } from "tina/__generated__/types";
 
 interface AboutGalleryProps {
-    source: AboutGalleryData;
+    source: AboutGalleryContent[];
 }
 
 export type { AboutGalleryProps };

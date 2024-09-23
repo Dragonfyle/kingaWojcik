@@ -28,8 +28,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body>
                 <AllContextProvider>
                     <LayoutWrapper>
-                        <Navigation />
-                        <main>{children}</main>
+                        <div>
+                            <Navigation />
+                            <main className="">{children}</main>
+                        </div>
                         <Footer />
                     </LayoutWrapper>
                 </AllContextProvider>

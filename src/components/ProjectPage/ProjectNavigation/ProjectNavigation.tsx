@@ -1,22 +1,35 @@
-import { projectUrlList, findCurrentUrlIndex, handleChangeProject } from "./ProjectNavigation.utils";
-import ProjectNavButtons from "../ProjectNavButtons/";
+"use client";
 
-const MIN_IDX = 0;
-const maxIdx = projectUrlList.length - 1;
+import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
+
+import { useDeviceContext } from "$contexts/DeviceContext";
+
+import ProjectNavButtons from "../ProjectNavButtons/";
+import { fetchProjects, findCurrentProjectIndex, getAdjacentProjects } from "./ProjectNavigation.utils";
 
 export default function ProjectNavigation() {
-    const currentUrlIndex = findCurrentUrlIndex();
-    const nextUrlIndex = (currentUrlIndex + 1) % projectUrlList.length;
-    const previousUrlIndex = currentUrlIndex - 1 < MIN_IDX ? maxIdx : currentUrlIndex - 1;
-    const nextProjectName = projectUrlList[nextUrlIndex].name;
-    const previousProjectName = projectUrlList[previousUrlIndex].name;
+    const [projectData, setProjectData] = useState<{ url: string; title: string }[]>([]);
 
-    return (
+    const { isMobile } = useDeviceContext();
+    const { push } = useRouter();
+    const pathname = usePathname();
+
+    useEffect(() => {
+        fetchProjects().then(setProjectData);
+    }, []);
+
+    const currentProjectIndex = findCurrentProjectIndex(projectData, pathname);
+    const { nextProject, previousProject } = getAdjacentProjects(projectData, currentProjectIndex);
+
+    if (projectData.length === 0) return null;
+
+    return !isMobile ? (
         <ProjectNavButtons
-            onNextProject={() => handleChangeProject(nextUrlIndex)}
-            onPreviousProject={() => handleChangeProject(previousUrlIndex)}
-            nextProjectName={nextProjectName}
-            previousProjectName={previousProjectName}
+            onNextProject={() => push(nextProject.url)}
+            onPreviousProject={() => push(previousProject.url)}
+            nextProjectName={nextProject.title}
+            previousProjectName={previousProject.title}
         />
-    );
+    ) : null;
 }

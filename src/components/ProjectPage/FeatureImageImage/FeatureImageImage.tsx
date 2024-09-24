@@ -28,7 +28,7 @@ export default function FeatureImageImage({ featureData }: FeatureImageImageProp
     const isRightTextVisible = hasRightHeader || hasRightDescription;
 
     return (
-        <div className={`${featureGridUtilities}`}>
+        <section className={`${featureGridUtilities}`}>
             <div className="flex flex-col flex-nowrap">
                 <FeatureSliceImage src={imageLeft} width={imageWidth} height={imageHeight} />
 
@@ -51,6 +51,6 @@ export default function FeatureImageImage({ featureData }: FeatureImageImageProp
                     />
                 )}
             </div>
-        </div>
+        </section>
     );
 }

@@ -11,9 +11,9 @@ export default function FeatureTextImage({ featureData }: FeatureTextImageProps)
     const featureGridUtilities = widthMap[leftColumnWidth];
 
     return (
-        <div className={`${featureGridUtilities}`}>
+        <section className={`${featureGridUtilities}`}>
             <FeatureSliceText header={header} description={description} />
             <FeatureSliceImage src={image} width={imageWidth} height={imageHeight} />
-        </div>
+        </section>
     );
 }

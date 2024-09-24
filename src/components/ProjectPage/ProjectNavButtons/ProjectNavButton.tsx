@@ -10,7 +10,7 @@ export default function ProjectNavButtons({
     previousProjectName,
 }: ProjectNavigationProps) {
     return (
-        <div className="left-[1%] right-[1%] top-1/2 flex -translate-y-1/2 transform justify-between">
+        <div className="fixed left-[1%] right-[1%] top-1/2 flex -translate-y-1/2 transform justify-between">
             <PreviousIcon onClick={onPreviousProject} tooltipValue={previousProjectName} />
             <NextIcon onClick={onNextProject} tooltipValue={nextProjectName} />
         </div>

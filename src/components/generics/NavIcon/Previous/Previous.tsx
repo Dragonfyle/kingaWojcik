@@ -19,8 +19,8 @@ export default function PreviousIcon({ onClick, tooltipValue, isDisabled = false
             />
 
             {withTooltip && (
-                <div className="absolute -top-full right-0">
-                    <p className="group-hover-visible text-white whitespace-nowrap bg-gray-300 px-2 py-1">
+                <div className="absolute -top-full left-0">
+                    <p className="text-white whitespace-nowrap bg-gray-300 px-2 py-1 group-hover-visible">
                         {tooltipValue}
                     </p>
                 </div>

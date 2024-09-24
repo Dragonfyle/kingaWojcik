@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
+import { forwardRef, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
 
@@ -11,6 +11,8 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
     const contentRef = useRef<HTMLDivElement>(null);
     const isScrolling = useRef(false);
     const lastScrollLeft = useRef<number | undefined>(0);
+    const isFirstIndex = useRef(true);
+    const isLastIndex = useRef(false);
 
     const { isPhone } = useDeviceContext();
 
@@ -46,12 +48,11 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
     function updateActiveItem() {
         if (contentRef.current && itemWidth) {
             setActiveItem(interpolateActiveIndex(contentRef.current?.scrollLeft));
+            isFirstIndex.current = contentRef.current?.scrollLeft === 0;
+            isLastIndex.current =
+                contentRef.current?.scrollLeft === contentRef.current?.scrollWidth - window.innerWidth;
         }
     }
-
-    useEffect(() => {
-        console.log(isPhone);
-    }, [isPhone]);
 
     useImperativeHandle(ref, () => {
         return {

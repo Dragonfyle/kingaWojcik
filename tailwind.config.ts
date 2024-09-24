@@ -53,14 +53,12 @@ const config: Config = {
             },
             maxWidth: {
                 "site-max": "2560px",
-                "project-max": "1600px",
-                "project-max-s": "1200px",
+                "project-max": "1200px",
+                "project-max-l": "1600px",
                 "project-panel-item": "550px",
             },
             width: {
                 "project-panel-item": "550px",
-                "feature-image": "1140px",
-                "feature-image-s": "900px",
                 "30": "30%",
                 "40": "40%",
                 "50": "50%",
@@ -68,21 +66,19 @@ const config: Config = {
                 "70": "70%",
             },
             height: {
-                "mobile-navigation": "var(--mobile-navigation-height)",
+                navigation: "var(--navigation-height)",
                 "project-panel-item": "500px",
                 "project-section": "850px",
                 "project-section-s": "700px",
             },
             inset: {
-                "mobile-navigation": "var(--mobile-navigation-height)",
+                navigation: "var(--navigation-height)",
             },
             fontWeight: defaultTheme.fontWeight,
             borderRadius: defaultTheme.borderRadius,
             fontSize: defaultTheme.fontSize,
             aspectRatio: {
                 hamburger: "1.45/1",
-                "feature-image": "1140/803",
-                "feature-slice-image": "1140/803",
             },
             screens: {
                 xs: `${SIZE.XS}px`,
@@ -119,7 +115,7 @@ const config: Config = {
 
             addBase({
                 ":root": {
-                    "--mobile-navigation-height": "50px",
+                    "--navigation-height": "50px",
                 },
             });
             addUtilities({

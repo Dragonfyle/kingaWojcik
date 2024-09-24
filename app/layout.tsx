@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { Navigation as NavigationType } from "tina/__generated__/types";
+import client from "tina/__generated__/client";
 
 import AllContextProvider from "$contexts/AllContextProvider";
 import Navigation from "$components/Navigation/";
@@ -12,7 +14,16 @@ export const metadata: Metadata = {
     description: "Portfolio projektów graficznych",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+    async function fetchNavigation() {
+        const navigationResponse = await client.queries.navigationConnection();
+        const navigation = navigationResponse.data?.navigationConnection?.edges?.map((edge) => edge?.node);
+
+        return navigation as NavigationType[];
+    }
+
+    const navigationItems = await fetchNavigation();
+
     return (
         <html lang="pl">
             <head>
@@ -29,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <AllContextProvider>
                     <LayoutWrapper>
                         <div>
-                            <Navigation />
+                            <Navigation navigationItems={navigationItems} />
                             <main className="">{children}</main>
                         </div>
                         <Footer />

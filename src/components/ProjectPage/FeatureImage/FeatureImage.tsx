@@ -7,7 +7,7 @@ export default function FeatureImage({ featureData }: FeatureImageProps) {
     const { header, optionalDescription, descriptionPosition, imageHeight, imageWidth } = featureData;
 
     return (
-        <section className="flex flex-col l:w-feature-image-s xl:w-feature-image">
+        <section className="flex w-full flex-col">
             <Image
                 alt="grafika prezentująca projekt"
                 width={imageWidth}

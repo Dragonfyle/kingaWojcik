@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { Navigation as NavigationType } from "tina/__generated__/types";
 
 import HamburgerIcon from "./HamburgerIcon/";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import BrandAndLinkedin from "../BrandAndLinkedin/BrandAndLinkedin";
 
-export default function MobileNavigation() {
+export default function MobileNavigation({ navigationItems }: { navigationItems: NavigationType[] }) {
     const [isExpanded, setIsExpanded] = useState(false);
 
     function handleHamburgerClick() {
@@ -19,7 +20,11 @@ export default function MobileNavigation() {
 
     function renderHamburgerOrMenu() {
         return isExpanded ? (
-            <MobileMenu onItemClick={handleMenuItemTouch} onClose={handleHamburgerClick} />
+            <MobileMenu
+                navigationItems={navigationItems}
+                onItemClick={handleMenuItemTouch}
+                onClose={handleHamburgerClick}
+            />
         ) : (
             <HamburgerIcon onClick={handleHamburgerClick} />
         );
@@ -27,7 +32,7 @@ export default function MobileNavigation() {
 
     return (
         <>
-            <nav className="site-padding sticky left-1/2 top-0 z-10 flex h-mobile-navigation items-center justify-between border-b border-leading-secondary-1 bg-white-1 py-2 pr-6">
+            <nav className="h-navigation sticky left-1/2 top-0 z-10 flex items-center justify-between border-b border-leading-secondary-1 bg-white-1 py-2 pr-6 site-padding">
                 <BrandAndLinkedin linkedinSize={30} />
 
                 {renderHamburgerOrMenu()}

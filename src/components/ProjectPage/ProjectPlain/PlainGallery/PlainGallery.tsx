@@ -49,7 +49,7 @@ export default function PlainGallery({ projectData }: PlainGalleryProps) {
     }
 
     return (
-        <div className="flex max-w-project-max-s flex-col items-center justify-center gap-12 p-4 pb-project-bottom s:p-8 xxl:max-w-project-max">
+        <div className="xxl:max-w-project-max-l flex max-w-project-max flex-col items-center justify-center gap-12 p-4 pb-project-bottom s:p-8">
             {/* TODO: find a way to fix this */}
             {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
             {renderSections(projectSections as any)}

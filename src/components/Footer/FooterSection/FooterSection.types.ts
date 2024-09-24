@@ -1,7 +1,6 @@
 interface FooterSectionProps {
     sectionName: string;
-    listItems: string[];
-    links: string[];
+    items: { label: string; url?: string }[];
 }
 
 export type { FooterSectionProps };

@@ -23,7 +23,7 @@ export default async function AboutPage() {
 
     return (
         <div className="flex justify-center">
-            <div className="grid-rows-[repeat(2, auto)] mx-5 mt-6 grid max-w-project-max-s gap-24 s:mx-12 l:mt-12 l:grid-cols-2 l:grid-rows-[auto] xxl:max-w-project-max">
+            <div className="grid-rows-[repeat(2, auto)] xxl:max-w-project-max-l mx-5 mt-6 grid max-w-project-max gap-24 s:mx-12 l:mt-12 l:grid-cols-2 l:grid-rows-[auto]">
                 <AboutAuthor source={aboutAuthorData} />
                 <AboutGallery source={aboutGalleryData} />
             </div>

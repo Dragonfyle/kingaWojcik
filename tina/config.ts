@@ -25,6 +25,38 @@ export default defineConfig({
     schema: {
         collections: [
             {
+                name: "email",
+                label: "Email",
+                path: "content/email",
+                fields: [
+                    {
+                        type: "string",
+                        name: "email",
+                        label: "Email",
+                        required: true,
+                    },
+                ],
+            },
+            {
+                name: "navigation",
+                label: "Nawigacja",
+                path: "content/navigation",
+                fields: [
+                    {
+                        type: "string",
+                        name: "label",
+                        label: "Label",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "url",
+                        label: "URL",
+                        required: true,
+                    },
+                ],
+            },
+            {
                 name: "about",
                 label: "O mnie - opis",
                 path: "content/aboutauthor",

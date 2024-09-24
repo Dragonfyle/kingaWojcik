@@ -12,5 +12,5 @@ export default async function Illustrations3() {
 
     const projectData = (await fetchData()).data.illustrations;
 
-    return projectData ? <ProjectPlain projectData={projectData} /> : <div>Loading...</div>;
+    return <ProjectPlain projectData={projectData} />;
 }

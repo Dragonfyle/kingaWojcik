@@ -12,5 +12,5 @@ export default async function Branding2() {
 
     const projectData = (await fetchData()).data.branding;
 
-    return projectData ? <ProjectPlain projectData={projectData} /> : <div>Loading...</div>;
+    return <ProjectPlain projectData={projectData} />;
 }

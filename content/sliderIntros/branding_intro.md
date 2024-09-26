@@ -1,8 +1,9 @@
 ---
 title: Projekty brandingowe
 description: >
-  Ważne jest zrozumienie potrzeb marki oraz oczekiwań klienta. Rozmowa lub
-  wpełniony brief pomaga mi określić odpowiedni kierunek działań.
+  Logo? To nie ładny znaczek – to symbol, który przekazuje najważniejsze
+  wartości marki. Pracuję nad tym, by każdy kształt, kolor i układ miały swój
+  cel. Twoje logo ma być czymś więcej niż grafiką – ma to być znak, który mówi
+  „zaufaj nam”.
 ---
-
 

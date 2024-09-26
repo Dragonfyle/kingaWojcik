@@ -1,8 +1,8 @@
 ---
 title: Moje publikacje
 description: >
-  Lubię dzielić się spostrzeżeniami, więc tutaj znajdziesz moje przemyślenia
-  dotyczące m.in. typografii, kompozycji czy doboru kolorów.
+  Lubię dzielić się wiedzą o projektowaniu – zwłaszcza jeśli chodzi o
+  typografię, kompozycję i kolory. To często moje własne, wygrzebane z czeluści
+  umysłu, przemyślenia. Ale nierzadko podpieram się też pracami naukowymi.
 ---
-
 

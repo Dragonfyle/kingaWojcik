@@ -60,6 +60,7 @@ export default defineConfig({
                 name: "about",
                 label: "O mnie - opis",
                 path: "content/aboutauthor",
+                format: 'md',
                 templates: [
                     {
                         name: "aboutAuthor",
@@ -91,6 +92,7 @@ export default defineConfig({
                             },
                             {
                                 type: "rich-text",
+                                isBody: true,
                                 name: "description",
                                 label: "Opis",
                                 required: true,

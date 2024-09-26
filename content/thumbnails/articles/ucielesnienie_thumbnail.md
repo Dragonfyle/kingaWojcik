@@ -1,5 +1,5 @@
 ---
-thumbnail: /assets/img/articles/ucielesnienie-kompozycja.jpg
+thumbnail: /assets/img/articles/kompoz.jpg
 title: Kompozycja w projektowaniu graficznym
 description: |
   Czym jest ucieleśnienie i jak wpływa na kompozycję projektu

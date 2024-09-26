@@ -9,6 +9,7 @@ tabItems:
     description2: >
       Zwycięski projekt w konkursie na stworzenie grafiki na elektryczny ciągnik
       siodłowy Renault
+    description3: ''
   - title1: '10.2023'
     title2: Agora
     description1: |
@@ -16,5 +17,6 @@ tabItems:
     description2: >
       Plakat wyróżniony w konkursie z okazji rocznicy odzyskania niepodległości,
       zakwalifikowany do wystawy pokonkursowej
+    description3: ''
 ---
 

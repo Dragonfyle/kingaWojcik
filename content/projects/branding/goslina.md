@@ -15,8 +15,8 @@ projectSections:
       pośrodku postać pokazuje możliwość aktywnego spędzania czasu i płynącą z
       tego radość. Całość przypomina mapę/plan terenu, na którym różnymi
       kolorami zaznaczono poszczególne obszary: (lasy, parki, rzeką, zabudowę
-      miejską). Żywe, kontrastowe kolory podkreślają nowoczesność. Skośne linie
-      i kąty ostre nadają dynamiki i ukazują dążenie gminy do rozwoju i zmian.
+      miejską) Żywe, kontrastowe kolory podkreślają nowoczesność. Skośne linie i
+      kąty ostre nadają dynamiki i ukazują dążenie gminy do rozwoju i zmian.
       Kolorowe elementy logo można w ciekawy sposób wykorzystać jako
       charakterystyczną, wyróżniającą część identyfikacji wizualnej gminy.
     _template: text

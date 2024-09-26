@@ -1,5 +1,5 @@
 ---
-thumbnail: /assets/img/articles/fonty_pisankowe.jpg
+thumbnail: /assets/img/articles/script-fonts.jpg
 title: Fonty pisankowe
 description: |
   Wielkanocny artykuł typograficzny :)

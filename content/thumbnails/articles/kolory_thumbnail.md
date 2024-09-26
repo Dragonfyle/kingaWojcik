@@ -1,5 +1,5 @@
 ---
-thumbnail: /assets/img/articles/projektowanie_stron_internetowych.jpg
+thumbnail: /assets/img/articles/colors.jpg
 title: Paleta kolorów na stronę internetową
 description: |
   Jak wybrać odpowiednią paletę kolorów na stronę internetową

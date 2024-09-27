@@ -60,7 +60,7 @@ export default defineConfig({
                 name: "about",
                 label: "O mnie - opis",
                 path: "content/aboutauthor",
-                format: 'md',
+                format: "md",
                 templates: [
                     {
                         name: "aboutAuthor",
@@ -105,6 +105,7 @@ export default defineConfig({
                 name: "aboutGalleryContent",
                 label: "O mnie - taby",
                 path: "content/aboutgallery",
+                format: "md",
                 fields: [
                     {
                         type: "string",
@@ -141,18 +142,21 @@ export default defineConfig({
                                 type: "rich-text",
                                 name: "description1",
                                 label: "Opis 1",
+                                isBody: true,
                                 required: true,
                             },
                             {
                                 type: "rich-text",
                                 name: "description2",
                                 label: "Opis 2",
+                                isBody: true,
                                 required: true,
                             },
                             {
                                 type: "rich-text",
                                 name: "description3",
                                 label: "Opis 3",
+                                isBody: true,
                             },
                         ],
                     },
@@ -162,6 +166,7 @@ export default defineConfig({
                 name: "illustrations",
                 label: "Ilustracje",
                 path: "content/projects/illustrations",
+                format: "md",
                 fields: [
                     {
                         type: "string",
@@ -172,6 +177,7 @@ export default defineConfig({
                         type: "rich-text",
                         name: "intro",
                         label: "Intro",
+                        isBody: true,
                     },
                     {
                         type: "object",
@@ -192,6 +198,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
+                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -216,6 +223,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
+                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -257,6 +265,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
+                                        isBody: true,
                                     },
                                     {
                                         type: "string",
@@ -308,12 +317,14 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "descriptionLeft",
                                         label: "Opis lewy",
+                                        isBody: true,
                                         required: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "descriptionRight",
                                         label: "Opis prawy",
+                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -350,11 +361,13 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescriptionLeft",
                                         label: "Opis lewy",
+                                        isBody: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "optionalDescriptionRight",
                                         label: "Opis prawy",
+                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -402,6 +415,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
+                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -444,6 +458,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
+                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -474,6 +489,7 @@ export default defineConfig({
                 name: "branding",
                 label: "Projekty brandingowe",
                 path: "content/projects/branding",
+                format: "md",
                 fields: [
                     {
                         type: "string",
@@ -504,6 +520,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
+                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -528,6 +545,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
+                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -569,6 +587,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
+                                        isBody: true,
                                     },
                                     {
                                         type: "string",
@@ -620,12 +639,14 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "descriptionLeft",
                                         label: "Opis lewy",
+                                        isBody: true,
                                         required: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "descriptionRight",
                                         label: "Opis prawy",
+                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -662,11 +683,13 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescriptionLeft",
                                         label: "Opis lewy",
+                                        isBody: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "optionalDescriptionRight",
                                         label: "Opis prawy",
+                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -714,6 +737,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
+                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -763,6 +787,7 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
+                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -793,6 +818,7 @@ export default defineConfig({
                 name: "illustrationsThumbnails",
                 label: "Miniaturki ilustracji",
                 path: "content/thumbnails/illustrations",
+                format: "md",
                 fields: [
                     {
                         type: "image",
@@ -824,6 +850,7 @@ export default defineConfig({
                 name: "brandingThumbnails",
                 label: "Miniaturki brandingowe",
                 path: "content/thumbnails/branding",
+                format: "md",
                 fields: [
                     {
                         type: "image",
@@ -841,6 +868,7 @@ export default defineConfig({
                         type: "rich-text",
                         name: "description",
                         label: "Opis",
+                        isBody: true,
                         required: true,
                     },
                     {
@@ -855,6 +883,7 @@ export default defineConfig({
                 name: "articlesThumbnails",
                 label: "Miniaturki artykułów",
                 path: "content/thumbnails/articles",
+                format: "md",
                 fields: [
                     {
                         type: "image",
@@ -872,6 +901,7 @@ export default defineConfig({
                         type: "rich-text",
                         name: "description",
                         label: "Opis",
+                        isBody: true,
                         required: true,
                     },
                     {
@@ -886,6 +916,7 @@ export default defineConfig({
                 name: "sliderIntros",
                 label: "Intra sliderów",
                 path: "content/sliderIntros",
+                format: "md",
                 fields: [
                     {
                         type: "string",
@@ -897,6 +928,7 @@ export default defineConfig({
                         type: "rich-text",
                         name: "description",
                         label: "Opis",
+                        isBody: true,
                         required: true,
                     },
                 ],

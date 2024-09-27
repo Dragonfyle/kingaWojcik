@@ -13,7 +13,7 @@ export default function AboutAuthor({ source }: AboutSectionProps) {
                 <h1 className="text-xl font-bold uppercase">Kinga Ewa Wójcik</h1>
             </header>
 
-            <div className="flex">
+            <div className="flex flex-col gap-6">
                 <TinaMarkdown content={source.description} />
             </div>
         </section>

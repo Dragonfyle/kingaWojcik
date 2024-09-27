@@ -3,7 +3,7 @@ title: ''
 intro: ''
 projectSections:
   - leftColumnWidth: '70'
-    descriptionPosition: bottom
+    descriptionPosition: top
     header: >-
       Zwycięski projekt w konkursie Renault Trucks Design Contest – grafika na
       ciężarówkę Renault E-Tech T

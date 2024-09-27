@@ -7,8 +7,8 @@ tabItems:
     description1: |
       Zwycięstwo w międzynarodowym konkursie Renault Trucks Design Contest
     description2: >
-      Zwycięski projekt w konkursie na stworzenie grafiki na elektryczny ciągnik
-      siodłowy Renault
+      **Zwycięski projekt w konkursie** na stworzenie grafiki na elektryczny
+      ciągnik siodłowy Renault
     description3: ''
   - title1: '10.2023'
     title2: Agora

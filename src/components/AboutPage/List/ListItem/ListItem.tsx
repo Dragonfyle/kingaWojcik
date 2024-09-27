@@ -11,9 +11,15 @@ export default function ListItem({ source }: ListItemProps) {
             </div>
 
             <div className="flex flex-col pl-[5%] *:text-s m:*:text-m">
-                {source.description1 && <TinaMarkdown content={source.description1} />}
-                {source.description2 && <TinaMarkdown content={source.description2} />}
-                {source.description3 && <TinaMarkdown content={source.description3} />}
+                <div className="flex flex-col gap-4">
+                    {source.description1 && <TinaMarkdown content={source.description1} />}
+                </div>
+                <div className="flex flex-col gap-4">
+                    {source.description2 && <TinaMarkdown content={source.description2} />}
+                </div>
+                <div className="flex flex-col gap-4">
+                    {source.description3 && <TinaMarkdown content={source.description3} />}
+                </div>
             </div>
         </div>
     );

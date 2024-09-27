@@ -14,7 +14,7 @@ export function ColumnDescription({ header, description, descriptionPosition }: 
             {hasHeader && <h3 className="text-2xl font-bold leading-tight">{header}</h3>}
 
             {hasDescription && (
-                <div className="mt-16 flex flex-col">
+                <div className="flex flex-col gap-4">
                     <TinaMarkdown content={description} />
                 </div>
             )}

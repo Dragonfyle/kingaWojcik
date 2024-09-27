@@ -13,7 +13,7 @@ export default function FeatureTextImage({ featureData }: FeatureTextImageProps)
     return (
         <section className={`${featureGridUtilities}`}>
             <FeatureSliceText header={header} description={description} />
-            <FeatureSliceImage src={image} width={imageWidth} height={imageHeight} />
+            <FeatureSliceImage src={image} width={imageWidth} height={imageHeight} defaultOrder={1} />
         </section>
     );
 }

@@ -1,7 +1,7 @@
-import { AboutSectionData } from "$data/aboutSectionData";
+import { AboutQuery } from "tina/__generated__/types";
 
 interface AboutSectionProps {
-    source: AboutSectionData;
+    source: AboutQuery["about"];
 }
 
 export type { AboutSectionProps };

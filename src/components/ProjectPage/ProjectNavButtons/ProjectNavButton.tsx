@@ -1,9 +1,7 @@
 import NextIcon from "$components/generics/NavIcon/Next/Next";
 import PreviousIcon from "$components/generics/NavIcon/Previous/Previous";
-import { useThemeContext } from "$contexts/ThemeContext";
 
 import { ProjectNavigationProps } from "../ProjectNavigation/ProjectNavigation.types";
-import * as P from "./ProjectNavButton.parts";
 
 export default function ProjectNavButtons({
     onNextProject,
@@ -11,24 +9,10 @@ export default function ProjectNavButtons({
     nextProjectName,
     previousProjectName,
 }: ProjectNavigationProps) {
-    const {
-        theme: { colors },
-    } = useThemeContext();
-
     return (
-        <P.ButtonsWrapper>
-            <PreviousIcon
-                $size="40px"
-                $color={colors.leading.secondary[3]}
-                onClick={onPreviousProject}
-                tooltipValue={previousProjectName}
-            />
-            <NextIcon
-                $size="90px"
-                $color={colors.leading.secondary[3]}
-                onClick={onNextProject}
-                tooltipValue={nextProjectName}
-            />
-        </P.ButtonsWrapper>
+        <div className="fixed left-[1%] right-[1%] top-1/2 flex -translate-y-1/2 transform justify-between">
+            <PreviousIcon onClick={onPreviousProject} tooltipValue={previousProjectName} />
+            <NextIcon onClick={onNextProject} tooltipValue={nextProjectName} />
+        </div>
     );
 }

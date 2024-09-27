@@ -1,22 +1,13 @@
+"use client";
+
 import { useState } from "react";
+import { Navigation as NavigationType } from "tina/__generated__/types";
 
-import Flexbox from "$generics/Flexbox/";
-import KingaBrand from "$generics/KingaBrand/";
-import LinkedinIcon from "$generics/LinkedinIcon/";
-import { useThemeContext } from "$contexts/ThemeContext";
-import navigationItems from "$data/navigationData";
-import Divider from "$components/generics/Divider/";
-import MenuCross from "$components/generics/MenuCrossIcon/";
-
-import NavigationHeader from "./NavigationHeader/";
-import MobileNavigationItem from "./MobileNavigationItem/";
 import HamburgerIcon from "./HamburgerIcon/";
-import * as P from "./MobileNavigation.parts";
+import MobileMenu from "./MobileMenu/MobileMenu";
+import BrandAndLinkedin from "../BrandAndLinkedin/BrandAndLinkedin";
 
-export default function MobileNavigation() {
-    const {
-        theme: { colors },
-    } = useThemeContext();
+export default function MobileNavigation({ navigationItems }: { navigationItems: NavigationType[] }) {
     const [isExpanded, setIsExpanded] = useState(false);
 
     function handleHamburgerClick() {
@@ -27,55 +18,25 @@ export default function MobileNavigation() {
         setIsExpanded(false);
     }
 
-    function renderItems(source: typeof navigationItems) {
-        return (
-            <>
-                {source.map(({ label, link }) => (
-                    <MobileNavigationItem key={label} to={link} onClick={handleMenuItemTouch}>
-                        {label}
-                    </MobileNavigationItem>
-                ))}
-            </>
+    function renderHamburgerOrMenu() {
+        return isExpanded ? (
+            <MobileMenu
+                navigationItems={navigationItems}
+                onItemClick={handleMenuItemTouch}
+                onClose={handleHamburgerClick}
+            />
+        ) : (
+            <HamburgerIcon onClick={handleHamburgerClick} />
         );
     }
 
     return (
         <>
-            <P.NavigationWrapper>
-                <Flexbox $width="auto">
-                    <LinkedinIcon size={25} />
-                    <KingaBrand onClick={handleMenuItemTouch} />
-                </Flexbox>
+            <nav className="h-navigation sticky left-1/2 top-0 z-10 flex items-center justify-between border-b border-leading-secondary-1 bg-white-1 py-2 pr-6 site-padding">
+                <BrandAndLinkedin linkedinSize={30} />
 
-                {!isExpanded && (
-                    <HamburgerIcon
-                        size="35px"
-                        fgColor={colors.leading.secondary[1]}
-                        bgColor={colors.leading.main[2]}
-                        onClick={handleHamburgerClick}
-                    />
-                )}
-            </P.NavigationWrapper>
-
-            {isExpanded && (
-                <P.Menu>
-                    <Flexbox $width="90%" $justify="flex-end">
-                        <MenuCross
-                            size="35px"
-                            fgColor={colors.leading.main[2]}
-                            bgColor={colors.supplementary[3]}
-                            onClick={handleMenuItemTouch}
-                        />
-                    </Flexbox>
-
-                    <Flexbox $direction="column" $width="75%" $rowGap="10px">
-                        <NavigationHeader />
-                        <Divider height={3} width="100%" mTop={0} mBot={20} color={colors.supplementary[3]} />
-                        {renderItems(navigationItems)}
-                        <Divider height={3} width="100%" mTop={70} mBot={0} color={colors.supplementary[3]} />
-                    </Flexbox>
-                </P.Menu>
-            )}
+                {renderHamburgerOrMenu()}
+            </nav>
         </>
     );
 }

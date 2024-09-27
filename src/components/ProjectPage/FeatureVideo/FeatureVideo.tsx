@@ -1,29 +1,19 @@
-import { FeatureVideoContent } from "$types/Project.types";
 import { ColumnDescription } from "../ColumnDescription/";
-import { FeatureVideoProps, descriptionPositionMap } from "../Feature.types";
+import { FeatureVideoProps } from "./FeatureVideo.types";
 
-import * as P from "./FeatureVideo.parts";
-
-export default function FeatureVideo({
-    source,
-    withH1 = true,
-    withDescription = false,
-    descriptionPosition = "bottom",
-}: FeatureVideoProps) {
-    const content = source.content as FeatureVideoContent;
+export default function FeatureVideo({ featureData }: FeatureVideoProps) {
+    const { header, optionalDescription, descriptionPosition } = featureData;
 
     return (
-        <P.FeatureWrapper>
+        <section className="flex flex-col">
             <ColumnDescription
-                withH1={withH1}
-                h1={content.h1}
-                withDescription={withDescription}
-                description={content.description}
-                order={descriptionPositionMap[descriptionPosition]}
+                header={header}
+                description={optionalDescription}
+                descriptionPosition={descriptionPosition as "top" | "bottom"}
             />
-            <video controls>
-                <source src={content.video} type="video/mp4" />
+            <video className="object-contain" controls>
+                <source src={featureData.videoUrl || ""} type="video/mp4" />
             </video>
-        </P.FeatureWrapper>
+        </section>
     );
 }

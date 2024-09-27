@@ -1,26 +1,16 @@
-import useScrollToTop from "$hooks/useScrollToTop";
-import Flexbox from "$generics/Flexbox/";
-
 import PlainGallery from "./PlainGallery/";
 import ProjectIntroduction from "../ProjectIntroduction/";
-import ProjectNavigation from "../ProjectNavigation/";
-import { ProjecPlainProps } from "./ProjectPlain.types";
-import { useDeviceContext } from "$contexts/DeviceContext";
-import * as P from "./ProjectPlain.parts";
+import { ProjectPlainProps } from "./ProjectPlain.types";
 
-export default function ProjectPlain({ source }: ProjecPlainProps) {
-    useScrollToTop();
-    const { isMobile } = useDeviceContext();
-
-    const withDescription = source.intro !== "";
+export default function ProjectPlain({ projectData }: ProjectPlainProps) {
+    const hasTitle = !!projectData.title;
+    const hasIntro = projectData.intro.children.length > 0;
+    const shouldRenderIntro = hasTitle || hasIntro;
 
     return (
-        <Flexbox $justify="center">
-            <P.ContentWrapper>
-                <ProjectIntroduction source={source} withDescription={withDescription} />
-                <PlainGallery source={source} />
-                {!isMobile && <ProjectNavigation />}
-            </P.ContentWrapper>
-        </Flexbox>
+        <div className="m-auto flex max-w-project-max-s flex-col items-center justify-center l:max-w-project-max">
+            {shouldRenderIntro && <ProjectIntroduction projectData={projectData} />}
+            <PlainGallery projectData={projectData} />
+        </div>
     );
 }

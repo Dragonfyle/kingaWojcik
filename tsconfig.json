@@ -2,42 +2,86 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
+    "esModuleInterop": true,
     "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "$components/*": ["./src/components/*"],
-      "$generics/*": ["./src/components/generics/*"],
-      "$data/*": ["./src/data/*"],
-      "$hooks/*": ["./src/hooks/*"],
-      "$contexts/*": ["./src/contexts/*"],
-      "$pages/*": ["./src/pages/*"],
-      "$utils/*": ["./src/utils/*"],
-      "$img/*": ["./src/assets/img/*"],
-      "$videos/*": ["./src/assets/videos/*"],
-      "$styles/*": ["./src/styles/*"],
-      "$constants/*": ["./src/constants/*"],
-      "$assets/*": ["./src/assets/*"],
-      "$types/*": ["./src/types/*"],
-    
-    },
-
-
-    /* Linting */
+    "jsx": "preserve",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "$components/*": [
+        "./src/components/*"
+      ],
+      "$generics/*": [
+        "./src/components/generics/*"
+      ],
+      "$data/*": [
+        "./src/data/*"
+      ],
+      "$hooks/*": [
+        "./src/hooks/*"
+      ],
+      "$contexts/*": [
+        "./src/contexts/*"
+      ],
+      "$pages/*": [
+        "./src/pages/*"
+      ],
+      "$utils/*": [
+        "./src/utils/*"
+      ],
+      "$img/*": [
+        "./src/assets/img/*"
+      ],
+      "$videos/*": [
+        "./src/assets/videos/*"
+      ],
+      "$styles/*": [
+        "./src/styles/*"
+      ],
+      "$constants/*": [
+        "./src/constants/*"
+      ],
+      "$assets/*": [
+        "./src/assets/*"
+      ],
+      "$types/*": [
+        "./src/types/*"
+      ],
+      "./app/*": [
+        "./src/*"
+      ]
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "./src",
+    "./app",
+    "./dist/types/**/*.ts",
+    "./next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
 }

@@ -1,23 +1,20 @@
-import navigationItems from "$data/navigationData";
-import KingaBrand from "$generics/KingaBrand/";
-import Flexbox from "$generics/Flexbox/";
+import { Navigation as NavigationType } from "tina/__generated__/types";
 import NavigationItem from "$components/Navigation/NavigationItem/";
-import LinkedinIcon from "$generics/LinkedinIcon/";
 
 import AboutMeItem from "../NavigationItem/AboutMeItem/";
-import * as P from "./DesktopNavigation.parts";
+import BrandAndLinkedin from "../BrandAndLinkedin/BrandAndLinkedin";
 
-export default function Navigation() {
-    function renderItems(source: typeof navigationItems) {
+export default function Navigation({ navigationItems }: { navigationItems: NavigationType[] }) {
+    function renderItems(source: NavigationType[]) {
         return (
             <>
-                {source.map(({ label, link }) => {
+                {source.map(({ label, url }) => {
                     return label === "O mnie" ? (
-                        <AboutMeItem key={label} to={link}>
+                        <AboutMeItem key={label} to={url}>
                             {label}
                         </AboutMeItem>
                     ) : (
-                        <NavigationItem key={label} to={link}>
+                        <NavigationItem key={label} to={url}>
                             {label}
                         </NavigationItem>
                     );
@@ -27,14 +24,12 @@ export default function Navigation() {
     }
 
     return (
-        <P.NavigationWrapper>
-            <P.ListWrapper>
-                <Flexbox $width="auto">
-                    <LinkedinIcon size={25} />
-                    <KingaBrand />
-                </Flexbox>
+        <nav className="h-navigation sticky top-0 z-10 flex border-b border-leading-secondary-1 bg-white-1 site-padding xxl:justify-start">
+            <ul className="xl:w-78% w-90% flex h-full justify-start gap-8">
+                <BrandAndLinkedin linkedinSize={30} />
+
                 {renderItems(navigationItems)}
-            </P.ListWrapper>
-        </P.NavigationWrapper>
+            </ul>
+        </nav>
     );
 }

@@ -1,1 +1,0 @@
-export { CopiedConfirmation } from "./CopiedConfirmation";

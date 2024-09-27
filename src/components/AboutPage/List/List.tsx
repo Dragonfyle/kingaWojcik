@@ -1,23 +1,20 @@
-import { TabContent } from "$types/AboutGallery.types";
-import Text from "$generics/Text/Text";
+import { AboutGalleryContent } from "tina/__generated__/types";
 
 import ListItem from "./ListItem/ListItem";
 import { ListProps } from "./List.types";
-import * as P from "./List.parts";
 
 export default function List({ source }: ListProps) {
-    function renderList(source: TabContent) {
-        return source.listContent.map((item) => <ListItem key={item.header[1]} source={item} />);
+    function renderList(source: AboutGalleryContent) {
+        return source.tabItems.map((item) => <ListItem key={item.title1} source={item} />);
     }
 
     return (
-        <P.ListWrapper>
-            <P.StyledFlexbox $width="100%" $justify="center">
-                <Text uppercase size="2xl" tag="h1">
-                    {source.h1}
-                </Text>
-            </P.StyledFlexbox>
-            <P.RightColumnWrapper>{renderList(source)}</P.RightColumnWrapper>
-        </P.ListWrapper>
+        <section className="flex flex-col items-center gap-12">
+            <div className="flex w-full justify-start border-b-2 border-leading-secondary-1">
+                <h1 className="text-2xl uppercase">{source.header}</h1>
+            </div>
+
+            <div className="flex w-full flex-col justify-center gap-y-8 pr-[1%] xxl:pr-[5%]">{renderList(source)}</div>
+        </section>
     );
 }

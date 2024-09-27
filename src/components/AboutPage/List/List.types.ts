@@ -1,7 +1,7 @@
-import { TabContent } from "$types/AboutGallery.types";
+import { AboutGalleryContent } from "tina/__generated__/types";
 
 interface ListProps {
-    source: TabContent;
+    source: AboutGalleryContent;
 }
 
 export type { ListProps };

@@ -1,9 +1,9 @@
+import { Maybe } from "tina/__generated__/types";
+
 interface ColumnDescriptionProps {
-    withH1: boolean;
-    h1?: string;
-    withDescription: boolean;
-    order: -1 | 1;
-    description?: string | undefined;
+    header?: Maybe<string> | undefined;
+    description?: any;
+    descriptionPosition: "top" | "bottom";
 }
 
 export type { ColumnDescriptionProps };

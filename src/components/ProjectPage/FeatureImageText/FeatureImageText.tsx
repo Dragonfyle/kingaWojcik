@@ -1,30 +1,18 @@
-import { FeatureTextImageContent } from "$types/Project.types";
-import Flexbox from "$generics/Flexbox/";
-import Text from "$generics/Text/";
+import { ColumnWidth } from "../Feature.types";
+import FeatureSliceImage from "../FeatureSliceImage/FeatureSliceImage";
+import FeatureSliceText from "../FeatureSliceText/FeatureSliceText";
+import { widthMap } from "../ProjectPage.utils";
+import { FeatureImageTextProps } from "./FeatureImageText.types";
 
-import { FeatureImageTextProps, getColumnsWidth } from "../Feature.types";
-import * as P from "./FeatureImageText.parts";
-
-export default function FeatureTextImage({ source, leftColumnWidth = 50, withH1 = true }: FeatureImageTextProps) {
-    const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureTextImageContent;
+export default function FeatureImageText({ featureData }: FeatureImageTextProps) {
+    const { image, imageWidth, imageHeight, header, description } = featureData;
+    const leftColumnWidth = Number(featureData.leftColumnWidth) as ColumnWidth;
+    const featureGridUtilities = widthMap[leftColumnWidth];
 
     return (
-        <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
-            <Flexbox $wrap="nowrap" $direction="column">
-                <img src={content.img} />
-            </Flexbox>
-            <P.StyledFlexbox $padding="20px 40px" $direction="column">
-                {withH1 && (
-                    <Text tag="h1" size="2xl" bold lineHeight={1.4}>
-                        {content.h1}
-                    </Text>
-                )}
-
-                <Flexbox $marginB="60px">
-                    <Text>{content.description}</Text>
-                </Flexbox>
-            </P.StyledFlexbox>
-        </P.FeatureWrapper>
+        <section className={`${featureGridUtilities} `}>
+            <FeatureSliceImage src={image} width={imageWidth} height={imageHeight} defaultOrder={-1} />
+            <FeatureSliceText header={header} description={description} />
+        </section>
     );
 }

@@ -1,30 +1,19 @@
-import { FeatureTextImageContent } from "$types/Project.types";
-import Flexbox from "$generics/Flexbox/";
-import Text from "$generics/Text/";
+import { ColumnWidth } from "../Feature.types";
+import { widthMap } from "../ProjectPage.utils";
+import FeatureSliceText from "../FeatureSliceText/FeatureSliceText";
+import FeatureSliceImage from "../FeatureSliceImage/FeatureSliceImage";
+import { FeatureTextImageProps } from "./FeatureTextImage.types";
 
-import { FeatureImageTextProps, getColumnsWidth } from "../Feature.types";
-import * as P from "./FeatureTextImage.parts";
+export default function FeatureTextImage({ featureData }: FeatureTextImageProps) {
+    const { header, description, image, imageWidth, imageHeight } = featureData;
 
-export default function FeatureTextImage({ source, leftColumnWidth = 50, withH1 = true }: FeatureImageTextProps) {
-    const { leftWidth, rightWidth } = getColumnsWidth(leftColumnWidth);
-    const content = source.content as FeatureTextImageContent;
+    const leftColumnWidth = Number(featureData.leftColumnWidth) as ColumnWidth;
+    const featureGridUtilities = widthMap[leftColumnWidth];
 
     return (
-        <P.FeatureWrapper $leftWidth={leftWidth} $rightWidth={rightWidth}>
-            <P.StyledFlexbox $padding="20px 40px" $marginT="50px" $direction="column">
-                {withH1 && (
-                    <Text tag="h1" size="2xl" bold lineHeight={1.4}>
-                        {content.h1}
-                    </Text>
-                )}
-
-                <Flexbox $marginB="60px">
-                    <Text>{content.description}</Text>
-                </Flexbox>
-            </P.StyledFlexbox>
-            <Flexbox $wrap="nowrap" $direction="column">
-                <img src={content.img} />
-            </Flexbox>
-        </P.FeatureWrapper>
+        <section className={`${featureGridUtilities}`}>
+            <FeatureSliceText header={header} description={description} />
+            <FeatureSliceImage src={image} width={imageWidth} height={imageHeight} defaultOrder={1} />
+        </section>
     );
 }

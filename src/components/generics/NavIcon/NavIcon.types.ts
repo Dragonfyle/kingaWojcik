@@ -1,6 +1,4 @@
 interface NavIconProps {
-    $color: string;
-    $size?: string;
     tooltipValue?: string;
     onClick: () => void;
     isDisabled?: boolean;

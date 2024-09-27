@@ -1,16 +1,51 @@
-import { ProjectPanelData } from "$data/ProjectPanelData";
+import client from "tina/__generated__/client";
 
-const projectUrlList = [
-    ...ProjectPanelData.branding.content.map((project) => ({ url: project.projectUrl, name: project.name })),
-    ...ProjectPanelData.illustrations.content.map((project) => ({ url: project.projectUrl, name: project.name })),
-];
+type Project = { url: string; title: string };
 
-function findCurrentUrlIndex() {
-    return projectUrlList.map(({ url }) => url).indexOf(window.location.pathname.slice(1));
+export async function fetchProjects(): Promise<Project[]> {
+    const [illustrations, branding] = await Promise.all([fetchIllustrations(), fetchBranding()]);
+
+    return [...illustrations, ...branding];
 }
 
-function handleChangeProject(index: number) {
-    window.location.pathname = projectUrlList[index].url;
+async function fetchIllustrations(): Promise<Project[]> {
+    const response = await client.queries.illustrationsThumbnailsConnection();
+
+    return (
+        response.data?.illustrationsThumbnailsConnection?.edges?.map((edge) => ({
+            url: edge?.node?.url ?? "",
+            title: edge?.node?.title ?? "",
+        })) ?? []
+    );
 }
 
-export { projectUrlList, findCurrentUrlIndex, handleChangeProject };
+async function fetchBranding(): Promise<Project[]> {
+    const response = await client.queries.brandingThumbnailsConnection();
+
+    return (
+        response.data?.brandingThumbnailsConnection?.edges?.map((edge) => ({
+            url: edge?.node?.url ?? "",
+            title: edge?.node?.title ?? "",
+        })) ?? []
+    );
+}
+
+export function findCurrentProjectIndex(projects: Project[], pathname: string | null): number {
+    if (!pathname) return -1;
+
+    return projects.findIndex((project) => project.url === pathname);
+}
+
+export function getAdjacentProjects(
+    projects: Project[],
+    currentIndex: number
+): { nextProject: Project; previousProject: Project } {
+    const maxIdx = projects.length - 1;
+    const nextIndex = (currentIndex + 1) % projects.length;
+    const previousIndex = currentIndex - 1 < 0 ? maxIdx : currentIndex - 1;
+
+    return {
+        nextProject: projects[nextIndex],
+        previousProject: projects[previousIndex],
+    };
+}

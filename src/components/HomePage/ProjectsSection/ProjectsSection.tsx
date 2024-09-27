@@ -1,57 +1,66 @@
+"use client";
+
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { ArticlesThumbnails, BrandingThumbnails, IllustrationsThumbnails } from "tina/__generated__/types";
+import Link from "next/link";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
-import Flexbox from "$generics/Flexbox/Flexbox";
-import Slider from "$generics/Slider/Slider";
 import { SliderImperativeHandle } from "$generics/Slider/Slider.types";
-import { ProjectPanelDataSection } from "$data/ProjectPanelData";
+import Slider from "$generics/Slider/Slider";
 
-import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/";
+import ProjectPanelIntro from "./ProjectPanel/ProjectPanelIntro/ProjectPanelIntro";
+import NavButtons from "./NavButtons/NavButtons";
 import ProjectPanelItem from "./ProjectPanel/ProjectPanelItem/";
-import NavButtons from "../ProjectsSection/NavButtons/";
 import { ProjectSectionProps } from "./ProjectsSection.types";
-import * as P from "./ProjectsSections.parts";
+import ProjectSectionTitle from "./ProjectSectionTitle/ProjectSectionTitle";
 
-export default function ProjectSection({ id, source }: ProjectSectionProps) {
+export default function ProjectSection({ id, source, intro }: ProjectSectionProps) {
     const sliderRef = useRef<SliderImperativeHandle>(null);
     const { isMobile } = useDeviceContext();
 
-    function renderContent(source: ProjectPanelDataSection) {
-        return source.content.map(({ thumbnail, title, description, projectUrl }) => (
-            <Link key={description} to={projectUrl}>
+    function renderSliderContent(source: IllustrationsThumbnails[] | BrandingThumbnails[] | ArticlesThumbnails[]) {
+        return source.map(({ thumbnail, title, description, url }) => (
+            <Link key={title} href={url} className="">
                 <ProjectPanelItem image={thumbnail} title={title} description={description} />
             </Link>
         ));
     }
 
-    return (
-        <P.StyledSection id={id}>
-            <Flexbox $wrap="nowrap">
-                <Flexbox $alignC="center">
-                    <P.Header tag="h2" bold size="4xl">
-                        {source.header}
-                    </P.Header>
-                </Flexbox>
+    function renderIntro() {
+        return isMobile ? (
+            <div className="flex flex-col justify-between gap-y-3 l:pr-96">
+                <ProjectSectionTitle title={intro.title} />
+                <ProjectPanelIntro text={intro.description} />
+            </div>
+        ) : (
+            <div className="flex justify-between l:pr-96">
+                <ProjectSectionTitle title={intro.title} />
 
-                {!isMobile && (
-                    <Flexbox $wrap="nowrap" $justify="center">
-                        <NavButtons
-                            onNextProject={() => sliderRef.current?.scrollToNext()}
-                            onPreviousProject={() => sliderRef.current?.scrollToPrevious()}
-                            isFirstIndex={false}
-                            isLastIndex={false}
-                        />
-                    </Flexbox>
-                )}
-            </Flexbox>
+                <NavButtons
+                    onNextProject={() => sliderRef.current?.scrollToNext()}
+                    onPreviousProject={() => sliderRef.current?.scrollToPrevious()}
+                    isFirstIndex={false}
+                    isLastIndex={false}
+                />
+            </div>
+        );
+    }
 
-            {isMobile && <ProjectPanelIntro text={source.intro} />}
-
+    function renderSlider() {
+        return isMobile ? (
+            <Slider ref={sliderRef}>{renderSliderContent(source)}</Slider>
+        ) : (
             <Slider ref={sliderRef}>
-                {!isMobile && <ProjectPanelIntro text={source.intro} />}
-                {renderContent(source)}
+                <ProjectPanelIntro text={intro.description} />
+                {renderSliderContent(source)}
             </Slider>
-        </P.StyledSection>
+        );
+    }
+
+    return (
+        <section id={id} className="w-95% l:89% relative flex h-auto flex-col py-10 site-padding m:h-project-section-s">
+            {renderIntro()}
+            {renderSlider()}
+        </section>
     );
 }

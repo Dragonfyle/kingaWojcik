@@ -1,18 +1,15 @@
-import { Link } from "react-router-dom";
-
-import Text from "$generics/Text/Text";
+import Link from "next/link";
 
 import { NavigationItemProps } from "./NavigationItem.types";
-import * as P from "./NavigationItem.parts";
 
 export default function NavigationItem({ children, to = "", onClick }: NavigationItemProps) {
     return (
-        <P.NavigationItemWrapper onClick={onClick}>
-            <Link to={to}>
-                <Text lineHeight={1.5} size="ms">
-                    {children}
-                </Text>
+        <div className="h-full cursor-pointer hover:bg-leading-main-2" onClick={onClick}>
+            <Link
+                href={to}
+                className="flex h-full items-center px-4 text-s font-bold uppercase text-leading-main-1 no-underline">
+                <p className="text-2xl font-bold uppercase l:text-s">{children}</p>
             </Link>
-        </P.NavigationItemWrapper>
+        </div>
     );
 }

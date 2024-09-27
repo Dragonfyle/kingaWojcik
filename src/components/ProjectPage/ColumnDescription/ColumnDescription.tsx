@@ -1,24 +1,23 @@
-import Flexbox from "$generics/Flexbox/Flexbox";
-import Text from "$generics/Text/Text";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
+import { descriptionPositionMap } from "../Feature.types";
 import { ColumnDescriptionProps } from "./ColumnDescription.types";
 
-export function ColumnDescription({ withH1, h1, withDescription, description, order }: ColumnDescriptionProps) {
-    return (
-        <Flexbox $order={order} $direction="column" $marginT="20px" $marginB="20px" $alignC="flex-start">
-            {withH1 && (
-                <Flexbox>
-                    <Text tag="h1" lineHeight={1.14} size="2xl" bold>
-                        {h1}
-                    </Text>
-                </Flexbox>
-            )}
+export function ColumnDescription({ header, description, descriptionPosition }: ColumnDescriptionProps) {
+    const order = descriptionPositionMap[descriptionPosition];
+    const hasHeader = !!header;
+    const hasDescription = description && description.children && description.children.length > 0;
+    const orderUtility = order === 1 ? "order-1" : "-order-1";
 
-            {withDescription && (
-                <Flexbox $marginB="60px" $marginT="40px">
-                    <Text>{description}</Text>
-                </Flexbox>
+    return (
+        <div className={`${orderUtility} flex flex-col gap-10`}>
+            {hasHeader && <h3 className="text-2xl font-bold leading-tight">{header}</h3>}
+
+            {hasDescription && (
+                <div className="flex flex-col gap-4">
+                    <TinaMarkdown content={description} />
+                </div>
             )}
-        </Flexbox>
+        </div>
     );
 }

@@ -6,7 +6,7 @@ type BreakpointsNoMedia = {
 };
 
 export const SIZE = Object.freeze({
-    XS: 320,
+    XS: 420,
     S: 640,
     M: 900,
     L: 1024,

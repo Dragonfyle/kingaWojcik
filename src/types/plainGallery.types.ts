@@ -1,13 +1,7 @@
-import { Feature } from "./Project.types";
+import { BrandingQuery, IllustrationsQuery } from "tina/__generated__/types";
 
-interface PlainGalleryProject {
-    header: string;
-    intro: string;
-    plainGalleryContent: Feature[];
+interface PlainGalleryProps {
+    projectData: IllustrationsQuery["illustrations"] | BrandingQuery["branding"];
 }
 
-interface PlainGalleryData {
-    [key: `project${number}`]: PlainGalleryProject;
-}
-
-export type { PlainGalleryProject, PlainGalleryData };
+export type { PlainGalleryProps };

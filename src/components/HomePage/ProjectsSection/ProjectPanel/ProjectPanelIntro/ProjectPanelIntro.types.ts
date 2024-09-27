@@ -1,5 +1,7 @@
+import { TinaMarkdownContent } from "tinacms/dist/rich-text";
+
 interface ProjectPanelIntroProps {
-    text: string;
+    text: TinaMarkdownContent;
 }
 
 export type { ProjectPanelIntroProps };

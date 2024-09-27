@@ -4,7 +4,7 @@ import { NavIconProps } from "../NavIcon.types";
 
 export default function PreviousIcon({ onClick, tooltipValue, isDisabled = false }: NavIconProps) {
     const withTooltip = !!tooltipValue;
-    const color = isDisabled ? "text-gray-100" : "text-black";
+    const color = isDisabled ? "text-gray-100" : "text-gray-500";
     const hoverColor = isDisabled ? "hover:text-gray-100" : "hover:text-leading-main-1";
 
     return (

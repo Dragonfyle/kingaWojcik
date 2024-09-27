@@ -198,7 +198,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
-                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -223,7 +222,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
-                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -265,7 +263,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
-                                        isBody: true,
                                     },
                                     {
                                         type: "string",
@@ -317,14 +314,12 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "descriptionLeft",
                                         label: "Opis lewy",
-                                        isBody: true,
                                         required: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "descriptionRight",
                                         label: "Opis prawy",
-                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -361,13 +356,11 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescriptionLeft",
                                         label: "Opis lewy",
-                                        isBody: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "optionalDescriptionRight",
                                         label: "Opis prawy",
-                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -415,7 +408,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
-                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -458,7 +450,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
-                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -520,7 +511,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
-                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -545,7 +535,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
-                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -587,7 +576,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescription",
                                         label: "Opis",
-                                        isBody: true,
                                     },
                                     {
                                         type: "string",
@@ -639,14 +627,12 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "descriptionLeft",
                                         label: "Opis lewy",
-                                        isBody: true,
                                         required: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "descriptionRight",
                                         label: "Opis prawy",
-                                        isBody: true,
                                         required: true,
                                     },
                                 ],
@@ -683,13 +669,11 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "optionalDescriptionLeft",
                                         label: "Opis lewy",
-                                        isBody: true,
                                     },
                                     {
                                         type: "rich-text",
                                         name: "optionalDescriptionRight",
                                         label: "Opis prawy",
-                                        isBody: true,
                                     },
                                     {
                                         type: "image",
@@ -737,7 +721,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
-                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -787,7 +770,6 @@ export default defineConfig({
                                         type: "rich-text",
                                         name: "description",
                                         label: "Opis",
-                                        isBody: true,
                                         required: true,
                                     },
                                     {
@@ -836,6 +818,7 @@ export default defineConfig({
                         type: "rich-text",
                         name: "description",
                         label: "Opis",
+                        isBody: true,
                         required: true,
                     },
                     {

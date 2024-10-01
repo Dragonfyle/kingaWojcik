@@ -2,14 +2,6 @@
 title: ''
 intro: ''
 projectSections:
-  - descriptionPosition: bottom
-    header: ''
-    optionalDescription: ''
-    videoUrl: ''
-    videoId: 2h1WKr6AWY8
-    imageWidth: 1280
-    imageHeight: 720
-    _template: video
   - leftColumnWidth: '70'
     descriptionPosition: top
     header: >-

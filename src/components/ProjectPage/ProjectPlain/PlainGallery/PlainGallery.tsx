@@ -21,6 +21,7 @@ export default function PlainGallery({ projectData }: PlainGalleryProps) {
     } as const;
 
     const projectSections = projectData.projectSections;
+    console.log(projectSections)
 
     function convertNameToKey(name: string | undefined) {
         if (!name) return "";
@@ -49,7 +50,7 @@ export default function PlainGallery({ projectData }: PlainGalleryProps) {
     }
 
     return (
-        <div className="xxl:max-w-project-max-l flex max-w-project-max flex-col items-center justify-center gap-12 p-4 pb-project-bottom s:p-8">
+        <div className="flex max-w-project-max flex-col items-center justify-center gap-12 p-4 pb-project-bottom s:p-8 xxl:max-w-project-max-l">
             {/* TODO: find a way to fix this */}
             {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
             {renderSections(projectSections as any)}

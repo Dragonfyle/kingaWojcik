@@ -1,19 +1,29 @@
+import { Suspense } from "react";
 import { ColumnDescription } from "../ColumnDescription/";
 import { FeatureVideoProps } from "./FeatureVideo.types";
+import YoutubeEmbed from "./YoutubeEmbed/YoutubeEmbed";
 
 export default function FeatureVideo({ featureData }: FeatureVideoProps) {
-    const { header, optionalDescription, descriptionPosition } = featureData;
-
     return (
         <section className="flex flex-col">
+            <Suspense fallback={<div>Loading...</div>}>
+                {featureData.isLocal ? (
+                    <video className="object-contain" controls>
+                        <source src={featureData.videoUrl || ""} type="video/mp4" />
+                    </video>
+                ) : (
+                    <YoutubeEmbed
+                        imageWidth={featureData.imageWidth}
+                        imageHeight={featureData.imageHeight}
+                        videoId={featureData.videoId || ""}
+                    />
+                )}
+            </Suspense>
             <ColumnDescription
-                header={header}
-                description={optionalDescription}
-                descriptionPosition={descriptionPosition as "top" | "bottom"}
+                header={featureData.header}
+                description={featureData.optionalDescription}
+                descriptionPosition={featureData.descriptionPosition as "top" | "bottom"}
             />
-            <video className="object-contain" controls>
-                <source src={featureData.videoUrl || ""} type="video/mp4" />
-            </video>
         </section>
     );
 }

@@ -1,5 +1,4 @@
 ---
-intro: ''
 projectSections:
   - descriptionPosition: bottom
     optionalDescription: ''
@@ -7,12 +6,34 @@ projectSections:
     imageWidth: 1400
     imageHeight: 988
     _template: image
+  - leftColumnWidth: '50'
+    descriptionLeft: >
+      Ten projekt to efekt mojej wewnętrznej potrzeby tworzenia. Chciałam
+      zilustrować niezwykłą historię – pełną emocji, niespodziewanych zwrotów
+      akcji i nieprzewidzianych zdarzeń: marzenie każdego ilustratora. Ale jak
+      wiadomo, nie jest łatwo o zlecenia. Postanowiłam więc wziąć sprawy w swoje
+      ręce i zilustrować własną, dramatyczną opowieść.
+    descriptionRight: >
+      Po pewnym czasie bezowocnych rozmyślań, wyszłam kupić coś do picia.
+      Mijając robotników w kamizelkach, udzielił mi się ten przemysłowy klimat.
+      To był pierwszy impuls. Następnie weszłam do Żabki i stanęłam przed
+      regałem z kawą. I wtedy mnie olśniło – kawa, produkt, który pijemy
+      codziennie, a tak mało o nim wiemy. Jak to się dzieje, że trafia do
+      naszych kubków?
+    _template: textText
   - descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_2.jpg
     imageWidth: 5834
     imageHeight: 4114
     _template: image
+  - description: >
+      Tak narodził się pomysł na ilustrowaną historię kawy. Uświadomiłam sobie,
+      że za każdym łykiem tego napoju kryje się długi i skomplikowany proces,
+      pełen pracy, czasu i wysiłku. Kawa musi naprawdę wiele przejść, zanim
+      trafi do naszych kubeczków. I żeby nie było drętwo, zaangażowałam też
+      Małgorzatę w napisanie niepoważnych wierszyków. Dzięki!
+    _template: text
   - descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_3.jpg

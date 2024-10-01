@@ -9,9 +9,9 @@ function FeatureText({ featureData }: FeatureTextProps) {
 
     return (
         <section className="mb-12 flex flex-col gap-8">
-            {hasHeader && <h2 className="text-2xl font-bold leading-snug">{featureData.header}</h2>}
+            {hasHeader && <h2 className="text-2xl font-bold leading-snug [&_p]:text-m [&_p]:s:text-2xl">{featureData.header}</h2>}
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 [&_p]:text-ms [&_p]:s:text-m">
                 <TinaMarkdown content={featureData.description} />
             </div>
         </section>

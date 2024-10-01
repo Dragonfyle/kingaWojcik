@@ -4,5 +4,4 @@ title: Krótka historia kawy
 url: /illustrations1
 ---
 
-Ilustrowana książeczka przedstawiająca w zabawny, wierszowany sposób proces
-powstawania kawy. Projekt we współpracy z Małgorzatą Jaworską
+Jak rośnie kawa i co się z nią dzieje zanim trafi do Twojego kubka? Ten projekt odkryje przed Tobą tajemnice tego wspaniałego napoju

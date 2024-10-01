@@ -11,7 +11,7 @@ export default function FeatureTextImage({ featureData }: FeatureTextImageProps)
     const featureGridUtilities = widthMap[leftColumnWidth];
 
     return (
-        <section className={`${featureGridUtilities}`}>
+        <section className={`${featureGridUtilities} gap-y-6`}>
             <FeatureSliceText header={header} description={description} />
             <FeatureSliceImage src={image} width={imageWidth} height={imageHeight} defaultOrder={1} />
         </section>

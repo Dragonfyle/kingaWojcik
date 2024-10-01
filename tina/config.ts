@@ -272,7 +272,12 @@ export default defineConfig({
                                     {
                                         type: "string",
                                         name: "videoId",
-                                        label: "ID filmu z yt",
+                                        label: "ID filmu z yt z youtube",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocal",
+                                        label: "lokalny film"
                                     },
                                     {
                                         type: "image",
@@ -589,7 +594,12 @@ export default defineConfig({
                                     {
                                         type: "string",
                                         name: "videoId",
-                                        label: "ID filmu",
+                                        label: "ID filmu z youtube",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocal",
+                                        label: "lokalny film"
                                     },
                                     {
                                         type: "image",

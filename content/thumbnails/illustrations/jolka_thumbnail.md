@@ -4,5 +4,4 @@ title: Jolka
 url: /illustrations3
 ---
 
-Ilustracje stworzone dla webePartners. Animowana, rysunkowa koleżanka, która
-pokazuje i tłumaczy świat afiliacji
+Jolka to nasza rysunkowa koleżanka, która zabierze Cię w podróż po świecie afiliacji. I nie obawiaj się tego słowa. To naprawdę proste

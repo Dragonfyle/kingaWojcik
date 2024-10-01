@@ -9,7 +9,7 @@ export default function ProjectIntroduction({ projectData }: ProjectIntroduction
             <h1 className="text-2xl font-bold">{projectData.title}</h1>
 
             {withDescription && (
-                <div className="flex items-center justify-center gap-4 px-3 py-5">
+                <div className="flex items-center gap-4 py-5">
                     <TinaMarkdown content={projectData.intro} />
                 </div>
             )}

@@ -8,6 +8,7 @@ import FeatureTextImage from "$components/ProjectPage/FeatureTextImage/FeatureTe
 
 import { BrandingProjectSections, IllustrationsProjectSections } from "tina/__generated__/types";
 import { PlainGalleryProps } from "$types/plainGallery.types";
+import { Suspense } from "react";
 
 export default function PlainGallery({ projectData }: PlainGalleryProps) {
     const featureMap = {
@@ -44,12 +45,16 @@ export default function PlainGallery({ projectData }: PlainGalleryProps) {
 
             //TODO: find a way to fix this
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            return <Component key={idx} featureData={feature as any} />;
+            return (
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Component key={idx} featureData={feature as any} />
+                </Suspense>
+            );
         });
     }
 
     return (
-        <div className="xxl:max-w-project-max-l flex max-w-project-max flex-col items-center justify-center gap-12 p-4 pb-project-bottom s:p-8">
+        <div className="flex max-w-project-max flex-col items-center justify-center gap-12 p-4 pb-project-bottom s:p-8 xxl:max-w-project-max-l">
             {/* TODO: find a way to fix this */}
             {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
             {renderSections(projectSections as any)}

@@ -268,7 +268,11 @@ export default defineConfig({
                                         type: "string",
                                         name: "videoUrl",
                                         label: "URL",
-                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoId",
+                                        label: "ID filmu z yt",
                                     },
                                     {
                                         type: "image",
@@ -580,8 +584,12 @@ export default defineConfig({
                                     {
                                         type: "string",
                                         name: "videoUrl",
-                                        label: "URL",
-                                        required: true,
+                                        label: "URL lokalny",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoId",
+                                        label: "ID filmu",
                                     },
                                     {
                                         type: "image",

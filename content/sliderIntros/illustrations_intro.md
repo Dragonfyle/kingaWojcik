@@ -2,6 +2,4 @@
 title: Ilustracje
 ---
 
-Tworzę zarówno dla firm, jak też indywidualnych twórców: od okładek, które
-czasem aż proszą, by je złapać :p po animowane postacie, ożywiające projekt.
-Każda ilustracja to osobna historia.
+Tworzę różne projekty: od okładek, które czasem aż proszą, by je złapać, po żywe, animowane postacie. Każda ilustracja to inna opowieść

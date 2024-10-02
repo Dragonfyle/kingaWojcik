@@ -34,7 +34,7 @@ projectSections:
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/goslina/goslina_tshirt.jpg
-    imageRight: /assets/img/projects/goslina/goslina_kubek.jpg
+    imageRight: /assets/img/projects/goslina/goslina_kubek.png
     imageWidth: 1000
     imageHeight: 1000
     _template: imageImage

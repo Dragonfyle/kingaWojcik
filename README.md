@@ -1,1 +1,2 @@
-# React + TypeScript + Vite
+# Next.js + Typescript + Tailwind 
+

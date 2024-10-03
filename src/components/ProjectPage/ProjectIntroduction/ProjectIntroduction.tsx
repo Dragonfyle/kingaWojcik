@@ -10,7 +10,12 @@ export default function ProjectIntroduction({ projectData }: ProjectIntroduction
 
             {withDescription && (
                 <div className="flex items-center gap-4 py-5">
-                    <TinaMarkdown content={projectData.intro} />
+                    <TinaMarkdown
+                        components={{
+                            bold: (props) => <span className="text-orange-500">{props?.children}</span>,
+                        }}
+                        content={projectData.intro}
+                    />
                 </div>
             )}
         </header>

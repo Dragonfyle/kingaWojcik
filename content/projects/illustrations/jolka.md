@@ -3,22 +3,23 @@ title: Jolka - animowana przewodniczka po świecie afiliacji
 projectSections:
   - leftColumnWidth: '50'
     description: >
-      Jolka, główna bohaterka, inspirowana jest serią bajek o Goofym z mojego
-      dzieciństwa. Jest to niezbyt zaradna postać, która niewiele wie o świecie.
-      Jednak z pomocą narratora udaje mu się całkiem skutecznie funkcjonować.
-      Podobnie jak Goofy, Jolka jest nieco nierozgarnięta i widzimy jak stara
-      się jakoś radzić sobie w świecie afiliacji.
+      Jolka, główna bohaterka, inspirowana jest serią bajek o Goofym. Jest to
+      niezbyt zaradna postać, która niewiele wie o świecie. Jednak z pomocą
+      narratora udaje jej się całkiem skutecznie funkcjonować. Podobnie jak
+      Goofy, Jolka jest nieco nierozgarnięta i widzimy jak stara się jakoś
+      radzić sobie w świecie afiliacji.
     image: /assets/img/projects/jolka/jolka-scena1.png
     imageWidth: 1920
     imageHeight: 1080
     _template: imageText
   - leftColumnWidth: '50'
     description: >
-      Afiliacja to sposób na zarabianie dzięki polecaniu produktów. Sklepy chcą
-      się reklamować, więc inne osoby polecają ich produkty, zarabiając prowizję
-      od każdej sprzedaży. Jolka w animacji pokazuje, jak krok po kroku
-      korzystać z panelu webePartners, by tworzyć linki afiliacyjne lub
-      udostępniać kody rabatowe.
+      Afiliacja to sposób na zarabianie dzięki polecaniu produktów. Sklepy
+      internetowe szukają efektywnych form reklamy, a osoby uczestniczące w
+      programach partnerskich polecają ich produkty, zarabiając prowizję za
+      każdą zrealizowaną sprzedaż. W animacji Jolka krok po kroku pokazuje, jak
+      korzystać z panelu webePartners, aby tworzyć linki afiliacyjne oraz
+      udostępniać kody rabatowe, które są podstawowymi narzędziami w afiliacji.
     image: /assets/img/projects/jolka/jolka-scena2.png
     imageWidth: 1920
     imageHeight: 1080
@@ -41,9 +42,9 @@ projectSections:
   - leftColumnWidth: '50'
     description: >
       Animacja miała być super prosta, wręcz "toporna", ale stworzona z humorem
-      i podana w nieco nietypowy sposób. Celem było, by była bardziej angażująca
-      niż standardowa instrukcja obsługi, a jednocześnie sprawiała, że
-      zrozumienie afiliacji stanie się przyjemnością
+      i podana w nieco nietypowy sposób. Moim celem było stworzenie czegoś
+      bardziej angażującego niż standardowa instrukcja obsługi, a jednocześnie
+      sprawienie, że nauka afiliacji stanie się przyjemnością.
     image: /assets/img/projects/jolka/jolka_eksplozja.png
     imageWidth: 1920
     imageHeight: 1080
@@ -66,4 +67,4 @@ projectSections:
     _template: imageImage
 ---
 
-Celem tego projektu było stworzenie animacji, która w przyjazny i przystępny sposób wyjaśni nowym użytkownikom, jak można zarabiać na afiliacji. Temat ten bywa trudny, a dla wielu już sama nazwa jest odstraszająca. Dlatego chciałam stworzyć postać, która w zabawny sposób pokaże, że to wcale nie jest takie skomplikowane.
+Celem tego projektu było stworzenie animacji, która w przyjazny i przystępny sposób wyjaśni nowym użytkownikom, jak można zarabiać na afiliacji. Chciałam stworzyć postać, która w zabawny sposób pokaże, że jest to proste i dostępne dla każdego.

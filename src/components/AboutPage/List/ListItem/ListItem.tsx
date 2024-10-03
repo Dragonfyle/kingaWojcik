@@ -12,13 +12,34 @@ export default function ListItem({ source }: ListItemProps) {
 
             <div className="flex flex-col pl-[5%] *:text-s m:*:text-m">
                 <div className="flex flex-col gap-4">
-                    {source.description1 && <TinaMarkdown content={source.description1} />}
+                    {source.description1 && (
+                        <TinaMarkdown
+                            components={{
+                                bold: (props) => <span className="text-orange-500">{props?.children}</span>,
+                            }}
+                            content={source.description1}
+                        />
+                    )}
                 </div>
                 <div className="flex flex-col gap-4">
-                    {source.description2 && <TinaMarkdown content={source.description2} />}
+                    {source.description2 && (
+                        <TinaMarkdown
+                            components={{
+                                bold: (props) => <span className="text-orange-500">{props?.children}</span>,
+                            }}
+                            content={source.description2}
+                        />
+                    )}
                 </div>
                 <div className="flex flex-col gap-4">
-                    {source.description3 && <TinaMarkdown content={source.description3} />}
+                    {source.description3 && (
+                        <TinaMarkdown
+                            components={{
+                                bold: (props) => <span className="text-orange-500">{props?.children}</span>,
+                            }}
+                            content={source.description3}
+                        />
+                    )}
                 </div>
             </div>
         </div>

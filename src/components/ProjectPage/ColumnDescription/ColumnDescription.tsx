@@ -14,8 +14,13 @@ export function ColumnDescription({ header, description, descriptionPosition }: 
             {hasHeader && <h3 className="text-2xl font-bold leading-tight [&_p]:text-m [&_p]:s:text-2xl">{header}</h3>}
 
             {hasDescription && (
-                <div className="flex flex-col gap-4 [&_p]:text-ms [&_p]:s:text-m">
-                    <TinaMarkdown content={description} />
+                <div className="flex flex-col gap-4 [&_*]:text-ms [&_*]:s:text-m">
+                    <TinaMarkdown
+                        content={description}
+                        components={{
+                            bold: (props) => <span className="text-orange-500">{props?.children}</span>,
+                        }}
+                    />
                 </div>
             )}
         </div>

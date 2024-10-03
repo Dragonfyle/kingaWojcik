@@ -1,16 +1,17 @@
 import { client } from "tina/__generated__/client";
-import ProjectPage from "$components/ProjectPage/ProjectPage";
+import ProjectPlain from "$components/ProjectPage";
 
-export default async function Branding2() {
+export default async function Branding4() {
     async function fetchData() {
         const myPost = await client.queries.branding({
-            relativePath: "renault.md",
+            relativePath: "webePartners.md",
         });
 
         return myPost;
     }
-
     const projectData = (await fetchData()).data.branding;
 
-    return <ProjectPage projectData={projectData} />;
+    return (
+        <ProjectPlain projectData={projectData} />
+    );
 }

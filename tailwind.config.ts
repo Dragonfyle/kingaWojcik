@@ -146,6 +146,11 @@ const config: Config = {
                     "background-image": "url('/uken_pattern_element.svg')",
                     "background-size": "2%",
                 },
+                ".text-children-white": {
+                    "& :not(span)": {
+                        "@apply text-white-2": {},
+                    },
+                },
                 ...featureClasses,
             });
         }),

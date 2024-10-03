@@ -14,7 +14,12 @@ export default function AboutAuthor({ source }: AboutSectionProps) {
             </header>
 
             <div className="flex flex-col gap-6">
-                <TinaMarkdown content={source.description} />
+                <TinaMarkdown
+                    components={{
+                        bold: (props) => <span className="text-orange-500">{props?.children}</span>,
+                    }}
+                    content={source.description}
+                />
             </div>
         </section>
     );

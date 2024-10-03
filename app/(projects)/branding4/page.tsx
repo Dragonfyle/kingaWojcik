@@ -1,5 +1,5 @@
 import { client } from "tina/__generated__/client";
-import ProjectPlain from "$components/ProjectPage/ProjectPlain";
+import ProjectPlain from "$components/ProjectPage";
 
 export default async function Branding4() {
     async function fetchData() {

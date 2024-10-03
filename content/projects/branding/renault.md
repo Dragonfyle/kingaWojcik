@@ -20,15 +20,19 @@ projectSections:
     descriptionPosition: top
     header: 'Głównymi elementami projektu są:'
     description: |
-      paski naładowania baterii
+      \- paski naładowania baterii
 
-      strzałki biegnące od akumulatora w kierunku frontu pojazdu,
 
-      błyskawica – klasyczny symbol elektryczności,
+      \- strzałki biegnące od akumulatora w kierunku frontu pojazdu,
 
-      fragment logo Renault,
 
-      oraz schemat obwodu elektrycznego na froncie.
+      \- błyskawica – klasyczny symbol elektryczności,
+
+
+      \- fragment logo Renault,
+
+
+      \- oraz schemat obwodu elektrycznego na froncie.
     image: /assets/img/projects/renault/front.png
     imageWidth: 1920
     imageHeight: 1790

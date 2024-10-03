@@ -1,5 +1,5 @@
 import { client } from "tina/__generated__/client";
-import ProjectPlain from "$components/ProjectPage/ProjectPlain";
+import ProjectPage from "$components/ProjectPage/ProjectPage";
 
 export default async function Illustrations3() {
     async function fetchData() {
@@ -12,5 +12,5 @@ export default async function Illustrations3() {
 
     const projectData = (await fetchData()).data.illustrations;
 
-    return <ProjectPlain projectData={projectData} />;
+    return <ProjectPage projectData={projectData} />;
 }

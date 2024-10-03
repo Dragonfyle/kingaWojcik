@@ -1,7 +1,7 @@
 import { BrandingQuery, IllustrationsQuery } from "tina/__generated__/types";
 
-interface ProjectPlainProps {
+interface ProjectPageProps {
     projectData: IllustrationsQuery["illustrations"] | BrandingQuery["branding"];
 }
 
-export type { ProjectPlainProps };
+export type { ProjectPageProps };

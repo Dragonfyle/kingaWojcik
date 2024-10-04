@@ -2,29 +2,22 @@
 title: Materiały tworzone dla webePartners
 intro: >
   Afiliacja to mało znany temat, który chcemy przybliżać coraz szerszemu gronu
-  odbiorców, a w szczególności młodym osobom. Dlatego stworzyłam postać Jolki –
-  rysunkowej koleżanki, która pomaga trywializować to zagadnienie.
+  odbiorców, a w szczególności młodym osobom. Dlatego stworzyłam rysunki, które
+  mają pomóc upowszechniać to zagadnienie. Wszystkie grafiki wykorzystują cztery
+  podstawowe kolory firmowe: zielony, różowy, żółty i pomarańczowy. W podobnej
+  estetyce przygotowałam też wizualne metafory afiliacji, ukazujące w
+  niedosłowny sposób mechanizmy jej działania.
 projectSections:
   - leftColumnWidth: '50'
-    header: Jolka - rysunkowa przewodniczka po świecie afiliacji
-    description: >
-      Jolka pojawia się więc coraz częściej w komunikacji marketingowej
-      webePartners, m.in. na banerach.
-
-
-      Dzięki niej afiliacja wydaje się prostsza i wcale nie taka straszna.
-
-
-      Wszystkie grafiki wykorzystują cztery podstawowe kolory firmowe: zielony,
-      różowy, żółty i pomarańczowy.
-    image: /assets/img/projects/webePartners/banery-etapy-gif.gif
+    descriptionPosition: top
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
+    imageLeft: /assets/img/projects/webePartners/baloniki-webePartners.png
+    imageRight: /assets/img/projects/webePartners/rozpedz-swoj-biznes.png
     imageWidth: 900
     imageHeight: 900
-    _template: textImage
-  - header: >-
-      W podobnej estetyce przygotowałam też wizualne metafory afiliacji,
-      ukazujące w niedosłowny sposób jej mechanizmy działania
-    description: >
+    _template: imageImage
+  - description: >
       Baloniki symbolizują wydawców sieci afiliacyjnej, którzy „unoszą” biznesy
       dzięki prowadzonym działaniom marketingowym. I mimo, że są to często
       działania na mikroskalę (niewielkie konta social media), to ich liczba
@@ -37,11 +30,17 @@ projectSections:
   - leftColumnWidth: '50'
     descriptionPosition: top
     optionalDescriptionLeft: ''
-    optionalDescriptionRight: ''
-    imageLeft: /assets/img/projects/webePartners/baloniki-webePartners.png
-    imageRight: /assets/img/projects/webePartners/rozpedz-swoj-biznes.png
-    imageWidth: 900
-    imageHeight: 900
+    imageLeft: /assets/img/projects/webePartners/zielone.png
+    imageRight: /assets/img/projects/webePartners/rozowe.png
+    imageWidth: 800
+    imageHeight: 800
+    _template: imageImage
+  - leftColumnWidth: '50'
+    descriptionPosition: top
+    imageLeft: /assets/img/projects/webePartners/zolte.png
+    imageRight: /assets/img/projects/webePartners/pomaranczowe.png
+    imageWidth: 800
+    imageHeight: 800
     _template: imageImage
   - header: Projekty nadruków
     description: >
@@ -51,10 +50,16 @@ projectSections:
     _template: text
   - leftColumnWidth: '50'
     descriptionPosition: top
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/webePartners/nadruk1.png
     imageRight: /assets/img/projects/webePartners/nadruk.png
     imageWidth: 900
     imageHeight: 900
     _template: imageImage
+  - description: >
+      [Zobacz też rysunki i animacje stworzone dla
+      webePartners](https://www.kingaewawojcik.pl/illustrations3) 
+    _template: text
 ---
 

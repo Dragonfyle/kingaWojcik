@@ -9,27 +9,10 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
     const [itemWidth, setItemWidth] = useState<number | undefined>();
     const [activeItem, setActiveItem] = useState(0);
     const contentRef = useRef<HTMLDivElement>(null);
-    const isScrolling = useRef(false);
-    const lastScrollLeft = useRef<number | undefined>(0);
     const isFirstIndex = useRef(true);
     const isLastIndex = useRef(false);
 
     const { isPhone } = useDeviceContext();
-
-    function onScrollEnd(handleScrollEnd: () => void) {
-        const scrollObserver = setInterval(() => {
-            if (contentRef.current?.scrollLeft === lastScrollLeft.current) {
-                handleScrollEnd();
-                clearInterval(scrollObserver);
-            } else {
-                lastScrollLeft.current = contentRef.current?.scrollLeft;
-            }
-        }, 100);
-    }
-
-    function scrollEndHandler() {
-        isScrolling.current = false;
-    }
 
     function renderIndicatorDots() {
         const sliderItems = contentRef.current?.children;
@@ -57,18 +40,14 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
     useImperativeHandle(ref, () => {
         return {
             scrollToNext() {
-                if (!itemWidth || isScrolling.current) return;
+                if (!itemWidth) return;
 
-                contentRef.current?.scrollBy({ left: itemWidth, behavior: "smooth" });
-                isScrolling.current = true;
-                onScrollEnd(scrollEndHandler);
+                contentRef.current?.scrollBy({ left: itemWidth, behavior: "instant" });
             },
             scrollToPrevious() {
-                if (!itemWidth || isScrolling.current) return;
+                if (!itemWidth) return;
 
-                contentRef.current?.scrollBy({ left: -itemWidth, behavior: "smooth" });
-                isScrolling.current = true;
-                onScrollEnd(scrollEndHandler);
+                contentRef.current?.scrollBy({ left: -itemWidth, behavior: "instant" });
             },
         };
     });

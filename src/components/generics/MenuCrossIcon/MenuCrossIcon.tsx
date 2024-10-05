@@ -6,7 +6,7 @@ import { MenuCrossProps } from "./MenuCrossIcon.types";
 export default function MenuCross({ onClick }: MenuCrossProps) {
     return (
         <MenuCrossIcon
-            className="w-16"
+            className="w-12"
             style={
                 {
                     "--background-color": defaultTheme.colors.supplementary[3],

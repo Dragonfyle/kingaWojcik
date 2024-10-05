@@ -6,7 +6,7 @@ intro: >
   Taki projekt ma dobrze wyglądać w porcie, wśród maszyn przemysłowych, a
   jednocześnie emanować elegancja i nowoczesnością. Prace nad projektem
   rozpoczęłam w czerwcu, choć o konkursie wiedziałam już miesiąc wcześniej. Ale
-  kilka tygodni wydaje mi się wystarczającym czasem, by zdecydować się na jakiś
+  kilka tygodni wydaje się wystarczającym czasem, by zdecydować się na jakiś
   kierunek.
 projectSections:
   - descriptionPosition: bottom
@@ -22,15 +22,11 @@ projectSections:
     description: |
       \- paski naładowania baterii
 
-
       \- strzałki biegnące od akumulatora w kierunku frontu pojazdu,
-
 
       \- błyskawica – klasyczny symbol elektryczności,
 
-
       \- fragment logo Renault,
-
 
       \- oraz schemat obwodu elektrycznego na froncie.
     image: /assets/img/projects/renault/front.png
@@ -53,7 +49,8 @@ projectSections:
       równie dobrze odnajdował się na ich samochodzie.
 
 
-      I jak widać, udało się.
+      I jak widać, udało się. Na nagraniu zobaczycie mój design zrealizowany na
+      rzeczywistym elektrycznym ciągniku.
     _template: text
   - descriptionPosition: top
     header: ''

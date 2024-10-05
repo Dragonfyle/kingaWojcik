@@ -1,6 +1,6 @@
 ---
 thumbnail: /assets/img/projects/jolka/jolka_miniaturka.jpg
-title: Jolka
+title: Jolka z webePartners
 url: /illustrations3
 ---
 

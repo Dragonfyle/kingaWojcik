@@ -17,7 +17,7 @@ export default function MobileMenu({ navigationItems, onItemClick }: MobileMenuP
     }
 
     return (
-        <menu className="z-99 fixed left-0 top-navigation flex h-full w-full touch-none flex-col items-center bg-leading-main-trans-1 pt-24">
+        <menu className="z-99 fixed left-0 top-navigation flex h-full w-full touch-none flex-col bg-leading-main-trans-1 pt-24">
             <ul className="flex flex-col gap-10">{renderItems(navigationItems)}</ul>
         </menu>
     );

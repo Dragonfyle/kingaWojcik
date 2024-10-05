@@ -4,7 +4,7 @@ import { MobileNavigationItemProps } from "./MobileNavigationItem.types";
 
 export default function MobileNavigationItem({ children, to, onClick }: MobileNavigationItemProps) {
     return (
-        <NavigationItem to={to} onClick={onClick}>
+        <NavigationItem className="font-normal capitalize" to={to} onClick={onClick}>
             {children}
         </NavigationItem>
     );

@@ -1,8 +1,5 @@
 import { Navigation as NavigationType } from "tina/__generated__/types";
 
-import Divider from "$components/generics/Divider/";
-import { defaultTheme } from "$styles/DefaultTheme";
-
 import MobileNavigationItem from "../MobileNavigationItem/";
 
 interface MobileMenuProps {

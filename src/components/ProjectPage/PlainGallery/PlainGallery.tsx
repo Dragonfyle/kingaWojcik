@@ -21,7 +21,6 @@ export default function PlainGallery({ projectData }: PlainGalleryProps) {
     } as const;
 
     const projectSections = projectData.projectSections;
-    console.log(projectSections);
 
     function convertNameToKey(name: string | undefined) {
         if (!name) return "";

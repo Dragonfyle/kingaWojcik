@@ -42,12 +42,12 @@ const Slider = forwardRef<SliderImperativeHandle, SliderProps>(function Slider({
             scrollToNext() {
                 if (!itemWidth) return;
 
-                contentRef.current?.scrollBy({ left: itemWidth, behavior: "instant" });
+                contentRef.current?.scrollBy({ left: itemWidth, behavior: "smooth" });
             },
             scrollToPrevious() {
                 if (!itemWidth) return;
 
-                contentRef.current?.scrollBy({ left: -itemWidth, behavior: "instant" });
+                contentRef.current?.scrollBy({ left: -itemWidth, behavior: "smooth" });
             },
         };
     });

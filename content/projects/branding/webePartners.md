@@ -3,10 +3,12 @@ title: Materiały tworzone dla webePartners
 intro: >
   Afiliacja to mało znany temat, który chcemy przybliżać coraz szerszemu gronu
   odbiorców, a w szczególności młodym osobom. Dlatego stworzyłam rysunki, które
-  mają pomóc upowszechniać to zagadnienie. Wszystkie grafiki wykorzystują cztery
-  podstawowe kolory firmowe: zielony, różowy, żółty i pomarańczowy. W podobnej
-  estetyce przygotowałam też wizualne metafory afiliacji, ukazujące w
-  niedosłowny sposób mechanizmy jej działania.
+  mają pomóc upowszechniać to zagadnienie. 
+
+
+  Wszystkie grafiki wykorzystują cztery podstawowe kolory firmowe: zielony,
+  różowy, żółty i pomarańczowy. W podobnej estetyce przygotowałam też wizualne
+  metafory afiliacji, ukazujące w niedosłowny sposób mechanizmy jej działania.
 projectSections:
   - leftColumnWidth: '50'
     descriptionPosition: top
@@ -30,6 +32,7 @@ projectSections:
   - leftColumnWidth: '50'
     descriptionPosition: top
     optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/webePartners/zielone.png
     imageRight: /assets/img/projects/webePartners/rozowe.png
     imageWidth: 800
@@ -37,6 +40,8 @@ projectSections:
     _template: imageImage
   - leftColumnWidth: '50'
     descriptionPosition: top
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
     imageLeft: /assets/img/projects/webePartners/zolte.png
     imageRight: /assets/img/projects/webePartners/pomaranczowe.png
     imageWidth: 800
@@ -59,7 +64,7 @@ projectSections:
     _template: imageImage
   - description: >
       [Zobacz też rysunki i animacje stworzone dla
-      webePartners](https://www.kingaewawojcik.pl/illustrations3) 
+      webePartners](https://www.kingaewawojcik.pl/illustrations3)
     _template: text
 ---
 

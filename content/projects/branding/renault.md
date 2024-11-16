@@ -26,7 +26,7 @@ projectSections:
 
       \- błyskawica – klasyczny symbol elektryczności,
 
-      \- fragment logo Renault,
+      \- fragment logo Renault Trucks,
 
       \- oraz schemat obwodu elektrycznego na froncie.
     image: /assets/img/projects/renault/front.png

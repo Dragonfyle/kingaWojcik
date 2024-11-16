@@ -6,4 +6,8 @@ const widthMap = {
     "70": "feature-70-30",
 };
 
-export { widthMap };
+function getGifDependentProps(isGif: boolean) {
+    return isGif ? { controls: false, autoPlay: true, loop: true, muted: true } : {};
+}
+
+export { widthMap, getGifDependentProps };

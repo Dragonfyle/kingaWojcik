@@ -277,7 +277,15 @@ export default defineConfig({
                                     {
                                         type: "boolean",
                                         name: "isLocal",
-                                        label: "lokalny film"
+                                        label: "lokalny film",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGif",
+                                        label: "GIF",
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
                                     },
                                     {
                                         type: "image",
@@ -294,6 +302,112 @@ export default defineConfig({
                                         type: "number",
                                         name: "imageHeight",
                                         label: "Wysokość grafiki w px",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "videoVideo",
+                                label: "Video - video",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "headerLeft",
+                                        label: "Nagłówek lewy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerRight",
+                                        label: "Nagłówek prawy",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionLeft",
+                                        label: "Opis lewy",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionRight",
+                                        label: "Opis prawy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrlLeft",
+                                        label: "URL lewy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoIdLeft",
+                                        label: "ID filmu z yt z youtube lewy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocalLeft",
+                                        label: "lokalny film lewy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGifLeft",
+                                        label: "GIF lewy",
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrlRight",
+                                        label: "URL prawy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoIdRight",
+                                        label: "ID filmu z yt z youtube prawy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocalRight",
+                                        label: "lokalny film prawy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGifRight",
+                                        label: "GIF prawy",
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImageLeft",
+                                        label: "Miniaturka lewa",
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImageRight",
+                                        label: "Miniaturka prawa",
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidthLeft",
+                                        label: "Szerokość grafiki w px lewa",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidthRight",
+                                        label: "Szerokość grafiki w px prawa",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeightLeft",
+                                        label: "Wysokość grafiki w px lewa",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeightRight",
+                                        label: "Wysokość grafiki w px prawa",
                                         required: true,
                                     },
                                 ],
@@ -599,7 +713,15 @@ export default defineConfig({
                                     {
                                         type: "boolean",
                                         name: "isLocal",
-                                        label: "lokalny film"
+                                        label: "lokalny film",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGif",
+                                        label: "GIF",
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
                                     },
                                     {
                                         type: "image",
@@ -616,6 +738,112 @@ export default defineConfig({
                                         type: "number",
                                         name: "imageHeight",
                                         label: "Wysokość grafiki w w px px",
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "videoVideo",
+                                label: "Video - video",
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "headerLeft",
+                                        label: "Nagłówek lewy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerRight",
+                                        label: "Nagłówek prawy",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionLeft",
+                                        label: "Opis lewy",
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionRight",
+                                        label: "Opis prawy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrlLeft",
+                                        label: "URL lewy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoIdLeft",
+                                        label: "ID filmu z yt z youtube lewy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocalLeft",
+                                        label: "lokalny film lewy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGifLeft",
+                                        label: "GIF lewy",
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrlRight",
+                                        label: "URL prawy",
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoIdRight",
+                                        label: "ID filmu z yt z youtube prawy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocalRight",
+                                        label: "lokalny film prawy",
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGifRight",
+                                        label: "GIF prawy",
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImageLeft",
+                                        label: "Miniaturka lewa",
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImageRight",
+                                        label: "Miniaturka prawa",
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidthLeft",
+                                        label: "Szerokość grafiki w px lewa",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidthRight",
+                                        label: "Szerokość grafiki w px prawa",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeightLeft",
+                                        label: "Wysokość grafiki w px lewa",
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeightRight",
+                                        label: "Wysokość grafiki w px prawa",
                                         required: true,
                                     },
                                 ],

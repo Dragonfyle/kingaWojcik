@@ -1,5 +1,7 @@
 import { IllustrationsProjectSectionsImage } from "tina/__generated__/types";
 
-type FeatureImageProps = IllustrationsProjectSectionsImage;
+interface FeatureImageProps {
+    featureData: IllustrationsProjectSectionsImage;
+}
 
 export type { FeatureImageProps };

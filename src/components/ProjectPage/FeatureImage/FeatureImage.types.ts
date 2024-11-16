@@ -1,4 +1,3 @@
-
 import { IllustrationsProjectSectionsImage } from "tina/__generated__/types";
 
 interface FeatureImageProps {

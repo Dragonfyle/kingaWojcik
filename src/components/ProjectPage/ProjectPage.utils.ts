@@ -7,7 +7,15 @@ const widthMap = {
 };
 
 function getGifDependentProps(isGif: boolean) {
-    return isGif ? { controls: false, autoPlay: true, loop: true, muted: true } : {};
+    return isGif
+        ? {
+              controls: false,
+              autoPlay: true,
+              playsInline: true,
+              loop: true,
+              muted: true,
+          }
+        : {};
 }
 
 export { widthMap, getGifDependentProps };

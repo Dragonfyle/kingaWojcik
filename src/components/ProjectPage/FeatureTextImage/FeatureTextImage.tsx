@@ -1,7 +1,7 @@
 import { ColumnWidth } from "../Feature.types";
 import { widthMap } from "../ProjectPage.utils";
-import FeatureSliceText from "../FeatureSliceText/FeatureSliceText";
-import FeatureSliceImage from "../FeatureSliceImage/FeatureSliceImage";
+import FeatureSliceText from "../FeatureSliceText";
+import FeatureSliceImage from "../FeatureSliceImage";
 import { FeatureTextImageProps } from "./FeatureTextImage.types";
 
 export default function FeatureTextImage({ featureData }: FeatureTextImageProps) {

@@ -1,5 +1,6 @@
 import FeatureImage from "$components/ProjectPage/FeatureImage/FeatureImage";
 import FeatureVideo from "$components/ProjectPage/FeatureVideo/FeatureVideo";
+import FeatureVideoVideo from "$components/ProjectPage/FeatureVideoVideo/FeatureVideoVideo";
 import FeatureText from "$components/ProjectPage/FeatureText/FeatureText";
 import FeatureTextText from "$components/ProjectPage/FeatureTextText/FeatureTextText";
 import FeatureImageImage from "$components/ProjectPage/FeatureImageImage/FeatureImageImage";
@@ -14,6 +15,7 @@ export default function PlainGallery({ projectData }: PlainGalleryProps) {
         projectSectionsText: FeatureText,
         projectSectionsImage: FeatureImage,
         projectSectionsVideo: FeatureVideo,
+        projectSectionsVideoVideo: FeatureVideoVideo,
         projectSectionsTextText: FeatureTextText,
         projectSectionsTextImage: FeatureTextImage,
         projectSectionsImageImage: FeatureImageImage,

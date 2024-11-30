@@ -1,13 +1,6 @@
 ---
 title: ''
 projectSections:
-  - descriptionPosition: top
-    header: ''
-    optionalDescription: ''
-    image: /assets/img/projects/finanse/tr-ilu-finpng.png
-    imageWidth: 1920
-    imageHeight: 980
-    _template: image
   - optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
     videoUrlLeft: r-wschod1.mp4
@@ -37,5 +30,26 @@ projectSections:
     imageHeightLeft: 1080
     imageHeightRight: 1920
     _template: videoVideo
+  - leftColumnWidth: '50'
+    descriptionPosition: top
+    optionalDescriptionLeft: ''
+    optionalDescriptionRight: ''
+    imageLeft: /assets/img/projects/truck/odsniezanie-tekst.png
+    imageRight: /assets/img/projects/truck/portal-tekst.png
+    imageWidth: 1080
+    imageHeight: 1920
+    _template: imageImage
+  - leftColumnWidth: '50'
+    descriptionPosition: top
+    imageLeft: /assets/img/projects/truck/supermoce-tekst2.png
+    imageRight: /assets/img/projects/truck/supermoce-tekst3.png
+    imageWidth: 1080
+    imageHeight: 1920
+    _template: imageImage
+  - descriptionPosition: top
+    image: /assets/img/projects/truck/komiks.png
+    imageWidth: 1920
+    imageHeight: 1080
+    _template: image
 ---
 

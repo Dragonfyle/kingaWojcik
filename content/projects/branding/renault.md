@@ -9,14 +9,16 @@ intro: >
   kilka tygodni wydaje się wystarczającym czasem, by zdecydować się na jakiś
   kierunek.
 projectSections:
-  - descriptionPosition: bottom
+  - title: Wizualizacja Projektu
+    descriptionPosition: bottom
     optionalDescription: ''
     videoUrl: /renault_design_contest_kinga_wojcik.mp4
     isLocal: true
     imageWidth: 640
     imageHeight: 360
     _template: video
-  - leftColumnWidth: '50'
+  - title: Elementy projektu
+    leftColumnWidth: '50'
     descriptionPosition: top
     header: 'Głównymi elementami projektu są:'
     description: |
@@ -33,7 +35,8 @@ projectSections:
     imageWidth: 1920
     imageHeight: 1790
     _template: imageText
-  - header: ''
+  - title: Proces twórczy
+    header: ''
     description: >
       Postawiłam na dość abstrakcyjny wzór, co początkowo budziło we mnie sporo
       wątpliwości. Zastanawiałam się, czy nie będzie zbyt „odjechany”. Jednak
@@ -52,7 +55,8 @@ projectSections:
       I jak widać, udało się. Na nagraniu zobaczycie mój design zrealizowany na
       rzeczywistym elektrycznym ciągniku.
     _template: text
-  - descriptionPosition: top
+  - title: Event WorldSkills 2024
+    descriptionPosition: top
     header: ''
     optionalDescription: ''
     videoId: bAc95aBzVVE

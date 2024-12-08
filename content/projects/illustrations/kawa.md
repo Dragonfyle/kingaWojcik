@@ -1,12 +1,14 @@
 ---
 projectSections:
-  - descriptionPosition: bottom
+  - title: Wstęp
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_1.jpg
     imageWidth: 1400
     imageHeight: 988
     _template: image
-  - leftColumnWidth: '50'
+  - title: Historia za projektem
+    leftColumnWidth: '50'
     descriptionLeft: >
       Ten projekt to efekt mojej wewnętrznej potrzeby tworzenia. Chciałam
       zilustrować niezwykłą historię – pełną emocji, niespodziewanych zwrotów
@@ -21,56 +23,66 @@ projectSections:
       codziennie, a tak mało o nim wiemy. Jak to się dzieje, że trafia do
       naszych kubków?
     _template: textText
-  - descriptionPosition: bottom
+  - title: Wersja drukowana
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_2.jpg
     imageWidth: 5834
     imageHeight: 4114
     _template: image
-  - description: >
+  - title: Podsumowanie wstępu
+    description: >
       Tak narodził się pomysł na ilustrowaną historię kawy. Uświadomiłam sobie,
       że za każdym łykiem tego napoju kryje się długi i skomplikowany proces,
       pełen pracy, czasu i wysiłku. Kawa musi naprawdę wiele przejść, zanim
       trafi do naszych kubeczków. I żeby nie było drętwo, zaangażowałam też
       Małgorzatę w napisanie niepoważnych wierszyków. Dzięki!
     _template: text
-  - descriptionPosition: bottom
+  - title: Spaść z badyla
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_3.jpg
     imageWidth: 1402
     imageHeight: 991
     _template: image
-  - descriptionPosition: bottom
+  - title: To są zbiory
+    descriptionPosition: bottom
+    header: ''
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_4.jpg
     imageWidth: 1402
     imageHeight: 991
     _template: image
-  - descriptionPosition: bottom
+  - title: Suszenie
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_5.jpg
     imageWidth: 1402
     imageHeight: 991
     _template: image
-  - descriptionPosition: bottom
+  - title: Chłodznie
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_7.jpg
     imageWidth: 1402
     imageHeight: 991
     _template: image
-  - descriptionPosition: bottom
+  - title: Selekcja
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_8.jpg
     imageWidth: 1402
     imageHeight: 991
     _template: image
-  - descriptionPosition: bottom
+  - title: Mielenie
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/kawa/kawa_9.jpg
     imageWidth: 1402
     imageHeight: 991
     _template: image
-  - descriptionPosition: bottom
+  - title: Kubek
+    descriptionPosition: bottom
     optionalDescription: |
       Projekt powstał we współpracy z Małgorzatą Jaworską (pisarzowiczka.pl)
     image: /assets/img/projects/kawa/kawa_10.jpg

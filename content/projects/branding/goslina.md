@@ -2,13 +2,15 @@
 title: Logo Miasta i Gminy Murowana Goślina -projekt konkursowy
 intro: ''
 projectSections:
-  - descriptionPosition: bottom
+  - title: Duże logo
+    descriptionPosition: bottom
     optionalDescription: ''
     image: /assets/img/projects/goslina/goslina_sygnet.jpg
     imageWidth: 2844
     imageHeight: 1302
     _template: image
-  - header: symbolika sygnetu
+  - title: Symbolika sygnetu
+    header: symbolika sygnetu
     description: >
       Logo ma na celu ukazanie walorów turystyczno-przyrodniczych gminy oraz
       zakomunikowanie jej dynamicznego, sportowego charakteru. Znajdująca się
@@ -20,7 +22,8 @@ projectSections:
       Kolorowe elementy logo można w ciekawy sposób wykorzystać jako
       charakterystyczną, wyróżniającą część identyfikacji wizualnej gminy.
     _template: text
-  - leftColumnWidth: '50'
+  - title: 'Małe loga, kolor i czarno-białe'
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -29,7 +32,8 @@ projectSections:
     imageWidth: 1100
     imageHeight: 386
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: Koszulka i kubek
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -38,7 +42,8 @@ projectSections:
     imageWidth: 1000
     imageHeight: 1000
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: Wizytówki
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''

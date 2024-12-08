@@ -1,7 +1,8 @@
 ---
 title: Jolka - animowana przewodniczka po świecie afiliacji
 projectSections:
-  - leftColumnWidth: '50'
+  - title: Przedstawienie jolki
+    leftColumnWidth: '50'
     description: >
       Jolka, główna bohaterka, inspirowana jest serią bajek o Goofym. Jest to
       niezbyt zaradna postać, która niewiele wie o świecie. Jednak z pomocą
@@ -12,7 +13,8 @@ projectSections:
     imageWidth: 1920
     imageHeight: 1080
     _template: imageText
-  - leftColumnWidth: '50'
+  - title: O afiliacji
+    leftColumnWidth: '50'
     description: >
       Afiliacja to sposób na zarabianie dzięki polecaniu produktów. Sklepy
       internetowe szukają efektywnych form reklamy, a osoby uczestniczące w
@@ -24,7 +26,8 @@ projectSections:
     imageWidth: 1920
     imageHeight: 1080
     _template: textImage
-  - leftColumnWidth: '50'
+  - title: Firmowe kolory
+    leftColumnWidth: '50'
     description: >
       Podczas projektowania postaci starałam się bazować na firmowych kolorach,
       by wzmocnić rozpoznawalność marki. Te cztery żywe barwy łatwo adaptują się
@@ -33,13 +36,15 @@ projectSections:
     imageWidth: 1920
     imageHeight: 1080
     _template: imageText
-  - leftColumnWidth: '50'
+  - title: Reakcje jolki
+    leftColumnWidth: '50'
     description: "Największą frajdę sprawiła mi praca nad mimiką i reakcjami Joli – od jej zagubienia, przez zniesmaczenie, aż po radość i spryt. Często inspirowałam się własnymi reakcjami \U0001F60A. Chciałam, żeby była to postać, z którą młodzi odbiorcy łatwo się utożsamią.\n"
     image: /assets/img/projects/jolka/jolka-scena6.png
     imageWidth: 1920
     imageHeight: 1080
     _template: textImage
-  - leftColumnWidth: '50'
+  - title: O animacji
+    leftColumnWidth: '50'
     description: >
       Animacja miała być super prosta, wręcz "toporna", ale stworzona z humorem
       i podana w nieco nietypowy sposób. Moim celem było stworzenie czegoś
@@ -49,14 +54,16 @@ projectSections:
     imageWidth: 1920
     imageHeight: 1080
     _template: imageText
-  - descriptionPosition: bottom
+  - title: Końcowa animacja
+    descriptionPosition: bottom
     optionalDescription: ''
     videoUrl: ''
     videoId: 0WF_pk3qncU
     imageWidth: 1280
     imageHeight: 720
     _template: video
-  - leftColumnWidth: '50'
+  - title: Reakcje i zaspana
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''

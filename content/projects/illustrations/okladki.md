@@ -1,7 +1,8 @@
 ---
 title: Projekty okładek książkowych
 projectSections:
-  - leftColumnWidth: '50'
+  - title: Doświadczenie psychodeliczne
+    leftColumnWidth: '50'
     headerLeft: '"Doświadczenie psychodeliczne"'
     headerRight: O projekcie
     descriptionLeft: >
@@ -16,7 +17,8 @@ projectSections:
       wizji, jakich można doświadczyć podczas spotkań z substancjami
       psychoaktywnymi.
     _template: textText
-  - leftColumnWidth: '50'
+  - title: Doświadczenie psychodeliczne
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -25,7 +27,8 @@ projectSections:
     imageWidth: 900
     imageHeight: 1256
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: Rewolucja
+    leftColumnWidth: '50'
     headerLeft: '"Rewolucja"'
     headerRight: O projekcie
     descriptionLeft: >
@@ -39,7 +42,8 @@ projectSections:
       Geometryczny font dobrze oddaje bezkompromisowość takich działań.
       Dodatkowo w tylną okładkę wkomponowałam rozpadające się litery.
     _template: textText
-  - leftColumnWidth: '50'
+  - title: Rewolucja
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -48,7 +52,8 @@ projectSections:
     imageWidth: 900
     imageHeight: 1256
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: Mitologia słowiańska
+    leftColumnWidth: '50'
     headerLeft: '"Mitologia słowiańska"'
     headerRight: O projekcie
     descriptionLeft: |
@@ -57,7 +62,8 @@ projectSections:
       Okładka imituje strukturę rzeźbionego drewna, co współgra z tradycjami
       słowiańskimi.
     _template: textText
-  - leftColumnWidth: '50'
+  - title: Mitologia słowiańska
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -66,7 +72,8 @@ projectSections:
     imageWidth: 915
     imageHeight: 1284
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: Astrologia
+    leftColumnWidth: '50'
     headerLeft: '"Astrologia"'
     headerRight: O projekcie
     descriptionLeft: >
@@ -80,7 +87,8 @@ projectSections:
       kompozycyjne okładki. Podtytuł pisany minuskułą ma podkreślić przystępny
       charakter książki.
     _template: textText
-  - leftColumnWidth: '50'
+  - title: Astrologia
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -89,7 +97,8 @@ projectSections:
     imageWidth: 900
     imageHeight: 1256
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: Podwórko
+    leftColumnWidth: '50'
     headerLeft: '"Podwórko"'
     headerRight: O projekcie
     descriptionLeft: >
@@ -107,7 +116,8 @@ projectSections:
       trudy dzieciństwa bohatera. Wyjustowanie tekstu w blurbie nadaje
       dodatkowej powagi.
     _template: textText
-  - leftColumnWidth: '50'
+  - title: Podwórko
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -116,7 +126,8 @@ projectSections:
     imageWidth: 915
     imageHeight: 1284
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: Egipt - zapomniana historia
+    leftColumnWidth: '50'
     headerLeft: '"Egipt - zapomniana historia"'
     headerRight: O projekcie
     descriptionLeft: >
@@ -132,7 +143,8 @@ projectSections:
       kolumnach. Tytułowy font dobrałam w taki sposób, by przywoływał na myśl
       starożytne pisma.
     _template: textText
-  - leftColumnWidth: '50'
+  - title: Egipt - zapomniana historia
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''
@@ -141,7 +153,8 @@ projectSections:
     imageWidth: 900
     imageHeight: 1256
     _template: imageImage
-  - leftColumnWidth: '50'
+  - title: The cosmic ray
+    leftColumnWidth: '50'
     headerLeft: '"The cosmic ray"'
     headerRight: O projekcie
     descriptionLeft: >
@@ -155,7 +168,8 @@ projectSections:
       patrzącego w centralnym punkcje. Tytuł wykonany odręcznym pismem podkreśla
       nieprzewidywalność pewnych zjawisk.
     _template: textText
-  - leftColumnWidth: '50'
+  - title: The cosmic ray
+    leftColumnWidth: '50'
     descriptionPosition: bottom
     optionalDescriptionLeft: ''
     optionalDescriptionRight: ''

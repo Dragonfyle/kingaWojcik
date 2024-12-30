@@ -15,6 +15,7 @@ export default function FeatureImage({ featureData }: FeatureImageProps) {
                 sizes="(min-width: 1024px) 87vw, (min-width: 1250px) 72vw, (min-width: 1440px) 80vw, (min-width: 1600px) 71vw,95vw"
                 src={featureData.image}
                 className="w-auto"
+                quality={75}
             />
 
             <ColumnDescription

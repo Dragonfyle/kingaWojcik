@@ -1,7 +1,8 @@
 ---
 title: 'Ilustracje reklamowe, które ożywią Twoją markę'
 projectSections:
-  - header: Indywidualny scenariusz komunikacji wizualnej dla Twojej firmy
+  - title: Indywidualne podejście
+    header: Indywidualny scenariusz komunikacji wizualnej dla Twojej firmy
     description: >
       W zależności od charakterystyki marki i jej grupy odbiorców proponuję
       określone rodzaje ilustracji (zabawne animacje, które trafią do dzieci,
@@ -14,13 +15,15 @@ projectSections:
       ilustracje. Będziesz mógł/mogła wdrożyć je w swoich social mediach, na
       stronie internetowej lub w postaci książeczek czy gadżetów.
     _template: text
-  - descriptionPosition: top
+  - title: Latarnia morska
+    descriptionPosition: top
     optionalDescription: ''
     image: /assets/img/projects/reklamowe/tr-ilu-finpng.png
     imageWidth: 1920
     imageHeight: 980
     _template: image
-  - leftColumnWidth: '50'
+  - title: Zastosowania i kontakt
+    leftColumnWidth: '50'
     headerLeft: Jakie są zastosowania ilustracji?
     headerRight: Chcesz wiedzieć więcej?
     descriptionLeft: |
@@ -30,7 +33,8 @@ projectSections:
       * banery, ikonki, animacje reklamowe
     descriptionRight: >
       Zapytaj o dowolną kwestię. Chętnie przedstawię pomysły na działania dla
-      Twojej firmy. Napisz do mnie: wojcik.kinga.ewa\@gmail.com
+      Twojej firmy. Napisz do mnie:
+      [wojcik.kinga.ewa@gmail.com](mailto:wojcik.kinga.ewa@gmail.com)
     _template: textText
 ---
 

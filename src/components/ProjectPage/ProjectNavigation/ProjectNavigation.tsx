@@ -18,12 +18,10 @@ export default function ProjectNavigation() {
     useEffect(() => {
         fetchProjects().then(setProjectData);
     }, []);
-
     const currentProjectIndex = findCurrentProjectIndex(projectData, pathname);
     const { nextProject, previousProject } = getAdjacentProjects(projectData, currentProjectIndex);
 
     if (projectData.length === 0) return null;
-
     return !isMobile ? (
         <ProjectNavButtons
             onNextProject={() => push(nextProject.url)}

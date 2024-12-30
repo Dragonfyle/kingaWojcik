@@ -2,4 +2,4 @@
 title: Ilustracje
 ---
 
-Tworzę ilustracje komiksowe, projekty okładek, a nawet animowane postacie. Być może zaskoczą Cię tematy, które podejmuję... Zapraszam Cię w rysunkową podróż.
+Tworzę ilustracje komiksowe, projekty okładek czy animowane postacie. Zapraszam Cię w rysunkową podróż...

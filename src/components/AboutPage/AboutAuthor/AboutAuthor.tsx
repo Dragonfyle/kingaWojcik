@@ -1,6 +1,8 @@
 import Image from "next/image";
+
+import StyledTinaMarkup from "$components/generics/StyledTinaMarkup";
+
 import { AboutSectionProps } from "./AboutAuthor.types";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export default function AboutAuthor({ source }: AboutSectionProps) {
     return (
@@ -14,12 +16,7 @@ export default function AboutAuthor({ source }: AboutSectionProps) {
             </header>
 
             <div className="flex flex-col gap-6">
-                <TinaMarkdown
-                    components={{
-                        bold: (props) => <span className="text-orange-500">{props?.children}</span>,
-                    }}
-                    content={source.description}
-                />
+                <StyledTinaMarkup content={source.description} />
             </div>
         </section>
     );

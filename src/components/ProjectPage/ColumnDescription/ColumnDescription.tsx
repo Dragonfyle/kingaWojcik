@@ -1,4 +1,4 @@
-import { TinaMarkdown } from "tinacms/dist/rich-text";
+import StyledTinaMarkup from "$components/generics/StyledTinaMarkup";
 
 import { descriptionPositionMap } from "../Feature.types";
 import { ColumnDescriptionProps } from "./ColumnDescription.types";
@@ -15,11 +15,8 @@ export function ColumnDescription({ header, description, descriptionPosition }: 
 
             {hasDescription && (
                 <div className="flex flex-col gap-4 [&_*]:text-ms [&_*]:s:text-m">
-                    <TinaMarkdown
+                    <StyledTinaMarkup
                         content={description}
-                        components={{
-                            bold: (props) => <span className="text-orange-500">{props?.children}</span>,
-                        }}
                     />
                 </div>
             )}

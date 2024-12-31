@@ -1,5 +1,5 @@
-import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { ProjectIntroductionProps } from "./ProjectIntroduction.types";
+import StyledTinaMarkup from "$components/generics/StyledTinaMarkup";
 
 export default function ProjectIntroduction({ projectData }: ProjectIntroductionProps) {
     const withDescription = "intro" in projectData;
@@ -10,10 +10,7 @@ export default function ProjectIntroduction({ projectData }: ProjectIntroduction
 
             {withDescription && (
                 <div className="flex flex-col items-start gap-4 py-5">
-                    <TinaMarkdown
-                        components={{
-                            bold: (props) => <span className="text-orange-500">{props?.children}</span>,
-                        }}
+                    <StyledTinaMarkup
                         content={projectData.intro}
                     />
                 </div>

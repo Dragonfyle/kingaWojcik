@@ -1,4 +1,5 @@
-import { TinaMarkdown } from "tinacms/dist/rich-text";
+import StyledTinaMarkup from "$components/generics/StyledTinaMarkup";
+
 import { ProjectPanelItemDescriptionProps } from "./ProjectPanelItemDescription.types";
 
 export default function ProjectPanelItemDescription({ title, description }: ProjectPanelItemDescriptionProps) {
@@ -7,12 +8,7 @@ export default function ProjectPanelItemDescription({ title, description }: Proj
             <h3 className="text-2xl font-bold">{title}</h3>
 
             <div className="flex flex-col gap-4 [&_*]:text-ms [&_*]:s:text-m">
-                <TinaMarkdown
-                    components={{
-                        bold: (props) => <span className="text-orange-500">{props?.children}</span>,
-                    }}
-                    content={description}
-                />
+                <StyledTinaMarkup content={description} />
             </div>
         </div>
     );

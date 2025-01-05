@@ -70,4 +70,4 @@ projectSections:
     _template: imageText
 ---
 
-**[Pobierz projekt kalendarza gotowy do druku ](https://drive.google.com/drive/folders/1jjGUyNpya8U9SrQ6g532OIwNvDye4dXP?usp=sharing)** Kalendarz na rok 2025, CMYK, format A4, spady 3mm, link prowadzi do katalogu z projektem okładki i wnętrza (osobne pliki .pdf).
+[Pobierz projekt kalendarza gotowy do druku ](https://drive.google.com/drive/folders/1jjGUyNpya8U9SrQ6g532OIwNvDye4dXP?usp=sharing) Kalendarz na rok 2025, CMYK, format A4, spady 3mm, link prowadzi do katalogu z projektem okładki i wnętrza (osobne pliki .pdf).

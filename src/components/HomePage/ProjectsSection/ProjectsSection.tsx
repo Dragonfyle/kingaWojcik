@@ -1,7 +1,12 @@
 "use client";
 
 import { useRef } from "react";
-import { ArticlesThumbnails, BrandingThumbnails, IllustrationsThumbnails } from "tina/__generated__/types";
+import {
+    ArticlesThumbnails,
+    BrandingThumbnails,
+    IllustrationsThumbnails,
+    PortraitThumbnails,
+} from "tina/__generated__/types";
 import Link from "next/link";
 
 import { useDeviceContext } from "$contexts/DeviceContext";
@@ -18,7 +23,9 @@ export default function ProjectSection({ id, source, intro }: ProjectSectionProp
     const sliderRef = useRef<SliderImperativeHandle>(null);
     const { isMobile } = useDeviceContext();
 
-    function renderSliderContent(source: IllustrationsThumbnails[] | BrandingThumbnails[] | ArticlesThumbnails[]) {
+    function renderSliderContent(
+        source: IllustrationsThumbnails[] | BrandingThumbnails[] | ArticlesThumbnails[] | PortraitThumbnails[]
+    ) {
         return source.map(({ thumbnail, title, description, url }) => (
             <Link key={title} href={url} className="">
                 <ProjectPanelItem image={thumbnail} title={title} description={description} />

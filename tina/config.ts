@@ -1265,6 +1265,523 @@ export default defineConfig({
                     },
                 ],
             },
+			{
+                name: "Portraits",
+                label: "Portrety",
+                path: "content/projects/portraits",
+                format: "md",
+                fields: [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: v.labels.TITLE,
+                    },
+                    {
+                        type: "rich-text",
+                        name: "intro",
+                        label: v.labels.INTRO,
+                        isBody: true,
+                    },
+                    {
+                        type: "object",
+                        name: "projectSections",
+                        label: v.labels.PROJECT_SECTIONS,
+                        list: true,
+                        templates: [
+                            {
+                                name: "text",
+                                label: v.labels.TEXT,
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "tekst"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: v.labels.TITLE,
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: v.labels.HEADER,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "description",
+                                        label: v.labels.DESCRIPTION,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "image",
+                                label: v.labels.IMAGE,
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "grafika"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: v.labels.TITLE,
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: v.labels.DESCRIPTION_POSITION,
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: v.labels.HEADER,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescription",
+                                        label: v.labels.DESCRIPTION,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "image",
+                                        label: v.labels.IMAGE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidth",
+                                        label: v.labels.IMAGE_WIDTH,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeight",
+                                        label: v.labels.IMAGE_HEIGHT,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "video",
+                                label: v.labels.VIDEO,
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "wideo"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: v.labels.TITLE,
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: v.labels.DESCRIPTION_POSITION,
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: v.labels.HEADER,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescription",
+                                        label: v.labels.DESCRIPTION,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrl",
+                                        label: v.labels.VIDEO_PATH,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoId",
+                                        label: v.labels.YT_ID,
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocal",
+                                        label: v.labels.LOCAL_VIDEO,
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGif",
+                                        label: v.labels.GIF,
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImage",
+                                        label: v.labels.POSTER_IMAGE,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidth",
+                                        label: v.labels.IMAGE_WIDTH,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeight",
+                                        label: v.labels.IMAGE_HEIGHT,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "videoVideo",
+                                label: "Video - video",
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "wideo - wideo"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: v.labels.TITLE,
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerLeft",
+                                        label: v.labels.HEADER_LEFT,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerRight",
+                                        label: v.labels.HEADER_RIGHT,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionLeft",
+                                        label: v.labels.DESCRIPTION_LEFT,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionRight",
+                                        label: v.labels.DESCRIPTION_RIGHT,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrlLeft",
+                                        label: v.labels.VIDEO_PATH_LEFT,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoIdLeft",
+                                        label: v.labels.YT_ID_LEFT,
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocalLeft",
+                                        label: v.labels.LOCAL_VIDEO_LEFT,
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGifLeft",
+                                        label: v.labels.GIF_LEFT,
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoUrlRight",
+                                        label: v.labels.VIDEO_PATH_RIGHT,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "videoIdRight",
+                                        label: v.labels.YT_ID_RIGHT,
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isLocalRight",
+                                        label: v.labels.LOCAL_VIDEO_RIGHT,
+                                    },
+                                    {
+                                        type: "boolean",
+                                        name: "isGifRight",
+                                        label: v.labels.GIF_RIGHT,
+                                        ui: {
+                                            description: "Czy video ma udawać GIF'a. Opcja tylko dla lokalnych filmów.",
+                                        },
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImageLeft",
+                                        label: v.labels.POSTER_IMAGE_LEFT,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "posterImageRight",
+                                        label: v.labels.POSTER_IMAGE_RIGHT,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidthLeft",
+                                        label: v.labels.IMAGE_WIDTH_LEFT,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidthRight",
+                                        label: v.labels.IMAGE_WIDTH_RIGHT,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeightLeft",
+                                        label: v.labels.IMAGE_HEIGHT_LEFT,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeightRight",
+                                        label: v.labels.IMAGE_HEIGHT_RIGHT,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "textText",
+                                label: "Tekst - tekst",
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "tekst - tekst"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: "Tytuł",
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: v.labels.LEFT_COLUMN_WIDTH,
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerLeft",
+                                        label: v.labels.HEADER_LEFT,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerRight",
+                                        label: v.labels.HEADER_RIGHT,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "descriptionLeft",
+                                        label: v.labels.DESCRIPTION_LEFT,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "descriptionRight",
+                                        label: v.labels.DESCRIPTION_RIGHT,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "imageImage",
+                                label: "Grafika - grafika",
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "grafika - grafika"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: "Tytuł",
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: v.labels.LEFT_COLUMN_WIDTH,
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "descriptionPosition",
+                                        label: v.labels.DESCRIPTION_POSITION,
+                                        options: ["top", "bottom"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerLeft",
+                                        label: v.labels.HEADER_LEFT,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "headerRight",
+                                        label: v.labels.HEADER_RIGHT,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionLeft",
+                                        label: v.labels.DESCRIPTION_LEFT,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "optionalDescriptionRight",
+                                        label: v.labels.DESCRIPTION_RIGHT,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "imageLeft",
+                                        label: v.labels.IMAGE_LEFT,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "imageRight",
+                                        label: v.labels.IMAGE_RIGHT,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidth",
+                                        label: v.labels.IMAGE_WIDTH,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeight",
+                                        label: v.labels.IMAGE_HEIGHT,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "textImage",
+                                label: "Tekst - grafika",
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "tekst - grafika"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: "Tytuł",
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: v.labels.LEFT_COLUMN_WIDTH,
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: v.labels.HEADER,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "description",
+                                        label: v.labels.DESCRIPTION,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "image",
+                                        label: v.labels.IMAGE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidth",
+                                        label: v.labels.IMAGE_WIDTH,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeight",
+                                        label: v.labels.IMAGE_HEIGHT,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                            {
+                                name: "imageText",
+                                label: "Grafika - tekst",
+                                ui: {
+                                    itemProps: (item) => getItemProps(item, "grafika - tekst"),
+                                },
+                                fields: [
+                                    {
+                                        type: "string",
+                                        name: "title",
+                                        label: "Tytuł",
+                                        description: v.descriptions.TITLE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "leftColumnWidth",
+                                        label: v.labels.LEFT_COLUMN_WIDTH,
+                                        options: ["30", "40", "50", "60", "70"],
+                                        required: true,
+                                    },
+                                    {
+                                        type: "string",
+                                        name: "header",
+                                        label: v.labels.HEADER,
+                                    },
+                                    {
+                                        type: "rich-text",
+                                        name: "description",
+                                        label: v.labels.DESCRIPTION,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "image",
+                                        name: "image",
+                                        label: v.labels.IMAGE,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageWidth",
+                                        label: v.labels.IMAGE_WIDTH,
+                                        required: true,
+                                    },
+                                    {
+                                        type: "number",
+                                        name: "imageHeight",
+                                        label: v.labels.IMAGE_HEIGHT,
+                                        required: true,
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
             {
                 name: "illustrationsThumbnails",
                 label: "Miniaturki ilustracji",
@@ -1341,6 +1858,39 @@ export default defineConfig({
                         type: "image",
                         name: "thumbnail",
                         label: v.labels.THUMBNAIL,
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "title",
+                        label: v.labels.TITLE,
+                        required: true,
+                    },
+                    {
+                        type: "rich-text",
+                        name: "description",
+                        label: v.labels.DESCRIPTION,
+                        isBody: true,
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "url",
+                        label: v.labels.URL,
+                        required: true,
+                    },
+                ],
+            },
+			{
+                name: "portraitThumbnails",
+                label: "Miniaturki portretów",
+                path: "content/thumbnails/portraits",
+                format: "md",
+                fields: [
+                    {
+                        type: "image",
+                        name: "thumbnail",
+                        label: "Miniaturka",
                         required: true,
                     },
                     {

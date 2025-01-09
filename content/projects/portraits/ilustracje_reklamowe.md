@@ -1,7 +1,7 @@
 ---
 title: 'Ilustracje reklamowe, które ożywią Twoją markę'
 projectSections:
-  - title: Indywidualne podejście
+  - title: Indywidualny scenariusz komunikacji wizualnej dla Twojej firmy
     header: Indywidualny scenariusz komunikacji wizualnej dla Twojej firmy
     description: >
       W zależności od charakterystyki marki i jej grupy odbiorców proponuję
@@ -15,14 +15,13 @@ projectSections:
       ilustracje. Będziesz mógł/mogła wdrożyć je w swoich social mediach, na
       stronie internetowej lub w postaci książeczek czy gadżetów.
     _template: text
-  - title: Latarnia morska
+  - title: naświetlę Ci światowe ryni Finansowe
     descriptionPosition: top
-    optionalDescription: ''
     image: /assets/img/projects/reklamowe/tr-ilu-finpng.png
-    imageWidth: 1920
-    imageHeight: 980
+    imageWidth: 1136
+    imageHeight: 580
     _template: image
-  - title: Zastosowania i kontakt
+  - title: Szczegóły oferty
     leftColumnWidth: '50'
     headerLeft: Jakie są zastosowania ilustracji?
     headerRight: Chcesz wiedzieć więcej?

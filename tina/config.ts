@@ -1265,8 +1265,8 @@ export default defineConfig({
                     },
                 ],
             },
-			{
-                name: "Portraits",
+            {
+                name: "portraits",
                 label: "Portrety",
                 path: "content/projects/portraits",
                 format: "md",
@@ -1881,7 +1881,7 @@ export default defineConfig({
                     },
                 ],
             },
-			{
+            {
                 name: "portraitThumbnails",
                 label: "Miniaturki portretów",
                 path: "content/thumbnails/portraits",

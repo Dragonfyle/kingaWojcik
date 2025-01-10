@@ -4,7 +4,7 @@ import ProjectPanelItemDescription from "./ProjectPanelItemDescription";
 
 export default function ProjectPanelItem({ image, title, description }: ProjectPanelItemProps) {
     return (
-        <div className="flex h-full snap-start flex-col">
+        <div className="flex s:w-project-panel-item h-full snap-start flex-col">
             <ProjectThumbnail src={image} />
             <ProjectPanelItemDescription title={title} description={description} />
         </div>

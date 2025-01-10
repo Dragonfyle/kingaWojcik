@@ -13,7 +13,7 @@ function FeatureText({ featureData }: FeatureTextProps) {
                 <h2 className="text-2xl font-bold leading-snug [&_p]:text-m [&_p]:s:text-2xl">{featureData.header}</h2>
             )}
 
-            <div className="flex flex-col gap-4 [&_*]:text-ms [&_*]:s:text-m">
+            <div className="flex flex-col gap-4">
                 <StyledTinaMarkup content={featureData.description} />
             </div>
         </section>

@@ -1266,7 +1266,7 @@ export default defineConfig({
                 ],
             },
 			{
-                name: "Portraits",
+                name: "portraits",
                 label: "Portrety",
                 path: "content/projects/portraits",
                 format: "md",

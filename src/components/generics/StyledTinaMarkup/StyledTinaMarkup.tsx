@@ -12,6 +12,9 @@ export default function StyledTinaMarkup({ content }: { content: any }) {
                         {props?.children}
                     </a>
                 ),
+                h3: (props) => <h3 className="text-[1.5rem] font-bold">{props?.children}</h3>,
+                h4: (props) => <h4 className="text-[1.1rem] font-bold text-orange-500">{props?.children}</h4>,
+                h5: (props) => <h5 className="text-[1.1rem] font-bold">{props?.children}</h5>,
             }}
             content={content}
         />

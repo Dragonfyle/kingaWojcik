@@ -7,7 +7,7 @@ import FeatureImageImage from "$components/ProjectPage/FeatureImageImage/Feature
 import FeatureImageText from "$components/ProjectPage/FeatureImageText/FeatureImageText";
 import FeatureTextImage from "$components/ProjectPage/FeatureTextImage/FeatureTextImage";
 
-import { BrandingProjectSections, IllustrationsProjectSections } from "tina/__generated__/types";
+import { BrandingProjectSections, IllustrationsProjectSections, PortraitsProjectSections } from "tina/__generated__/types";
 import { PlainGalleryProps } from "$types/plainGallery.types";
 
 export default function PlainGallery({ projectData }: PlainGalleryProps) {
@@ -27,10 +27,10 @@ export default function PlainGallery({ projectData }: PlainGalleryProps) {
     function convertNameToKey(name: string | undefined) {
         if (!name) return "";
 
-        return name.replace(/^(Illustrations|Branding)ProjectSections/, "projectSections");
+        return name.replace(/^(Illustrations|Branding|Portraits)ProjectSections/, "projectSections");
     }
 
-    function renderSections(sections: IllustrationsProjectSections[] | BrandingProjectSections[] | undefined) {
+    function renderSections(sections: IllustrationsProjectSections[] | BrandingProjectSections[] | PortraitsProjectSections[] | undefined) {
         if (sections === undefined) {
             return null;
         }

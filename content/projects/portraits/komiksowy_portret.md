@@ -13,26 +13,26 @@ projectSections:
       * \- Darmową wysyłkę – paczkomatem lub pocztą, na terenie Polski.
 
 
-      ## Jak to działa?
+      ### Jak to działa?
 
 
-      ## 1. Prześlij zdjęcia
+      #### 1. Prześlij zdjęcia
 
 
       Twoje, Twoich bliskich lub kogoś, kogo chcesz uwiecznić. Najlepiej kilka
       zdjęć osoby/osób z różnych perspektyw.
 
 
-      ## 2. Opisz, jaką masz wizję
+      #### 2. Opisz, jaką masz wizję
 
 
-      Chcesz latać na miotle nad zamkiem, stać się astronautą, bohaterem
+      ##### Chcesz latać na miotle nad zamkiem, stać się astronautą, bohaterem
       ulubionej kreskówki czy superbohaterem ratującym świat? Ogranicza nas
       tylko wyobraźnia! Chętnie pomogę w doborze najlepszej scenerii, ale
       wtedy...
 
 
-      ## 3. Dodaj kilka szczegółów
+      #### 3. Dodaj kilka szczegółów
 
 
       Hobby, pasje, ulubione filmy? Dzięki temu przygotuję projekt, który będzie
@@ -41,21 +41,26 @@ projectSections:
     imageWidth: 1920
     imageHeight: 2716
     _template: imageText
-  - title: 'ceny, jak zamówić'
+  - title: 'Ceny, jak zamówić'
     leftColumnWidth: '50'
-    headerLeft: Ceny
-    headerRight: Jak zamówić?
+    headerLeft: Cena
+    headerRight: Zamów portret
     descriptionLeft: >
-      400 zł netto za portret jednej osoby w formacie A3, wydrukowany i
-      oprawiony w ramę
+      400 zł netto za portret jednej osoby
 
 
       Każda kolejna osoba na obrazie: +160 zł netto
+
+
+      ##### Masz inną propozycję? Napisz :)
+      [wojcik.kinga.ewa@gmail.com](mailto:wojcik.kinga.ewa@gmail.com)
     descriptionRight: >
       Napisz wiadomość na adres
-      [wojcik.kinga.ewa@gmail.com,](mailto:wojcik.kinga.ewa@gmail.com) prześlij
-      zdjęcia i szczegółowe oczekiwania. Jeśli masz pytania dotyczące oferty lub
-      innych możliwości współpracy, śmiało pisz.
+      [wojcik.kinga.ewa@gmail.com](mailto:wojcik.kinga.ewa@gmail.com).
+
+
+      Prześlij zdjęcia i szczegółowe oczekiwania. Jeśli masz pytania dotyczące
+      oferty lub innych możliwości współpracy, śmiało pisz.
     _template: textText
 ---
 

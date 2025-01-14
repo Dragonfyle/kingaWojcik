@@ -62,6 +62,26 @@ projectSections:
       Prześlij zdjęcia i szczegółowe oczekiwania. Jeśli masz pytania dotyczące
       oferty lub innych możliwości współpracy, śmiało pisz.
     _template: textText
+  - title: Babcia
+    leftColumnWidth: '70'
+    descriptionPosition: top
+    headerLeft: Babcia Dobra Wróżka
+    headerRight: (nie)zwykła babcia
+    imageLeft: /assets/img/projects/portrety/babcia-wiz-min.png
+    imageRight: /assets/img/projects/portrety/babcia-zdjecie.png
+    imageWidth: 1920
+    imageHeight: 2716
+    _template: imageImage
+  - title: Potter
+    leftColumnWidth: '70'
+    descriptionPosition: top
+    headerLeft: Jak Harry Potter
+    headerRight: Oryginalny Adam
+    imageLeft: /assets/img/projects/portrety/potter-wiz-min.png
+    imageRight: /assets/img/projects/portrety/adam-zdjecie.png
+    imageWidth: 1920
+    imageHeight: 2716
+    _template: imageImage
 ---
 
 Sprawisz radość każdemu – na urodziny, wieczór kawalerski, dzień nauczyciela, babci, dziadka, a nawet... po prostu bez okazji. Zabawny, kreatywny i personalizowany portret to podarunek, który na długo zostanie w pamięci.

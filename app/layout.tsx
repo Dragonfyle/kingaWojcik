@@ -12,7 +12,7 @@ import LayoutWrapper from "$components/generics/LayoutWrapper";
 
 export const metadata: Metadata = {
     title: "Kinga Ewa Wójcik - grafik, ilustrator",
-    description: "Portfolio projektów graficznych",
+    description: "Ilustracje i projektowanie graficzne",
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

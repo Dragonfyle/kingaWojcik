@@ -42,16 +42,6 @@ projectSections:
     imageWidth: 1080
     imageHeight: 1920
     _template: imageImage
-  - title: Un i un z portalem
-    leftColumnWidth: '50'
-    descriptionPosition: top
-    optionalDescriptionLeft: ''
-    optionalDescriptionRight: ''
-    imageLeft: /assets/img/projects/truck/supermoce-tekst2.png
-    imageRight: /assets/img/projects/truck/supermoce-tekst3.png
-    imageWidth: 1080
-    imageHeight: 1920
-    _template: imageImage
   - title: Korek
     descriptionPosition: top
     optionalDescription: ''

@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  redirects: async () => [{
+    source: "/portrety",
+    destination: "/offer1",
+    permanent: true
+  },
+  {
+    source: "/portraits",
+    destination: "/offer1",
+    permanent: true
+  }],
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -30,14 +40,14 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-          protocol: 'https',
-          hostname: '**.vercel.app',
+        protocol: 'https',
+        hostname: '**.vercel.app',
       },
       {
         protocol: 'https',
         hostname: '**.tina.io',
       },
-  ],
+    ],
   },
 }
 

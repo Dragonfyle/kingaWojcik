@@ -1,14 +1,13 @@
-import Image from "next/image";
-
 import StyledTinaMarkup from "$components/generics/StyledTinaMarkup";
 
 import { AboutSectionProps } from "./AboutAuthor.types";
+import YoutubeEmbed from "$components/ProjectPage/FeatureVideo/YoutubeEmbed";
 
 export default function AboutAuthor({ source }: AboutSectionProps) {
     return (
         <section className="flex flex-col">
             <div className="flex">
-                <Image src={source.photo} alt="zdjęcie autora" width={source.photoWidth} height={source.photoHeight} />
+				<YoutubeEmbed imageWidth={source.photoWidth} imageHeight={source.photoHeight} videoId={source.videoId || ""} />
             </div>
 
             <header className="my-8 flex">

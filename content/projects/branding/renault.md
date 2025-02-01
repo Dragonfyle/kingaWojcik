@@ -9,13 +9,13 @@ intro: >
   kilka tygodni wydaje się wystarczającym czasem, by zdecydować się na jakiś
   kierunek.
 projectSections:
-  - title: Wizualizacja Projektu
-    descriptionPosition: bottom
+  - title: Kinga Wójcik Renault Trucks Design Contest Winner
+    descriptionPosition: top
+    header: ''
     optionalDescription: ''
-    videoUrl: /renault_design_contest_kinga_wojcik.mp4
-    isLocal: true
-    imageWidth: 640
-    imageHeight: 360
+    videoId: NDHLIXEP7kQ
+    imageWidth: 1280
+    imageHeight: 720
     _template: video
   - title: Elementy projektu
     leftColumnWidth: '50'
@@ -52,16 +52,15 @@ projectSections:
       równie dobrze odnajdował się na ich samochodzie.
 
 
-      I jak widać, udało się. Na nagraniu zobaczycie mój design zrealizowany na
-      rzeczywistym elektrycznym ciągniku.
+      I jak widać, udało się :)
     _template: text
-  - title: Event WorldSkills 2024
-    descriptionPosition: top
-    header: ''
+  - title: Wizualizacja Projektu
+    descriptionPosition: bottom
     optionalDescription: ''
-    videoId: bAc95aBzVVE
-    imageWidth: 1280
-    imageHeight: 720
+    videoUrl: /renault_design_contest_kinga_wojcik.mp4
+    isLocal: true
+    imageWidth: 640
+    imageHeight: 360
     _template: video
 ---
 

@@ -136,10 +136,9 @@ export default defineConfig({
                                 required: true,
                             },
                             {
-                                type: "image",
-                                name: "photo",
-                                label: v.labels.IMAGE,
-                                required: true,
+								type: "string",
+								name: "videoId",
+								label: v.labels.YT_ID,
                             },
                             {
                                 type: "number",

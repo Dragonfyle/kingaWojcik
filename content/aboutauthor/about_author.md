@@ -1,6 +1,7 @@
 ---
-header: Kinga Ewa Wójcik
 photo: /assets/img/author/about_kinga_wojcik.jpg
+header: Kinga Ewa Wójcik
+videoId: NDHLIXEP7kQ
 photoWidth: 1920
 photoHeight: 1080
 _template: aboutAuthor
